@@ -1,0 +1,272 @@
+{
+  "created_at": "2026-04-18T10:05:09.932902+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_26cd33a65acd",
+  "question": "Where was the director of Aci Zafer born?",
+  "question_type": "two_hop",
+  "template": "film_director_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q35997",
+    "text": "İzmir"
+  },
+  "prediction_text": "Izmir",
+  "match": {
+    "prediction_normalized": "izmir",
+    "gold_normalized": "izmir",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q18712718",
+      "entity_name": "aci zafer",
+      "roles": [
+        "film"
+      ],
+      "source": "lexicon",
+      "score": 18
+    }
+  ],
+  "relation_path": [
+    "P57",
+    "P19"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q18712718"
+      ],
+      "candidate_count": 3,
+      "selected_triples": [
+        {
+          "source_id": "Q18712718",
+          "source_name": "aci zafer",
+          "source_roles": [
+            "film"
+          ],
+          "relation_id": "P57",
+          "relation_label": "director",
+          "target_id": "Q2237841",
+          "target_name": "halit refig",
+          "target_roles": [
+            "director"
+          ],
+          "score": 19.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q2237841"
+      ],
+      "candidate_count": 2,
+      "selected_triples": [
+        {
+          "source_id": "Q2237841",
+          "source_name": "halit refig",
+          "source_roles": [
+            "director"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q35997",
+          "target_name": "Izmir",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 16.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q18712718",
+        "seed_entity_name": "aci zafer",
+        "final_answers": [
+          {
+            "entity_id": "Q35997",
+            "entity_name": "Izmir"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q35997"
+    ],
+    "candidate_texts": [
+      "Izmir"
+    ],
+    "answer_text": "Izmir"
+  },
+  "kg_summary": "aci zafer was directed by halit refig. halit refig was born in Izmir.",
+  "expanded_query": "Where was Halit Refig born, the director of Aci Zafer.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_26cd33a65acd::1",
+      "title": "Where was the director of Aci Zafer born?",
+      "body": "Aci Zafer was directed by Halit Refiğ. Halit Refiğ was born in İzmir.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q18712718",
+      "metadata": {
+        "question_id": "qa_26cd33a65acd",
+        "template": "film_director_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -41.32569724464412,
+      "snippet": "Aci Zafer was directed by Halit Refiğ. Halit Refiğ was born in İzmir."
+    },
+    {
+      "doc_id": "entity::Q18712718",
+      "title": "acı zafer",
+      "body": "acı zafer. Description: Acı Zafer is a 1972 Turkish film directed by Halit Refiğ and starring Yilmaz Köksal, Deniz Erkanat, Turgut Özatay. Aliases: acı zafer, Acı Zafer, aci zafer, Aci Zafer. Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q18712718",
+      "metadata": {
+        "entity_id": "Q18712718",
+        "aliases": [
+          "acı zafer",
+          "Acı Zafer",
+          "aci zafer",
+          "Aci Zafer"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -26.373659224100454,
+      "snippet": "acı zafer. Description: Acı Zafer is a 1972 Turkish film directed by Halit Refiğ and starring Yilmaz Köksal, Deniz Erkanat, Turgut Özatay. Aliases: acı zafer, Acı Zafer, aci zafer, Aci Zafer. Roles: film. Domains: cin..."
+    },
+    {
+      "doc_id": "fact::Q18712718::P57::Q2237841",
+      "title": "acı zafer - director",
+      "body": "acı zafer was directed by halit refiğ. Relation type: director. Source roles: film. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q18712718",
+      "metadata": {
+        "source_id": "Q18712718",
+        "target_id": "Q2237841",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -20.429547931178668,
+      "snippet": "acı zafer was directed by halit refiğ. Relation type: director. Source roles: film. Target roles: director."
+    },
+    {
+      "doc_id": "entity::Q2237841",
+      "title": "halit refiğ",
+      "body": "halit refiğ. Description: Halit Refiğ (5 March 1934, İzmir – 11 October 2009, İstanbul) was a Turkish film director, film producer, screenwriter and writer. He made around sixty films, including feature films, documentaries and TV serials. He is considered to be the pioneer of the National Cinema movement and the initiator of the production of TV serials in Turkey. Aliases: halit refiğ, halit refig, Halit Refig, Halit Refiğ. Roles: director. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q2237841",
+      "metadata": {
+        "entity_id": "Q2237841",
+        "aliases": [
+          "halit refiğ",
+          "halit refig",
+          "Halit Refig",
+          "Halit Refiğ"
+        ],
+        "roles": [
+          "director"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -14.807755181214123,
+      "snippet": "halit refiğ. Description: Halit Refiğ (5 March 1934, İzmir – 11 October 2009, İstanbul) was a Turkish film director, film producer, screenwriter and writer. He made around sixty films, including feature films, documen..."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T10:05:09.058231+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 997,
+      "remaining_tokens": 11835,
+      "reset_requests_seconds": 259.2,
+      "reset_tokens_seconds": 0.825,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 10:05:09 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "997",
+        "x-ratelimit-remaining-tokens": "11835",
+        "x-ratelimit-reset-requests": "4m19.2s",
+        "x-ratelimit-reset-tokens": "825ms",
+        "x-request-id": "req_01kpg0t91df8fakndbwqtj9mhq",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=rgg__8aVD6BYczWyVfnneSlR8PDL1gCiygD95d.D0yk-1776506709.015262-1.0.1.1-HwA5iuvXNxTPf3pxWZKKSH0m_KzNQYbMaYqvexU4AQfiXhUWf3oAfvdedzAdZwnb4FN1Ay0KyRQiFDmKdanDaP2Mi.8MNnoKnS4JDvlbqBT4vRbQ1rlicxuOCThhb1gJ; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 10:35:09 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee2d9735b0274c7-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T10:05:09.931448+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 996,
+      "remaining_tokens": 11426,
+      "reset_requests_seconds": 345.6,
+      "reset_tokens_seconds": 2.87,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 10:05:10 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "996",
+        "x-ratelimit-remaining-tokens": "11426",
+        "x-ratelimit-reset-requests": "5m45.6s",
+        "x-ratelimit-reset-tokens": "2.87s",
+        "x-request-id": "req_01kpg0t9q8fh1txvvfxg6dnvys",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=7N3YTH85FsqCiYgaTFxElCt9XlJhn0_L4eA9QMVcPtU-1776506709.713908-1.0.1.1-iTzMtsdwowcigjcQRcw5D.gFsXjcPY7d6oOu0VZC1O3wsq8_axXTQaHwR4OPp7eC36MrHHiDwVmyC7YzLkc5HhAF_ykifAKg9FPwW.Yisl7DguP8z2lZT8qtOoSqyQOd; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 10:35:10 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee2d977bb2c607f-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

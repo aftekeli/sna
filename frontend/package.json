@@ -1,0 +1,22 @@
+{
+  "name": "turkiye-cinema-kg-rag-frontend",
+  "private": true,
+  "scripts": {
+    "dev": "scripts\\next-run.cmd dev",
+    "build": "scripts\\next-run.cmd build",
+    "start": "scripts\\next-run.cmd start"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-force-graph-2d": "^1.29.1"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "puppeteer": "^24.41.0",
+    "typescript": "latest"
+  }
+}

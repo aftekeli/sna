@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T11:58:55.446591+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_565c95482384",
+  "question": "In which country was Kim Seol-hyun, a cast member of Ayla The Daughter of War, born?",
+  "question_type": "three_hop",
+  "template": "film_cast_birth_place_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q884",
+    "text": "South Korea"
+  },
+  "prediction_text": "South Korea",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T11:58:55.444885+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 976,
+    "remaining_tokens": 11550,
+    "reset_requests_seconds": 2073.6,
+    "reset_tokens_seconds": 2.25,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 11:58:55 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "976",
+      "x-ratelimit-remaining-tokens": "11550",
+      "x-ratelimit-reset-requests": "34m33.6s",
+      "x-ratelimit-reset-tokens": "2.25s",
+      "x-request-id": "req_01kpg7akj0fbpbdbz5cc62w6n3",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=1A8b0HIJex6yDvV.jMmfT7e0C7w4diRGgh_Tx95VleU-1776513535.5299044-1.0.1.1-UzlwYVudOQlojqCwV3cRo.UdFAC1ms.Vgdz6WfMjb353jVUq7FKOEGt2az1pqeh6ZGjPmJeKBDB3Ja9y3vEWOOaI1y55s78WkFgiI5A4LC6_yARFA8JcgGKg9gv70rtw; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:28:55 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3801d08774f36-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "south korea",
+    "gold_normalized": "south korea",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

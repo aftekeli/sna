@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T13:11:06.646238+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_d6de5558a6c3",
+  "question": "In which country is the school attended by the director of Bitter Life located?",
+  "question_type": "three_hop",
+  "template": "film_director_education_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q43",
+    "text": "Turkey"
+  },
+  "prediction_text": "Greece",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:11:06.636468+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 750,
+    "remaining_tokens": 11910,
+    "reset_requests_seconds": 21600.0,
+    "reset_tokens_seconds": 0.449,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:11:06 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "750",
+      "x-ratelimit-remaining-tokens": "11910",
+      "x-ratelimit-reset-requests": "6h0m0s",
+      "x-ratelimit-reset-tokens": "449ms",
+      "x-request-id": "req_01kpgbes5ge6ftv7fyfy22xfjq",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=epGe0w3Nmw02wzKtKMBuaR75rH6rvTo3QhE3xl7O6w0-1776517866.6528826-1.0.1.1-EITYYQoR_dZwUiXD1AvD3dk4lWim.RrbfZKP2fImPSUESEIKfzeK7g3NDS.tba9w5YGKUNUWesSyQNwyLo15v7grM0jEVB5YFWS1HkaJXn0zmySgX9W4j3WFEiRj6lX0; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:41:06 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3e9da9c928b2e-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "greece",
+    "gold_normalized": "turkey",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

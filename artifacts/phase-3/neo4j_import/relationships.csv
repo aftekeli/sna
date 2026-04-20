@@ -1,0 +1,1517 @@
+source_id,pid,relation_label,target_id
+Q4390382,P19,place of birth,Q6407315
+Q78168,P27,country of citizenship,Q43
+Q17277912,P57,director,Q4815792
+Q131293,P17,country,Q43
+Q18712839,P495,country of origin,Q43
+Q18753224,P57,director,Q2237841
+Q83965,P17,country,Q43
+Q3446835,P19,place of birth,Q199723
+Q284051,P166,award received,Q616568
+Q180280,P27,country of citizenship,Q43
+Q724172,P27,country of citizenship,Q43
+Q12810813,P19,place of birth,Q406
+Q6033250,P19,place of birth,Q719537
+Q962106,P27,country of citizenship,Q43
+Q3459778,P161,cast member,Q3337865
+Q6083691,P161,cast member,Q1925634
+Q4831964,P19,place of birth,Q1010949
+Q12812387,P19,place of birth,Q35997
+Q7116454,P27,country of citizenship,Q43
+Q6085441,P161,cast member,Q735585
+Q573156,P161,cast member,Q1382418
+Q3811192,P69,educated at,Q865528
+Q42099,P17,country,Q884
+Q7817189,P27,country of citizenship,Q145
+Q2090,P17,country,Q183
+Q25999900,P161,cast member,Q4727547
+Q257669,P161,cast member,Q4696189
+Q6081761,P161,cast member,Q5936459
+Q720344,P27,country of citizenship,Q43
+Q17512617,P161,cast member,Q463473
+Q18753224,P161,cast member,Q5626880
+Q7750585,P495,country of origin,Q43
+Q18712832,P495,country of origin,Q43
+Q16736826,P161,cast member,Q6093408
+Q1348747,P27,country of citizenship,Q43
+Q5098492,P57,director,Q2827768
+Q6099913,P27,country of citizenship,Q43
+Q5437360,P161,cast member,Q5377630
+Q6091112,P495,country of origin,Q43
+Q19600502,P495,country of origin,Q43
+Q4832684,P27,country of citizenship,Q43
+Q1284001,P27,country of citizenship,Q43
+Q3306251,P19,place of birth,Q3640
+Q18713080,P57,director,Q2237841
+Q6094318,P161,cast member,Q343040
+Q374415,P27,country of citizenship,Q43
+Q6084089,P19,place of birth,Q406
+Q6086955,P19,place of birth,Q174341
+Q716602,P27,country of citizenship,Q30
+Q447576,P19,place of birth,Q3640
+Q468418,P27,country of citizenship,Q43
+Q616568,P17,country,Q801
+Q184539,P17,country,Q43
+Q97604,P19,place of birth,Q3764
+Q12810617,P161,cast member,Q1382418
+Q6079841,P161,cast member,Q7398100
+Q6094839,P161,cast member,Q6097675
+Q4807991,P161,cast member,Q3126013
+Q27957840,P161,cast member,Q5641421
+Q47117,P17,country,Q43
+Q3561666,P57,director,Q1685054
+Q6084541,P161,cast member,Q4831964
+Q6094318,P57,director,Q374415
+Q55460,P19,place of birth,Q406
+Q5377630,P19,place of birth,Q650569
+Q130553,P17,country,Q43
+Q1452569,P19,place of birth,Q184116
+Q97241,P27,country of citizenship,Q43
+Q505264,P19,place of birth,Q155915
+Q6083314,P161,cast member,Q11170397
+Q307737,P27,country of citizenship,Q43
+Q962106,P19,place of birth,Q406
+Q17,P17,country,Q17
+Q844804,P17,country,Q142
+Q832180,P161,cast member,Q5377630
+Q494719,P495,country of origin,Q43
+Q2288769,P19,place of birth,Q803679
+Q3176600,P166,award received,Q7241424
+Q982389,P19,place of birth,Q168197
+Q151729,P27,country of citizenship,Q43
+Q26702984,P19,place of birth,Q35997
+Q6061219,P495,country of origin,Q43
+Q17432108,P19,place of birth,Q406
+Q794,P17,country,Q794
+Q6090129,P19,place of birth,Q129649
+Q188894,P17,country,Q43
+Q6066254,P161,cast member,Q5626880
+Q8078990,P19,place of birth,Q35997
+Q1685054,P27,country of citizenship,Q142
+Q3472837,P161,cast member,Q307835
+Q858026,P69,educated at,Q192964
+Q7667107,P19,place of birth,Q406
+Q25999897,P495,country of origin,Q43
+Q6079841,P57,director,Q936089
+Q3054263,P19,place of birth,Q35997
+Q6094757,P161,cast member,Q531443
+Q3126013,P19,place of birth,Q326339
+Q18713113,P161,cast member,Q792949
+Q6407788,P57,director,Q6051778
+Q3624103,P19,place of birth,Q406
+Q5352355,P495,country of origin,Q43
+Q18713110,P495,country of origin,Q43
+Q20986937,P27,country of citizenship,Q298
+Q4390382,P27,country of citizenship,Q17
+Q327852,P495,country of origin,Q43
+Q187261,P19,place of birth,Q171031
+Q20002628,P161,cast member,Q6101497
+Q1373349,P27,country of citizenship,Q43
+Q724172,P166,award received,Q179808
+Q17512617,P161,cast member,Q463514
+Q17512617,P161,cast member,Q465998
+Q567579,P57,director,Q567269
+Q2827768,P19,place of birth,Q11194
+Q27957837,P57,director,Q2237841
+Q5936459,P19,place of birth,Q173474
+Q17512617,P161,cast member,Q58603
+Q7116454,P19,place of birth,Q2090
+Q3574282,P166,award received,Q7241424
+Q12809142,P161,cast member,Q12811020
+Q277184,P161,cast member,Q343040
+Q6088017,P19,place of birth,Q209905
+Q6074177,P495,country of origin,Q43
+Q19473346,P161,cast member,Q1264350
+Q463514,P19,place of birth,Q595974
+Q209905,P17,country,Q43
+Q12810220,P161,cast member,Q735585
+Q7742278,P161,cast member,Q6103860
+Q77005,P19,place of birth,Q2880
+Q982946,P161,cast member,Q4724766
+Q586,P17,country,Q183
+Q257031,P19,place of birth,Q3200
+Q449082,P19,place of birth,Q23482
+Q6084504,P495,country of origin,Q43
+Q257031,P27,country of citizenship,Q183
+Q1740774,P495,country of origin,Q43
+Q18713111,P57,director,Q2237841
+Q6806566,P161,cast member,Q4831964
+Q3434403,P19,place of birth,Q3640
+Q4817705,P27,country of citizenship,Q43
+Q2075940,P19,place of birth,Q406
+Q536298,P19,place of birth,Q844542
+Q42716,P17,country,Q142
+Q6099913,P19,place of birth,Q637120
+Q33,P17,country,Q33
+Q2086445,P161,cast member,Q130164
+Q928436,P161,cast member,Q6101229
+Q6100032,P19,place of birth,Q406
+Q20002323,P495,country of origin,Q43
+Q18712997,P161,cast member,Q558853
+Q6407315,P17,country,Q408
+Q17560788,P495,country of origin,Q43
+Q20730476,P27,country of citizenship,Q142
+Q18713008,P495,country of origin,Q43
+Q927967,P69,educated at,Q192964
+Q4817705,P27,country of citizenship,Q35
+Q2157934,P27,country of citizenship,Q43
+Q5385256,P19,place of birth,Q40738
+Q1758492,P17,country,Q43
+Q463514,P27,country of citizenship,Q142
+Q18713008,P161,cast member,Q792949
+Q2335956,P19,place of birth,Q3711
+Q3624123,P19,place of birth,Q84
+Q6088721,P161,cast member,Q357260
+Q4027352,P161,cast member,Q5423258
+Q3337865,P27,country of citizenship,Q43
+Q982821,P161,cast member,Q3057408
+Q832180,P161,cast member,Q6083959
+Q6070626,P161,cast member,Q357260
+Q19858720,P161,cast member,Q270709
+Q17560788,P495,country of origin,Q183
+Q1033641,P19,place of birth,Q35997
+Q25999911,P495,country of origin,Q43
+Q12810281,P161,cast member,Q1720967
+Q271659,P17,country,Q142
+Q797577,P495,country of origin,Q43
+Q4117946,P27,country of citizenship,Q43
+Q797577,P161,cast member,Q3446906
+Q6082475,P27,country of citizenship,Q43
+Q815624,P27,country of citizenship,Q145
+Q6088221,P495,country of origin,Q43
+Q16533418,P161,cast member,Q6090423
+Q930862,P27,country of citizenship,Q43
+Q45301,P17,country,Q43
+Q6093425,P19,place of birth,Q3640
+Q16954839,P495,country of origin,Q43
+Q3074376,P19,place of birth,Q3640
+Q79857,P17,country,Q43
+Q1134063,P19,place of birth,Q193428
+Q735585,P27,country of citizenship,Q43
+Q6049668,P495,country of origin,Q43
+Q928436,P161,cast member,Q6090990
+Q1382418,P166,award received,Q7241424
+Q20065085,P161,cast member,Q3157489
+Q43924,P17,country,Q43
+Q5003637,P27,country of citizenship,Q43
+Q6063936,P161,cast member,Q735585
+Q3405087,P19,place of birth,Q206900
+Q18713111,P495,country of origin,Q43
+Q6083959,P19,place of birth,Q183651
+Q6059651,P57,director,Q2237841
+Q6084089,P27,country of citizenship,Q43
+Q58603,P166,award received,Q873842
+Q11235234,P19,place of birth,Q35765
+Q4831727,P27,country of citizenship,Q43
+Q6077842,P27,country of citizenship,Q43
+Q12810281,P495,country of origin,Q43
+Q23482,P17,country,Q142
+Q2739722,P166,award received,Q7650000
+Q16533418,P495,country of origin,Q43
+Q18712747,P495,country of origin,Q43
+Q17450797,P161,cast member,Q6083959
+Q1033641,P27,country of citizenship,Q43
+Q4831964,P19,place of birth,Q406
+Q177993,P27,country of citizenship,Q801
+Q1688122,P19,place of birth,Q492478
+Q6059651,P161,cast member,Q3574282
+Q78168,P19,place of birth,Q189134
+Q19573200,P495,country of origin,Q43
+Q16173210,P27,country of citizenship,Q884
+Q8082379,P161,cast member,Q7667107
+Q8082379,P161,cast member,Q357260
+Q18713113,P57,director,Q2237841
+Q1928775,P19,place of birth,Q23556
+Q145,P17,country,Q145
+Q3335501,P57,director,Q3057501
+Q19600506,P495,country of origin,Q43
+Q6086286,P161,cast member,Q12811020
+Q797577,P161,cast member,Q8082498
+Q6046554,P161,cast member,Q3111250
+Q6082425,P161,cast member,Q470210
+Q2887,P17,country,Q298
+Q25999900,P161,cast member,Q6480242
+Q4663809,P57,director,Q2288769
+Q6046554,P161,cast member,Q11170397
+Q307737,P19,place of birth,Q3640
+Q19600142,P495,country of origin,Q43
+Q20065085,P495,country of origin,Q41
+Q16736826,P161,cast member,Q3623884
+Q6070626,P161,cast member,Q4727547
+Q6101229,P19,place of birth,Q388995
+Q6086286,P57,director,Q2237841
+Q6051778,P19,place of birth,Q406
+Q531443,P19,place of birth,Q3640
+Q17450815,P495,country of origin,Q43
+Q6088748,P495,country of origin,Q43
+Q6099428,P161,cast member,Q4875335
+Q793,P17,country,Q55
+Q7807711,P27,country of citizenship,Q43
+Q470210,P27,country of citizenship,Q43
+Q2274910,P27,country of citizenship,Q43
+Q6091762,P161,cast member,Q4914460
+Q187253,P166,award received,Q7603040
+Q257669,P161,cast member,Q5058838
+Q6094757,P57,director,Q7107110
+Q4808148,P161,cast member,Q6849761
+Q16955948,P57,director,Q536298
+Q6103860,P19,place of birth,Q406
+Q4808148,P161,cast member,Q4736145
+Q72347,P27,country of citizenship,Q43
+Q4414864,P161,cast member,Q962106
+Q18713126,P495,country of origin,Q43
+Q6050998,P161,cast member,Q735585
+Q27959328,P57,director,Q26702984
+Q18712768,P495,country of origin,Q43
+Q934718,P495,country of origin,Q43
+Q16533418,P495,country of origin,Q183
+Q6079841,P495,country of origin,Q43
+Q18712859,P57,director,Q2237841
+Q3176600,P69,educated at,Q1007545
+Q183,P17,country,Q183
+Q742775,P19,place of birth,Q200951
+Q6077916,P161,cast member,Q366685
+Q637120,P17,country,Q43
+Q17450844,P495,country of origin,Q43
+Q4120620,P27,country of citizenship,Q43
+Q19600142,P161,cast member,Q6100742
+Q1769370,P161,cast member,Q6585777
+Q6806566,P495,country of origin,Q43
+Q7742847,P161,cast member,Q3552827
+Q12810281,P57,director,Q2237841
+Q2882584,P161,cast member,Q3446835
+Q6054381,P57,director,Q1373349
+Q6692252,P495,country of origin,Q43
+Q982389,P27,country of citizenship,Q43
+Q183651,P17,country,Q43
+Q403,P17,country,Q403
+Q27959328,P495,country of origin,Q43
+Q6683587,P161,cast member,Q930862
+Q388469,P17,country,Q43
+Q4880647,P27,country of citizenship,Q43
+Q1720967,P19,place of birth,Q184539
+Q20065085,P161,cast member,Q2274910
+Q858,P17,country,Q858
+Q18170176,P161,cast member,Q310947
+Q6065130,P495,country of origin,Q43
+Q1285407,P19,place of birth,Q406
+Q6084082,P495,country of origin,Q41
+Q1255329,P19,place of birth,Q271659
+Q927967,P27,country of citizenship,Q43
+Q6046554,P57,director,Q7107075
+Q17450883,P57,director,Q3057501
+Q18170176,P57,director,Q6052842
+Q6093097,P161,cast member,Q982389
+Q298,P17,country,Q298
+Q17277912,P161,cast member,Q6099299
+Q6683587,P161,cast member,Q3337865
+Q12809142,P495,country of origin,Q43
+Q5289694,P27,country of citizenship,Q43
+Q6081026,P161,cast member,Q3126013
+Q1769370,P161,cast member,Q6064958
+Q3711,P17,country,Q12560
+Q388995,P17,country,Q43
+Q3856,P17,country,Q229
+Q573156,P495,country of origin,Q43
+Q6045125,P161,cast member,Q447576
+Q2427828,P19,place of birth,Q160450
+Q12809142,P161,cast member,Q3552827
+Q58603,P166,award received,Q819973
+Q5423534,P27,country of citizenship,Q43
+Q5626880,P19,place of birth,Q406
+Q470210,P19,place of birth,Q35997
+Q6570602,P495,country of origin,Q142
+Q20065085,P57,director,Q2335956
+Q19587294,P161,cast member,Q4817705
+Q229,P17,country,Q229
+Q6081026,P161,cast member,Q357260
+Q8082379,P161,cast member,Q4831964
+Q12835393,P161,cast member,Q792949
+Q18713110,P161,cast member,Q7398100
+Q7398100,P27,country of citizenship,Q43
+Q1935923,P19,place of birth,Q668
+Q1740774,P57,director,Q758354
+Q20002628,P495,country of origin,Q43
+Q6087774,P495,country of origin,Q43
+Q3206830,P161,cast member,Q90879
+Q18712807,P495,country of origin,Q43
+Q551683,P19,place of birth,Q258974
+Q357260,P19,place of birth,Q406
+Q4696189,P27,country of citizenship,Q43
+Q1285407,P27,country of citizenship,Q43
+Q719537,P17,country,Q43
+Q173474,P17,country,Q12560
+Q505264,P27,country of citizenship,Q43
+Q934718,P161,cast member,Q307805
+Q982821,P161,cast member,Q187253
+Q284051,P27,country of citizenship,Q801
+Q558287,P69,educated at,Q192964
+Q6088748,P57,director,Q2237841
+Q6081761,P161,cast member,Q3126013
+Q6088721,P495,country of origin,Q43
+Q6083061,P495,country of origin,Q43
+Q6091762,P495,country of origin,Q43
+Q720344,P19,place of birth,Q406
+Q7203434,P57,director,Q5644666
+Q3446906,P19,place of birth,Q107401
+Q6103860,P27,country of citizenship,Q43
+Q23022350,P161,cast member,Q77005
+Q18712937,P57,director,Q2237841
+Q257669,P161,cast member,Q4736145
+Q12812387,P27,country of citizenship,Q43
+Q6086827,P161,cast member,Q6100742
+Q41,P17,country,Q41
+Q1769370,P161,cast member,Q6096506
+Q558287,P19,place of birth,Q136217
+Q1402686,P161,cast member,Q4831964
+Q19824796,P495,country of origin,Q183
+Q16736826,P161,cast member,Q6083959
+Q27957842,P495,country of origin,Q43
+Q8082379,P57,director,Q3057501
+Q27957840,P495,country of origin,Q43
+Q19581968,P57,director,Q2237841
+Q456,P17,country,Q142
+Q18170176,P161,cast member,Q220584
+Q6062810,P57,director,Q2237841
+Q4922219,P161,cast member,Q1956183
+Q3472837,P161,cast member,Q4736145
+Q6051878,P57,director,Q7107075
+Q6029116,P27,country of citizenship,Q43
+Q832180,P161,cast member,Q968479
+Q6054267,P495,country of origin,Q43
+Q884,P17,country,Q884
+Q7398100,P19,place of birth,Q406
+Q5437360,P161,cast member,Q6029116
+Q19581968,P495,country of origin,Q43
+Q7460798,P161,cast member,Q2274910
+Q7827905,P161,cast member,Q4831964
+Q232745,P166,award received,Q173402
+Q6082425,P161,cast member,Q742775
+Q325648,P161,cast member,Q78168
+Q6048850,P161,cast member,Q11170397
+Q6083314,P161,cast member,Q792949
+Q6049668,P161,cast member,Q930862
+Q2075940,P27,country of citizenship,Q43
+Q422915,P27,country of citizenship,Q43
+Q63228,P166,award received,Q873842
+Q31193403,P161,cast member,Q16173210
+Q19600506,P57,director,Q2237841
+Q5098492,P495,country of origin,Q183
+Q522362,P17,country,Q183
+Q6094757,P161,cast member,Q6091713
+Q1264350,P27,country of citizenship,Q43
+Q3624380,P27,country of citizenship,Q43
+Q6070626,P57,director,Q374415
+Q6070309,P161,cast member,Q1264350
+Q6091713,P19,place of birth,Q406
+Q20986937,P19,place of birth,Q2887
+Q1033926,P57,director,Q3057501
+Q6099299,P27,country of citizenship,Q43
+Q27957837,P495,country of origin,Q43
+Q1264350,P19,place of birth,Q406
+Q4117946,P19,place of birth,Q160450
+Q7241424,P17,country,Q43
+Q75177,P19,place of birth,Q56036
+Q257669,P495,country of origin,Q43
+Q18170176,P161,cast member,Q339604
+Q5423534,P19,place of birth,Q122803
+Q6021948,P27,country of citizenship,Q43
+Q3054263,P27,country of citizenship,Q43
+Q3057408,P27,country of citizenship,Q43
+Q19600502,P161,cast member,Q12812549
+Q90879,P27,country of citizenship,Q183
+Q6691616,P161,cast member,Q927967
+Q4667421,P69,educated at,Q192964
+Q1382418,P166,award received,Q7603040
+Q7744599,P161,cast member,Q4831964
+Q6083691,P161,cast member,Q3126013
+Q3434403,P27,country of citizenship,Q43
+Q3157489,P19,place of birth,Q42716
+Q19573200,P161,cast member,Q927967
+Q6692252,P161,cast member,Q7807711
+Q6101497,P19,place of birth,Q406
+Q69108,P19,place of birth,Q163012
+Q4414864,P57,director,Q758354
+Q6094839,P161,cast member,Q962106
+Q1235258,P17,country,Q43
+Q4827126,P161,cast member,Q6094037
+Q17450810,P495,country of origin,Q43
+Q796,P17,country,Q796
+Q11194,P17,country,Q12560
+Q3447475,P19,place of birth,Q35997
+Q7603040,P17,country,Q43
+Q366685,P27,country of citizenship,Q43
+Q6095171,P19,place of birth,Q3640
+Q7744599,P495,country of origin,Q43
+Q25999885,P57,director,Q758354
+Q928436,P161,cast member,Q8080207
+Q6070309,P161,cast member,Q5423258
+Q804582,P495,country of origin,Q43
+Q20065085,P495,country of origin,Q43
+Q23556,P17,country,Q30
+Q6064304,P495,country of origin,Q43
+Q307805,P19,place of birth,Q406
+Q6070626,P495,country of origin,Q43
+Q18712937,P495,country of origin,Q43
+Q6091850,P495,country of origin,Q43
+Q1740774,P161,cast member,Q12811020
+Q7742278,P495,country of origin,Q43
+Q339604,P19,place of birth,Q648489
+Q3335501,P161,cast member,Q4831964
+Q3447475,P69,educated at,Q1235258
+Q19573200,P57,director,Q2237841
+Q114624,P27,country of citizenship,Q183
+Q6093097,P161,cast member,Q4116401
+Q934718,P161,cast member,Q7116454
+Q9248,P17,country,Q227
+Q4120620,P19,place of birth,Q406
+Q5644666,P19,place of birth,Q3616
+Q25999824,P495,country of origin,Q43
+Q6068775,P69,educated at,Q483758
+Q19587294,P495,country of origin,Q43
+Q6087125,P495,country of origin,Q43
+Q25999824,P57,director,Q6084089
+Q27703651,P161,cast member,Q6097675
+Q4027352,P57,director,Q7813033
+Q6074177,P161,cast member,Q307906
+Q5377630,P27,country of citizenship,Q43
+Q8076089,P161,cast member,Q5385256
+Q6084541,P161,cast member,Q357260
+Q232745,P27,country of citizenship,Q43
+Q3356874,P19,place of birth,Q204905
+Q2882584,P161,cast member,Q1294015
+Q127063,P17,country,Q43
+Q6091850,P161,cast member,Q5444280
+Q6061219,P161,cast member,Q3296846
+Q934718,P161,cast member,Q6090990
+Q6046323,P495,country of origin,Q43
+Q5058838,P27,country of citizenship,Q43
+Q804582,P161,cast member,Q6086955
+Q384,P17,country,Q12560
+Q35997,P17,country,Q12560
+Q200951,P17,country,Q43
+Q3206830,P495,country of origin,Q43
+Q238217,P17,country,Q858
+Q3459778,P161,cast member,Q6086955
+Q25480414,P57,director,Q55460
+Q187253,P27,country of citizenship,Q43
+Q2882584,P57,director,Q307737
+Q17277912,P495,country of origin,Q43
+Q6090990,P27,country of citizenship,Q43
+Q6064376,P57,director,Q2237841
+Q6096506,P19,place of birth,Q406
+Q6051385,P495,country of origin,Q43
+Q4696189,P19,place of birth,Q3640
+Q2758737,P161,cast member,Q6099299
+Q7667107,P27,country of citizenship,Q43
+Q17512617,P161,cast member,Q284051
+Q4875335,P19,place of birth,Q3640
+Q325648,P495,country of origin,Q43
+Q6849761,P27,country of citizenship,Q43
+Q7742847,P161,cast member,Q7854884
+Q6051878,P495,country of origin,Q43
+Q1218525,P495,country of origin,Q1028
+Q735585,P166,award received,Q3070476
+Q257669,P161,cast member,Q736523
+Q7107075,P27,country of citizenship,Q43
+Q5098492,P161,cast member,Q1267155
+Q6806566,P161,cast member,Q735585
+Q17450844,P161,cast member,Q6084312
+Q648489,P17,country,Q403
+Q27957842,P57,director,Q2237841
+Q4880647,P19,place of birth,Q35997
+Q6064958,P27,country of citizenship,Q43
+Q25999908,P495,country of origin,Q43
+Q2086445,P161,cast member,Q1956183
+Q797577,P161,cast member,Q307805
+Q5558187,P27,country of citizenship,Q145
+Q21787529,P495,country of origin,Q43
+Q3275371,P161,cast member,Q3446800
+Q1033926,P161,cast member,Q6090990
+Q603216,P19,place of birth,Q220
+Q4116401,P19,place of birth,Q165995
+Q2374086,P69,educated at,Q1583249
+Q6089787,P19,place of birth,Q3640
+Q6806566,P57,director,Q374415
+Q1307030,P495,country of origin,Q43
+Q6427861,P161,cast member,Q4802773
+Q3459778,P495,country of origin,Q142
+Q3656276,P27,country of citizenship,Q43
+Q6083691,P495,country of origin,Q43
+Q21787529,P161,cast member,Q4390382
+Q6070309,P495,country of origin,Q43
+Q18713080,P161,cast member,Q7398100
+Q6683587,P161,cast member,Q913571
+Q6093097,P161,cast member,Q3552827
+Q501820,P27,country of citizenship,Q43
+Q3561666,P161,cast member,Q815624
+Q166824,P17,country,Q43
+Q2845101,P495,country of origin,Q43
+Q307835,P19,place of birth,Q326339
+Q982821,P495,country of origin,Q43
+Q6083314,P495,country of origin,Q43
+Q18712718,P57,director,Q2237841
+Q277184,P161,cast member,Q5626506
+Q16223329,P27,country of citizenship,Q43
+Q6081026,P161,cast member,Q7667107
+Q6068374,P19,place of birth,Q406
+Q6094318,P161,cast member,Q735585
+Q18713053,P161,cast member,Q927967
+Q25476945,P495,country of origin,Q43
+Q4922219,P161,cast member,Q3337865
+Q2671060,P17,country,Q43
+Q946984,P27,country of citizenship,Q30
+Q18712832,P161,cast member,Q927967
+Q8080276,P19,place of birth,Q326339
+Q6084082,P161,cast member,Q6093425
+Q4667421,P27,country of citizenship,Q43
+Q4167177,P495,country of origin,Q43
+Q77005,P27,country of citizenship,Q183
+Q18712839,P57,director,Q2237841
+Q12810617,P495,country of origin,Q43
+Q18713113,P495,country of origin,Q43
+Q256292,P69,educated at,Q483758
+Q844542,P17,country,Q43
+Q6048850,P495,country of origin,Q43
+Q3145038,P495,country of origin,Q801
+Q17450883,P161,cast member,Q357260
+Q399,P17,country,Q399
+Q6073585,P161,cast member,Q422915
+Q1348747,P19,place of birth,Q3640
+Q6054381,P495,country of origin,Q43
+Q3711,P17,country,Q403
+Q142,P17,country,Q142
+Q1373349,P69,educated at,Q1235258
+Q408,P17,country,Q408
+Q494719,P161,cast member,Q58603
+Q803679,P17,country,Q43
+Q5352355,P161,cast member,Q858026
+Q2758737,P495,country of origin,Q43
+Q1769370,P495,country of origin,Q43
+Q6081026,P161,cast member,Q735585
+Q934718,P161,cast member,Q307906
+Q26964835,P495,country of origin,Q43
+Q31193403,P161,cast member,Q3446906
+Q8082379,P161,cast member,Q735585
+Q2920518,P161,cast member,Q77005
+Q6082061,P161,cast member,Q6088566
+Q815624,P19,place of birth,Q84
+Q1925634,P27,country of citizenship,Q43
+Q6082061,P161,cast member,Q6088017
+Q1152,P17,country,Q142
+Q18712718,P495,country of origin,Q43
+Q20730476,P27,country of citizenship,Q43
+Q3145038,P495,country of origin,Q43
+Q6083691,P57,director,Q3057501
+Q7750585,P161,cast member,Q3624103
+Q18712767,P495,country of origin,Q43
+Q6088221,P57,director,Q6090129
+Q5437360,P161,cast member,Q2489440
+Q6101954,P27,country of citizenship,Q43
+Q6082425,P57,director,Q505264
+Q20065085,P161,cast member,Q6849761
+Q25999911,P161,cast member,Q447576
+Q23022350,P161,cast member,Q5558187
+Q928436,P495,country of origin,Q43
+Q4922219,P495,country of origin,Q43
+Q16173210,P19,place of birth,Q42099
+Q20065085,P161,cast member,Q75176
+Q934718,P161,cast member,Q6103860
+Q257031,P27,country of citizenship,Q43
+Q6084312,P19,place of birth,Q384
+Q4808148,P161,cast member,Q6103860
+Q7813033,P19,place of birth,Q35997
+Q21001943,P161,cast member,Q3624123
+Q12809611,P19,place of birth,Q793
+Q7460798,P161,cast member,Q406478
+Q3561666,P161,cast member,Q716602
+Q18713008,P57,director,Q2237841
+Q184116,P17,country,Q30
+Q865528,P17,country,Q145
+Q724172,P166,award received,Q7241424
+Q18712767,P161,cast member,Q374415
+Q982946,P161,cast member,Q3552827
+Q75176,P27,country of citizenship,Q183
+Q6084082,P495,country of origin,Q43
+Q6097730,P27,country of citizenship,Q43
+Q48338,P17,country,Q43
+Q6091358,P495,country of origin,Q41
+Q19954477,P495,country of origin,Q43
+Q307906,P27,country of citizenship,Q43
+Q6815170,P19,place of birth,Q406
+Q17560788,P57,director,Q21209533
+Q25999897,P57,director,Q3176600
+Q4724766,P19,place of birth,Q3856
+Q192964,P17,country,Q43
+Q406,P17,country,Q12560
+Q2880,P17,country,Q183
+Q4831964,P27,country of citizenship,Q43
+Q1358965,P17,country,Q17
+Q25476945,P57,director,Q6089787
+Q19824796,P57,director,Q20730476
+Q16554,P17,country,Q30
+Q6074077,P495,country of origin,Q43
+Q1021893,P19,place of birth,Q851
+Q1740774,P161,cast member,Q735585
+Q307835,P27,country of citizenship,Q43
+Q7107075,P166,award received,Q7603040
+Q424661,P17,country,Q43
+Q483078,P17,country,Q43
+Q1685054,P19,place of birth,Q1152
+Q12835393,P161,cast member,Q2427828
+Q325648,P161,cast member,Q75177
+Q6054315,P161,cast member,Q468418
+Q3040561,P27,country of citizenship,Q43
+Q6091358,P57,director,Q1349104
+Q6051878,P161,cast member,Q792949
+Q6094757,P161,cast member,Q4736145
+Q406478,P19,place of birth,Q3856
+Q12835393,P57,director,Q936089
+Q7813033,P27,country of citizenship,Q43
+Q449082,P27,country of citizenship,Q142
+Q463473,P19,place of birth,Q83387
+Q1033926,P495,country of origin,Q43
+Q6054267,P57,director,Q7853403
+Q3446800,P19,place of birth,Q406
+Q18170176,P161,cast member,Q1928775
+Q4167177,P161,cast member,Q373424
+Q531443,P27,country of citizenship,Q43
+Q7744599,P57,director,Q2739722
+Q58603,P27,country of citizenship,Q183
+Q12835393,P495,country of origin,Q43
+Q4414864,P495,country of origin,Q43
+Q5385256,P27,country of citizenship,Q43
+Q4116401,P69,educated at,Q192964
+Q6081761,P495,country of origin,Q43
+Q307805,P27,country of citizenship,Q43
+Q8080044,P19,place of birth,Q3640
+Q232745,P166,award received,Q972241
+Q6088221,P161,cast member,Q5423258
+Q742775,P27,country of citizenship,Q43
+Q982946,P161,cast member,Q3623884
+Q1740774,P161,cast member,Q4832684
+Q19573200,P161,cast member,Q2427828
+Q5936459,P27,country of citizenship,Q43
+Q6054315,P161,cast member,Q11170397
+Q6085441,P495,country of origin,Q43
+Q6088721,P161,cast member,Q3126013
+Q20002628,P57,director,Q7107075
+Q6068374,P27,country of citizenship,Q43
+Q6093408,P27,country of citizenship,Q43
+Q130164,P27,country of citizenship,Q43
+Q25999897,P161,cast member,Q6480242
+Q6063936,P495,country of origin,Q43
+Q5651479,P161,cast member,Q3574282
+Q6073585,P495,country of origin,Q43
+Q3561666,P495,country of origin,Q142
+Q6081761,P57,director,Q6033250
+Q982946,P161,cast member,Q6088017
+Q25999908,P161,cast member,Q2075940
+Q357260,P27,country of citizenship,Q43
+Q199723,P17,country,Q43
+Q4808148,P495,country of origin,Q43
+Q1382418,P27,country of citizenship,Q43
+Q724172,P19,place of birth,Q406
+Q339604,P27,country of citizenship,Q403
+Q18713112,P495,country of origin,Q43
+Q20002323,P57,director,Q936089
+Q189134,P17,country,Q43
+Q6082425,P161,cast member,Q257031
+Q25480414,P495,country of origin,Q43
+Q736523,P19,place of birth,Q406
+Q18712829,P495,country of origin,Q43
+Q31193403,P161,cast member,Q4736145
+Q270709,P27,country of citizenship,Q43
+Q170967,P17,country,Q43
+Q1740774,P161,cast member,Q357260
+Q11170397,P27,country of citizenship,Q43
+Q1956183,P19,place of birth,Q214303
+Q25999912,P57,director,Q3356874
+Q155915,P17,country,Q43
+Q17045512,P27,country of citizenship,Q43
+Q6096506,P27,country of citizenship,Q43
+Q17378488,P495,country of origin,Q43
+Q6093425,P27,country of citizenship,Q43
+Q7203434,P17,country,Q794
+Q16954839,P161,cast member,Q4875335
+Q4390382,P27,country of citizenship,Q408
+Q452477,P27,country of citizenship,Q43
+Q30,P17,country,Q30
+Q97241,P19,place of birth,Q406
+Q3145038,P161,cast member,Q2836362
+Q6077916,P495,country of origin,Q43
+Q1033926,P161,cast member,Q720344
+Q4736145,P19,place of birth,Q406
+Q913571,P27,country of citizenship,Q43
+Q6045125,P495,country of origin,Q43
+Q6094839,P161,cast member,Q307835
+Q327852,P495,country of origin,Q55
+Q7742278,P161,cast member,Q4116401
+Q25999900,P161,cast member,Q792949
+Q6093408,P19,place of birth,Q1022149
+Q801,P17,country,Q801
+Q1007545,P17,country,Q43
+Q7814307,P495,country of origin,Q43
+Q2845101,P57,director,Q6021948
+Q136217,P17,country,Q43
+Q5355422,P19,place of birth,Q1358965
+Q3552827,P27,country of citizenship,Q43
+Q17045512,P19,place of birth,Q406
+Q18713053,P495,country of origin,Q43
+Q18712859,P495,country of origin,Q43
+Q6692252,P161,cast member,Q7666744
+Q310947,P19,place of birth,Q954079
+Q7827905,P161,cast member,Q735585
+Q6051878,P161,cast member,Q3111250
+Q6080714,P57,director,Q3040561
+Q7713773,P57,director,Q936089
+Q4827126,P495,country of origin,Q43
+Q567579,P161,cast member,Q63228
+Q31193403,P161,cast member,Q1284001
+Q16533418,P161,cast member,Q8082498
+Q858026,P19,place of birth,Q3640
+Q1267155,P27,country of citizenship,Q403
+Q6041844,P161,cast member,Q11170397
+Q6815170,P27,country of citizenship,Q43
+Q3472837,P161,cast member,Q256292
+Q3574282,P19,place of birth,Q406
+Q3446906,P27,country of citizenship,Q43
+Q6084504,P161,cast member,Q5626880
+Q16223329,P19,place of birth,Q216912
+Q6062891,P495,country of origin,Q43
+Q187272,P27,country of citizenship,Q43
+Q804582,P57,director,Q1373349
+Q5626506,P27,country of citizenship,Q43
+Q6091358,P161,cast member,Q97241
+Q19600142,P57,director,Q2237841
+Q6082061,P495,country of origin,Q55
+Q1218525,P495,country of origin,Q43
+Q18419,P17,country,Q30
+Q465998,P166,award received,Q547316
+Q20065085,P161,cast member,Q177993
+Q6683587,P161,cast member,Q8080044
+Q7742278,P161,cast member,Q307835
+Q17450844,P161,cast member,Q12809611
+Q27957837,P161,cast member,Q5626506
+Q6050029,P57,director,Q936089
+Q19473346,P495,country of origin,Q43
+Q6691616,P161,cast member,Q3111250
+Q6086827,P495,country of origin,Q43
+Q2335956,P69,educated at,Q1261822
+Q3145038,P161,cast member,Q284051
+Q1218525,P161,cast member,Q449082
+Q18713110,P57,director,Q2237841
+Q17450810,P161,cast member,Q3074376
+Q6100742,P27,country of citizenship,Q43
+Q954079,P17,country,Q30
+Q6056011,P495,country of origin,Q43
+Q21001943,P161,cast member,Q6082475
+Q6030503,P19,place of birth,Q173310
+Q2288769,P27,country of citizenship,Q43
+Q1720967,P27,country of citizenship,Q43
+Q6052842,P27,country of citizenship,Q43
+Q3616,P17,country,Q794
+Q6098660,P161,cast member,Q6100742
+Q21787529,P495,country of origin,Q17
+Q6585777,P27,country of citizenship,Q43
+Q6073585,P161,cast member,Q4880647
+Q3561666,P161,cast member,Q1688122
+Q1402686,P495,country of origin,Q43
+Q17450810,P161,cast member,Q4667421
+Q18713126,P57,director,Q2237841
+Q551683,P27,country of citizenship,Q142
+Q4811871,P19,place of birth,Q209905
+Q3057501,P27,country of citizenship,Q43
+Q258974,P17,country,Q183
+Q3337865,P19,place of birth,Q406
+Q6081026,P161,cast member,Q1925634
+Q18712747,P161,cast member,Q8080276
+Q193428,P17,country,Q17
+Q7827905,P161,cast member,Q12811020
+Q7827905,P495,country of origin,Q43
+Q463473,P27,country of citizenship,Q145
+Q6064376,P495,country of origin,Q43
+Q758354,P19,place of birth,Q134291
+Q19573200,P161,cast member,Q1935923
+Q69108,P27,country of citizenship,Q183
+Q7853403,P19,place of birth,Q406
+Q1010949,P17,country,Q43
+Q6099299,P19,place of birth,Q130553
+Q4667421,P19,place of birth,Q406
+Q21787529,P161,cast member,Q1134063
+Q1267155,P19,place of birth,Q3711
+Q26964835,P57,director,Q26702984
+Q1218525,P495,country of origin,Q142
+Q17512617,P495,country of origin,Q43
+Q2086445,P495,country of origin,Q43
+Q97241,P27,country of citizenship,Q183
+Q2374086,P69,educated at,Q4614
+Q6073585,P161,cast member,Q3054263
+Q211828,P17,country,Q43
+Q4807991,P161,cast member,Q343040
+Q865,P17,country,Q865
+Q15479026,P27,country of citizenship,Q43
+Q6046554,P495,country of origin,Q43
+Q4808148,P161,cast member,Q913571
+Q494719,P161,cast member,Q75177
+Q7650000,P17,country,Q145
+Q21526296,P495,country of origin,Q43
+Q3472837,P161,cast member,Q3446906
+Q6077916,P57,director,Q1349104
+Q3446800,P27,country of citizenship,Q43
+Q19954477,P161,cast member,Q551683
+Q38545,P17,country,Q43
+Q4663809,P495,country of origin,Q43
+Q1452569,P27,country of citizenship,Q30
+Q21526296,P57,director,Q2598575
+Q4807991,P161,cast member,Q357260
+Q851,P17,country,Q851
+Q7742847,P495,country of origin,Q43
+Q5641421,P27,country of citizenship,Q43
+Q163012,P17,country,Q183
+Q6101954,P19,place of birth,Q406
+Q326339,P17,country,Q43
+Q21209533,P19,place of birth,Q210292
+Q6683587,P161,cast member,Q4117946
+Q6585777,P19,place of birth,Q40738
+Q6048850,P161,cast member,Q792949
+Q6570602,P161,cast member,Q4875335
+Q6089749,P495,country of origin,Q43
+Q6101497,P27,country of citizenship,Q43
+Q6480242,P27,country of citizenship,Q43
+Q6087125,P161,cast member,Q256292
+Q1259496,P19,place of birth,Q406
+Q6407788,P495,country of origin,Q43
+Q18713053,P57,director,Q2237841
+Q19858720,P495,country of origin,Q43
+Q19858720,P161,cast member,Q982389
+Q1349104,P19,place of birth,Q27162
+Q2288769,P69,educated at,Q1567050
+Q3472837,P161,cast member,Q75177
+Q1134063,P19,place of birth,Q35765
+Q6070309,P161,cast member,Q913571
+Q8080044,P27,country of citizenship,Q43
+Q2090,P17,country,Q2415901
+Q3335501,P495,country of origin,Q43
+Q210292,P17,country,Q43
+Q567579,P495,country of origin,Q183
+Q3472837,P161,cast member,Q232745
+Q7460798,P495,country of origin,Q43
+Q1402686,P161,cast member,Q4811871
+Q1021818,P17,country,Q43
+Q3561666,P161,cast member,Q1452569
+Q6046323,P161,cast member,Q11170397
+Q6070309,P161,cast member,Q12812387
+Q494719,P161,cast member,Q69108
+Q18712832,P57,director,Q2237841
+Q7814307,P161,cast member,Q2157934
+Q6068775,P19,place of birth,Q406
+Q19600508,P57,director,Q2237841
+Q20065085,P161,cast member,Q962106
+Q18712997,P495,country of origin,Q43
+Q1769370,P161,cast member,Q3656276
+Q5098492,P495,country of origin,Q43
+Q1022149,P17,country,Q43
+Q6094839,P161,cast member,Q470210
+Q6059651,P495,country of origin,Q43
+Q2075940,P166,award received,Q7603040
+Q567579,P495,country of origin,Q43
+Q6094839,P495,country of origin,Q43
+Q3206830,P57,director,Q536298
+Q3472837,P161,cast member,Q4696189
+Q6049668,P161,cast member,Q4831964
+Q6094318,P495,country of origin,Q43
+Q452477,P19,place of birth,Q1021818
+Q7742847,P161,cast member,Q72347
+Q2374086,P27,country of citizenship,Q30
+Q18713111,P161,cast member,Q5626880
+Q5644666,P27,country of citizenship,Q794
+Q20065085,P161,cast member,Q2836362
+Q7460798,P57,director,Q3811192
+Q6070626,P161,cast member,Q735585
+Q20065085,P161,cast member,Q930862
+Q3820,P17,country,Q822
+Q6691616,P161,cast member,Q6068374
+Q19824796,P495,country of origin,Q43
+Q982821,P161,cast member,Q6090990
+Q35765,P17,country,Q17
+Q6100742,P19,place of birth,Q45301
+Q6065238,P495,country of origin,Q43
+Q3206830,P495,country of origin,Q142
+Q21209533,P27,country of citizenship,Q43
+Q84,P17,country,Q145
+Q6086286,P495,country of origin,Q43
+Q16223329,P69,educated at,Q192964
+Q6570602,P495,country of origin,Q43
+Q343040,P19,place of birth,Q38545
+Q16736826,P161,cast member,Q982389
+Q6084541,P495,country of origin,Q43
+Q6094757,P161,cast member,Q12812387
+Q1349104,P27,country of citizenship,Q43
+Q4832684,P19,place of birth,Q174060
+Q2274910,P19,place of birth,Q170967
+Q7744599,P161,cast member,Q735585
+Q4808148,P161,cast member,Q1033641
+Q206900,P17,country,Q43
+Q6084541,P161,cast member,Q2042947
+Q6065130,P57,director,Q2237841
+Q4807991,P57,director,Q3057501
+Q17378488,P57,director,Q7813033
+Q31193403,P495,country of origin,Q43
+Q5651479,P161,cast member,Q5423534
+Q6086827,P57,director,Q2237841
+Q6093097,P161,cast member,Q77005
+Q3574282,P166,award received,Q7603040
+Q797577,P161,cast member,Q962106
+Q6091112,P161,cast member,Q5289694
+Q7827905,P161,cast member,Q357260
+Q257669,P161,cast member,Q12810813
+Q567579,P161,cast member,Q114624
+Q17450815,P161,cast member,Q6100032
+Q6085441,P161,cast member,Q4832684
+Q3447475,P27,country of citizenship,Q43
+Q6048850,P161,cast member,Q447576
+Q7742278,P161,cast member,Q3306251
+Q27703661,P495,country of origin,Q43
+Q18713112,P57,director,Q2237841
+Q134291,P17,country,Q43
+Q1307030,P57,director,Q603216
+Q4811871,P27,country of citizenship,Q43
+Q1688122,P27,country of citizenship,Q142
+Q130164,P19,place of birth,Q1758492
+Q19581975,P495,country of origin,Q43
+Q18712747,P57,director,Q2237841
+Q19858720,P161,cast member,Q1021893
+Q177993,P19,place of birth,Q430776
+Q6067860,P495,country of origin,Q43
+Q6052842,P19,place of birth,Q388469
+Q4727547,P27,country of citizenship,Q43
+Q724172,P166,award received,Q844804
+Q3472837,P495,country of origin,Q43
+Q1769370,P161,cast member,Q307835
+Q26963199,P57,director,Q26702984
+Q227,P17,country,Q227
+Q6054315,P161,cast member,Q7398100
+Q6048850,P57,director,Q3176600
+Q277184,P57,director,Q2237841
+Q17560788,P161,cast member,Q16223329
+Q6066254,P161,cast member,Q927967
+Q6085779,P495,country of origin,Q43
+Q1925634,P19,place of birth,Q406
+Q6091762,P161,cast member,Q930862
+Q6090990,P19,place of birth,Q406
+Q187272,P166,award received,Q7603040
+Q6021948,P19,place of birth,Q406
+Q6045125,P161,cast member,Q187272
+Q422915,P19,place of birth,Q38545
+Q16736826,P495,country of origin,Q43
+Q27957840,P57,director,Q2237841
+Q11170397,P19,place of birth,Q12560
+Q17512617,P495,country of origin,Q183
+Q6091762,P161,cast member,Q6088566
+Q1373349,P19,place of birth,Q35997
+Q4831727,P19,place of birth,Q38545
+Q6048850,P161,cast member,Q6101497
+Q122803,P17,country,Q43
+Q406,P17,country,Q43
+Q928436,P57,director,Q6021948
+Q307906,P19,place of birth,Q406
+Q18712767,P57,director,Q2237841
+Q6691616,P495,country of origin,Q43
+Q5641421,P19,place of birth,Q406
+Q25479948,P495,country of origin,Q43
+Q982946,P495,country of origin,Q43
+Q492478,P17,country,Q30
+Q6073585,P161,cast member,Q3446800
+Q3111250,P27,country of citizenship,Q43
+Q204905,P17,country,Q41
+Q6088566,P27,country of citizenship,Q43
+Q797577,P161,cast member,Q4914460
+Q1402686,P161,cast member,Q8078990
+Q1255329,P27,country of citizenship,Q142
+Q6691616,P57,director,Q501820
+Q6080714,P495,country of origin,Q43
+Q6070309,P161,cast member,Q6097730
+Q11235234,P27,country of citizenship,Q17
+Q6091762,P161,cast member,Q5377630
+Q168197,P17,country,Q43
+Q6033250,P27,country of citizenship,Q43
+Q4914460,P27,country of citizenship,Q43
+Q171031,P17,country,Q43
+Q173310,P17,country,Q796
+Q327852,P57,director,Q536298
+Q63228,P27,country of citizenship,Q183
+Q18170176,P495,country of origin,Q43
+Q3126013,P27,country of citizenship,Q43
+Q6089749,P161,cast member,Q7398100
+Q27162,P17,country,Q43
+Q5423258,P27,country of citizenship,Q43
+Q1567050,P17,country,Q43
+Q16954839,P161,cast member,Q1033641
+Q5058838,P19,place of birth,Q189134
+Q6074077,P57,director,Q3057501
+Q650569,P17,country,Q43
+Q6074177,P161,cast member,Q12812549
+Q2489440,P27,country of citizenship,Q43
+Q187261,P69,educated at,Q192964
+Q6081761,P161,cast member,Q5626880
+Q12812549,P27,country of citizenship,Q43
+Q23755171,P495,country of origin,Q43
+Q7807711,P19,place of birth,Q38545
+Q494719,P495,country of origin,Q183
+Q3624103,P27,country of citizenship,Q43
+Q7460798,P161,cast member,Q5003637
+Q25999900,P495,country of origin,Q43
+Q72347,P19,place of birth,Q3640
+Q220584,P27,country of citizenship,Q30
+Q6051385,P161,cast member,Q11170397
+Q2100,P17,country,Q183
+Q3356874,P27,country of citizenship,Q41
+Q1259496,P27,country of citizenship,Q43
+Q18713080,P495,country of origin,Q43
+Q6090423,P19,place of birth,Q9248
+Q928436,P161,cast member,Q531443
+Q20065085,P161,cast member,Q6099913
+Q19600502,P57,director,Q2237841
+Q1028,P17,country,Q1028
+Q25999912,P495,country of origin,Q43
+Q724172,P166,award received,Q510175
+Q3811192,P19,place of birth,Q193190
+Q2042947,P27,country of citizenship,Q43
+Q168866,P17,country,Q43
+Q3624380,P19,place of birth,Q406
+Q6480242,P19,place of birth,Q35997
+Q12811020,P27,country of citizenship,Q43
+Q31193403,P161,cast member,Q8080207
+Q8080276,P27,country of citizenship,Q43
+Q18712768,P57,director,Q6815170
+Q17512617,P495,country of origin,Q142
+Q90879,P19,place of birth,Q134291
+Q6095171,P27,country of citizenship,Q43
+Q90879,P27,country of citizenship,Q43
+Q6083959,P27,country of citizenship,Q43
+Q6082061,P495,country of origin,Q43
+Q6041844,P495,country of origin,Q43
+Q6097730,P19,place of birth,Q127063
+Q25999911,P161,cast member,Q4727547
+Q23022350,P161,cast member,Q6030503
+Q6077842,P19,place of birth,Q3640
+Q567269,P27,country of citizenship,Q183
+Q3656276,P19,place of birth,Q844542
+Q2237841,P19,place of birth,Q35997
+Q6081026,P57,director,Q3057501
+Q3640,P17,country,Q43
+Q4027352,P495,country of origin,Q43
+Q6072143,P57,director,Q936089
+Q792949,P27,country of citizenship,Q43
+Q6091713,P27,country of citizenship,Q43
+Q216912,P17,country,Q43
+Q4167177,P161,cast member,Q6096506
+Q12812549,P19,place of birth,Q3640
+Q6570602,P161,cast member,Q373424
+Q147089,P17,country,Q43
+Q3145038,P161,cast member,Q177993
+Q6041844,P161,cast member,Q1973615
+Q6050998,P57,director,Q374415
+Q23755171,P161,cast member,Q6097730
+Q6094037,P27,country of citizenship,Q43
+Q374415,P19,place of birth,Q3640
+Q12811020,P19,place of birth,Q406
+Q1218525,P161,cast member,Q3157489
+Q18712829,P57,director,Q2237841
+Q3552827,P19,place of birth,Q406
+Q6073585,P161,cast member,Q3624380
+Q6812586,P27,country of citizenship,Q43
+Q6074177,P57,director,Q758354
+Q3561666,P161,cast member,Q946984
+Q6093097,P161,cast member,Q8053042
+Q2157934,P19,place of birth,Q2100
+Q982946,P161,cast member,Q1259496
+Q4614,P17,country,Q30
+Q8053042,P19,place of birth,Q406
+Q16954839,P161,cast member,Q4914460
+Q6087125,P161,cast member,Q4811871
+Q3070476,P17,country,Q43
+Q20002628,P161,cast member,Q5423534
+Q16533418,P161,cast member,Q6088017
+Q6049668,P57,director,Q758354
+Q17450883,P495,country of origin,Q43
+Q1284001,P19,place of birth,Q79857
+Q792949,P19,place of birth,Q35997
+Q35997,P17,country,Q43
+Q6050029,P495,country of origin,Q43
+Q220584,P19,place of birth,Q1297
+Q21001943,P495,country of origin,Q43
+Q6088566,P19,place of birth,Q406
+Q6070309,P161,cast member,Q962106
+Q6054315,P57,director,Q7107075
+Q7827905,P161,cast member,Q7667107
+Q3472837,P161,cast member,Q8080207
+Q536298,P27,country of citizenship,Q43
+Q6082425,P495,country of origin,Q43
+Q187261,P27,country of citizenship,Q43
+Q6086955,P27,country of citizenship,Q43
+Q3472837,P161,cast member,Q3624103
+Q4922219,P161,cast member,Q3623884
+Q8082498,P19,place of birth,Q856171
+Q83387,P17,country,Q43
+Q832180,P161,cast member,Q2274910
+Q6085441,P161,cast member,Q357260
+Q174060,P17,country,Q43
+Q913571,P19,place of birth,Q35997
+Q6098660,P57,director,Q2237841
+Q6083691,P161,cast member,Q735585
+Q6050998,P161,cast member,Q4831964
+Q56036,P17,country,Q2415901
+Q12811020,P69,educated at,Q192964
+Q6082061,P495,country of origin,Q183
+Q6070309,P161,cast member,Q3446906
+Q736523,P27,country of citizenship,Q43
+Q4875335,P27,country of citizenship,Q43
+Q927967,P19,place of birth,Q2671060
+Q3275371,P495,country of origin,Q43
+Q19858720,P161,cast member,Q8078990
+Q21787529,P161,cast member,Q3552827
+Q7853403,P27,country of citizenship,Q43
+Q3306251,P27,country of citizenship,Q43
+Q16955948,P495,country of origin,Q43
+Q40738,P17,country,Q43
+Q4727547,P19,place of birth,Q238217
+Q6083314,P57,director,Q3176600
+Q8076089,P161,cast member,Q6095171
+Q6093445,P57,director,Q6101954
+Q3275371,P161,cast member,Q6812586
+Q7827905,P57,director,Q374415
+Q6061219,P161,cast member,Q6090990
+Q494719,P161,cast member,Q20986937
+Q3446835,P27,country of citizenship,Q43
+Q8082379,P495,country of origin,Q43
+Q6067860,P57,director,Q936089
+Q277184,P161,cast member,Q558853
+Q972241,P17,country,Q43
+Q256292,P27,country of citizenship,Q43
+Q832180,P495,country of origin,Q183
+Q25479948,P495,country of origin,Q183
+Q16736826,P161,cast member,Q5377630
+Q21787529,P161,cast member,Q5355422
+Q6427861,P495,country of origin,Q43
+Q2042947,P19,place of birth,Q136217
+Q6045125,P57,director,Q7107075
+Q19600502,P161,cast member,Q1720967
+Q7854884,P27,country of citizenship,Q43
+Q558853,P19,place of birth,Q122803
+Q6087774,P161,cast member,Q735585
+Q12560,P17,country,Q12560
+Q19726886,P161,cast member,Q6077842
+Q2920518,P161,cast member,Q913571
+Q6030503,P27,country of citizenship,Q796
+Q7750585,P161,cast member,Q8053042
+Q6046323,P161,cast member,Q792949
+Q18712997,P57,director,Q2237841
+Q6091762,P161,cast member,Q2274910
+Q6084541,P57,director,Q6033250
+Q25999885,P495,country of origin,Q43
+Q174341,P17,country,Q43
+Q12810813,P27,country of citizenship,Q43
+Q3624123,P27,country of citizenship,Q43
+Q180280,P19,place of birth,Q165995
+Q934718,P161,cast member,Q8080044
+Q3111250,P19,place of birth,Q35997
+Q77005,P27,country of citizenship,Q43
+Q7107110,P19,place of birth,Q170967
+Q5626880,P27,country of citizenship,Q43
+Q5651479,P495,country of origin,Q43
+Q6065238,P57,director,Q2237841
+Q43,P17,country,Q43
+Q1307030,P495,country of origin,Q142
+Q7203434,P495,country of origin,Q43
+Q797577,P161,cast member,Q8053042
+Q4663809,P161,cast member,Q4831964
+Q7107110,P27,country of citizenship,Q43
+Q3200,P17,country,Q183
+Q6046554,P161,cast member,Q792949
+Q12810220,P495,country of origin,Q43
+Q20002539,P57,director,Q936089
+Q6051878,P161,cast member,Q11170397
+Q832180,P495,country of origin,Q43
+Q366685,P69,educated at,Q192964
+Q3472837,P161,cast member,Q3337865
+Q2739722,P27,country of citizenship,Q43
+Q3764,P17,country,Q183
+Q422915,P19,place of birth,Q406
+Q6806566,P161,cast member,Q357260
+Q716602,P19,place of birth,Q16554
+Q6100032,P27,country of citizenship,Q43
+Q5098492,P161,cast member,Q4938585
+Q8053042,P27,country of citizenship,Q43
+Q946984,P19,place of birth,Q18419
+Q15479026,P19,place of birth,Q210292
+Q3041530,P19,place of birth,Q3640
+Q6093445,P495,country of origin,Q43
+Q4807991,P161,cast member,Q4831964
+Q5444280,P19,place of birth,Q272649
+Q2237841,P27,country of citizenship,Q43
+Q982946,P161,cast member,Q3447475
+Q5289694,P19,place of birth,Q38545
+Q20730476,P19,place of birth,Q3640
+Q3561666,P495,country of origin,Q43
+Q26963199,P495,country of origin,Q43
+Q6062810,P495,country of origin,Q43
+Q8080207,P19,place of birth,Q406
+Q928436,P161,cast member,Q6100032
+Q4914460,P19,place of birth,Q3640
+Q2920518,P161,cast member,Q6088017
+Q7713773,P495,country of origin,Q43
+Q114624,P27,country of citizenship,Q43
+Q45220,P17,country,Q43
+Q2920518,P495,country of origin,Q43
+Q17450815,P161,cast member,Q5936459
+Q6083061,P57,director,Q2237841
+Q804582,P495,country of origin,Q183
+Q3296846,P27,country of citizenship,Q43
+Q78168,P27,country of citizenship,Q183
+Q1297,P17,country,Q30
+Q6088017,P27,country of citizenship,Q43
+Q758354,P27,country of citizenship,Q43
+Q483758,P17,country,Q43
+Q6077804,P57,director,Q2237841
+Q19858720,P57,director,Q6090129
+Q6082475,P19,place of birth,Q406
+Q6097675,P27,country of citizenship,Q43
+Q8080207,P27,country of citizenship,Q43
+Q1925634,P166,award received,Q7603040
+Q6066777,P495,country of origin,Q43
+Q5003637,P19,place of birth,Q3640
+Q6077804,P161,cast member,Q1720967
+Q968479,P19,place of birth,Q456
+Q256292,P19,place of birth,Q166824
+Q586,P17,country,Q142
+Q447576,P27,country of citizenship,Q43
+Q6088721,P161,cast member,Q735585
+Q4116401,P27,country of citizenship,Q43
+Q5289694,P69,educated at,Q192964
+Q1134063,P27,country of citizenship,Q17
+Q1688122,P27,country of citizenship,Q30
+Q797577,P161,cast member,Q1259496
+Q930862,P19,place of birth,Q406
+Q343040,P27,country of citizenship,Q43
+Q6088721,P161,cast member,Q6038800
+Q6691616,P161,cast member,Q447576
+Q17432108,P27,country of citizenship,Q43
+Q17512617,P161,cast member,Q1255329
+Q19599195,P57,director,Q2237841
+Q551683,P27,country of citizenship,Q30
+Q6038800,P27,country of citizenship,Q43
+Q501820,P19,place of birth,Q107401
+Q494719,P161,cast member,Q78168
+Q6094757,P161,cast member,Q4120620
+Q5355422,P27,country of citizenship,Q17
+Q19600508,P495,country of origin,Q43
+Q2157934,P27,country of citizenship,Q183
+Q6099428,P161,cast member,Q6029116
+Q17450810,P161,cast member,Q927967
+Q6068775,P27,country of citizenship,Q43
+Q187272,P19,place of birth,Q40738
+Q6066254,P495,country of origin,Q43
+Q107401,P17,country,Q43
+Q19954477,P57,director,Q1373349
+Q468418,P19,place of birth,Q3640
+Q567269,P19,place of birth,Q586
+Q1021893,P27,country of citizenship,Q43
+Q2836362,P19,place of birth,Q430776
+Q25479948,P161,cast member,Q6088017
+Q1402686,P57,director,Q2288769
+Q6050998,P495,country of origin,Q43
+Q8076089,P495,country of origin,Q43
+Q27703651,P495,country of origin,Q43
+Q17150245,P161,cast member,Q3041530
+Q494719,P161,cast member,Q97604
+Q6081761,P161,cast member,Q357260
+Q160450,P17,country,Q43
+Q6101229,P27,country of citizenship,Q43
+Q373424,P19,place of birth,Q406
+Q8078990,P27,country of citizenship,Q43
+Q6082061,P161,cast member,Q75176
+Q6085441,P161,cast member,Q343040
+Q936089,P27,country of citizenship,Q43
+Q7666744,P27,country of citizenship,Q43
+Q5437360,P495,country of origin,Q43
+Q19824796,P495,country of origin,Q142
+Q115,P17,country,Q115
+Q12810220,P57,director,Q2739722
+Q6066777,P57,director,Q2237841
+Q3459778,P495,country of origin,Q183
+Q2598575,P19,place of birth,Q406
+Q27703661,P57,director,Q2598575
+Q6051778,P27,country of citizenship,Q43
+Q737547,P17,country,Q145
+Q310947,P27,country of citizenship,Q30
+Q1583249,P17,country,Q30
+Q6085779,P57,director,Q3057501
+Q6094839,P57,director,Q6090129
+Q2335956,P27,country of citizenship,Q403
+Q4817705,P19,place of birth,Q25331
+Q8082498,P27,country of citizenship,Q43
+Q6090423,P27,country of citizenship,Q43
+Q6081026,P495,country of origin,Q43
+Q6041844,P161,cast member,Q7398100
+Q20065085,P57,director,Q2374086
+Q6054315,P495,country of origin,Q43
+Q6570602,P161,cast member,Q6086955
+Q25479948,P57,director,Q187261
+Q2489440,P19,place of birth,Q3640
+Q6072143,P495,country of origin,Q43
+Q17450797,P495,country of origin,Q43
+Q272649,P17,country,Q43
+Q177993,P27,country of citizenship,Q142
+Q6084504,P57,director,Q2237841
+Q6065130,P161,cast member,Q5626880
+Q165995,P17,country,Q43
+Q1973615,P27,country of citizenship,Q43
+Q270709,P19,place of birth,Q406
+Q3157489,P27,country of citizenship,Q142
+Q75177,P27,country of citizenship,Q183
+Q6094757,P161,cast member,Q6097730
+Q214303,P17,country,Q43
+Q1294015,P19,place of birth,Q3640
+Q3405087,P27,country of citizenship,Q43
+Q465998,P19,place of birth,Q3820
+Q716602,P69,educated at,Q4614
+Q6812586,P19,place of birth,Q3640
+Q19726886,P495,country of origin,Q43
+Q16955948,P161,cast member,Q4831727
+Q3074376,P27,country of citizenship,Q43
+Q6093097,P495,country of origin,Q43
+Q2845101,P161,cast member,Q3054263
+Q3623884,P27,country of citizenship,Q43
+Q5423258,P19,place of birth,Q406
+Q928436,P161,cast member,Q3434403
+Q510175,P17,country,Q142
+Q4808148,P161,cast member,Q4120620
+Q3057408,P19,place of birth,Q424661
+Q18713111,P161,cast member,Q927967
+Q18753224,P495,country of origin,Q43
+Q6054315,P161,cast member,Q5936459
+Q4807991,P161,cast member,Q735585
+Q3145038,P161,cast member,Q7817189
+Q3176600,P27,country of citizenship,Q43
+Q6066254,P57,director,Q2237841
+Q277184,P495,country of origin,Q43
+Q34,P17,country,Q34
+Q3145038,P495,country of origin,Q142
+Q4807991,P495,country of origin,Q43
+Q2598575,P27,country of citizenship,Q43
+Q5651479,P57,director,Q2237841
+Q75176,P27,country of citizenship,Q43
+Q856171,P17,country,Q43
+Q97604,P27,country of citizenship,Q183
+Q4802773,P27,country of citizenship,Q43
+Q6049668,P161,cast member,Q12812549
+Q1382418,P19,place of birth,Q160450
+Q18712747,P161,cast member,Q5936459
+Q7742847,P161,cast member,Q8080207
+Q55460,P27,country of citizenship,Q43
+Q6062891,P57,director,Q7107075
+Q463514,P27,country of citizenship,Q1028
+Q668,P17,country,Q668
+Q6806566,P161,cast member,Q4832684
+Q179808,P17,country,Q142
+Q7666744,P19,place of birth,Q165995
+Q6570602,P495,country of origin,Q183
+Q3459778,P495,country of origin,Q43
+Q6088221,P161,cast member,Q3296846
+Q6074077,P161,cast member,Q343040
+Q7854884,P19,place of birth,Q189134
+Q6046323,P57,director,Q3176600
+Q1218525,P161,cast member,Q3405087
+Q3335501,P161,cast member,Q5385256
+Q2427828,P27,country of citizenship,Q43
+Q20002539,P495,country of origin,Q43
+Q6084312,P27,country of citizenship,Q43
+Q6038800,P19,place of birth,Q40738
+Q982946,P161,cast member,Q470210
+Q6090129,P27,country of citizenship,Q43
+Q5626506,P19,place of birth,Q48338
+Q18712718,P161,cast member,Q3111250
+Q19858720,P161,cast member,Q6029116
+Q18712859,P161,cast member,Q927967
+Q1294015,P27,country of citizenship,Q43
+Q6094757,P161,cast member,Q452477
+Q12809611,P27,country of citizenship,Q43
+Q3041530,P27,country of citizenship,Q43
+Q20065085,P57,director,Q2827768
+Q1973615,P19,place of birth,Q406
+Q79,P17,country,Q79
+Q6094757,P495,country of origin,Q43
+Q430776,P17,country,Q801
+Q5444280,P27,country of citizenship,Q43
+Q6088748,P161,cast member,Q5626506
+Q47813,P17,country,Q43
+Q18712807,P57,director,Q2237841
+Q19473346,P57,director,Q6068775
+Q3472837,P161,cast member,Q3447475
+Q25999912,P57,director,Q17432108
+Q19599195,P495,country of origin,Q43
+Q25480414,P161,cast member,Q1259496
+Q558853,P27,country of citizenship,Q43
+Q6849761,P19,place of birth,Q3640
+Q18712768,P161,cast member,Q792949
+Q6091358,P495,country of origin,Q43
+Q1956183,P27,country of citizenship,Q43
+Q4922219,P161,cast member,Q366685
+Q4807991,P161,cast member,Q5641421
+Q3040561,P19,place of birth,Q3640
+Q3335501,P161,cast member,Q357260
+Q21787529,P161,cast member,Q11235234
+Q6098660,P495,country of origin,Q43
+Q3057501,P19,place of birth,Q45301
+Q4802773,P19,place of birth,Q406
+Q12810617,P57,director,Q2237841
+Q573156,P495,country of origin,Q183
+Q936089,P19,place of birth,Q47813
+Q3574282,P27,country of citizenship,Q43
+Q595974,P17,country,Q1028
+Q5558187,P19,place of birth,Q737547
+Q6098660,P161,cast member,Q927967
+Q4815792,P19,place of birth,Q43
+Q75176,P19,place of birth,Q522362
+Q4922219,P161,cast member,Q6088017
+Q3054263,P69,educated at,Q1235258
+Q558287,P27,country of citizenship,Q43
+Q2882584,P495,country of origin,Q43
+Q2758737,P161,cast member,Q724172
+Q822,P17,country,Q822
+Q23022350,P495,country of origin,Q43
+Q8076089,P161,cast member,Q17045512
+Q6683587,P495,country of origin,Q43
+Q6077804,P495,country of origin,Q43
+Q1928775,P27,country of citizenship,Q30
+Q17450815,P57,director,Q758354
+Q17150245,P495,country of origin,Q43
+Q193190,P17,country,Q229
+Q6054381,P161,cast member,Q6086955
+Q6063936,P57,director,Q374415
+Q17450815,P161,cast member,Q1285407
+Q6056011,P57,director,Q2237841
+Q3296846,P19,place of birth,Q147089
+Q483195,P17,country,Q43
+Q6097675,P19,place of birth,Q188894
+Q8082379,P161,cast member,Q3126013
+Q7742278,P161,cast member,Q982389
+Q6064304,P57,director,Q2237841
+Q19581975,P57,director,Q2237841
+Q936089,P69,educated at,Q192964
+Q1033926,P161,cast member,Q12811020
+Q80550,P17,country,Q43
+Q6089749,P57,director,Q15479026
+Q129649,P17,country,Q43
+Q6029116,P19,place of birth,Q211828
+Q6099428,P495,country of origin,Q43
+Q3623884,P19,place of birth,Q168866
+Q6094037,P19,place of birth,Q3640
+Q6064958,P19,place of birth,Q3640
+Q968479,P27,country of citizenship,Q142
+Q373424,P27,country of citizenship,Q43
+Q858026,P27,country of citizenship,Q43
+Q4736145,P27,country of citizenship,Q43
+Q25331,P17,country,Q35

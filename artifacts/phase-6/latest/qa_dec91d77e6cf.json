@@ -1,0 +1,302 @@
+{
+  "created_at": "2026-04-18T12:50:28.625652+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_dec91d77e6cf",
+  "question": "Where was the director of Anadolu Kartalları born?",
+  "question_type": "two_hop",
+  "template": "film_director_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q406",
+    "text": "Istanbul"
+  },
+  "prediction_text": "Istanbul",
+  "match": {
+    "prediction_normalized": "istanbul",
+    "gold_normalized": "istanbul",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q2845101",
+      "entity_name": "Anadolu Kartallari",
+      "roles": [
+        "film"
+      ],
+      "source": "lexicon",
+      "score": 26
+    }
+  ],
+  "relation_path": [
+    "P57",
+    "P19"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q2845101"
+      ],
+      "candidate_count": 3,
+      "selected_triples": [
+        {
+          "source_id": "Q2845101",
+          "source_name": "Anadolu Kartallari",
+          "source_roles": [
+            "film"
+          ],
+          "relation_id": "P57",
+          "relation_label": "director",
+          "target_id": "Q6021948",
+          "target_name": "Ömer Vargı",
+          "target_roles": [
+            "director"
+          ],
+          "score": 19.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q6021948"
+      ],
+      "candidate_count": 2,
+      "selected_triples": [
+        {
+          "source_id": "Q6021948",
+          "source_name": "Ömer Vargı",
+          "source_roles": [
+            "director"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q406",
+          "target_name": "Ligos",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 16.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q2845101",
+        "seed_entity_name": "Anadolu Kartallari",
+        "final_answers": [
+          {
+            "entity_id": "Q406",
+            "entity_name": "Ligos"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q406"
+    ],
+    "candidate_texts": [
+      "Ligos"
+    ],
+    "answer_text": "Ligos"
+  },
+  "kg_summary": "Anadolu Kartallari was directed by Ömer Vargı. Ömer Vargı was born in Ligos.",
+  "expanded_query": "Director Ömer Vargı of Anadolu Kartalları was born in Ligos.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_dec91d77e6cf::1",
+      "title": "Where was the director of Anadolu Kartalları born?",
+      "body": "Anadolu Kartalları was directed by Ömer Vargı. Ömer Vargı was born in Istanbul.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q2845101",
+      "metadata": {
+        "question_id": "qa_dec91d77e6cf",
+        "template": "film_director_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -41.64206538671619,
+      "snippet": "Anadolu Kartalları was directed by Ömer Vargı. Ömer Vargı was born in Istanbul."
+    },
+    {
+      "doc_id": "fact::Q2845101::P57::Q6021948",
+      "title": "Anadolu Kartalları - director",
+      "body": "Anadolu Kartalları was directed by Ömer Vargı. Relation type: director. Source roles: film. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q2845101",
+      "metadata": {
+        "source_id": "Q2845101",
+        "target_id": "Q6021948",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -36.4653344986781,
+      "snippet": "Anadolu Kartalları was directed by Ömer Vargı. Relation type: director. Source roles: film. Target roles: director."
+    },
+    {
+      "doc_id": "entity::Q6021948",
+      "title": "Ömer Vargı",
+      "body": "Ömer Vargı. Description: Ömer Vargı is a Turkish film director and producer. He has directed films like Everything's Gonna Be Great in 1998, For Love and Honor in 2007, Anadolu Kartalları in 2011. He also produced Lovelorn in 2005. Aliases: Ömer Vargı, ömer vargı. Roles: director. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q6021948",
+      "metadata": {
+        "entity_id": "Q6021948",
+        "aliases": [
+          "Ömer Vargı",
+          "ömer vargı"
+        ],
+        "roles": [
+          "director"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -32.28165374848342,
+      "snippet": "Ömer Vargı. Description: Ömer Vargı is a Turkish film director and producer. He has directed films like Everything's Gonna Be Great in 1998, For Love and Honor in 2007, Anadolu Kartalları in 2011. He also produced Lov..."
+    },
+    {
+      "doc_id": "fact::Q6021948::P19::Q406",
+      "title": "Ömer Vargı - place of birth",
+      "body": "Ömer Vargı was born in istanbul (turkey). Relation type: place of birth. Source roles: director. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6021948",
+      "metadata": {
+        "source_id": "Q6021948",
+        "target_id": "Q406",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -22.041548262124635,
+      "snippet": "Ömer Vargı was born in istanbul (turkey). Relation type: place of birth. Source roles: director. Target roles: birth_place."
+    },
+    {
+      "doc_id": "entity::Q2845101",
+      "title": "Anadolu Kartalları",
+      "body": "Anadolu Kartalları. Description: Anadolu Kartalları (Anatolian Eagle) is a Turkish film directed by Ömer Vargi and released in 2011. It is produced by the production company Fida Film, and stars Engin Altan Düzyatan, Özge Özpirinçci and Çağatay Ulusoy.The film, commissioned for the centenary of the Turkish Air Force, was filmed in collaboration with the Turkish Air Force in the air base in Konya. Some aerial scenes were notably performed by Türk Yıldızları and Solo Türk, the aerobatic team of the Turkish Air Force.The film is the sixth-biggest hit of 2011 Turkish box office, with a total of 1,179,190 entries and grossing 10,217,302 Turkish liras. Aliases: Anadolu Kartalları, anatolian eagles (film), Anatolian Eagles (film), Anadolu Kartallari, anadolu kartallari, anadolu kartalları. Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q2845101",
+      "metadata": {
+        "entity_id": "Q2845101",
+        "aliases": [
+          "Anadolu Kartalları",
+          "anatolian eagles (film)",
+          "Anatolian Eagles (film)",
+          "Anadolu Kartallari",
+          "anadolu kartallari",
+          "anadolu kartalları"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -20.80979693110906,
+      "snippet": "Anadolu Kartalları. Description: Anadolu Kartalları (Anatolian Eagle) is a Turkish film directed by Ömer Vargi and released in 2011. It is produced by the production company Fida Film, and stars Engin Altan Düzyatan,..."
+    },
+    {
+      "doc_id": "fact::Q6021948::P27::Q43",
+      "title": "Ömer Vargı - country of citizenship",
+      "body": "Ömer Vargı has country of citizenship turkiye. Relation type: country of citizenship. Source roles: director. Target roles: birth_place, country, country_root.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6021948",
+      "metadata": {
+        "source_id": "Q6021948",
+        "target_id": "Q43",
+        "relation_id": "P27",
+        "relation_label": "country of citizenship"
+      },
+      "score": -18.359927482534005,
+      "snippet": "Ömer Vargı has country of citizenship turkiye. Relation type: country of citizenship. Source roles: director. Target roles: birth_place, country, country_root."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T12:50:23.686629+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 887,
+      "remaining_tokens": 11873,
+      "reset_requests_seconds": 9763.2,
+      "reset_tokens_seconds": 0.635,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:50:23 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "887",
+        "x-ratelimit-remaining-tokens": "11873",
+        "x-ratelimit-reset-requests": "2h42m43.2s",
+        "x-ratelimit-reset-tokens": "635ms",
+        "x-request-id": "req_01kpga8vave1fabfwg6dt28cr3",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=VJT2LDRPAv01e14ZIHvYXOePHYHhWuusF9eueu_83YI-1776516623.687148-1.0.1.1-d9LUBww25LorURzf_ezQdPKxYGHLWeTIvNpgPFSC.iwq9FXu4DSr.P_bQ1LbyDgoeWu0tX56uCNFKzUqM6M.jAc6OnzuVlfQUZX255scCuxUjaFha1heaW_jhaxl1A89; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:20:23 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3cb82082cb210-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T12:50:28.614510+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 886,
+      "remaining_tokens": 11405,
+      "reset_requests_seconds": 9849.6,
+      "reset_tokens_seconds": 2.975,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:50:28 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "886",
+        "x-ratelimit-remaining-tokens": "11405",
+        "x-ratelimit-reset-requests": "2h44m9.6s",
+        "x-ratelimit-reset-tokens": "2.975s",
+        "x-request-id": "req_01kpga9071fgv8m7g5nxbj7rzc",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=pdD.qrSrro8DbyA8Dj3PwDreVfhUlzgD9GZkaXvZ89Y-1776516628.6828628-1.0.1.1-Guw3fWhSf_YCGf.f19bpaMwgqqi.DM4YrkHA6FpZr7cXlhTZHdVe6otzwzoiuF2AMhmqNr94VMf4BMHNM5Nb76Gmv28NH2CFcACRIXoDPPfxJoHEIMEhsXTPeGE3YCUo; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:20:28 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3cba14870ae07-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

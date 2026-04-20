@@ -1,0 +1,165 @@
+{
+  "created_at": "2026-04-18T13:11:47.077286+00:00",
+  "status": "success",
+  "method": "vanilla_rag",
+  "question_id": "qa_2a6ac9643a80",
+  "question": "In which country is the school attended by the director of Dokuz Dagin Efesi located?",
+  "question_type": "three_hop",
+  "template": "film_director_education_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q43",
+    "text": "Turkey"
+  },
+  "prediction_text": "Turkey",
+  "expanded_query": null,
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_2a6ac9643a80::1",
+      "title": "In which country is the school attended by the director of Dokuz Dagin Efesi located?",
+      "body": "Dokuz Dagin Efesi was directed by Metin Erksan. Metin Erksan studied at Istanbul University. Istanbul University is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6067860",
+      "metadata": {
+        "question_id": "qa_2a6ac9643a80",
+        "template": "film_director_education_country",
+        "question_type": "three_hop"
+      },
+      "score": -54.44417777346571,
+      "snippet": "Dokuz Dagin Efesi was directed by Metin Erksan. Metin Erksan studied at Istanbul University. Istanbul University is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_07e8f72b4442::1",
+      "title": "In which country is the school attended by the director of Angel's Fall located?",
+      "body": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University. Dokuz Eylül University is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6054381",
+      "metadata": {
+        "question_id": "qa_07e8f72b4442",
+        "template": "film_director_education_country",
+        "question_type": "three_hop"
+      },
+      "score": -35.13309262100449,
+      "snippet": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University. Dokuz Eylül University is located in Turkey."
+    },
+    {
+      "doc_id": "entity::Q6067860",
+      "title": "dokuz dagin efesi: çakici geliyor",
+      "body": "dokuz dagin efesi: çakici geliyor. Description: Dokuz Dağın Efesi, or Dokuz Dağın Efesi: Çakici Geliyor is a 1958 Turkish drama film directed by Metin Erksan. It stars Fikret Hakan, Serpil Gül, and Hayri Esen. Aliases: dokuz dagin efesi: çakici geliyor, Dokuz Dagin Efesi, Dokuz dagin efesi: Çakici geliyor, dokuz dagin efesi, dokuz dağın efesi, Dokuz Dağın Efesi. Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q6067860",
+      "metadata": {
+        "entity_id": "Q6067860",
+        "aliases": [
+          "dokuz dagin efesi: çakici geliyor",
+          "Dokuz Dagin Efesi",
+          "Dokuz dagin efesi: Çakici geliyor",
+          "dokuz dagin efesi",
+          "dokuz dağın efesi",
+          "Dokuz Dağın Efesi"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -34.06874579982953,
+      "snippet": "dokuz dagin efesi: çakici geliyor. Description: Dokuz Dağın Efesi, or Dokuz Dağın Efesi: Çakici Geliyor is a 1958 Turkish drama film directed by Metin Erksan. It stars Fikret Hakan, Serpil Gül, and Hayri Esen. Aliases..."
+    },
+    {
+      "doc_id": "fact::Q6067860::P57::Q936089",
+      "title": "dokuz dagin efesi: çakici geliyor - director",
+      "body": "dokuz dagin efesi: çakici geliyor was directed by metin erksan. Relation type: director. Source roles: film. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6067860",
+      "metadata": {
+        "source_id": "Q6067860",
+        "target_id": "Q936089",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -32.45663589573016,
+      "snippet": "dokuz dagin efesi: çakici geliyor was directed by metin erksan. Relation type: director. Source roles: film. Target roles: director."
+    },
+    {
+      "doc_id": "path::qa_d6de5558a6c3::1",
+      "title": "In which country is the school attended by the director of Bitter Life located?",
+      "body": "Bitter Life was directed by Metin Erksan. Metin Erksan studied at Istanbul University. Istanbul University is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q12835393",
+      "metadata": {
+        "question_id": "qa_d6de5558a6c3",
+        "template": "film_director_education_country",
+        "question_type": "three_hop"
+      },
+      "score": -28.501200967453315,
+      "snippet": "Bitter Life was directed by Metin Erksan. Metin Erksan studied at Istanbul University. Istanbul University is located in Turkey."
+    },
+    {
+      "doc_id": "fact::Q6067860::P495::Q43",
+      "title": "dokuz dagin efesi: çakici geliyor - country of origin",
+      "body": "dokuz dagin efesi: çakici geliyor has country of origin turkiye. Relation type: country of origin. Source roles: film. Target roles: birth_place, country, country_root.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6067860",
+      "metadata": {
+        "source_id": "Q6067860",
+        "target_id": "Q43",
+        "relation_id": "P495",
+        "relation_label": "country of origin"
+      },
+      "score": -28.015109493418144,
+      "snippet": "dokuz dagin efesi: çakici geliyor has country of origin turkiye. Relation type: country of origin. Source roles: film. Target roles: birth_place, country, country_root."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:11:47.064148+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 743,
+    "remaining_tokens": 11456,
+    "reset_requests_seconds": 22204.8,
+    "reset_tokens_seconds": 2.72,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:11:47 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "743",
+      "x-ratelimit-remaining-tokens": "11456",
+      "x-ratelimit-reset-requests": "6h10m4.8s",
+      "x-ratelimit-reset-tokens": "2.72s",
+      "x-request-id": "req_01kpgbg0kqegmb11xpqmy0amxs",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=j3VHwnt04j4dKlcJGEQ1jz6hy4TKzZbUoe8UaG7ortM-1776517907.0422556-1.0.1.1-nnYd.JjyhAJcWPbPXQ2snbtlptzn4cVGAzguvbTvsPdCWgE53RBg_JPUMzUokH8GZKdsOleF7MBKQkqmc6icVVq3qF2fcUtQd85OEZ5g_0ntU.bS8Cu2u4fBn5Jx8.6V; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:41:47 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3ead70f17f43f-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "turkey",
+    "gold_normalized": "turkey",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

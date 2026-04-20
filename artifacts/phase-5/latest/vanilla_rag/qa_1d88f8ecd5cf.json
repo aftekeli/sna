@@ -1,0 +1,122 @@
+{
+  "created_at": "2026-04-18T12:10:34.856725+00:00",
+  "status": "success",
+  "method": "vanilla_rag",
+  "question_id": "qa_1d88f8ecd5cf",
+  "question": "Where was the director of Arabesk born?",
+  "question_type": "two_hop",
+  "template": "film_director_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q45301",
+    "text": "Trabzon"
+  },
+  "prediction_text": "Trabzon.",
+  "expanded_query": null,
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_1d88f8ecd5cf::1",
+      "title": "Where was the director of Arabesk born?",
+      "body": "Arabesk was directed by Ertem Eğilmez. Ertem Eğilmez was born in Trabzon.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q1033926",
+      "metadata": {
+        "question_id": "qa_1d88f8ecd5cf",
+        "template": "film_director_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -21.424385252679457,
+      "snippet": "Arabesk was directed by Ertem Eğilmez. Ertem Eğilmez was born in Trabzon."
+    },
+    {
+      "doc_id": "path::qa_ef87589de143::2",
+      "title": "Were the directors of Ah Nerede and Arabesk born in the same country?",
+      "body": "Arabesk was directed by Ertem Eğilmez. Ertem Eğilmez was born in Trabzon. Trabzon is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6081761",
+      "metadata": {
+        "question_id": "qa_ef87589de143",
+        "template": "film_director_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -13.439025973818925,
+      "snippet": "Arabesk was directed by Ertem Eğilmez. Ertem Eğilmez was born in Trabzon. Trabzon is located in Turkey."
+    },
+    {
+      "doc_id": "fact::Q1033926::P57::Q3057501",
+      "title": "arabesk (film) - director",
+      "body": "arabesk (film) was directed by Ertem Egilmez. Relation type: director. Source roles: film. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q1033926",
+      "metadata": {
+        "source_id": "Q1033926",
+        "target_id": "Q3057501",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -13.158906631360066,
+      "snippet": "arabesk (film) was directed by Ertem Egilmez. Relation type: director. Source roles: film. Target roles: director."
+    },
+    {
+      "doc_id": "path::qa_26cd33a65acd::1",
+      "title": "Where was the director of Aci Zafer born?",
+      "body": "Aci Zafer was directed by Halit Refiğ. Halit Refiğ was born in İzmir.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q18712718",
+      "metadata": {
+        "question_id": "qa_26cd33a65acd",
+        "template": "film_director_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -12.085425252428092,
+      "snippet": "Aci Zafer was directed by Halit Refiğ. Halit Refiğ was born in İzmir."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:10:34.853398+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 920,
+    "remaining_tokens": 11593,
+    "reset_requests_seconds": 6912.0,
+    "reset_tokens_seconds": 2.034,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:10:35 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "920",
+      "x-ratelimit-remaining-tokens": "11593",
+      "x-ratelimit-reset-requests": "1h55m12s",
+      "x-ratelimit-reset-tokens": "2.034s",
+      "x-request-id": "req_01kpg7zyj5ewb81gpvxy5pa0mg",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=lFQJ.mKLhObXlxc9s1XlDL73IiU3VgxCyTZm7.sgDWY-1776514234.9294221-1.0.1.1-6.rsLmFs98oPGEREMBftQkZfTLvuZzW0sIG9XlNO5ZzVN6tNInrg06Snvc1ePsZAeVyx_1ouuiHYtO3uC028peWTdC0PmlVyLL65Kek05eUpzpz_wSUwk62Cbc67DSEu; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:40:35 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee391304add3e85-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "trabzon",
+    "gold_normalized": "trabzon",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

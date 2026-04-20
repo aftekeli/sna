@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T12:59:37.909852+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_515c0f340473",
+  "question": "Where was Seiyō Uchino, a cast member of 125 Years Memory, born?",
+  "question_type": "two_hop",
+  "template": "film_cast_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q1358965",
+    "text": "Kōhoku-ku"
+  },
+  "prediction_text": "Unknown",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:59:37.890121+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 839,
+    "remaining_tokens": 11903,
+    "reset_requests_seconds": 13910.4,
+    "reset_tokens_seconds": 0.485,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:59:38 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "839",
+      "x-ratelimit-remaining-tokens": "11903",
+      "x-ratelimit-reset-requests": "3h51m50.4s",
+      "x-ratelimit-reset-tokens": "485ms",
+      "x-request-id": "req_01kpgasrhteq7tncpnc2z82fs6",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=SWjROBYZsIFMODkU3xqZ_kUer8TkC7lsPO_DqERchR8-1776517177.894644-1.0.1.1-P7N6L_BkkvIAXHQQ_1sm_uorFn0rP4Wi.saTwrNmZbPfmKhAwwyuS0xgia8aHQ._I_C0pgp0MIPRh_KnKMugM_0iR8r0NUNeOyKaClBdesLywl50NoFJ6CZ1VsJIFVHq; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:29:38 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3d909dad65ed6-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "unknown",
+    "gold_normalized": "kohoku ku",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

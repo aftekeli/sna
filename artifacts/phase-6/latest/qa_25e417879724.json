@@ -1,0 +1,319 @@
+{
+  "created_at": "2026-04-18T12:07:01.872482+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_25e417879724",
+  "question": "Were Tülin Özen from 10 To 11 and Seiyō Uchino from 125 Years Memory born in the same country?",
+  "question_type": "comparison",
+  "template": "film_cast_birth_place_country__comparison",
+  "difficulty": "very_hard",
+  "gold_answer": {
+    "entity_id": null,
+    "text": "no"
+  },
+  "prediction_text": "no",
+  "match": {
+    "prediction_normalized": "no",
+    "gold_normalized": "no",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q5355422",
+      "entity_name": "Seiyo Uchino",
+      "roles": [
+        "cast_member"
+      ],
+      "source": "lexicon",
+      "score": 18
+    },
+    {
+      "entity_id": "Q6086955",
+      "entity_name": "Tülin Özen",
+      "roles": [
+        "cast_member"
+      ],
+      "source": "lexicon",
+      "score": 16
+    }
+  ],
+  "relation_path": [
+    "P19",
+    "P17"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q5355422",
+        "Q6086955"
+      ],
+      "candidate_count": 4,
+      "selected_triples": [
+        {
+          "source_id": "Q5355422",
+          "source_name": "Seiyo Uchino",
+          "source_roles": [
+            "cast_member"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q1358965",
+          "target_name": "Kohoku-ku",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 16.0
+        },
+        {
+          "source_id": "Q6086955",
+          "source_name": "Tülin Özen",
+          "source_roles": [
+            "cast_member"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q174341",
+          "target_name": "Iskenderum",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 16.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q1358965",
+        "Q174341"
+      ],
+      "candidate_count": 2,
+      "selected_triples": [
+        {
+          "source_id": "Q1358965",
+          "source_name": "Kohoku-ku",
+          "source_roles": [
+            "birth_place"
+          ],
+          "relation_id": "P17",
+          "relation_label": "country",
+          "target_id": "Q17",
+          "target_name": "JPN",
+          "target_roles": [
+            "country"
+          ],
+          "score": 21.0
+        },
+        {
+          "source_id": "Q174341",
+          "source_name": "Iskenderum",
+          "source_roles": [
+            "birth_place"
+          ],
+          "relation_id": "P17",
+          "relation_label": "country",
+          "target_id": "Q43",
+          "target_name": "Turkey",
+          "target_roles": [
+            "birth_place",
+            "country",
+            "country_root"
+          ],
+          "score": 21.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q5355422",
+        "seed_entity_name": "Seiyo Uchino",
+        "final_answers": [
+          {
+            "entity_id": "Q17",
+            "entity_name": "JPN"
+          }
+        ]
+      },
+      {
+        "seed_entity_id": "Q6086955",
+        "seed_entity_name": "Tülin Özen",
+        "final_answers": [
+          {
+            "entity_id": "Q43",
+            "entity_name": "Turkey"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q17",
+      "Q43"
+    ],
+    "candidate_texts": [
+      "JPN",
+      "Turkey"
+    ],
+    "answer_text": "no"
+  },
+  "kg_summary": "Seiyo Uchino was born in Kohoku-ku. Tülin Özen was born in Iskenderum. Kohoku-ku is located in JPN. Iskenderum is located in Turkey.",
+  "expanded_query": "Were Tülin Özen and Seiyō Uchino born in the same country, given Tülin Özen is from Turkey and Seiyō Uchino is from Japan.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_25e417879724::2",
+      "title": "Were Tülin Özen from 10 To 11 and Seiyō Uchino from 125 Years Memory born in the same country?",
+      "body": "125 Years Memory has cast member Seiyō Uchino. Seiyō Uchino was born in Kōhoku-ku. Kōhoku-ku is located in Japan.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q3459778",
+      "metadata": {
+        "question_id": "qa_25e417879724",
+        "template": "film_cast_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -93.05371535120803,
+      "snippet": "125 Years Memory has cast member Seiyō Uchino. Seiyō Uchino was born in Kōhoku-ku. Kōhoku-ku is located in Japan."
+    },
+    {
+      "doc_id": "path::qa_25e417879724::1",
+      "title": "Were Tülin Özen from 10 To 11 and Seiyō Uchino from 125 Years Memory born in the same country?",
+      "body": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun. İskenderun is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q3459778",
+      "metadata": {
+        "question_id": "qa_25e417879724",
+        "template": "film_cast_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -88.10632854141024,
+      "snippet": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun. İskenderun is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_6e027a24320b::1",
+      "title": "Were Tülin Özen from 10 To 11 and Asuman Dabak from Adem'in Trenleri born in the same country?",
+      "body": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun. İskenderun is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q3459778",
+      "metadata": {
+        "question_id": "qa_6e027a24320b",
+        "template": "film_cast_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -61.39982485004972,
+      "snippet": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun. İskenderun is located in Turkey."
+    },
+    {
+      "doc_id": "entity::Q5355422",
+      "title": "Masaaki Uchino",
+      "body": "Masaaki Uchino. Description: Seiyō Uchino (内野 聖陽, Uchino Seiyō, born September 16, 1968, in Kōhoku-ku, Yokohama, Kanagawa Prefecture, Japan) is a Japanese actor who is represented by Stardust Promotion. Aliases: Masaaki Uchino, seiyou uchino, Seiyo Uchino, seiyo uchino, 内野聖陽, Seiyō Uchino, seiyō uchino, masaaki uchino, Seiyou Uchino. Roles: cast_member. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q5355422",
+      "metadata": {
+        "entity_id": "Q5355422",
+        "aliases": [
+          "Masaaki Uchino",
+          "seiyou uchino",
+          "Seiyo Uchino",
+          "seiyo uchino",
+          "内野聖陽",
+          "Seiyō Uchino",
+          "seiyō uchino",
+          "masaaki uchino",
+          "Seiyou Uchino"
+        ],
+        "roles": [
+          "cast_member"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -53.59781043669487,
+      "snippet": "Masaaki Uchino. Description: Seiyō Uchino (内野 聖陽, Uchino Seiyō, born September 16, 1968, in Kōhoku-ku, Yokohama, Kanagawa Prefecture, Japan) is a Japanese actor who is represented by Stardust Promotion. Aliases: Masaa..."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T12:07:01.185439+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 928,
+      "remaining_tokens": 11369,
+      "reset_requests_seconds": 6220.799,
+      "reset_tokens_seconds": 3.155,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:07:01 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "928",
+        "x-ratelimit-remaining-tokens": "11369",
+        "x-ratelimit-reset-requests": "1h43m40.799s",
+        "x-ratelimit-reset-tokens": "3.155s",
+        "x-request-id": "req_01kpg7sdk9fx0b5zmd96jdyygy",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=Z_3_kXDeJZ4WbSVHhyOW.szVLarpyJtEJ9kBaPxrinI-1776514020.947108-1.0.1.1-QO1Xakd81_ga3OrbLTSGi_GISRGI6pImipFPPEMKLOeSXf8QTu1eG9x2dD4YhsaGGWTT8OtIRIEcTg7vNt97oMDteZiW4.UelKGOWHJ7UzRUrw.o20s6QOHgYsT3s0JA; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:37:01 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee38bf6ed4c9862-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T12:07:01.869768+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 927,
+      "remaining_tokens": 10982,
+      "reset_requests_seconds": 6307.2,
+      "reset_tokens_seconds": 5.09,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:07:02 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "927",
+        "x-ratelimit-remaining-tokens": "10982",
+        "x-ratelimit-reset-requests": "1h45m7.2s",
+        "x-ratelimit-reset-tokens": "5.09s",
+        "x-request-id": "req_01kpg7sehxemjb2v2t3j2d6cte",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=Ergt2RSEHGTmcnIRCcQlK8eCjYOYWCxapqXpCAaa3oE-1776514021.9265738-1.0.1.1-Hl54afz2GARnu5160QWjHW4ybAFRWRN38CNXcT6XJ108sj9sRaX31VF.go4sR8_i9lIJ.ZYVXA7oFvA8DWXVX2pLjVJK.Ln5wiUMlj3a7vh4lOfkUcfnvjMc6qKwISdp; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:37:02 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee38bfd0d93d505-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "created_at": "2026-04-18T12:49:26.617876+00:00",
+  "status": "success",
+  "method": "vanilla_qe",
+  "question_id": "qa_056fc446ad92",
+  "question": "Were the directors of Angel's Fall and Do Not Forget Me Istanbul educated in the same country?",
+  "question_type": "comparison",
+  "template": "film_director_education_country__comparison",
+  "difficulty": "very_hard",
+  "gold_answer": {
+    "entity_id": null,
+    "text": "no"
+  },
+  "prediction_text": "No.",
+  "expanded_query": "Directors of Angel's Fall and Do Not Forget Me Istanbul education country.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_056fc446ad92::2",
+      "title": "Were the directors of Angel's Fall and Do Not Forget Me Istanbul educated in the same country?",
+      "body": "Do Not Forget Me Istanbul was directed by Eric Nazarian. Eric Nazarian studied at The University of Southern California. The University of Southern California is located in The United States of America.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6054381",
+      "metadata": {
+        "question_id": "qa_056fc446ad92",
+        "template": "film_director_education_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -47.427718728029646,
+      "snippet": "Do Not Forget Me Istanbul was directed by Eric Nazarian. Eric Nazarian studied at The University of Southern California. The University of Southern California is located in The United States of America."
+    },
+    {
+      "doc_id": "path::qa_056fc446ad92::1",
+      "title": "Were the directors of Angel's Fall and Do Not Forget Me Istanbul educated in the same country?",
+      "body": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University. Dokuz Eylül University is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6054381",
+      "metadata": {
+        "question_id": "qa_056fc446ad92",
+        "template": "film_director_education_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -47.1629994231568,
+      "snippet": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University. Dokuz Eylül University is located in Turkey."
+    },
+    {
+      "doc_id": "entity::Q20065085",
+      "title": "do not forget me istanbul",
+      "body": "do not forget me istanbul. Description: Do Not Forget Me Istanbul is a 2012 Greek / Turkish anthology film. Aliases: do not forget me istanbul, Do Not Forget Me Istanbul. Roles: film, film_seed. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q20065085",
+      "metadata": {
+        "entity_id": "Q20065085",
+        "aliases": [
+          "do not forget me istanbul",
+          "Do Not Forget Me Istanbul"
+        ],
+        "roles": [
+          "film",
+          "film_seed"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -37.710933467450545,
+      "snippet": "do not forget me istanbul. Description: Do Not Forget Me Istanbul is a 2012 Greek / Turkish anthology film. Aliases: do not forget me istanbul, Do Not Forget Me Istanbul. Roles: film, film_seed. Domains: cinema, film,..."
+    },
+    {
+      "doc_id": "fact::Q20065085::P495::Q41",
+      "title": "do not forget me istanbul - country of origin",
+      "body": "do not forget me istanbul has country of origin hellada. Relation type: country of origin. Source roles: film, film_seed. Target roles: country.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q20065085",
+      "metadata": {
+        "source_id": "Q20065085",
+        "target_id": "Q41",
+        "relation_id": "P495",
+        "relation_label": "country of origin"
+      },
+      "score": -33.3380677998234,
+      "snippet": "do not forget me istanbul has country of origin hellada. Relation type: country of origin. Source roles: film, film_seed. Target roles: country."
+    },
+    {
+      "doc_id": "fact::Q20065085::P57::Q2335956",
+      "title": "do not forget me istanbul - director",
+      "body": "do not forget me istanbul was directed by Stefan Arsenijevic. Relation type: director. Source roles: film, film_seed. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q20065085",
+      "metadata": {
+        "source_id": "Q20065085",
+        "target_id": "Q2335956",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -32.86726249553165,
+      "snippet": "do not forget me istanbul was directed by Stefan Arsenijevic. Relation type: director. Source roles: film, film_seed. Target roles: director."
+    },
+    {
+      "doc_id": "fact::Q20065085::P57::Q2374086",
+      "title": "do not forget me istanbul - director",
+      "body": "do not forget me istanbul was directed by Eric Nazarian. Relation type: director. Source roles: film, film_seed. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q20065085",
+      "metadata": {
+        "source_id": "Q20065085",
+        "target_id": "Q2374086",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -32.86726249553165,
+      "snippet": "do not forget me istanbul was directed by Eric Nazarian. Relation type: director. Source roles: film, film_seed. Target roles: director."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:49:26.608892+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 894,
+    "remaining_tokens": 11529,
+    "reset_requests_seconds": 9158.4,
+    "reset_tokens_seconds": 2.355,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:49:26 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "894",
+      "x-ratelimit-remaining-tokens": "11529",
+      "x-ratelimit-reset-requests": "2h32m38.4s",
+      "x-ratelimit-reset-tokens": "2.355s",
+      "x-request-id": "req_01kpga73bbfp0t7jgnktew73pn",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=BzI9hYjiepQ6o_wOUKfc6jO1tPPtY6HmjdkpewfF50M-1776516566.3585818-1.0.1.1-CzcZv1FtBVin4muq1hy7FMta4lK2h8fy6ak_psd07ZOr3S.UbyJuMWNKejZrg0Q4x496UnLCQ21YbYT70fCDiOlcpc_a.8.rNK7Uupqbk2PgfyORh3GttYCx4PmryavE; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:19:26 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3ca1bba8d0d37-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "no",
+    "gold_normalized": "no",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

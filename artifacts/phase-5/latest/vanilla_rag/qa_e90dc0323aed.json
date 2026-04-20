@@ -1,0 +1,161 @@
+{
+  "created_at": "2026-04-18T13:05:02.180177+00:00",
+  "status": "success",
+  "method": "vanilla_rag",
+  "question_id": "qa_e90dc0323aed",
+  "question": "In which country was the director of Playing with Death born?",
+  "question_type": "three_hop",
+  "template": "film_director_birth_place_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q794",
+    "text": "Iran"
+  },
+  "prediction_text": "Iran.",
+  "expanded_query": null,
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_e90dc0323aed::1",
+      "title": "In which country was the director of Playing with Death born?",
+      "body": "Playing with Death was directed by Hamid Tamjidi. Hamid Tamjidi was born in Tehran. Tehran is located in Iran.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q7203434",
+      "metadata": {
+        "question_id": "qa_e90dc0323aed",
+        "template": "film_director_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -31.282524410946596,
+      "snippet": "Playing with Death was directed by Hamid Tamjidi. Hamid Tamjidi was born in Tehran. Tehran is located in Iran."
+    },
+    {
+      "doc_id": "path::qa_f2af017e97bd::2",
+      "title": "Were the directors of Ah Nerede and Playing with Death born in the same country?",
+      "body": "Playing with Death was directed by Hamid Tamjidi. Hamid Tamjidi was born in Tehran. Tehran is located in Iran.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6081761",
+      "metadata": {
+        "question_id": "qa_f2af017e97bd",
+        "template": "film_director_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -25.602572287669446,
+      "snippet": "Playing with Death was directed by Hamid Tamjidi. Hamid Tamjidi was born in Tehran. Tehran is located in Iran."
+    },
+    {
+      "doc_id": "fact::Q7203434::P57::Q5644666",
+      "title": "Playing with Death - director",
+      "body": "Playing with Death was directed by Hamid tamjidi. Relation type: director. Source roles: film. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q7203434",
+      "metadata": {
+        "source_id": "Q7203434",
+        "target_id": "Q5644666",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -24.70635992002151,
+      "snippet": "Playing with Death was directed by Hamid tamjidi. Relation type: director. Source roles: film. Target roles: director."
+    },
+    {
+      "doc_id": "entity::Q7203434",
+      "title": "Playing with Death",
+      "body": "Playing with Death. Description: Playing with Death is a 1995 Iranian detective movie filmed in Iran and Turkey and produced by Alireza Zarif of 'IRIB Television'. Aliases: Playing with Death, playing with death. Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q7203434",
+      "metadata": {
+        "entity_id": "Q7203434",
+        "aliases": [
+          "Playing with Death",
+          "playing with death"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -23.434821648878355,
+      "snippet": "Playing with Death. Description: Playing with Death is a 1995 Iranian detective movie filmed in Iran and Turkey and produced by Alireza Zarif of 'IRIB Television'. Aliases: Playing with Death, playing with death. Role..."
+    },
+    {
+      "doc_id": "fact::Q7203434::P17::Q794",
+      "title": "Playing with Death - country",
+      "body": "Playing with Death is located in Persian State of Iran. Relation type: country. Source roles: film. Target roles: country.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q7203434",
+      "metadata": {
+        "source_id": "Q7203434",
+        "target_id": "Q794",
+        "relation_id": "P17",
+        "relation_label": "country"
+      },
+      "score": -22.351990373974797,
+      "snippet": "Playing with Death is located in Persian State of Iran. Relation type: country. Source roles: film. Target roles: country."
+    },
+    {
+      "doc_id": "path::qa_f2af017e97bd::1",
+      "title": "Were the directors of Ah Nerede and Playing with Death born in the same country?",
+      "body": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa. Mustafakemalpaşa is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6081761",
+      "metadata": {
+        "question_id": "qa_f2af017e97bd",
+        "template": "film_director_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -21.295872192682925,
+      "snippet": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa. Mustafakemalpaşa is located in Turkey."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:05:02.169841+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 778,
+    "remaining_tokens": 11591,
+    "reset_requests_seconds": 19180.8,
+    "reset_tokens_seconds": 2.045,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:05:02 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "778",
+      "x-ratelimit-remaining-tokens": "11591",
+      "x-ratelimit-reset-requests": "5h19m40.8s",
+      "x-ratelimit-reset-tokens": "2.045s",
+      "x-request-id": "req_01kpgb3n6pfrtav72125b9y4cv",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=jGndHblAhgU1MpD1uMGz9MliBI5r4qhXlCaV0LhuxQ4-1776517502.144431-1.0.1.1-tznK2x7hH.YZI9etB4EQ_58yZQyigVhi4wSMYjx4dnwVL2gD7Gpr_J2W38Q3xlUB_6l.gUEXtU_1ht3Uuk30sI5VOycdxlrF7.KCKHw_hHLzIuFupjZD2CNrv3EJVDWr; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:35:02 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3e0f469f73f36-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "iran",
+    "gold_normalized": "iran",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

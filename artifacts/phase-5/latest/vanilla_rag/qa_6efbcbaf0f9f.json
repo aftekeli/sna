@@ -1,0 +1,181 @@
+{
+  "created_at": "2026-04-18T13:00:20.409073+00:00",
+  "status": "success",
+  "method": "vanilla_rag",
+  "question_id": "qa_6efbcbaf0f9f",
+  "question": "Where was Shiori Kutsuna, a cast member of 125 Years Memory, born?",
+  "question_type": "two_hop",
+  "template": "film_cast_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q6407315",
+    "text": "Killarney Heights"
+  },
+  "prediction_text": "Killarney Heights, Australia",
+  "expanded_query": null,
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_6efbcbaf0f9f::1",
+      "title": "Where was Shiori Kutsuna, a cast member of 125 Years Memory, born?",
+      "body": "125 Years Memory has cast member Shiori Kutsuna. Shiori Kutsuna was born in Killarney Heights.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q21787529",
+      "metadata": {
+        "question_id": "qa_6efbcbaf0f9f",
+        "template": "film_cast_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -54.74703971576883,
+      "snippet": "125 Years Memory has cast member Shiori Kutsuna. Shiori Kutsuna was born in Killarney Heights."
+    },
+    {
+      "doc_id": "path::qa_515c0f340473::1",
+      "title": "Where was Seiyō Uchino, a cast member of 125 Years Memory, born?",
+      "body": "125 Years Memory has cast member Seiyō Uchino. Seiyō Uchino was born in Kōhoku-ku.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q21787529",
+      "metadata": {
+        "question_id": "qa_515c0f340473",
+        "template": "film_cast_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -32.64503517701055,
+      "snippet": "125 Years Memory has cast member Seiyō Uchino. Seiyō Uchino was born in Kōhoku-ku."
+    },
+    {
+      "doc_id": "path::qa_25e417879724::2",
+      "title": "Were Tülin Özen from 10 To 11 and Seiyō Uchino from 125 Years Memory born in the same country?",
+      "body": "125 Years Memory has cast member Seiyō Uchino. Seiyō Uchino was born in Kōhoku-ku. Kōhoku-ku is located in Japan.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q3459778",
+      "metadata": {
+        "question_id": "qa_25e417879724",
+        "template": "film_cast_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -25.587743928074257,
+      "snippet": "125 Years Memory has cast member Seiyō Uchino. Seiyō Uchino was born in Kōhoku-ku. Kōhoku-ku is located in Japan."
+    },
+    {
+      "doc_id": "entity::Q4390382",
+      "title": "shioli kutsuna",
+      "body": "shioli kutsuna. Description: Shiori Kutsuna (Japanese: 忽那 汐里, Hepburn: Kutsuna Shiori, born 22 December 1992) is an Australian-born Japanese actress and idol, best known for her role as Ran Mori in Shinichi Kudo's Written Challenge, Minami Maho in Beck and Yukio in Deadpool 2. Aliases: shioli kutsuna, Shioli Kutsuna, 忽那汐里, Kutsuna Shiori, Shiori Kutsuna, shiori kutsuna, kutsuna shiori. Roles: cast_member. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q4390382",
+      "metadata": {
+        "entity_id": "Q4390382",
+        "aliases": [
+          "shioli kutsuna",
+          "Shioli Kutsuna",
+          "忽那汐里",
+          "Kutsuna Shiori",
+          "Shiori Kutsuna",
+          "shiori kutsuna",
+          "kutsuna shiori"
+        ],
+        "roles": [
+          "cast_member"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -24.775651074222612,
+      "snippet": "shioli kutsuna. Description: Shiori Kutsuna (Japanese: 忽那 汐里, Hepburn: Kutsuna Shiori, born 22 December 1992) is an Australian-born Japanese actress and idol, best known for her role as Ran Mori in Shinichi Kudo's Wri..."
+    },
+    {
+      "doc_id": "path::qa_25e417879724::1",
+      "title": "Were Tülin Özen from 10 To 11 and Seiyō Uchino from 125 Years Memory born in the same country?",
+      "body": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun. İskenderun is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q3459778",
+      "metadata": {
+        "question_id": "qa_25e417879724",
+        "template": "film_cast_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -20.276475030225633,
+      "snippet": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun. İskenderun is located in Turkey."
+    },
+    {
+      "doc_id": "entity::Q21787529",
+      "title": "ertugrul 1890",
+      "body": "ertugrul 1890. Description: 125 Years Memory (海難1890, Kainan 1890) is a 2015 drama film directed by Mitsutoshi Tanaka and written by Eriko Komatsu. A Japanese-Turkish co-production, the film was produced by Japan's Creators' Union and Toei together with Turkey's Böcek Yapım(tr). It was released in Japan by Toei on December 5, 2015, and in Turkey by Mars on December 25, 2015. The film connects two historical incidents that deepened the friendship between Japan and Turkey: The sinking of the Turkish frigate Ertuğrul off the Japanese coast in 1890, and the evacuation of Japanese nationals from Tehran in 1985. It received ten nominations at the 39th Japan Academy Film Prize, winning the awards for Best Art Direction and Best Sound Recording. Aliases: ertugrul 1890, kainan 1890, 125 Years Memory, ertuğrul 1890, Ertuğrul 1890, Kainan 1890, 125 years memory, 海難1890, Ertugrul 1890. Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q21787529",
+      "metadata": {
+        "entity_id": "Q21787529",
+        "aliases": [
+          "ertugrul 1890",
+          "kainan 1890",
+          "125 Years Memory",
+          "ertuğrul 1890",
+          "Ertuğrul 1890",
+          "Kainan 1890",
+          "125 years memory",
+          "海難1890",
+          "Ertugrul 1890"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -17.922239085370393,
+      "snippet": "ertugrul 1890. Description: 125 Years Memory (海難1890, Kainan 1890) is a 2015 drama film directed by Mitsutoshi Tanaka and written by Eriko Komatsu. A Japanese-Turkish co-production, the film was produced by Japan's Cr..."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:00:20.400354+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 832,
+    "remaining_tokens": 11331,
+    "reset_requests_seconds": 14515.2,
+    "reset_tokens_seconds": 3.345,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:00:20 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "832",
+      "x-ratelimit-remaining-tokens": "11331",
+      "x-ratelimit-reset-requests": "4h1m55.2s",
+      "x-ratelimit-reset-tokens": "3.345s",
+      "x-request-id": "req_01kpgav201f2bv8p3jpy11rgs6",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=kzdpij0iKs8CwOs2SUTZ24luh2pMoJ6lo7EdLOAYYcc-1776517220.3294804-1.0.1.1-V5TJlo4ZzD92vENabEap73EQnZf0KSIDzQrBEaNCUA.ONtRpjzqvb4Ja4nuoR5GQweFgWcoPvmwF8Goq5M5ICLxbxKk5OmBoXZ85NuEMYeLI0_Vwy3PNvJTN85MNKcIw; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:30:20 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3da130da8c693-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "killarney heights australia",
+    "gold_normalized": "killarney heights",
+    "exact_match": false,
+    "contains_match": true
+  }
+}

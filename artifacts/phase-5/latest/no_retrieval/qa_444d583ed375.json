@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T13:02:57.369504+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_444d583ed375",
+  "question": "Where was Berk Hakman, a cast member of Beyond the Hill, born?",
+  "question_type": "two_hop",
+  "template": "film_cast_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q3640",
+    "text": "Ankara"
+  },
+  "prediction_text": "Unknown",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:02:57.358505+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 803,
+    "remaining_tokens": 11900,
+    "reset_requests_seconds": 17020.8,
+    "reset_tokens_seconds": 0.5,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:02:57 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "803",
+      "x-ratelimit-remaining-tokens": "11900",
+      "x-ratelimit-reset-requests": "4h43m40.8s",
+      "x-ratelimit-reset-tokens": "500ms",
+      "x-request-id": "req_01kpgazv70e838wg0k5kea8tg3",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=mrgnBU1dc5JNZnKu2lNX8No1ou9DDrKDBKkbmUOtZT4-1776517377.2267358-1.0.1.1-WA3IW7MIwP0VJIgsKK_7MGoYmCuZZFBk_ScTbnWaPaOlVetE9mF8m4RQfDd_5H5fmxMmVRbPzaCpSDT7ppV_o.ZDr66dVTkboEbQ5ccpWMJJMCt4Y8rcBsu1dMA1ibiI; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:32:57 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3dde7ac220d37-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "unknown",
+    "gold_normalized": "ankara",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

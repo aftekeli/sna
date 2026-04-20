@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T12:47:41.217038+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_45847cf61fb5",
+  "question": "In which country was the director of Davaro born?",
+  "question_type": "three_hop",
+  "template": "film_director_birth_place_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q43",
+    "text": "Turkey"
+  },
+  "prediction_text": "Unknown",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:47:41.208229+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 915,
+    "remaining_tokens": 11920,
+    "reset_requests_seconds": 7344.0,
+    "reset_tokens_seconds": 0.4,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:47:41 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "915",
+      "x-ratelimit-remaining-tokens": "11920",
+      "x-ratelimit-reset-requests": "2h2m24s",
+      "x-ratelimit-reset-tokens": "400ms",
+      "x-request-id": "req_01kpga3wrpejerqbxmwv9wzpqd",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=9nARXYmHA58CvXMUS1NTj3jik8WsGmaKILz_uUxU1RE-1776516461.3144844-1.0.1.1-EylJWSX15Xjcedy3UOTAGJiXFkE5KSQq6Bt97eNggMJExmrR145zW1vtQBSvhpJuDJQjAuWbY0IwvcponLLn0tmTDKhqnTTn4FQ_TdkeElfAGXP5PPh34iWdhGuvUCDz; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:17:41 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3c78b3d9ad2a3-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "unknown",
+    "gold_normalized": "turkey",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

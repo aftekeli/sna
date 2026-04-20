@@ -1,0 +1,164 @@
+{
+  "created_at": "2026-04-18T13:10:51.650498+00:00",
+  "status": "success",
+  "method": "vanilla_qe",
+  "question_id": "qa_eb46e42dc05a",
+  "question": "In which country is the school attended by the director of Shadows and Faces located?",
+  "question_type": "three_hop",
+  "template": "film_director_education_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q145",
+    "text": "The United Kingdom of Great Britain and Northern Ireland"
+  },
+  "prediction_text": "United Kingdom",
+  "expanded_query": "What country is the school of the director of Shadows and Faces located in!",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_eb46e42dc05a::1",
+      "title": "In which country is the school attended by the director of Shadows and Faces located?",
+      "body": "Shadows and Faces was directed by Derviş Zaim. Derviş Zaim studied at The University of Warwick. The University of Warwick is located in The United Kingdom of Great Britain and Northern Ireland.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q7460798",
+      "metadata": {
+        "question_id": "qa_eb46e42dc05a",
+        "template": "film_director_education_country",
+        "question_type": "three_hop"
+      },
+      "score": -32.07363593514505,
+      "snippet": "Shadows and Faces was directed by Derviş Zaim. Derviş Zaim studied at The University of Warwick. The University of Warwick is located in The United Kingdom of Great Britain and Northern Ireland."
+    },
+    {
+      "doc_id": "path::qa_ea1b335bfcbb::1",
+      "title": "In which country was the director of Shadows and Faces born?",
+      "body": "Shadows and Faces was directed by Derviş Zaim. Derviş Zaim was born in Famagusta. Famagusta is located in Cyprus.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q7460798",
+      "metadata": {
+        "question_id": "qa_ea1b335bfcbb",
+        "template": "film_director_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -27.430634424343335,
+      "snippet": "Shadows and Faces was directed by Derviş Zaim. Derviş Zaim was born in Famagusta. Famagusta is located in Cyprus."
+    },
+    {
+      "doc_id": "entity::Q7460798",
+      "title": "Shadows and Faces",
+      "body": "Shadows and Faces. Description: Shadows and Faces (Turkish: Gölgeler ve Suretler) is a 2010 Turkish drama film, written and directed by Turkish Cypriot director Derviş Zaim, which tells the story of a young girl who is separated from her father, a Karagöz shadow play master, during the beginning of the conflict between Turks and Greeks in Cyprus in 1963. The film, which saw a nationwide general release across Turkey on March 11, 2011 (2011-03-11), premiered in competition at the 47th International Antalya Golden Orange Film Festival, where it won the Turkish Film Critics Association Award. It is the third and final part of a trilogy of films themed around traditional Turkish arts, which includes Waiting for Heaven (2006) and Dot (2008). Aliases: Shadows and Faces, Gölgeler ve suretler, shadows and faces, gölgeler ve suretler. Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q7460798",
+      "metadata": {
+        "entity_id": "Q7460798",
+        "aliases": [
+          "Shadows and Faces",
+          "Gölgeler ve suretler",
+          "shadows and faces",
+          "gölgeler ve suretler"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -22.127286897013043,
+      "snippet": "Shadows and Faces. Description: Shadows and Faces (Turkish: Gölgeler ve Suretler) is a 2010 Turkish drama film, written and directed by Turkish Cypriot director Derviş Zaim, which tells the story of a young girl who i..."
+    },
+    {
+      "doc_id": "fact::Q7460798::P57::Q3811192",
+      "title": "Shadows and Faces - director",
+      "body": "Shadows and Faces was directed by derviş zaim. Relation type: director. Source roles: film. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q7460798",
+      "metadata": {
+        "source_id": "Q7460798",
+        "target_id": "Q3811192",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -21.858063082920857,
+      "snippet": "Shadows and Faces was directed by derviş zaim. Relation type: director. Source roles: film. Target roles: director."
+    },
+    {
+      "doc_id": "fact::Q7460798::P495::Q43",
+      "title": "Shadows and Faces - country of origin",
+      "body": "Shadows and Faces has country of origin turkiye. Relation type: country of origin. Source roles: film. Target roles: birth_place, country, country_root.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q7460798",
+      "metadata": {
+        "source_id": "Q7460798",
+        "target_id": "Q43",
+        "relation_id": "P495",
+        "relation_label": "country of origin"
+      },
+      "score": -19.310342371527163,
+      "snippet": "Shadows and Faces has country of origin turkiye. Relation type: country of origin. Source roles: film. Target roles: birth_place, country, country_root."
+    },
+    {
+      "doc_id": "fact::Q7460798::P161::Q2274910",
+      "title": "Shadows and Faces - cast member",
+      "body": "Shadows and Faces has cast member settar tanriogen. Relation type: cast member. Source roles: film. Target roles: cast_member.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q7460798",
+      "metadata": {
+        "source_id": "Q7460798",
+        "target_id": "Q2274910",
+        "relation_id": "P161",
+        "relation_label": "cast member"
+      },
+      "score": -18.559347592271322,
+      "snippet": "Shadows and Faces has cast member settar tanriogen. Relation type: cast member. Source roles: film. Target roles: cast_member."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:10:51.642715+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 753,
+    "remaining_tokens": 11497,
+    "reset_requests_seconds": 21340.8,
+    "reset_tokens_seconds": 2.514,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:10:51 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "753",
+      "x-ratelimit-remaining-tokens": "11497",
+      "x-ratelimit-reset-requests": "5h55m40.8s",
+      "x-ratelimit-reset-tokens": "2.514s",
+      "x-request-id": "req_01kpgbeag5fdda54m1rmmsx1x2",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=N9_ggIFGn8FwO7rVUMWWzSBttLiT_vZHnkRqAj_UY.w-1776517851.6326408-1.0.1.1-mpY9wGsds0nHjTMWmBcA.pa66M9yFNYDcIvAUL4suKNLtYDPQxYKJ0.huh2c3ZAgjKiM2hTU5BWdc5iuDrwmGxJLa_3FLeUzDe_3PZdfHMHjrPtrIpV1iyUCz6FA8hkO; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:40:51 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3e97cbc4eae50-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "united kingdom",
+    "gold_normalized": "the united kingdom of great britain and northern ireland",
+    "exact_match": false,
+    "contains_match": true
+  }
+}

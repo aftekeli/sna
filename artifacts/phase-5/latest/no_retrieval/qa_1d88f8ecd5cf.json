@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T12:10:34.199704+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_1d88f8ecd5cf",
+  "question": "Where was the director of Arabesk born?",
+  "question_type": "two_hop",
+  "template": "film_director_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q45301",
+    "text": "Trabzon"
+  },
+  "prediction_text": "Ertem Eğilmez, the director of Arabesk, was born in İzmir, Turkey.",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:10:34.197452+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 921,
+    "remaining_tokens": 11716,
+    "reset_requests_seconds": 6825.6,
+    "reset_tokens_seconds": 1.42,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:10:34 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "921",
+      "x-ratelimit-remaining-tokens": "11716",
+      "x-ratelimit-reset-requests": "1h53m45.6s",
+      "x-ratelimit-reset-tokens": "1.42s",
+      "x-request-id": "req_01kpg7zxrrebns82jam9efmfvg",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=kWiDA2CYtbs3bsXwh6v4SbjVN3mIo1_AXQlWgGY9CT4-1776514234.1159284-1.0.1.1-iiNj.n4caJDEczmCE_seclmG2rH_EsqGg34uFog3ImRvkHY63t1ld8P85z3629fewAjveWtoBD2b4oCTjDRFHBDOS5PKa4j7ofrhza4k.fTYJnxbQ34UsQmzj58SYZLq; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:40:34 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3912b3ded88e2-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "ertem egilmez the director of arabesk was born in izmir turkey",
+    "gold_normalized": "trabzon",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

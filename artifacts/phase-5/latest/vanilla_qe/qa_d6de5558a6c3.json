@@ -1,0 +1,161 @@
+{
+  "created_at": "2026-04-18T13:11:21.874520+00:00",
+  "status": "success",
+  "method": "vanilla_qe",
+  "question_id": "qa_d6de5558a6c3",
+  "question": "In which country is the school attended by the director of Bitter Life located?",
+  "question_type": "three_hop",
+  "template": "film_director_education_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q43",
+    "text": "Turkey"
+  },
+  "prediction_text": "Turkey",
+  "expanded_query": "What country is the school of Bitter Life director located in!",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_d6de5558a6c3::1",
+      "title": "In which country is the school attended by the director of Bitter Life located?",
+      "body": "Bitter Life was directed by Metin Erksan. Metin Erksan studied at Istanbul University. Istanbul University is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q12835393",
+      "metadata": {
+        "question_id": "qa_d6de5558a6c3",
+        "template": "film_director_education_country",
+        "question_type": "three_hop"
+      },
+      "score": -30.002547954114792,
+      "snippet": "Bitter Life was directed by Metin Erksan. Metin Erksan studied at Istanbul University. Istanbul University is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_d8aa86c24033::1",
+      "title": "Where was the director of Bitter Life born?",
+      "body": "Bitter Life was directed by Metin Erksan. Metin Erksan was born in Çanakkale Province.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q12835393",
+      "metadata": {
+        "question_id": "qa_d8aa86c24033",
+        "template": "film_director_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -20.597347910525173,
+      "snippet": "Bitter Life was directed by Metin Erksan. Metin Erksan was born in Çanakkale Province."
+    },
+    {
+      "doc_id": "path::qa_dcba1b612c86::1",
+      "title": "Where did the director of Bitter Life study?",
+      "body": "Bitter Life was directed by Metin Erksan. Metin Erksan studied at Istanbul University.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q12835393",
+      "metadata": {
+        "question_id": "qa_dcba1b612c86",
+        "template": "film_director_education",
+        "question_type": "two_hop"
+      },
+      "score": -20.074986586011313,
+      "snippet": "Bitter Life was directed by Metin Erksan. Metin Erksan studied at Istanbul University."
+    },
+    {
+      "doc_id": "fact::Q12835393::P57::Q936089",
+      "title": "Bitter Life (film) - director",
+      "body": "Bitter Life (film) was directed by metin erksan. Relation type: director. Source roles: film. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q12835393",
+      "metadata": {
+        "source_id": "Q12835393",
+        "target_id": "Q936089",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -19.415089186731315,
+      "snippet": "Bitter Life (film) was directed by metin erksan. Relation type: director. Source roles: film. Target roles: director."
+    },
+    {
+      "doc_id": "entity::Q12835393",
+      "title": "Bitter Life (film)",
+      "body": "Bitter Life (film). Description: Bitter Life (Turkish: Acı Hayat) is a 1962 Turkish drama film directed by Metin Erksan. Aliases: Bitter Life (film), bitter life (film). Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q12835393",
+      "metadata": {
+        "entity_id": "Q12835393",
+        "aliases": [
+          "Bitter Life (film)",
+          "bitter life (film)"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -19.292949152945365,
+      "snippet": "Bitter Life (film). Description: Bitter Life (Turkish: Acı Hayat) is a 1962 Turkish drama film directed by Metin Erksan. Aliases: Bitter Life (film), bitter life (film). Roles: film. Domains: cinema, film, turkiye."
+    },
+    {
+      "doc_id": "fact::Q12835393::P495::Q43",
+      "title": "Bitter Life (film) - country of origin",
+      "body": "Bitter Life (film) has country of origin turkiye. Relation type: country of origin. Source roles: film. Target roles: birth_place, country, country_root.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q12835393",
+      "metadata": {
+        "source_id": "Q12835393",
+        "target_id": "Q43",
+        "relation_id": "P495",
+        "relation_label": "country of origin"
+      },
+      "score": -16.98715335189797,
+      "snippet": "Bitter Life (film) has country of origin turkiye. Relation type: country of origin. Source roles: film. Target roles: birth_place, country, country_root."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:11:21.856287+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 747,
+    "remaining_tokens": 11583,
+    "reset_requests_seconds": 21859.2,
+    "reset_tokens_seconds": 2.085,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:11:22 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "747",
+      "x-ratelimit-remaining-tokens": "11583",
+      "x-ratelimit-reset-requests": "6h4m19.2s",
+      "x-ratelimit-reset-tokens": "2.085s",
+      "x-request-id": "req_01kpgbf7sje8p8m28q6njvdfvf",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=vIVdFotc3gjoKfhvtppvzaKJV_DPbe0R4lYxlCGUTRs-1776517881.6299-1.0.1.1-k4ou04EiUlpyaNvrFseB6ayAex_C.cxGatZhYFY8iU0nHJnAWUCLweJLkzNS49DPqV8YlHRlcBwigGGdq_GB4h4uWUilyqZ46AY6bbkhzfYwM0ZgX.ym1TRsedr_SpZh; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:41:22 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3ea382ea7165d-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "turkey",
+    "gold_normalized": "turkey",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

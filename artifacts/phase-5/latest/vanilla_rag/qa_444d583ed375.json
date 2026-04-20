@@ -1,0 +1,174 @@
+{
+  "created_at": "2026-04-18T13:03:02.185677+00:00",
+  "status": "success",
+  "method": "vanilla_rag",
+  "question_id": "qa_444d583ed375",
+  "question": "Where was Berk Hakman, a cast member of Beyond the Hill, born?",
+  "question_type": "two_hop",
+  "template": "film_cast_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q3640",
+    "text": "Ankara"
+  },
+  "prediction_text": "Ankara",
+  "expanded_query": null,
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_444d583ed375::1",
+      "title": "Where was Berk Hakman, a cast member of Beyond the Hill, born?",
+      "body": "Beyond the Hill has cast member Berk Hakman. Berk Hakman was born in Ankara.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6084082",
+      "metadata": {
+        "question_id": "qa_444d583ed375",
+        "template": "film_cast_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -48.334316328272024,
+      "snippet": "Beyond the Hill has cast member Berk Hakman. Berk Hakman was born in Ankara."
+    },
+    {
+      "doc_id": "fact::Q6084082::P161::Q6093425",
+      "title": "Beyond the Hill - cast member",
+      "body": "Beyond the Hill has cast member berk hakman. Relation type: cast member. Source roles: film. Target roles: cast_member.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6084082",
+      "metadata": {
+        "source_id": "Q6084082",
+        "target_id": "Q6093425",
+        "relation_id": "P161",
+        "relation_label": "cast member"
+      },
+      "score": -34.86534549406196,
+      "snippet": "Beyond the Hill has cast member berk hakman. Relation type: cast member. Source roles: film. Target roles: cast_member."
+    },
+    {
+      "doc_id": "entity::Q6093425",
+      "title": "berk hakman",
+      "body": "berk hakman. Description: Berk Hakman (born 14 August 1981) is a Turkish film and television actor. Aliases: berk hakman, Berk Hakman. Roles: cast_member. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q6093425",
+      "metadata": {
+        "entity_id": "Q6093425",
+        "aliases": [
+          "berk hakman",
+          "Berk Hakman"
+        ],
+        "roles": [
+          "cast_member"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -24.27970730168923,
+      "snippet": "berk hakman. Description: Berk Hakman (born 14 August 1981) is a Turkish film and television actor. Aliases: berk hakman, Berk Hakman. Roles: cast_member. Domains: cinema, people, turkiye."
+    },
+    {
+      "doc_id": "fact::Q6093425::P19::Q3640",
+      "title": "berk hakman - place of birth",
+      "body": "berk hakman was born in Angora, Turkey. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6093425",
+      "metadata": {
+        "source_id": "Q6093425",
+        "target_id": "Q3640",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -22.02351198848065,
+      "snippet": "berk hakman was born in Angora, Turkey. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place."
+    },
+    {
+      "doc_id": "entity::Q6084082",
+      "title": "Beyond the Hill",
+      "body": "Beyond the Hill. Description: Beyond the Hill (Turkish: Tepenin Ardı) is a 2012 Turkish drama film directed by Emin Alper. Aliases: Beyond the Hill, beyond the hill, tepenin ardı, Tepenin Ardı. Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q6084082",
+      "metadata": {
+        "entity_id": "Q6084082",
+        "aliases": [
+          "Beyond the Hill",
+          "beyond the hill",
+          "tepenin ardı",
+          "Tepenin Ardı"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -21.92277537392579,
+      "snippet": "Beyond the Hill. Description: Beyond the Hill (Turkish: Tepenin Ardı) is a 2012 Turkish drama film directed by Emin Alper. Aliases: Beyond the Hill, beyond the hill, tepenin ardı, Tepenin Ardı. Roles: film. Domains: c..."
+    },
+    {
+      "doc_id": "fact::Q6084082::P495::Q41",
+      "title": "Beyond the Hill - country of origin",
+      "body": "Beyond the Hill has country of origin hellada. Relation type: country of origin. Source roles: film. Target roles: country.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6084082",
+      "metadata": {
+        "source_id": "Q6084082",
+        "target_id": "Q41",
+        "relation_id": "P495",
+        "relation_label": "country of origin"
+      },
+      "score": -19.236879406946947,
+      "snippet": "Beyond the Hill has country of origin hellada. Relation type: country of origin. Source roles: film. Target roles: country."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:03:02.177672+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 802,
+    "remaining_tokens": 11592,
+    "reset_requests_seconds": 17107.2,
+    "reset_tokens_seconds": 2.04,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:03:02 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "802",
+      "x-ratelimit-remaining-tokens": "11592",
+      "x-ratelimit-reset-requests": "4h45m7.2s",
+      "x-ratelimit-reset-tokens": "2.04s",
+      "x-request-id": "req_01kpgb001yf1cs8a8gsa6z3ptk",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=JAFzx1n.QmYmpkqgcmZ_8D82DyWPjSyTdo3rQldf7oM-1776517382.184986-1.0.1.1-cOjGUWlDp0tLGmtDn2xnCI.PeNt0mwwhVCJgJxhdoPHFKQitGVNCkbu2C4qPA6Pt15AdKX5Z0G46I4dsvpOZoRsDDajblnLetjbQoM1df_As9A4QAS1A5mwI_fFKUFbh; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:33:02 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3de06aefeb8c8-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "ankara",
+    "gold_normalized": "ankara",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

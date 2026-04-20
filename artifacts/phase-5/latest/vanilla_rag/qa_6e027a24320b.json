@@ -1,0 +1,149 @@
+{
+  "created_at": "2026-04-18T13:13:47.057058+00:00",
+  "status": "success",
+  "method": "vanilla_rag",
+  "question_id": "qa_6e027a24320b",
+  "question": "Were Tülin Özen from 10 To 11 and Asuman Dabak from Adem'in Trenleri born in the same country?",
+  "question_type": "comparison",
+  "template": "film_cast_birth_place_country__comparison",
+  "difficulty": "very_hard",
+  "gold_answer": {
+    "entity_id": null,
+    "text": "yes"
+  },
+  "prediction_text": "Yes.",
+  "expanded_query": null,
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_6e027a24320b::2",
+      "title": "Were Tülin Özen from 10 To 11 and Asuman Dabak from Adem'in Trenleri born in the same country?",
+      "body": "Adem'in Trenleri has cast member Asuman Dabak. Asuman Dabak was born in Akhisar. Akhisar is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q3459778",
+      "metadata": {
+        "question_id": "qa_6e027a24320b",
+        "template": "film_cast_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -84.21192043126686,
+      "snippet": "Adem'in Trenleri has cast member Asuman Dabak. Asuman Dabak was born in Akhisar. Akhisar is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_6e027a24320b::1",
+      "title": "Were Tülin Özen from 10 To 11 and Asuman Dabak from Adem'in Trenleri born in the same country?",
+      "body": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun. İskenderun is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q3459778",
+      "metadata": {
+        "question_id": "qa_6e027a24320b",
+        "template": "film_cast_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -82.98343048035673,
+      "snippet": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun. İskenderun is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_25e417879724::1",
+      "title": "Were Tülin Özen from 10 To 11 and Seiyō Uchino from 125 Years Memory born in the same country?",
+      "body": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun. İskenderun is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q3459778",
+      "metadata": {
+        "question_id": "qa_25e417879724",
+        "template": "film_cast_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -56.85100419093741,
+      "snippet": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun. İskenderun is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_25e417879724::2",
+      "title": "Were Tülin Özen from 10 To 11 and Seiyō Uchino from 125 Years Memory born in the same country?",
+      "body": "125 Years Memory has cast member Seiyō Uchino. Seiyō Uchino was born in Kōhoku-ku. Kōhoku-ku is located in Japan.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q3459778",
+      "metadata": {
+        "question_id": "qa_25e417879724",
+        "template": "film_cast_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -46.87413824706017,
+      "snippet": "125 Years Memory has cast member Seiyō Uchino. Seiyō Uchino was born in Kōhoku-ku. Kōhoku-ku is located in Japan."
+    },
+    {
+      "doc_id": "path::qa_95049c4cd79a::1",
+      "title": "Where was Asuman Dabak, a cast member of Adem'in Trenleri, born?",
+      "body": "Adem'in Trenleri has cast member Asuman Dabak. Asuman Dabak was born in Akhisar.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6087125",
+      "metadata": {
+        "question_id": "qa_95049c4cd79a",
+        "template": "film_cast_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -42.5932189025892,
+      "snippet": "Adem'in Trenleri has cast member Asuman Dabak. Asuman Dabak was born in Akhisar."
+    },
+    {
+      "doc_id": "path::qa_6c10516be4d1::1",
+      "title": "Where was Tülin Özen, a cast member of 10 To 11, born?",
+      "body": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q3459778",
+      "metadata": {
+        "question_id": "qa_6c10516be4d1",
+        "template": "film_cast_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -37.77335877642582,
+      "snippet": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:13:47.047159+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 719,
+    "remaining_tokens": 11483,
+    "reset_requests_seconds": 24278.4,
+    "reset_tokens_seconds": 2.585,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:13:47 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "719",
+      "x-ratelimit-remaining-tokens": "11483",
+      "x-ratelimit-reset-requests": "6h44m38.4s",
+      "x-ratelimit-reset-tokens": "2.585s",
+      "x-request-id": "req_01kpgbknv7fqzaht6p2k7ywmwx",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=ApV8R9QSv2D7GUEodnr2K0K4KIg0lK8v8Wx9t7dnVfk-1776518027.08868-1.0.1.1-azueN8sP868rWr7a.Xau_OdiTksNcsRyClQ94SIlxrgr01KOJZ7tMJaSQ90MiTfN1B7hbWMJ6IKKWioUS4.GOp7pDNdzhzYGDgiHQHwK1hfXVWJ1i000HmamZwm59VrU; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:43:47 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3edc54c8c1a64-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "yes",
+    "gold_normalized": "yes",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

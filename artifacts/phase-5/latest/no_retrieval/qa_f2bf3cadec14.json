@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T12:57:37.789417+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_f2bf3cadec14",
+  "question": "Which award was received by the director of King of the Doormen?",
+  "question_type": "two_hop",
+  "template": "film_director_award",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q7650000",
+    "text": "The Sutherland Trophy"
+  },
+  "prediction_text": "Unknown",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:57:37.781399+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 863,
+    "remaining_tokens": 11833,
+    "reset_requests_seconds": 11836.8,
+    "reset_tokens_seconds": 0.835,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:57:37 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "863",
+      "x-ratelimit-remaining-tokens": "11833",
+      "x-ratelimit-reset-requests": "3h17m16.8s",
+      "x-ratelimit-reset-tokens": "835ms",
+      "x-request-id": "req_01kpgap3bhe0vrbfw7tqgevmvr",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=mYWsG.CJ3HDB2nvyqh4VGvLyTPUrHQ3YeDQhhw2aC1c-1776517057.8824823-1.0.1.1-NQFLj8IkIKFP05cZki.lrh6i7aE8YHZr5xznhbR9L4VjL7TiRkAj4h5ovKW6yMrgiIz3eTmnOzrBLHuHLMG3e61x70mL59.IrtZC6QPGL2f8VPzbwSNBKlcO9665pcnA; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:27:37 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3d61bca60a61b-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "unknown",
+    "gold_normalized": "the sutherland trophy",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

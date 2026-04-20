@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T13:01:45.179464+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_f7df086d2062",
+  "question": "Where was Tamer Karadağlı, a cast member of Alina, born?",
+  "question_type": "two_hop",
+  "template": "film_cast_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q3640",
+    "text": "Ankara"
+  },
+  "prediction_text": "Unknown",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:01:45.165382+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 815,
+    "remaining_tokens": 11896,
+    "reset_requests_seconds": 15984.0,
+    "reset_tokens_seconds": 0.52,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:01:45 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "815",
+      "x-ratelimit-remaining-tokens": "11896",
+      "x-ratelimit-reset-requests": "4h26m24s",
+      "x-ratelimit-reset-tokens": "520ms",
+      "x-request-id": "req_01kpgaxmy8ekfrz5938g7x8a0t",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=ooRPMd.maOcG0.2Ati9hoSkNjRz6pCb8SEwAvCbl2FU-1776517305.2683835-1.0.1.1-0Z1moar4tZt6MN0Zu7QCVuFOTPCiUPbtPJFxtPjXIFDiGNnybGLBgjkDH05xLhRcmLRTwNsLcv3ca.qMYV17Lfuj_c0DIg0y29y5e_zeNz0q3y2SaQ1iXI5icg83D8dw; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:31:45 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3dc25e8e7e430-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "unknown",
+    "gold_normalized": "ankara",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-04-18T08:46:00.027128+00:00",
+  "question_count": 50,
+  "distribution": {
+    "question_type": {
+      "two_hop": 30,
+      "three_hop": 15,
+      "comparison": 5
+    },
+    "template": {
+      "film_director_birth_place": 8,
+      "film_director_award": 4,
+      "film_director_education": 5,
+      "film_cast_birth_place": 8,
+      "film_cast_award": 5,
+      "film_director_birth_place_country": 5,
+      "film_director_education_country": 5,
+      "film_cast_birth_place_country": 5,
+      "film_director_birth_place_country__comparison": 2,
+      "film_director_education_country__comparison": 1,
+      "film_cast_birth_place_country__comparison": 2
+    },
+    "difficulty": {
+      "medium": 30,
+      "hard": 15,
+      "very_hard": 5
+    },
+    "hop_count": {
+      "2": 30,
+      "3": 20
+    }
+  },
+  "pool_counts": {
+    "film_director_birth_place": 132,
+    "film_director_award": 12,
+    "film_director_education": 22,
+    "film_cast_birth_place": 187,
+    "film_cast_award": 25,
+    "film_director_birth_place_country": 56,
+    "film_director_education_country": 22,
+    "film_cast_birth_place_country": 179
+  },
+  "selected_counts": {
+    "film_director_birth_place": 8,
+    "film_director_award": 4,
+    "film_director_education": 5,
+    "film_cast_birth_place": 8,
+    "film_cast_award": 5,
+    "film_director_birth_place_country": 5,
+    "film_director_education_country": 5,
+    "film_cast_birth_place_country": 5,
+    "comparison": 5
+  },
+  "validation": {
+    "verified_questions": 50,
+    "failed_questions": 0,
+    "required_triple_count": 94,
+    "verified_triple_count": 94
+  },
+  "paths": {
+    "append_only_jsonl": "C:\\Users\\AFTek\\Desktop\\sna\\artifacts\\phase-4\\accepted_questions.jsonl",
+    "dataset_json": "C:\\Users\\AFTek\\Desktop\\sna\\artifacts\\phase-4\\turkiye_cinema_multihop_qa.json",
+    "dataset_jsonl": "C:\\Users\\AFTek\\Desktop\\sna\\artifacts\\phase-4\\turkiye_cinema_multihop_qa.jsonl",
+    "raw_verification": "C:\\Users\\AFTek\\Desktop\\sna\\artifacts\\phase-4\\raw_triple_verification.json"
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "created_at": "2026-04-18T12:49:06.273550+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_fd2bb20d9589",
+  "question": "In which country was Aliye Rona, a cast member of Bloody Money, born?",
+  "question_type": "three_hop",
+  "template": "film_cast_birth_place_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q858",
+    "text": "Syria"
+  },
+  "prediction_text": "Syria",
+  "match": {
+    "prediction_normalized": "syria",
+    "gold_normalized": "syria",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q4727547",
+      "entity_name": "aliye rona",
+      "roles": [
+        "cast_member"
+      ],
+      "source": "lexicon",
+      "score": 16
+    }
+  ],
+  "relation_path": [
+    "P19",
+    "P17"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q4727547"
+      ],
+      "candidate_count": 2,
+      "selected_triples": [
+        {
+          "source_id": "Q4727547",
+          "source_name": "aliye rona",
+          "source_roles": [
+            "cast_member"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q238217",
+          "target_name": "Dar`a",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 16.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q238217"
+      ],
+      "candidate_count": 1,
+      "selected_triples": [
+        {
+          "source_id": "Q238217",
+          "source_name": "Dar`a",
+          "source_roles": [
+            "birth_place"
+          ],
+          "relation_id": "P17",
+          "relation_label": "country",
+          "target_id": "Q858",
+          "target_name": "Syria",
+          "target_roles": [
+            "country"
+          ],
+          "score": 21.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q4727547",
+        "seed_entity_name": "aliye rona",
+        "final_answers": [
+          {
+            "entity_id": "Q858",
+            "entity_name": "Syria"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q858"
+    ],
+    "candidate_texts": [
+      "Syria"
+    ],
+    "answer_text": "Syria"
+  },
+  "kg_summary": "aliye rona was born in Dar`a. Dar`a is located in Syria.",
+  "expanded_query": "Aliye Rona birth country.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_fd2bb20d9589::1",
+      "title": "In which country was Aliye Rona, a cast member of Bloody Money, born?",
+      "body": "Bloody Money has cast member Aliye Rona. Aliye Rona was born in Daraa. Daraa is located in Syria.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q25999900",
+      "metadata": {
+        "question_id": "qa_fd2bb20d9589",
+        "template": "film_cast_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -20.398250150824545,
+      "snippet": "Bloody Money has cast member Aliye Rona. Aliye Rona was born in Daraa. Daraa is located in Syria."
+    },
+    {
+      "doc_id": "fact::Q4727547::P27::Q43",
+      "title": "aliye rona - country of citizenship",
+      "body": "aliye rona has country of citizenship turkiye. Relation type: country of citizenship. Source roles: cast_member. Target roles: birth_place, country, country_root.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q4727547",
+      "metadata": {
+        "source_id": "Q4727547",
+        "target_id": "Q43",
+        "relation_id": "P27",
+        "relation_label": "country of citizenship"
+      },
+      "score": -19.777906285749214,
+      "snippet": "aliye rona has country of citizenship turkiye. Relation type: country of citizenship. Source roles: cast_member. Target roles: birth_place, country, country_root."
+    },
+    {
+      "doc_id": "entity::Q4727547",
+      "title": "aliye rona",
+      "body": "aliye rona. Description: Aliye Rona (née Dilligil, 1921 – 29 August 1996) was a Turkish film actress starring in more than 130 movies, mostly of drama and romance genre, from 1947 until her death.She was born in Daraa, French Mandate for Syria and the Lebanon (today southwestern Syria). After acting in theater, she transferred to cinema in 1947.Aliye Rona, who was sister of Avni Dilligil, actor, screenwriter and film director, and had a marriage with the actor Zihni Rona, died on 29 August 1996 in Istanbul. Aliases: aliye rona, Aliye Rona. Roles: cast_member. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q4727547",
+      "metadata": {
+        "entity_id": "Q4727547",
+        "aliases": [
+          "aliye rona",
+          "Aliye Rona"
+        ],
+        "roles": [
+          "cast_member"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -19.014757031244095,
+      "snippet": "aliye rona. Description: Aliye Rona (née Dilligil, 1921 – 29 August 1996) was a Turkish film actress starring in more than 130 movies, mostly of drama and romance genre, from 1947 until her death.She was born in Daraa..."
+    },
+    {
+      "doc_id": "fact::Q4727547::P19::Q238217",
+      "title": "aliye rona - place of birth",
+      "body": "aliye rona was born in dera'a. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q4727547",
+      "metadata": {
+        "source_id": "Q4727547",
+        "target_id": "Q238217",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -19.000446080998394,
+      "snippet": "aliye rona was born in dera'a. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place."
+    },
+    {
+      "doc_id": "fact::Q6070626::P161::Q4727547",
+      "title": "Şabaniye - cast member",
+      "body": "Şabaniye has cast member aliye rona. Relation type: cast member. Source roles: film. Target roles: cast_member.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6070626",
+      "metadata": {
+        "source_id": "Q6070626",
+        "target_id": "Q4727547",
+        "relation_id": "P161",
+        "relation_label": "cast member"
+      },
+      "score": -15.207829671290915,
+      "snippet": "Şabaniye has cast member aliye rona. Relation type: cast member. Source roles: film. Target roles: cast_member."
+    },
+    {
+      "doc_id": "fact::Q25999900::P161::Q4727547",
+      "title": "kanli para - cast member",
+      "body": "kanli para has cast member aliye rona. Relation type: cast member. Source roles: film. Target roles: cast_member.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q25999900",
+      "metadata": {
+        "source_id": "Q25999900",
+        "target_id": "Q4727547",
+        "relation_id": "P161",
+        "relation_label": "cast member"
+      },
+      "score": -14.896916205938782,
+      "snippet": "kanli para has cast member aliye rona. Relation type: cast member. Source roles: film. Target roles: cast_member."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T12:49:01.292368+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 899,
+      "remaining_tokens": 11882,
+      "reset_requests_seconds": 8726.4,
+      "reset_tokens_seconds": 0.59,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:49:01 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "899",
+        "x-ratelimit-remaining-tokens": "11882",
+        "x-ratelimit-reset-requests": "2h25m26.4s",
+        "x-ratelimit-reset-tokens": "590ms",
+        "x-request-id": "req_01kpga6ay0f01ttkx5ags9j3pp",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=GULKZMGz0kLhZFu5RGourH3cN14w8Y7q4VFATFt0t1U-1776516541.3549418-1.0.1.1-8KG_.8pOUxLbab9gCnhvY6U5Aqblrnt6LrPt329PjZSQdXdXjoaL3xtNEYVVKRgevhsjPcNOxcpRqJA.8viBSbKpnO7hBogeK.pXXjC_L6UBPmeFEDLE5RsezTc7Flwq; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:19:01 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3c97f7f541a64-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T12:49:06.262964+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 898,
+      "remaining_tokens": 11476,
+      "reset_requests_seconds": 8812.8,
+      "reset_tokens_seconds": 2.62,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:49:06 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "898",
+        "x-ratelimit-remaining-tokens": "11476",
+        "x-ratelimit-reset-requests": "2h26m52.8s",
+        "x-ratelimit-reset-tokens": "2.62s",
+        "x-request-id": "req_01kpga6fszf0mbd751kwxjdhcf",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=LT4iNe_QSEmwo6QjGn.loY9uDU2skLkIvCVL8x.fLEA-1776516546.3451433-1.0.1.1-AaK0irhEHSEL61z0X2wKiotGBrxMxWE93jBy.d_QlD4cpzUDYnQu4yRX837s0cEK4YOwX4mbKidooOlHJAU_FPbj8Us0ORW0jGFGdMZrbO7XLF.NRvca4PSelCv0CLtN; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:19:06 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3c99eaaf1dad2-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

@@ -1,0 +1,298 @@
+{
+  "created_at": "2026-04-18T12:51:28.923931+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_afcdaf7d352f",
+  "question": "Where was the director of Banker Bilo born?",
+  "question_type": "two_hop",
+  "template": "film_director_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q45301",
+    "text": "Trabzon"
+  },
+  "prediction_text": "Trabzon",
+  "match": {
+    "prediction_normalized": "trabzon",
+    "gold_normalized": "trabzon",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q6074077",
+      "entity_name": "banker bilo",
+      "roles": [
+        "film"
+      ],
+      "source": "lexicon",
+      "score": 20
+    }
+  ],
+  "relation_path": [
+    "P57",
+    "P19"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q6074077"
+      ],
+      "candidate_count": 3,
+      "selected_triples": [
+        {
+          "source_id": "Q6074077",
+          "source_name": "banker bilo",
+          "source_roles": [
+            "film"
+          ],
+          "relation_id": "P57",
+          "relation_label": "director",
+          "target_id": "Q3057501",
+          "target_name": "Ertem Egilmez",
+          "target_roles": [
+            "director"
+          ],
+          "score": 19.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q3057501"
+      ],
+      "candidate_count": 2,
+      "selected_triples": [
+        {
+          "source_id": "Q3057501",
+          "source_name": "Ertem Egilmez",
+          "source_roles": [
+            "director"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q45301",
+          "target_name": "Ardesen",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 16.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q6074077",
+        "seed_entity_name": "banker bilo",
+        "final_answers": [
+          {
+            "entity_id": "Q45301",
+            "entity_name": "Ardesen"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q45301"
+    ],
+    "candidate_texts": [
+      "Ardesen"
+    ],
+    "answer_text": "Ardesen"
+  },
+  "kg_summary": "banker bilo was directed by Ertem Egilmez. Ertem Egilmez was born in Ardesen.",
+  "expanded_query": "Where was Ertem Egilmez born, the director of Banker Bilo.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_afcdaf7d352f::1",
+      "title": "Where was the director of Banker Bilo born?",
+      "body": "Banker Bilo was directed by Ertem Eğilmez. Ertem Eğilmez was born in Trabzon.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6074077",
+      "metadata": {
+        "question_id": "qa_afcdaf7d352f",
+        "template": "film_director_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -45.926376936997535,
+      "snippet": "Banker Bilo was directed by Ertem Eğilmez. Ertem Eğilmez was born in Trabzon."
+    },
+    {
+      "doc_id": "fact::Q6074077::P57::Q3057501",
+      "title": "banker bilo - director",
+      "body": "banker bilo was directed by Ertem Egilmez. Relation type: director. Source roles: film. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6074077",
+      "metadata": {
+        "source_id": "Q6074077",
+        "target_id": "Q3057501",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -35.48144011450704,
+      "snippet": "banker bilo was directed by Ertem Egilmez. Relation type: director. Source roles: film. Target roles: director."
+    },
+    {
+      "doc_id": "entity::Q6074077",
+      "title": "banker bilo",
+      "body": "banker bilo. Description: Banker Bilo is a 1980 Turkish language comedy film directed and produced by Ertem Egilmez.The film features Ilyas Salman, Meral Zeren, Sener Sen and Ahu Tugba in the lead role. The film was one of the most popular Turkish comedy films released in 1980's. Aliases: banker bilo, Banker Bilo. Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q6074077",
+      "metadata": {
+        "entity_id": "Q6074077",
+        "aliases": [
+          "banker bilo",
+          "Banker Bilo"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -30.856821814261174,
+      "snippet": "banker bilo. Description: Banker Bilo is a 1980 Turkish language comedy film directed and produced by Ertem Egilmez.The film features Ilyas Salman, Meral Zeren, Sener Sen and Ahu Tugba in the lead role. The film was o..."
+    },
+    {
+      "doc_id": "path::qa_1d88f8ecd5cf::1",
+      "title": "Where was the director of Arabesk born?",
+      "body": "Arabesk was directed by Ertem Eğilmez. Ertem Eğilmez was born in Trabzon.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q1033926",
+      "metadata": {
+        "question_id": "qa_1d88f8ecd5cf",
+        "template": "film_director_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -27.077865410368826,
+      "snippet": "Arabesk was directed by Ertem Eğilmez. Ertem Eğilmez was born in Trabzon."
+    },
+    {
+      "doc_id": "path::qa_59798c8c1dd1::1",
+      "title": "Where was Ali Şen, a cast member of Banker Bilo, born?",
+      "body": "Banker Bilo has cast member Ali Şen. Ali Şen was born in Adana.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6074077",
+      "metadata": {
+        "question_id": "qa_59798c8c1dd1",
+        "template": "film_cast_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -27.048692704162896,
+      "snippet": "Banker Bilo has cast member Ali Şen. Ali Şen was born in Adana."
+    },
+    {
+      "doc_id": "entity::Q3057501",
+      "title": "Ertem Egilmez",
+      "body": "Ertem Egilmez. Description: Ertem Eğilmez (18 February 1929, Trabzon – 21 September 1989, Istanbul, Turkey) was a Turkish film director, producer and screenwriter. He is known as the name behind some of the most popular films in Turkish film history. Many of these were produced by his production company Arzu Film. Aliases: Ertem Egilmez, ertem eğilmez, Ertem Eğilmez, ertem egilmez. Roles: director. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q3057501",
+      "metadata": {
+        "entity_id": "Q3057501",
+        "aliases": [
+          "Ertem Egilmez",
+          "ertem eğilmez",
+          "Ertem Eğilmez",
+          "ertem egilmez"
+        ],
+        "roles": [
+          "director"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -20.245704099054166,
+      "snippet": "Ertem Egilmez. Description: Ertem Eğilmez (18 February 1929, Trabzon – 21 September 1989, Istanbul, Turkey) was a Turkish film director, producer and screenwriter. He is known as the name behind some of the most popul..."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T12:51:23.840096+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 875,
+      "remaining_tokens": 11874,
+      "reset_requests_seconds": 10800.0,
+      "reset_tokens_seconds": 0.63,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:51:24 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "875",
+        "x-ratelimit-remaining-tokens": "11874",
+        "x-ratelimit-reset-requests": "3h0m0s",
+        "x-ratelimit-reset-tokens": "630ms",
+        "x-request-id": "req_01kpgaanzyeem8082hjwxeyypn",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=pf3bmIIp8qwDJUHMR1WsOGu40_vc150JqZsw7oDuOpA-1776516683.7541056-1.0.1.1-Avp3ZV4kvGJMNUq05pFkAZTwNmoTls64cAZceUFHJrdRp.SwZHv7nOL_hOrQ06hjLZkjpA4wOwZqsLUuSmCxBUaSyTEdrQEIPk.aIUBup7pGaLwHGfTQGIg34.uIrvzN; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:21:24 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3ccf97837a98c-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T12:51:28.913581+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 874,
+      "remaining_tokens": 11427,
+      "reset_requests_seconds": 10886.4,
+      "reset_tokens_seconds": 2.865,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:51:29 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "874",
+        "x-ratelimit-remaining-tokens": "11427",
+        "x-ratelimit-reset-requests": "3h1m26.4s",
+        "x-ratelimit-reset-tokens": "2.865s",
+        "x-request-id": "req_01kpgaatvdfxq8j42j29acz5kb",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=gcyJDoo8bDfnWztpnrRn3Gi.se8A9C1NACw5wEBIUdo-1776516688.7274904-1.0.1.1-OmaxJQfEnW8RfeNffcA24NUN7VGht2fEGkUtURsWYheeh_8w.S4NLV4WWFf.LQybq7RPQ1CM4QH0kXm3em3Pnjnq8nEFzAtFOq1.RRUDVs.Dc_stG5Ivb9cPgthRplcb; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:21:29 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3cd188820788b-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

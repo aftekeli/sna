@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T12:51:33.626911+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_d8aa86c24033",
+  "question": "Where was the director of Bitter Life born?",
+  "question_type": "two_hop",
+  "template": "film_director_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q47813",
+    "text": "Çanakkale Province"
+  },
+  "prediction_text": "İzmir, Turkey",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:51:33.616444+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 873,
+    "remaining_tokens": 11902,
+    "reset_requests_seconds": 10972.8,
+    "reset_tokens_seconds": 0.489,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:51:33 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "873",
+      "x-ratelimit-remaining-tokens": "11902",
+      "x-ratelimit-reset-requests": "3h2m52.8s",
+      "x-ratelimit-reset-tokens": "489ms",
+      "x-request-id": "req_01kpgaazpjfyqsyc0y0bmr4k5n",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=cRs0L5f7SSemSp5DSjsZJrTtkI2WMhqDIoygmaEixqw-1776516693.6928334-1.0.1.1-Y8oYWJ5fulkUTYmqyM9jkjKRz2i_nw.CEHPKeKN8tfdUj0eTFFIUGgeD9QVhodJ2hnS7vKqQvq.MZnVF05w6bYPY0VQpjtLdO0ebFtCgHbbUaquaSPianDEOV1EfUGY2; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:21:33 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3cd379930ae50-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "izmir turkey",
+    "gold_normalized": "canakkale province",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "created_at": "2026-04-18T12:52:29.062245+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_d406bf48e837",
+  "question": "Which award was received by the director of Kanun namina?",
+  "question_type": "two_hop",
+  "template": "film_director_award",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q7241424",
+    "text": "Presidential Culture and Arts Grand Awards"
+  },
+  "prediction_text": "Presidential Culture and Arts Grand Awards",
+  "match": {
+    "prediction_normalized": "presidential culture and arts grand awards",
+    "gold_normalized": "presidential culture and arts grand awards",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q6083314",
+      "entity_name": "Kanun namina",
+      "roles": [
+        "film"
+      ],
+      "source": "lexicon",
+      "score": 21
+    }
+  ],
+  "relation_path": [
+    "P57",
+    "P166"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q6083314"
+      ],
+      "candidate_count": 4,
+      "selected_triples": [
+        {
+          "source_id": "Q6083314",
+          "source_name": "Kanun namina",
+          "source_roles": [
+            "film"
+          ],
+          "relation_id": "P57",
+          "relation_label": "director",
+          "target_id": "Q3176600",
+          "target_name": "Ömer Akad",
+          "target_roles": [
+            "director"
+          ],
+          "score": 19.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q3176600"
+      ],
+      "candidate_count": 3,
+      "selected_triples": [
+        {
+          "source_id": "Q3176600",
+          "source_name": "Ömer Akad",
+          "source_roles": [
+            "director"
+          ],
+          "relation_id": "P166",
+          "relation_label": "award received",
+          "target_id": "Q7241424",
+          "target_name": "Presidential Culture and Arts Grand Awards",
+          "target_roles": [
+            "award"
+          ],
+          "score": 18.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q6083314",
+        "seed_entity_name": "Kanun namina",
+        "final_answers": [
+          {
+            "entity_id": "Q7241424",
+            "entity_name": "Presidential Culture and Arts Grand Awards"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q7241424"
+    ],
+    "candidate_texts": [
+      "Presidential Culture and Arts Grand Awards"
+    ],
+    "answer_text": "Presidential Culture and Arts Grand Awards"
+  },
+  "kg_summary": "Kanun namina was directed by Ömer Akad. Ömer Akad received the award Presidential Culture and Arts Grand Awards.",
+  "expanded_query": "Ömer Akad, director of Kanun namina, received Presidential Culture and Arts Grand Awards.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_d406bf48e837::1",
+      "title": "Which award was received by the director of Kanun namina?",
+      "body": "Kanun namina was directed by Ömer Akad. Ömer Akad received the award Presidential Culture and Arts Grand Awards.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6083314",
+      "metadata": {
+        "question_id": "qa_d406bf48e837",
+        "template": "film_director_award",
+        "question_type": "two_hop"
+      },
+      "score": -70.29370863401532,
+      "snippet": "Kanun namina was directed by Ömer Akad. Ömer Akad received the award Presidential Culture and Arts Grand Awards."
+    },
+    {
+      "doc_id": "fact::Q3176600::P166::Q7241424",
+      "title": "lütfi akad - award received",
+      "body": "lütfi akad received the award Presidential Culture and Arts Grand Awards. Relation type: award received. Source roles: director. Target roles: award.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q3176600",
+      "metadata": {
+        "source_id": "Q3176600",
+        "target_id": "Q7241424",
+        "relation_id": "P166",
+        "relation_label": "award received"
+      },
+      "score": -46.41845282890585,
+      "snippet": "lütfi akad received the award Presidential Culture and Arts Grand Awards. Relation type: award received. Source roles: director. Target roles: award."
+    },
+    {
+      "doc_id": "entity::Q7241424",
+      "title": "Presidential Culture and Arts Grand Awards",
+      "body": "Presidential Culture and Arts Grand Awards. Description: Presidential Culture and Arts Grand Awards (Turkish: Cumhurbaşkanlığı Kültür ve Sanat Büyük Ödülleri) are the annual awards awarded by Presidency of Turkey. Aliases: Presidential Culture and Arts Grand Awards, presidential culture and arts grand awards. Roles: award. Domains: award, cinema, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q7241424",
+      "metadata": {
+        "entity_id": "Q7241424",
+        "aliases": [
+          "Presidential Culture and Arts Grand Awards",
+          "presidential culture and arts grand awards"
+        ],
+        "roles": [
+          "award"
+        ],
+        "domains": [
+          "award",
+          "cinema",
+          "turkiye"
+        ]
+      },
+      "score": -40.77474950029228,
+      "snippet": "Presidential Culture and Arts Grand Awards. Description: Presidential Culture and Arts Grand Awards (Turkish: Cumhurbaşkanlığı Kültür ve Sanat Büyük Ödülleri) are the annual awards awarded by Presidency of Turkey. Ali..."
+    },
+    {
+      "doc_id": "fact::Q7241424::P17::Q43",
+      "title": "Presidential Culture and Arts Grand Awards - country",
+      "body": "Presidential Culture and Arts Grand Awards is located in turkiye. Relation type: country. Source roles: award. Target roles: birth_place, country, country_root.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q7241424",
+      "metadata": {
+        "source_id": "Q7241424",
+        "target_id": "Q43",
+        "relation_id": "P17",
+        "relation_label": "country"
+      },
+      "score": -35.85413790813135,
+      "snippet": "Presidential Culture and Arts Grand Awards is located in turkiye. Relation type: country. Source roles: award. Target roles: birth_place, country, country_root."
+    },
+    {
+      "doc_id": "fact::Q3574282::P166::Q7241424",
+      "title": "yıldız kenter - award received",
+      "body": "yıldız kenter received the award Presidential Culture and Arts Grand Awards. Relation type: award received. Source roles: cast_member, person_seed. Target roles: award.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q3574282",
+      "metadata": {
+        "source_id": "Q3574282",
+        "target_id": "Q7241424",
+        "relation_id": "P166",
+        "relation_label": "award received"
+      },
+      "score": -35.20129930530168,
+      "snippet": "yıldız kenter received the award Presidential Culture and Arts Grand Awards. Relation type: award received. Source roles: cast_member, person_seed. Target roles: award."
+    },
+    {
+      "doc_id": "fact::Q1382418::P166::Q7241424",
+      "title": "Orhan Gencebay - award received",
+      "body": "Orhan Gencebay received the award Presidential Culture and Arts Grand Awards. Relation type: award received. Source roles: cast_member, person_seed. Target roles: award.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q1382418",
+      "metadata": {
+        "source_id": "Q1382418",
+        "target_id": "Q7241424",
+        "relation_id": "P166",
+        "relation_label": "award received"
+      },
+      "score": -35.20129930530168,
+      "snippet": "Orhan Gencebay received the award Presidential Culture and Arts Grand Awards. Relation type: award received. Source roles: cast_member, person_seed. Target roles: award."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T12:52:23.740423+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 863,
+      "remaining_tokens": 11872,
+      "reset_requests_seconds": 11836.8,
+      "reset_tokens_seconds": 0.64,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:52:23 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "863",
+        "x-ratelimit-remaining-tokens": "11872",
+        "x-ratelimit-reset-requests": "3h17m16.8s",
+        "x-ratelimit-reset-tokens": "640ms",
+        "x-request-id": "req_01kpgacgjnevr990edkh43n184",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=y7C0tC1RScgAHxMU4NkiL2SMdZm3OzXlpNYOpJAtKAk-1776516743.7438085-1.0.1.1-dWzQs8xvSVX867Of5D3qmNhXKrod9gnTa_RPGcBrPaxTy2ZlvgSMfwzoaVJLuTzDThy7N6gVbFz5R5qsfNJItInnZnIXzWP4ddxTCJ_USpphhUO9u.oEqwfyN0qy_CVI; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:22:23 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3ce706e754e44-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T12:52:29.053197+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 862,
+      "remaining_tokens": 11512,
+      "reset_requests_seconds": 11923.2,
+      "reset_tokens_seconds": 2.44,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:52:29 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "862",
+        "x-ratelimit-remaining-tokens": "11512",
+        "x-ratelimit-reset-requests": "3h18m43.2s",
+        "x-ratelimit-reset-tokens": "2.44s",
+        "x-request-id": "req_01kpgacngge8et54r0smjj0wec",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=vuY6Ajdr1PKWOlORY_4s0D1mXEIkuZR4duke4bmA6zU-1776516748.7915673-1.0.1.1-pbn6E.EunatGrLWdVpMx9FvXgGs6ppr700WBE9tHs0pgD1zjtk2FGZPztM1F9KfvbmncPcP9wf2_yF8NlIxSG5VoO2NuIML2LbwsY1tJh8U7jgWK9AQ1AJx9Wg0rFlR1; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:22:29 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3ce8ffe7eaeb3-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

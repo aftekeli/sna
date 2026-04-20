@@ -1,0 +1,227 @@
+{
+  "created_at": "2026-04-18T12:06:54.196220+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_284c5e0ceb83",
+  "question": "Which award was received by Nuri Bilge Ceylan, a cast member of Climates?",
+  "question_type": "two_hop",
+  "template": "film_cast_award",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q7241424",
+    "text": "Presidential Culture and Arts Grand Awards"
+  },
+  "prediction_text": "Presidential Culture and Arts Grand Awards",
+  "match": {
+    "prediction_normalized": "presidential culture and arts grand awards",
+    "gold_normalized": "presidential culture and arts grand awards",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q724172",
+      "entity_name": "nuri bilge ceylan",
+      "roles": [
+        "cast_member",
+        "person_seed"
+      ],
+      "source": "lexicon",
+      "score": 25
+    }
+  ],
+  "relation_path": [
+    "P166"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q724172"
+      ],
+      "candidate_count": 6,
+      "selected_triples": [
+        {
+          "source_id": "Q724172",
+          "source_name": "nuri bilge ceylan",
+          "source_roles": [
+            "cast_member",
+            "person_seed"
+          ],
+          "relation_id": "P166",
+          "relation_label": "award received",
+          "target_id": "Q510175",
+          "target_name": "Best Director Award",
+          "target_roles": [
+            "award"
+          ],
+          "score": 18.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q724172",
+        "seed_entity_name": "nuri bilge ceylan",
+        "final_answers": [
+          {
+            "entity_id": "Q510175",
+            "entity_name": "Best Director Award"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q510175"
+    ],
+    "candidate_texts": [
+      "Best Director Award"
+    ],
+    "answer_text": "Best Director Award"
+  },
+  "kg_summary": "nuri bilge ceylan received the award Best Director Award.",
+  "expanded_query": "Nuri Bilge Ceylan received the Best Director Award.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_284c5e0ceb83::1",
+      "title": "Which award was received by Nuri Bilge Ceylan, a cast member of Climates?",
+      "body": "Climates has cast member Nuri Bilge Ceylan. Nuri Bilge Ceylan received the award Presidential Culture and Arts Grand Awards.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q2758737",
+      "metadata": {
+        "question_id": "qa_284c5e0ceb83",
+        "template": "film_cast_award",
+        "question_type": "two_hop"
+      },
+      "score": -39.27783141609017,
+      "snippet": "Climates has cast member Nuri Bilge Ceylan. Nuri Bilge Ceylan received the award Presidential Culture and Arts Grand Awards."
+    },
+    {
+      "doc_id": "fact::Q724172::P166::Q844804",
+      "title": "nuri bilge ceylan - award received",
+      "body": "nuri bilge ceylan received the award Grand Prix (Cannes Festival). Relation type: award received. Source roles: cast_member, person_seed. Target roles: award.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q724172",
+      "metadata": {
+        "source_id": "Q724172",
+        "target_id": "Q844804",
+        "relation_id": "P166",
+        "relation_label": "award received"
+      },
+      "score": -39.0929445800193,
+      "snippet": "nuri bilge ceylan received the award Grand Prix (Cannes Festival). Relation type: award received. Source roles: cast_member, person_seed. Target roles: award."
+    },
+    {
+      "doc_id": "fact::Q724172::P166::Q179808",
+      "title": "nuri bilge ceylan - award received",
+      "body": "nuri bilge ceylan received the award palme d'or 1939–1959. Relation type: award received. Source roles: cast_member, person_seed. Target roles: award.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q724172",
+      "metadata": {
+        "source_id": "Q724172",
+        "target_id": "Q179808",
+        "relation_id": "P166",
+        "relation_label": "award received"
+      },
+      "score": -38.876076300059445,
+      "snippet": "nuri bilge ceylan received the award palme d'or 1939–1959. Relation type: award received. Source roles: cast_member, person_seed. Target roles: award."
+    },
+    {
+      "doc_id": "fact::Q724172::P166::Q7241424",
+      "title": "nuri bilge ceylan - award received",
+      "body": "nuri bilge ceylan received the award Presidential Culture and Arts Grand Awards. Relation type: award received. Source roles: cast_member, person_seed. Target roles: award.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q724172",
+      "metadata": {
+        "source_id": "Q724172",
+        "target_id": "Q7241424",
+        "relation_id": "P166",
+        "relation_label": "award received"
+      },
+      "score": -38.66172233285766,
+      "snippet": "nuri bilge ceylan received the award Presidential Culture and Arts Grand Awards. Relation type: award received. Source roles: cast_member, person_seed. Target roles: award."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T12:06:53.541380+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 934,
+      "remaining_tokens": 11529,
+      "reset_requests_seconds": 5702.4,
+      "reset_tokens_seconds": 2.355,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:06:53 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "934",
+        "x-ratelimit-remaining-tokens": "11529",
+        "x-ratelimit-reset-requests": "1h35m2.4s",
+        "x-ratelimit-reset-tokens": "2.355s",
+        "x-request-id": "req_01kpg7s6e4fw585v9xxndstreq",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=Y6hnSknRDatxuI1bz0blmdIK78cKqAfUc7ik8zeGpOs-1776514013.6125183-1.0.1.1-VL.LpaH7lxLTXJFVeYDaAP6N5Hnen2gxKbDmFjQKP8PsB78x.ihOjBuixFMpC4TLT0CkmTacyV8XpL2l.7faScTslhqeoue9CRY6e95jWQ3P_jPDjg_AcCgtQzSVaGeo; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:36:53 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee38bc91b221347-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T12:06:54.194719+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 933,
+      "remaining_tokens": 11291,
+      "reset_requests_seconds": 5788.8,
+      "reset_tokens_seconds": 3.545,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:06:54 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "933",
+        "x-ratelimit-remaining-tokens": "11291",
+        "x-ratelimit-reset-requests": "1h36m28.8s",
+        "x-ratelimit-reset-tokens": "3.545s",
+        "x-request-id": "req_01kpg7s72pfw7s9v25cq6z9zs2",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=yFN9YXDLTbpN3HMWGkJFSkHxwycTsMPG1HVr4.sfysk-1776514014.273363-1.0.1.1-Ukv6y98PKMPUfsslZC2rJsxdPsPdA76flsHGszIgXW7Vh85I2n2u_GRTuSbLzKlvzIVU0ziw2iXkNuQdMTpEUQP5SzcH6h5n4IpztC5224XCGgwBt9io61qmMYr8bB4l; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:36:54 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee38bcd3b95b0d2-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

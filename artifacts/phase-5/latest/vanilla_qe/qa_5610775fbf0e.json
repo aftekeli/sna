@@ -1,0 +1,174 @@
+{
+  "created_at": "2026-04-18T13:04:12.490742+00:00",
+  "status": "success",
+  "method": "vanilla_qe",
+  "question_id": "qa_5610775fbf0e",
+  "question": "Which award was received by Nora Marie Tschirner, a cast member of Kebab Connection?",
+  "question_type": "two_hop",
+  "template": "film_cast_award",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q873842",
+    "text": "The Romy TV award in honor of the Austrian-born actress Romy Schneider"
+  },
+  "prediction_text": "The Romy TV award or platinum romy.",
+  "expanded_query": "Nora Tschirner award from Kebab Connection.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_5610775fbf0e::1",
+      "title": "Which award was received by Nora Marie Tschirner, a cast member of Kebab Connection?",
+      "body": "Kebab Connection has cast member Nora Marie Tschirner. Nora Marie Tschirner received the award The Romy TV award in honor of the Austrian-born actress Romy Schneider.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q567579",
+      "metadata": {
+        "question_id": "qa_5610775fbf0e",
+        "template": "film_cast_award",
+        "question_type": "two_hop"
+      },
+      "score": -41.90085775293075,
+      "snippet": "Kebab Connection has cast member Nora Marie Tschirner. Nora Marie Tschirner received the award The Romy TV award in honor of the Austrian-born actress Romy Schneider."
+    },
+    {
+      "doc_id": "fact::Q567579::P161::Q63228",
+      "title": "Kebab Connection - cast member",
+      "body": "Kebab Connection has cast member Nora Tschirner. Relation type: cast member. Source roles: film, film_seed. Target roles: cast_member, person_seed.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q567579",
+      "metadata": {
+        "source_id": "Q567579",
+        "target_id": "Q63228",
+        "relation_id": "P161",
+        "relation_label": "cast member"
+      },
+      "score": -33.093268982149205,
+      "snippet": "Kebab Connection has cast member Nora Tschirner. Relation type: cast member. Source roles: film, film_seed. Target roles: cast_member, person_seed."
+    },
+    {
+      "doc_id": "fact::Q63228::P166::Q873842",
+      "title": "Nora Tschirner - award received",
+      "body": "Nora Tschirner received the award platinum romy. Relation type: award received. Source roles: cast_member, person_seed. Target roles: award.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q63228",
+      "metadata": {
+        "source_id": "Q63228",
+        "target_id": "Q873842",
+        "relation_id": "P166",
+        "relation_label": "award received"
+      },
+      "score": -25.888718124381267,
+      "snippet": "Nora Tschirner received the award platinum romy. Relation type: award received. Source roles: cast_member, person_seed. Target roles: award."
+    },
+    {
+      "doc_id": "entity::Q63228",
+      "title": "Nora Tschirner",
+      "body": "Nora Tschirner. Description: Nora Marie Tschirner (born 12 June 1981) is a German film actress, musician and former television and radio presenter. Aliases: Nora Tschirner, nora tschirner. Roles: cast_member, person_seed. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q63228",
+      "metadata": {
+        "entity_id": "Q63228",
+        "aliases": [
+          "Nora Tschirner",
+          "nora tschirner"
+        ],
+        "roles": [
+          "cast_member",
+          "person_seed"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -22.14021785467268,
+      "snippet": "Nora Tschirner. Description: Nora Marie Tschirner (born 12 June 1981) is a German film actress, musician and former television and radio presenter. Aliases: Nora Tschirner, nora tschirner. Roles: cast_member, person_s..."
+    },
+    {
+      "doc_id": "entity::Q567579",
+      "title": "Kebab Connection",
+      "body": "Kebab Connection. Description: Kebab Connection is a 2004 German-Turkish comedy film, with some slapstick, set in Hamburg. Aliases: Kebab Connection, kebab connection. Roles: film, film_seed. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q567579",
+      "metadata": {
+        "entity_id": "Q567579",
+        "aliases": [
+          "Kebab Connection",
+          "kebab connection"
+        ],
+        "roles": [
+          "film",
+          "film_seed"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -21.06152246380931,
+      "snippet": "Kebab Connection. Description: Kebab Connection is a 2004 German-Turkish comedy film, with some slapstick, set in Hamburg. Aliases: Kebab Connection, kebab connection. Roles: film, film_seed. Domains: cinema, film, tu..."
+    },
+    {
+      "doc_id": "fact::Q63228::P27::Q183",
+      "title": "Nora Tschirner - country of citizenship",
+      "body": "Nora Tschirner has country of citizenship Germanz. Relation type: country of citizenship. Source roles: cast_member, person_seed. Target roles: country.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q63228",
+      "metadata": {
+        "source_id": "Q63228",
+        "target_id": "Q183",
+        "relation_id": "P27",
+        "relation_label": "country of citizenship"
+      },
+      "score": -19.195780502577563,
+      "snippet": "Nora Tschirner has country of citizenship Germanz. Relation type: country of citizenship. Source roles: cast_member, person_seed. Target roles: country."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:04:12.477122+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 788,
+    "remaining_tokens": 11502,
+    "reset_requests_seconds": 18316.8,
+    "reset_tokens_seconds": 2.49,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:04:12 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "788",
+      "x-ratelimit-remaining-tokens": "11502",
+      "x-ratelimit-reset-requests": "5h5m16.8s",
+      "x-ratelimit-reset-tokens": "2.49s",
+      "x-request-id": "req_01kpgb24f1ffrtt1n1s5vhctm3",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=tDAKiwuoLEJKuTw029pLJgcjig3wNNuChApeRw0Azg4-1776517452.237532-1.0.1.1-azKeSBovkIp6NJslLFA.C6xtTgEg9uYoW.VaNnDiC3.Ol4rInhvzdumt6I9nk_LiVm2ElfJq1c2agMb8KCnrannzj5dYV1bOrJcyj0V8jJfLxQ6TDUOYSyD1qLqfVoZX; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:34:12 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3dfbc7f4db657-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "the romy tv award or platinum romy",
+    "gold_normalized": "the romy tv award in honor of the austrian born actress romy schneider",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

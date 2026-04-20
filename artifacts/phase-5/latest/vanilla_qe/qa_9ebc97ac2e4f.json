@@ -1,0 +1,164 @@
+{
+  "created_at": "2026-04-18T12:58:22.973831+00:00",
+  "status": "success",
+  "method": "vanilla_qe",
+  "question_id": "qa_9ebc97ac2e4f",
+  "question": "Where did the director of Do Not Forget Me Istanbul study?",
+  "question_type": "two_hop",
+  "template": "film_director_education",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q4614",
+    "text": "The University of Southern California"
+  },
+  "prediction_text": "The University of Southern California.",
+  "expanded_query": "Director of Do Not Forget Me Istanbul's educational background.",
+  "retrieved_documents": [
+    {
+      "doc_id": "entity::Q20065085",
+      "title": "do not forget me istanbul",
+      "body": "do not forget me istanbul. Description: Do Not Forget Me Istanbul is a 2012 Greek / Turkish anthology film. Aliases: do not forget me istanbul, Do Not Forget Me Istanbul. Roles: film, film_seed. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q20065085",
+      "metadata": {
+        "entity_id": "Q20065085",
+        "aliases": [
+          "do not forget me istanbul",
+          "Do Not Forget Me Istanbul"
+        ],
+        "roles": [
+          "film",
+          "film_seed"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -37.710933467450545,
+      "snippet": "do not forget me istanbul. Description: Do Not Forget Me Istanbul is a 2012 Greek / Turkish anthology film. Aliases: do not forget me istanbul, Do Not Forget Me Istanbul. Roles: film, film_seed. Domains: cinema, film,..."
+    },
+    {
+      "doc_id": "fact::Q20065085::P57::Q2335956",
+      "title": "do not forget me istanbul - director",
+      "body": "do not forget me istanbul was directed by Stefan Arsenijevic. Relation type: director. Source roles: film, film_seed. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q20065085",
+      "metadata": {
+        "source_id": "Q20065085",
+        "target_id": "Q2335956",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -35.72675700297951,
+      "snippet": "do not forget me istanbul was directed by Stefan Arsenijevic. Relation type: director. Source roles: film, film_seed. Target roles: director."
+    },
+    {
+      "doc_id": "fact::Q20065085::P57::Q2374086",
+      "title": "do not forget me istanbul - director",
+      "body": "do not forget me istanbul was directed by Eric Nazarian. Relation type: director. Source roles: film, film_seed. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q20065085",
+      "metadata": {
+        "source_id": "Q20065085",
+        "target_id": "Q2374086",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -35.72675700297951,
+      "snippet": "do not forget me istanbul was directed by Eric Nazarian. Relation type: director. Source roles: film, film_seed. Target roles: director."
+    },
+    {
+      "doc_id": "fact::Q20065085::P57::Q2827768",
+      "title": "do not forget me istanbul - director",
+      "body": "do not forget me istanbul was directed by Aida Begic. Relation type: director. Source roles: film, film_seed. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q20065085",
+      "metadata": {
+        "source_id": "Q20065085",
+        "target_id": "Q2827768",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -35.72675700297951,
+      "snippet": "do not forget me istanbul was directed by Aida Begic. Relation type: director. Source roles: film, film_seed. Target roles: director."
+    },
+    {
+      "doc_id": "path::qa_9ebc97ac2e4f::1",
+      "title": "Where did the director of Do Not Forget Me Istanbul study?",
+      "body": "Do Not Forget Me Istanbul was directed by Eric Nazarian. Eric Nazarian studied at The University of Southern California.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q20065085",
+      "metadata": {
+        "question_id": "qa_9ebc97ac2e4f",
+        "template": "film_director_education",
+        "question_type": "two_hop"
+      },
+      "score": -34.24345294634164,
+      "snippet": "Do Not Forget Me Istanbul was directed by Eric Nazarian. Eric Nazarian studied at The University of Southern California."
+    },
+    {
+      "doc_id": "fact::Q20065085::P161::Q75176",
+      "title": "do not forget me istanbul - cast member",
+      "body": "do not forget me istanbul has cast member davrak. Relation type: cast member. Source roles: film, film_seed. Target roles: cast_member.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q20065085",
+      "metadata": {
+        "source_id": "Q20065085",
+        "target_id": "Q75176",
+        "relation_id": "P161",
+        "relation_label": "cast member"
+      },
+      "score": -32.46436644795249,
+      "snippet": "do not forget me istanbul has cast member davrak. Relation type: cast member. Source roles: film, film_seed. Target roles: cast_member."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:58:22.959036+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 854,
+    "remaining_tokens": 11577,
+    "reset_requests_seconds": 12614.4,
+    "reset_tokens_seconds": 2.114,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:58:23 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "854",
+      "x-ratelimit-remaining-tokens": "11577",
+      "x-ratelimit-reset-requests": "3h30m14.4s",
+      "x-ratelimit-reset-tokens": "2.114s",
+      "x-request-id": "req_01kpgaqfacf35sd91tk4sg9c52",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=.KV8Os_eavCzze_fmt044gJCUiFfzOultZ7DfZu0olU-1776517102.9032166-1.0.1.1-koqmCdoS2Wt.i0XV5J_vmKiRxoyiLvkeRH9S3s9Y9TDGfi2b9Yzqh8FNc9dHb5ZrGPSHFmNPsMzbNnBTWXkuWyi4H4752.g.pbgpRj7lgh6Q32m.3HzFjND6cGlQXNFE; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:28:23 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3d735296d26ad-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "the university of southern california",
+    "gold_normalized": "the university of southern california",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

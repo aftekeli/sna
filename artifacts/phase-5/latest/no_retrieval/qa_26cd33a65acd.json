@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T09:03:41.115532+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_26cd33a65acd",
+  "question": "Where was the director of Aci Zafer born?",
+  "question_type": "two_hop",
+  "template": "film_director_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q35997",
+    "text": "İzmir"
+  },
+  "prediction_text": "Unknown",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T09:03:41.112093+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 991,
+    "remaining_tokens": 11928,
+    "reset_requests_seconds": 777.599,
+    "reset_tokens_seconds": 0.36,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 09:03:41 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "991",
+      "x-ratelimit-remaining-tokens": "11928",
+      "x-ratelimit-reset-requests": "12m57.599s",
+      "x-ratelimit-reset-tokens": "360ms",
+      "x-request-id": "req_01kpfx9qk2egas1sq8qkmk92za",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=qtJZAZVJfVZ7_HpXvCNGiCKOiULFaojkLmbjct_yBAY-1776503021.131366-1.0.1.1-QIeGqU7hzAfjhxm60ADj8.Af1abRpeKSjTihFQHx._suzdj3B1OshxYrZXGE63YZ757zXQT8mJ_LpOH5_YlX9xl9bdkUiGJ5Bz5iSinTdb9fwHINTfUrQtlq.IFFv0Yv; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 09:33:41 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee27f6a1e4dad37-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "unknown",
+    "gold_normalized": "izmir",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T12:48:41.338250+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_fd2bb20d9589",
+  "question": "In which country was Aliye Rona, a cast member of Bloody Money, born?",
+  "question_type": "three_hop",
+  "template": "film_cast_birth_place_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q858",
+    "text": "Syria"
+  },
+  "prediction_text": "Turkey",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:48:41.328355+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 903,
+    "remaining_tokens": 11913,
+    "reset_requests_seconds": 8380.8,
+    "reset_tokens_seconds": 0.435,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:48:41 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "903",
+      "x-ratelimit-remaining-tokens": "11913",
+      "x-ratelimit-reset-requests": "2h19m40.8s",
+      "x-ratelimit-reset-tokens": "435ms",
+      "x-request-id": "req_01kpga5qbhewcva4743hf84gfd",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=rXYxstkHcUW7oXpuVUWrdkQq20mlEHZNZkGpbd5MEQ0-1776516521.3074584-1.0.1.1-Ziy4YEA3ELnUXSrCOUtZGRFI1362_4qRFQsi.okec34IbwUMEc.2GuTTKai_392Ms2Nqdd_W780Lmu0lXFPRGO8slr8XvRZQyQQ3mdWV3X4fGmBSMGlzhBHTv7yi3iKC; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:18:41 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3c9022dc62ff7-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "turkey",
+    "gold_normalized": "syria",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

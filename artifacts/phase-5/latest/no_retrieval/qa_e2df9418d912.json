@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T12:10:58.380218+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_e2df9418d912",
+  "question": "Which award was received by Moritz Johann Bleibtreu, a cast member of In July?",
+  "question_type": "two_hop",
+  "template": "film_cast_award",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q873842",
+    "text": "The Romy TV award in honor of the Austrian-born actress Romy Schneider"
+  },
+  "prediction_text": "Max Ophüls Preis",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:10:58.378723+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 897,
+    "remaining_tokens": 11476,
+    "reset_requests_seconds": 8899.199,
+    "reset_tokens_seconds": 2.62,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:10:58 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "897",
+      "x-ratelimit-remaining-tokens": "11476",
+      "x-ratelimit-reset-requests": "2h28m19.199s",
+      "x-ratelimit-reset-tokens": "2.62s",
+      "x-request-id": "req_01kpg80ncmeeksya394q96kzvv",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=yVrPT38tsqlsmLFvLZiyhEvotu4RjD.7xvw3cuwtza8-1776514258.2995515-1.0.1.1-fkMuI4qbs.XrvJ44uFsv_qQGwfcZnggZEm9lQO005UqNTYzcKPq6JdlCDuFZYLvHnw4wtXKeamnAC6.rwy9Pt12FMHHtWXYe4TCszwv23Wnt5P0I_YfoGzvXEHW1qoZR; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:40:58 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee391c25ebbf182-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "max ophuls preis",
+    "gold_normalized": "the romy tv award in honor of the austrian born actress romy schneider",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

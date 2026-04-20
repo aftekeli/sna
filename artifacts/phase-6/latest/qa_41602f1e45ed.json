@@ -1,0 +1,304 @@
+{
+  "created_at": "2026-04-18T12:50:58.789566+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_41602f1e45ed",
+  "question": "Where was the director of Aslan Pençesi born?",
+  "question_type": "two_hop",
+  "template": "film_director_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q406",
+    "text": "Istanbul"
+  },
+  "prediction_text": "Istanbul",
+  "match": {
+    "prediction_normalized": "istanbul",
+    "gold_normalized": "istanbul",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q18712768",
+      "entity_name": "Aslan Pençesi",
+      "roles": [
+        "film"
+      ],
+      "source": "lexicon",
+      "score": 22
+    }
+  ],
+  "relation_path": [
+    "P57",
+    "P19"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q18712768"
+      ],
+      "candidate_count": 3,
+      "selected_triples": [
+        {
+          "source_id": "Q18712768",
+          "source_name": "Aslan Pençesi",
+          "source_roles": [
+            "film"
+          ],
+          "relation_id": "P57",
+          "relation_label": "director",
+          "target_id": "Q6815170",
+          "target_name": "Arif Memduh Ün (14 March 1920 – 16 October 2015)",
+          "target_roles": [
+            "director"
+          ],
+          "score": 19.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q6815170"
+      ],
+      "candidate_count": 2,
+      "selected_triples": [
+        {
+          "source_id": "Q6815170",
+          "source_name": "Arif Memduh Ün (14 March 1920 – 16 October 2015)",
+          "source_roles": [
+            "director"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q406",
+          "target_name": "Ligos",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 16.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q18712768",
+        "seed_entity_name": "Aslan Pençesi",
+        "final_answers": [
+          {
+            "entity_id": "Q406",
+            "entity_name": "Ligos"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q406"
+    ],
+    "candidate_texts": [
+      "Ligos"
+    ],
+    "answer_text": "Ligos"
+  },
+  "kg_summary": "Aslan Pençesi was directed by Arif Memduh Ün (14 March 1920 – 16 October 2015). Arif Memduh Ün (14 March 1920 – 16 October 2015) was born in Ligos.",
+  "expanded_query": "Where was Arif Memduh Ün born.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_41602f1e45ed::1",
+      "title": "Where was the director of Aslan Pençesi born?",
+      "body": "Aslan Pençesi was directed by Arif Memduh Ün. Arif Memduh Ün was born in Istanbul.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q18712768",
+      "metadata": {
+        "question_id": "qa_41602f1e45ed",
+        "template": "film_director_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -33.49956484782866,
+      "snippet": "Aslan Pençesi was directed by Arif Memduh Ün. Arif Memduh Ün was born in Istanbul."
+    },
+    {
+      "doc_id": "entity::Q6815170",
+      "title": "memduh un",
+      "body": "memduh un. Description: Arif Memduh Ün (14 March 1920 – 16 October 2015) was a Turkish film producer, director, actor and screenwriter. His film The Broken Pots was entered into the 11th Berlin International Film Festival. Aliases: memduh un, turhan ün, Turhan Ün, memduh ün, Memduh Ün, Memduh Un. Roles: director. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q6815170",
+      "metadata": {
+        "entity_id": "Q6815170",
+        "aliases": [
+          "memduh un",
+          "turhan ün",
+          "Turhan Ün",
+          "memduh ün",
+          "Memduh Ün",
+          "Memduh Un"
+        ],
+        "roles": [
+          "director"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -25.10413312155834,
+      "snippet": "memduh un. Description: Arif Memduh Ün (14 March 1920 – 16 October 2015) was a Turkish film producer, director, actor and screenwriter. His film The Broken Pots was entered into the 11th Berlin International Film Fest..."
+    },
+    {
+      "doc_id": "fact::Q6815170::P19::Q406",
+      "title": "memduh un - place of birth",
+      "body": "memduh un was born in istanbul (turkey). Relation type: place of birth. Source roles: director. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6815170",
+      "metadata": {
+        "source_id": "Q6815170",
+        "target_id": "Q406",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -18.643880263765816,
+      "snippet": "memduh un was born in istanbul (turkey). Relation type: place of birth. Source roles: director. Target roles: birth_place."
+    },
+    {
+      "doc_id": "fact::Q6815170::P27::Q43",
+      "title": "memduh un - country of citizenship",
+      "body": "memduh un has country of citizenship turkiye. Relation type: country of citizenship. Source roles: director. Target roles: birth_place, country, country_root.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6815170",
+      "metadata": {
+        "source_id": "Q6815170",
+        "target_id": "Q43",
+        "relation_id": "P27",
+        "relation_label": "country of citizenship"
+      },
+      "score": -15.686861142957401,
+      "snippet": "memduh un has country of citizenship turkiye. Relation type: country of citizenship. Source roles: director. Target roles: birth_place, country, country_root."
+    },
+    {
+      "doc_id": "fact::Q18712768::P57::Q6815170",
+      "title": "Aslan Pençesi - director",
+      "body": "Aslan Pençesi was directed by memduh un. Relation type: director. Source roles: film. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q18712768",
+      "metadata": {
+        "source_id": "Q18712768",
+        "target_id": "Q6815170",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -14.40324499431011,
+      "snippet": "Aslan Pençesi was directed by memduh un. Relation type: director. Source roles: film. Target roles: director."
+    },
+    {
+      "doc_id": "entity::Q6094037",
+      "title": "arif onur saylak",
+      "body": "arif onur saylak. Description: Arif Onur Saylak (born 12 May 1977) is a Turkish actor, filmmaker and director. He was married for six years to Tuba Büyüküstün, with whom he has twin daughters. Aliases: arif onur saylak, Onur Saylak, Arif Onur Saylak, onur saylak. Roles: cast_member. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q6094037",
+      "metadata": {
+        "entity_id": "Q6094037",
+        "aliases": [
+          "arif onur saylak",
+          "Onur Saylak",
+          "Arif Onur Saylak",
+          "onur saylak"
+        ],
+        "roles": [
+          "cast_member"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -11.855722742989796,
+      "snippet": "arif onur saylak. Description: Arif Onur Saylak (born 12 May 1977) is a Turkish actor, filmmaker and director. He was married for six years to Tuba Büyüküstün, with whom he has twin daughters. Aliases: arif onur sayla..."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T12:50:53.608008+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 881,
+      "remaining_tokens": 11847,
+      "reset_requests_seconds": 10281.6,
+      "reset_tokens_seconds": 0.764,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:50:53 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "881",
+        "x-ratelimit-remaining-tokens": "11847",
+        "x-ratelimit-reset-requests": "2h51m21.6s",
+        "x-ratelimit-reset-tokens": "764ms",
+        "x-request-id": "req_01kpga9rmfft8ssyrbzwrts6bp",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=Kz0TQUz4a03VEh1Ig2_ZKGiy17mbjss2ntDlTolODXU-1776516653.6876163-1.0.1.1-L56MRANwHRKWtZx3dLWPfLOP_yUxI.EKFoC_wh.ptnC.rq4GgP8qd8sXTgX8ZhV2pz6dux2SPHRBOWNz6Ux8Dj7SqFRH4ymivaxT0GWHvJWAc2zDMUfE0cHBTxYt_9zX; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:20:53 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3cc3d887eb1f0-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T12:50:58.777113+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 880,
+      "remaining_tokens": 11418,
+      "reset_requests_seconds": 10368.0,
+      "reset_tokens_seconds": 2.91,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:50:58 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "880",
+        "x-ratelimit-remaining-tokens": "11418",
+        "x-ratelimit-reset-requests": "2h52m48s",
+        "x-ratelimit-reset-tokens": "2.91s",
+        "x-request-id": "req_01kpga9xjae9yt2ngj4wbx4k75",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=jE_7vzL2apaS3D9Lg0syGH1a56pBhsmKPx3pQVXAa0w-1776516658.7401578-1.0.1.1-kDEqpzol7SNQFjJqvLK8apwWzlTj6P3gQ2psfQ6KkEO5AGmsRHXoAcQL0JOlyuvtnB1.Td3RfDjxpl2SdAuqaXg1iQeYC3kpPX9ZW5HXxlvjrJqRDM55cvooI4R5i7Kg; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:20:58 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3cc5d18e91a64-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

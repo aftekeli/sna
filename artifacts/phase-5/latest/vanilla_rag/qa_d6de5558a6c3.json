@@ -1,0 +1,149 @@
+{
+  "created_at": "2026-04-18T13:11:11.631254+00:00",
+  "status": "success",
+  "method": "vanilla_rag",
+  "question_id": "qa_d6de5558a6c3",
+  "question": "In which country is the school attended by the director of Bitter Life located?",
+  "question_type": "three_hop",
+  "template": "film_director_education_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q43",
+    "text": "Turkey"
+  },
+  "prediction_text": "Turkey.",
+  "expanded_query": null,
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_d6de5558a6c3::1",
+      "title": "In which country is the school attended by the director of Bitter Life located?",
+      "body": "Bitter Life was directed by Metin Erksan. Metin Erksan studied at Istanbul University. Istanbul University is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q12835393",
+      "metadata": {
+        "question_id": "qa_d6de5558a6c3",
+        "template": "film_director_education_country",
+        "question_type": "three_hop"
+      },
+      "score": -43.793678280146985,
+      "snippet": "Bitter Life was directed by Metin Erksan. Metin Erksan studied at Istanbul University. Istanbul University is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_2a6ac9643a80::1",
+      "title": "In which country is the school attended by the director of Dokuz Dagin Efesi located?",
+      "body": "Dokuz Dagin Efesi was directed by Metin Erksan. Metin Erksan studied at Istanbul University. Istanbul University is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6067860",
+      "metadata": {
+        "question_id": "qa_2a6ac9643a80",
+        "template": "film_director_education_country",
+        "question_type": "three_hop"
+      },
+      "score": -28.04921016145545,
+      "snippet": "Dokuz Dagin Efesi was directed by Metin Erksan. Metin Erksan studied at Istanbul University. Istanbul University is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_07e8f72b4442::1",
+      "title": "In which country is the school attended by the director of Angel's Fall located?",
+      "body": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University. Dokuz Eylül University is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6054381",
+      "metadata": {
+        "question_id": "qa_07e8f72b4442",
+        "template": "film_director_education_country",
+        "question_type": "three_hop"
+      },
+      "score": -27.611812335112198,
+      "snippet": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University. Dokuz Eylül University is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_eb46e42dc05a::1",
+      "title": "In which country is the school attended by the director of Shadows and Faces located?",
+      "body": "Shadows and Faces was directed by Derviş Zaim. Derviş Zaim studied at The University of Warwick. The University of Warwick is located in The United Kingdom of Great Britain and Northern Ireland.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q7460798",
+      "metadata": {
+        "question_id": "qa_eb46e42dc05a",
+        "template": "film_director_education_country",
+        "question_type": "three_hop"
+      },
+      "score": -26.456153112147902,
+      "snippet": "Shadows and Faces was directed by Derviş Zaim. Derviş Zaim studied at The University of Warwick. The University of Warwick is located in The United Kingdom of Great Britain and Northern Ireland."
+    },
+    {
+      "doc_id": "path::qa_ca18f2482294::1",
+      "title": "In which country is the school attended by the director of Do Not Forget Me Istanbul located?",
+      "body": "Do Not Forget Me Istanbul was directed by Eric Nazarian. Eric Nazarian studied at The University of Southern California. The University of Southern California is located in The United States of America.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q20065085",
+      "metadata": {
+        "question_id": "qa_ca18f2482294",
+        "template": "film_director_education_country",
+        "question_type": "three_hop"
+      },
+      "score": -26.104580365551698,
+      "snippet": "Do Not Forget Me Istanbul was directed by Eric Nazarian. Eric Nazarian studied at The University of Southern California. The University of Southern California is located in The United States of America."
+    },
+    {
+      "doc_id": "path::qa_d8aa86c24033::1",
+      "title": "Where was the director of Bitter Life born?",
+      "body": "Bitter Life was directed by Metin Erksan. Metin Erksan was born in Çanakkale Province.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q12835393",
+      "metadata": {
+        "question_id": "qa_d8aa86c24033",
+        "template": "film_director_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -23.585763466865913,
+      "snippet": "Bitter Life was directed by Metin Erksan. Metin Erksan was born in Çanakkale Province."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:11:11.620943+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 749,
+    "remaining_tokens": 11561,
+    "reset_requests_seconds": 21686.4,
+    "reset_tokens_seconds": 2.195,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:11:11 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "749",
+      "x-ratelimit-remaining-tokens": "11561",
+      "x-ratelimit-reset-requests": "6h1m26.4s",
+      "x-ratelimit-reset-tokens": "2.195s",
+      "x-request-id": "req_01kpgbey21edz86xnjwygxdjx3",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=k06V0THghHH1U7qZ_wIZvJd_EF9gCt4OjEcqUW3_bPA-1776517871.6601775-1.0.1.1-oe0gCV3mtV4ZRKdLPNoYX3cWFyEsvvhjyAsttdly0oRSbD3P1UNIpp_Uzn8Trw1AJEiAahOlZz69uN9RLgxPaYFv5O_1kY_UIY5Ys_9JQWbzI_QR5NYh9Gp3qObrqBgJ; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:41:11 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3e9f9de80f182-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "turkey",
+    "gold_normalized": "turkey",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

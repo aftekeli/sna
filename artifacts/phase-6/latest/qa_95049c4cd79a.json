@@ -1,0 +1,263 @@
+{
+  "created_at": "2026-04-18T13:01:10.297315+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_95049c4cd79a",
+  "question": "Where was Asuman Dabak, a cast member of Adem'in Trenleri, born?",
+  "question_type": "two_hop",
+  "template": "film_cast_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q209905",
+    "text": "Akhisar"
+  },
+  "prediction_text": "Akhisar",
+  "match": {
+    "prediction_normalized": "akhisar",
+    "gold_normalized": "akhisar",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q4811871",
+      "entity_name": "Asuman Dabak (born 1 February 1970)",
+      "roles": [
+        "cast_member"
+      ],
+      "source": "lexicon",
+      "score": 18
+    }
+  ],
+  "relation_path": [
+    "P19"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q4811871"
+      ],
+      "candidate_count": 2,
+      "selected_triples": [
+        {
+          "source_id": "Q4811871",
+          "source_name": "Asuman Dabak (born 1 February 1970)",
+          "source_roles": [
+            "cast_member"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q209905",
+          "target_name": "Tepe Mezarligi",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 16.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q4811871",
+        "seed_entity_name": "Asuman Dabak (born 1 February 1970)",
+        "final_answers": [
+          {
+            "entity_id": "Q209905",
+            "entity_name": "Tepe Mezarligi"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q209905"
+    ],
+    "candidate_texts": [
+      "Tepe Mezarligi"
+    ],
+    "answer_text": "Tepe Mezarligi"
+  },
+  "kg_summary": "Asuman Dabak (born 1 February 1970) was born in Tepe Mezarligi.",
+  "expanded_query": "Where was Asuman Dabak born; Asuman Dabak birthplace.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_95049c4cd79a::1",
+      "title": "Where was Asuman Dabak, a cast member of Adem'in Trenleri, born?",
+      "body": "Adem'in Trenleri has cast member Asuman Dabak. Asuman Dabak was born in Akhisar.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6087125",
+      "metadata": {
+        "question_id": "qa_95049c4cd79a",
+        "template": "film_cast_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -47.153232364284875,
+      "snippet": "Adem'in Trenleri has cast member Asuman Dabak. Asuman Dabak was born in Akhisar."
+    },
+    {
+      "doc_id": "entity::Q4811871",
+      "title": "asuman dabak",
+      "body": "asuman dabak. Description: Asuman Dabak (born 1 February 1970) is a Turkish actress. Aliases: asuman dabak, Asuman Dabak. Roles: cast_member. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q4811871",
+      "metadata": {
+        "entity_id": "Q4811871",
+        "aliases": [
+          "asuman dabak",
+          "Asuman Dabak"
+        ],
+        "roles": [
+          "cast_member"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -43.98718338020979,
+      "snippet": "asuman dabak. Description: Asuman Dabak (born 1 February 1970) is a Turkish actress. Aliases: asuman dabak, Asuman Dabak. Roles: cast_member. Domains: cinema, people, turkiye."
+    },
+    {
+      "doc_id": "path::qa_6e027a24320b::2",
+      "title": "Were Tülin Özen from 10 To 11 and Asuman Dabak from Adem'in Trenleri born in the same country?",
+      "body": "Adem'in Trenleri has cast member Asuman Dabak. Asuman Dabak was born in Akhisar. Akhisar is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q3459778",
+      "metadata": {
+        "question_id": "qa_6e027a24320b",
+        "template": "film_cast_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -39.89391117163608,
+      "snippet": "Adem'in Trenleri has cast member Asuman Dabak. Asuman Dabak was born in Akhisar. Akhisar is located in Turkey."
+    },
+    {
+      "doc_id": "fact::Q4811871::P19::Q209905",
+      "title": "asuman dabak - place of birth",
+      "body": "asuman dabak was born in History of Akhisar. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q4811871",
+      "metadata": {
+        "source_id": "Q4811871",
+        "target_id": "Q209905",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -38.19967559880374,
+      "snippet": "asuman dabak was born in History of Akhisar. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place."
+    },
+    {
+      "doc_id": "fact::Q4811871::P27::Q43",
+      "title": "asuman dabak - country of citizenship",
+      "body": "asuman dabak has country of citizenship turkiye. Relation type: country of citizenship. Source roles: cast_member. Target roles: birth_place, country, country_root.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q4811871",
+      "metadata": {
+        "source_id": "Q4811871",
+        "target_id": "Q43",
+        "relation_id": "P27",
+        "relation_label": "country of citizenship"
+      },
+      "score": -35.15345842437262,
+      "snippet": "asuman dabak has country of citizenship turkiye. Relation type: country of citizenship. Source roles: cast_member. Target roles: birth_place, country, country_root."
+    },
+    {
+      "doc_id": "fact::Q1402686::P161::Q4811871",
+      "title": "Paper (film) - cast member",
+      "body": "Paper (film) has cast member asuman dabak. Relation type: cast member. Source roles: film. Target roles: cast_member.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q1402686",
+      "metadata": {
+        "source_id": "Q1402686",
+        "target_id": "Q4811871",
+        "relation_id": "P161",
+        "relation_label": "cast member"
+      },
+      "score": -29.134719267562343,
+      "snippet": "Paper (film) has cast member asuman dabak. Relation type: cast member. Source roles: film. Target roles: cast_member."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T13:01:05.398120+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 823,
+      "remaining_tokens": 11862,
+      "reset_requests_seconds": 15292.8,
+      "reset_tokens_seconds": 0.69,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 13:01:05 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "823",
+        "x-ratelimit-remaining-tokens": "11862",
+        "x-ratelimit-reset-requests": "4h14m52.8s",
+        "x-ratelimit-reset-tokens": "690ms",
+        "x-request-id": "req_01kpgawdwfea5axk8scvapw4pp",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=VEkOjXYwhF9MSCVVUn_NHoJtexhEZFoIFszK47ds290-1776517265.2636135-1.0.1.1-iCelvvbAXEcMDOws4q9uNeNW_SdfC8e4c.598audV.0E9aX1bALuh1Z.oyNMCMM_vOmrWJ3OURqiBDs48Snr.K4s4tRjcyBoFcbUpDwsIeVeEYrgxG383c3I4w9iF8Fg; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:31:05 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3db2be9a5329f-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T13:01:10.287408+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 822,
+      "remaining_tokens": 11492,
+      "reset_requests_seconds": 15379.199,
+      "reset_tokens_seconds": 2.54,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 13:01:10 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "822",
+        "x-ratelimit-remaining-tokens": "11492",
+        "x-ratelimit-reset-requests": "4h16m19.199s",
+        "x-ratelimit-reset-tokens": "2.54s",
+        "x-request-id": "req_01kpgawjrdeb1s4ct1m2mms5qz",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=D2xABFfg7QiPXDDfl2vs9WrH_vr01WNwU5xogfmGNhc-1776517270.2649424-1.0.1.1-JxcPvkcUR4Xf73Lz_X0LCOa06zUZt5wETSJKMmTjQTldevaPnH1S6Bd2z3.XJKtF89WYnqIUhG7yRJqdOjqsO1iZK1N9I0GmYRk0suBV8IfH.IK92nj4kjZT3WmOsYH5; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:31:10 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3db4b2d740d26-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

@@ -1,0 +1,303 @@
+{
+  "created_at": "2026-04-18T12:48:36.300274+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_07e8f72b4442",
+  "question": "In which country is the school attended by the director of Angel's Fall located?",
+  "question_type": "three_hop",
+  "template": "film_director_education_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q43",
+    "text": "Turkey"
+  },
+  "prediction_text": "Turkey",
+  "match": {
+    "prediction_normalized": "turkey",
+    "gold_normalized": "turkey",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q6054381",
+      "entity_name": "Angel's Fall",
+      "roles": [
+        "film"
+      ],
+      "source": "lexicon",
+      "score": 23
+    }
+  ],
+  "relation_path": [
+    "P57",
+    "P69",
+    "P17"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q6054381"
+      ],
+      "candidate_count": 3,
+      "selected_triples": [
+        {
+          "source_id": "Q6054381",
+          "source_name": "Angel's Fall",
+          "source_roles": [
+            "film"
+          ],
+          "relation_id": "P57",
+          "relation_label": "director",
+          "target_id": "Q1373349",
+          "target_name": "Semih Kaplanoğlu",
+          "target_roles": [
+            "director"
+          ],
+          "score": 19.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q1373349"
+      ],
+      "candidate_count": 3,
+      "selected_triples": [
+        {
+          "source_id": "Q1373349",
+          "source_name": "Semih Kaplanoğlu",
+          "source_roles": [
+            "director"
+          ],
+          "relation_id": "P69",
+          "relation_label": "educated at",
+          "target_id": "Q1235258",
+          "target_name": "9 Eylul University",
+          "target_roles": [
+            "education_entity"
+          ],
+          "score": 16.0
+        }
+      ]
+    },
+    {
+      "round_index": 3,
+      "frontier_entity_ids": [
+        "Q1235258"
+      ],
+      "candidate_count": 1,
+      "selected_triples": [
+        {
+          "source_id": "Q1235258",
+          "source_name": "9 Eylul University",
+          "source_roles": [
+            "education_entity"
+          ],
+          "relation_id": "P17",
+          "relation_label": "country",
+          "target_id": "Q43",
+          "target_name": "Turkey",
+          "target_roles": [
+            "birth_place",
+            "country",
+            "country_root"
+          ],
+          "score": 21.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q6054381",
+        "seed_entity_name": "Angel's Fall",
+        "final_answers": [
+          {
+            "entity_id": "Q43",
+            "entity_name": "Turkey"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q43"
+    ],
+    "candidate_texts": [
+      "Turkey"
+    ],
+    "answer_text": "Turkey"
+  },
+  "kg_summary": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at 9 Eylul University. 9 Eylul University is located in Turkey.",
+  "expanded_query": "In which country is 9 Eylul University, attended by Semih Kaplanoğlu, located.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_07e8f72b4442::1",
+      "title": "In which country is the school attended by the director of Angel's Fall located?",
+      "body": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University. Dokuz Eylül University is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6054381",
+      "metadata": {
+        "question_id": "qa_07e8f72b4442",
+        "template": "film_director_education_country",
+        "question_type": "three_hop"
+      },
+      "score": -45.48279554939884,
+      "snippet": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University. Dokuz Eylül University is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_056fc446ad92::1",
+      "title": "Were the directors of Angel's Fall and Do Not Forget Me Istanbul educated in the same country?",
+      "body": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University. Dokuz Eylül University is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6054381",
+      "metadata": {
+        "question_id": "qa_056fc446ad92",
+        "template": "film_director_education_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -33.52801141136,
+      "snippet": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University. Dokuz Eylül University is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_4ae95238ae3e::1",
+      "title": "Where did the director of Grain study?",
+      "body": "Grain was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q19954477",
+      "metadata": {
+        "question_id": "qa_4ae95238ae3e",
+        "template": "film_director_education",
+        "question_type": "two_hop"
+      },
+      "score": -30.015210672997497,
+      "snippet": "Grain was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University."
+    },
+    {
+      "doc_id": "path::qa_bb3348c757ee::1",
+      "title": "Where did the director of Angel's Fall study?",
+      "body": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6054381",
+      "metadata": {
+        "question_id": "qa_bb3348c757ee",
+        "template": "film_director_education",
+        "question_type": "two_hop"
+      },
+      "score": -29.054475324424427,
+      "snippet": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University."
+    },
+    {
+      "doc_id": "fact::Q1373349::P69::Q1235258",
+      "title": "Semih Kaplanoğlu - educated at",
+      "body": "Semih Kaplanoğlu studied at Dokuz Eylul University. Relation type: educated at. Source roles: director. Target roles: education_entity.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q1373349",
+      "metadata": {
+        "source_id": "Q1373349",
+        "target_id": "Q1235258",
+        "relation_id": "P69",
+        "relation_label": "educated at"
+      },
+      "score": -27.96263508919688,
+      "snippet": "Semih Kaplanoğlu studied at Dokuz Eylul University. Relation type: educated at. Source roles: director. Target roles: education_entity."
+    },
+    {
+      "doc_id": "path::qa_d6de5558a6c3::1",
+      "title": "In which country is the school attended by the director of Bitter Life located?",
+      "body": "Bitter Life was directed by Metin Erksan. Metin Erksan studied at Istanbul University. Istanbul University is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q12835393",
+      "metadata": {
+        "question_id": "qa_d6de5558a6c3",
+        "template": "film_director_education_country",
+        "question_type": "three_hop"
+      },
+      "score": -23.409395226732045,
+      "snippet": "Bitter Life was directed by Metin Erksan. Metin Erksan studied at Istanbul University. Istanbul University is located in Turkey."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T12:48:31.273570+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 905,
+      "remaining_tokens": 11859,
+      "reset_requests_seconds": 8208.0,
+      "reset_tokens_seconds": 0.705,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:48:31 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "905",
+        "x-ratelimit-remaining-tokens": "11859",
+        "x-ratelimit-reset-requests": "2h16m48s",
+        "x-ratelimit-reset-tokens": "705ms",
+        "x-request-id": "req_01kpga5djsfbwscw4p3thx0akp",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=LDGIlYlpVlMZFuY9pA3LB3BBGi_8n_GBuaDGUnBWxew-1776516511.2989724-1.0.1.1-Kni50dFgfkxBOD0a46d6yIWMlN8Y3Db97.LEY_oLZLqetVvIQrbcVcrXSre9hXSU11mbkdZOAWZ7VA1WgnEOqkRKdF.VBDpM8oLLHr332wtnmIS8a_.NCOOR53UlbofP; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:18:31 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3c8c39cafc8cd-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T12:48:36.289489+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 904,
+      "remaining_tokens": 11525,
+      "reset_requests_seconds": 8294.4,
+      "reset_tokens_seconds": 2.375,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:48:36 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "904",
+        "x-ratelimit-remaining-tokens": "11525",
+        "x-ratelimit-reset-requests": "2h18m14.4s",
+        "x-ratelimit-reset-tokens": "2.375s",
+        "x-request-id": "req_01kpga5jfmetwsxk2samnh5b9k",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=sTmxYlPMPG5CyyE_javm81tOF8ouBa5NypqFfn8UDjc-1776516516.318047-1.0.1.1-uWdp3blWvMcy8qoY1hD3CPkxsEpG1ZxmQrFU7nVrRNpD.YebX_IzvWywDQ_5FpDy2lAyQ5rp3uSFNCn4NjUWh86FZxl.l_FUGyce0Zjzze.fbSVlWrCt7k51o7PXzXae; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:18:36 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3c8e2fb919904-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

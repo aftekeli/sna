@@ -1,0 +1,160 @@
+{
+  "created_at": "2026-04-18T13:00:50.378097+00:00",
+  "status": "success",
+  "method": "vanilla_rag",
+  "question_id": "qa_95049c4cd79a",
+  "question": "Where was Asuman Dabak, a cast member of Adem'in Trenleri, born?",
+  "question_type": "two_hop",
+  "template": "film_cast_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q209905",
+    "text": "Akhisar"
+  },
+  "prediction_text": "Akhisar, Turkey.",
+  "expanded_query": null,
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_95049c4cd79a::1",
+      "title": "Where was Asuman Dabak, a cast member of Adem'in Trenleri, born?",
+      "body": "Adem'in Trenleri has cast member Asuman Dabak. Asuman Dabak was born in Akhisar.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6087125",
+      "metadata": {
+        "question_id": "qa_95049c4cd79a",
+        "template": "film_cast_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -47.76727562081226,
+      "snippet": "Adem'in Trenleri has cast member Asuman Dabak. Asuman Dabak was born in Akhisar."
+    },
+    {
+      "doc_id": "path::qa_6e027a24320b::2",
+      "title": "Were Tülin Özen from 10 To 11 and Asuman Dabak from Adem'in Trenleri born in the same country?",
+      "body": "Adem'in Trenleri has cast member Asuman Dabak. Asuman Dabak was born in Akhisar. Akhisar is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q3459778",
+      "metadata": {
+        "question_id": "qa_6e027a24320b",
+        "template": "film_cast_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -40.20478601180848,
+      "snippet": "Adem'in Trenleri has cast member Asuman Dabak. Asuman Dabak was born in Akhisar. Akhisar is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_6e027a24320b::1",
+      "title": "Were Tülin Özen from 10 To 11 and Asuman Dabak from Adem'in Trenleri born in the same country?",
+      "body": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun. İskenderun is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q3459778",
+      "metadata": {
+        "question_id": "qa_6e027a24320b",
+        "template": "film_cast_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -29.786060600566792,
+      "snippet": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun. İskenderun is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_baef96cb9ce7::1",
+      "title": "Where was Nurgül Yeşilçay, a cast member of Adem'in Trenleri, born?",
+      "body": "Adem'in Trenleri has cast member Nurgül Yeşilçay. Nurgül Yeşilçay was born in Afyonkarahisar.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6087125",
+      "metadata": {
+        "question_id": "qa_baef96cb9ce7",
+        "template": "film_cast_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -28.199498736197874,
+      "snippet": "Adem'in Trenleri has cast member Nurgül Yeşilçay. Nurgül Yeşilçay was born in Afyonkarahisar."
+    },
+    {
+      "doc_id": "entity::Q4811871",
+      "title": "asuman dabak",
+      "body": "asuman dabak. Description: Asuman Dabak (born 1 February 1970) is a Turkish actress. Aliases: asuman dabak, Asuman Dabak. Roles: cast_member. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q4811871",
+      "metadata": {
+        "entity_id": "Q4811871",
+        "aliases": [
+          "asuman dabak",
+          "Asuman Dabak"
+        ],
+        "roles": [
+          "cast_member"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -22.862092360698576,
+      "snippet": "asuman dabak. Description: Asuman Dabak (born 1 February 1970) is a Turkish actress. Aliases: asuman dabak, Asuman Dabak. Roles: cast_member. Domains: cinema, people, turkiye."
+    },
+    {
+      "doc_id": "fact::Q4811871::P19::Q209905",
+      "title": "asuman dabak - place of birth",
+      "body": "asuman dabak was born in History of Akhisar. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q4811871",
+      "metadata": {
+        "source_id": "Q4811871",
+        "target_id": "Q209905",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -21.115315722969736,
+      "snippet": "asuman dabak was born in History of Akhisar. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:00:50.351224+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 826,
+    "remaining_tokens": 11511,
+    "reset_requests_seconds": 15033.599,
+    "reset_tokens_seconds": 2.445,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:00:50 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "826",
+      "x-ratelimit-remaining-tokens": "11511",
+      "x-ratelimit-reset-requests": "4h10m33.599s",
+      "x-ratelimit-reset-tokens": "2.445s",
+      "x-request-id": "req_01kpgavz7rfzjtjvr44d8dwhtn",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=KNWbY4AIi8DigFTxnjsdezGctdfqXY.JDb5ayRfRUk4-1776517250.2651117-1.0.1.1-KpEbR9saxnKur3mN7DosQHELgsobFUXGLfvUnvc2BcmAImp_jDN4i0tfSd0Lw0soyFU4.tkiPvqEUmrdtzoRkt7jxq9huT6GzTiKpq83Ywu8_cN9ok6dKT3jECxtDXkl; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:30:50 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3dace2afac0ca-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "akhisar turkey",
+    "gold_normalized": "akhisar",
+    "exact_match": false,
+    "contains_match": true
+  }
+}

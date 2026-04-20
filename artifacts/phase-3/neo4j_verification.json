@@ -1,0 +1,96 @@
+{
+  "entity_count": 629,
+  "relationship_count": 1516,
+  "verification": {
+    "one_hop_films": {
+      "row_count": 5,
+      "sample_rows": [
+        {
+          "film": "arabesk (film)",
+          "country": "turkiye"
+        },
+        {
+          "film": "Le Grand Voyage",
+          "country": "turkiye"
+        },
+        {
+          "film": "Dar alanda kısa paslaşmalar",
+          "country": "turkiye"
+        },
+        {
+          "film": "Kapicilar Krali",
+          "country": "turkiye"
+        },
+        {
+          "film": "Karilar Kogusu",
+          "country": "turkiye"
+        }
+      ]
+    },
+    "two_hop_director_birth_place": {
+      "row_count": 5,
+      "sample_rows": [
+        {
+          "film": "the canal (1979 film)",
+          "director": "erden kiral",
+          "birth_place": "gölcük, kocaeli"
+        },
+        {
+          "film": "The Blue Exile",
+          "director": "erden kiral",
+          "birth_place": "gölcük, kocaeli"
+        },
+        {
+          "film": "grain (film)",
+          "director": "Semih Kaplanoğlu",
+          "birth_place": "ismir, turkey"
+        },
+        {
+          "film": "Meleğin Düşüşü",
+          "director": "Semih Kaplanoğlu",
+          "birth_place": "ismir, turkey"
+        },
+        {
+          "film": "bal (film",
+          "director": "Semih Kaplanoğlu",
+          "birth_place": "ismir, turkey"
+        }
+      ]
+    },
+    "three_hop_director_birth_place_country": {
+      "row_count": 5,
+      "sample_rows": [
+        {
+          "film": "do not forget me istanbul",
+          "director": "Aida Begic",
+          "birth_place": "Rajvosa",
+          "country": "Ottoman empire"
+        },
+        {
+          "film": "children of sarajevo",
+          "director": "Aida Begic",
+          "birth_place": "Rajvosa",
+          "country": "Ottoman empire"
+        },
+        {
+          "film": "grain (film)",
+          "director": "Semih Kaplanoğlu",
+          "birth_place": "ismir, turkey",
+          "country": "Ottoman empire"
+        },
+        {
+          "film": "Meleğin Düşüşü",
+          "director": "Semih Kaplanoğlu",
+          "birth_place": "ismir, turkey",
+          "country": "Ottoman empire"
+        },
+        {
+          "film": "bal (film",
+          "director": "Semih Kaplanoğlu",
+          "birth_place": "ismir, turkey",
+          "country": "Ottoman empire"
+        }
+      ]
+    }
+  }
+}

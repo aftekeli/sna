@@ -1,0 +1,175 @@
+{
+  "created_at": "2026-04-18T13:12:47.112407+00:00",
+  "status": "success",
+  "method": "vanilla_rag",
+  "question_id": "qa_ab897ab4eb0b",
+  "question": "In which country was Gianni Capaldi, a cast member of Ghosts of Garip, born?",
+  "question_type": "three_hop",
+  "template": "film_cast_birth_place_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q145",
+    "text": "The United Kingdom of Great Britain and Northern Ireland"
+  },
+  "prediction_text": "The United Kingdom of Great Britain and Northern Ireland, specifically Scotland.",
+  "expanded_query": null,
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_ab897ab4eb0b::1",
+      "title": "In which country was Gianni Capaldi, a cast member of Ghosts of Garip, born?",
+      "body": "Ghosts of Garip has cast member Gianni Capaldi. Gianni Capaldi was born in Motherwell. Motherwell is located in The United Kingdom of Great Britain and Northern Ireland.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q23022350",
+      "metadata": {
+        "question_id": "qa_ab897ab4eb0b",
+        "template": "film_cast_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -43.38024213993166,
+      "snippet": "Ghosts of Garip has cast member Gianni Capaldi. Gianni Capaldi was born in Motherwell. Motherwell is located in The United Kingdom of Great Britain and Northern Ireland."
+    },
+    {
+      "doc_id": "fact::Q23022350::P161::Q5558187",
+      "title": "Ghosts of Garip - cast member",
+      "body": "Ghosts of Garip has cast member gianni capaldi. Relation type: cast member. Source roles: film. Target roles: cast_member.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q23022350",
+      "metadata": {
+        "source_id": "Q23022350",
+        "target_id": "Q5558187",
+        "relation_id": "P161",
+        "relation_label": "cast member"
+      },
+      "score": -33.30130838879425,
+      "snippet": "Ghosts of Garip has cast member gianni capaldi. Relation type: cast member. Source roles: film. Target roles: cast_member."
+    },
+    {
+      "doc_id": "entity::Q23022350",
+      "title": "Ghosts of Garip",
+      "body": "Ghosts of Garip. Description: The Ghosts of Garip a.k.a. Kanlı Girdap & Vlad's Legacy directed by Patricio Valladares, is a Turkish Film. Gianni Capaldi and Selma Ergeç star in this found footage horror film. Film was released on 11 July 2016 in Turkey. Aliases: Ghosts of Garip, ghosts of garip, the ghosts of garip, The Ghosts of Garip, The Ghosts of Garip (2016 film), the ghosts of garip (2016 film). Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q23022350",
+      "metadata": {
+        "entity_id": "Q23022350",
+        "aliases": [
+          "Ghosts of Garip",
+          "ghosts of garip",
+          "the ghosts of garip",
+          "The Ghosts of Garip",
+          "The Ghosts of Garip (2016 film)",
+          "the ghosts of garip (2016 film)"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -31.585771309532486,
+      "snippet": "Ghosts of Garip. Description: The Ghosts of Garip a.k.a. Kanlı Girdap & Vlad's Legacy directed by Patricio Valladares, is a Turkish Film. Gianni Capaldi and Selma Ergeç star in this found footage horror film. Film was..."
+    },
+    {
+      "doc_id": "path::qa_f5a4909699e7::1",
+      "title": "In which country was Selim Bayraktar, a cast member of Ghosts of Garip, born?",
+      "body": "Ghosts of Garip has cast member Selim Bayraktar. Selim Bayraktar was born in Kirkuk. Kirkuk is located in Iraq.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q23022350",
+      "metadata": {
+        "question_id": "qa_f5a4909699e7",
+        "template": "film_cast_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -25.425749989315218,
+      "snippet": "Ghosts of Garip has cast member Selim Bayraktar. Selim Bayraktar was born in Kirkuk. Kirkuk is located in Iraq."
+    },
+    {
+      "doc_id": "fact::Q5558187::P19::Q737547",
+      "title": "gianni capaldi - place of birth",
+      "body": "gianni capaldi was born in Motherwell, Scotland. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q5558187",
+      "metadata": {
+        "source_id": "Q5558187",
+        "target_id": "Q737547",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -22.128168104938066,
+      "snippet": "gianni capaldi was born in Motherwell, Scotland. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place."
+    },
+    {
+      "doc_id": "entity::Q5558187",
+      "title": "gianni capaldi",
+      "body": "gianni capaldi. Description: Gianni Capaldi is a Scottish film and television actor as well as a film and television producer. Aliases: gianni capaldi, Gianni Capaldi. Roles: cast_member. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q5558187",
+      "metadata": {
+        "entity_id": "Q5558187",
+        "aliases": [
+          "gianni capaldi",
+          "Gianni Capaldi"
+        ],
+        "roles": [
+          "cast_member"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -21.839849878707412,
+      "snippet": "gianni capaldi. Description: Gianni Capaldi is a Scottish film and television actor as well as a film and television producer. Aliases: gianni capaldi, Gianni Capaldi. Roles: cast_member. Domains: cinema, people, turk..."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:12:47.102578+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 731,
+    "remaining_tokens": 11462,
+    "reset_requests_seconds": 23241.6,
+    "reset_tokens_seconds": 2.69,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:12:47 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "731",
+      "x-ratelimit-remaining-tokens": "11462",
+      "x-ratelimit-reset-requests": "6h27m21.6s",
+      "x-ratelimit-reset-tokens": "2.69s",
+      "x-request-id": "req_01kpgbhv69ez9r2m27ed6vm8ts",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=BUY2MPzLWt.uVpRH9rpEe1uR6SwAWwre67LkZb6iAII-1776517967.0288825-1.0.1.1-hgJ792tuZCqVMfJvty40QldvY90WVuneCEq7IAiBENG5BRZV8hS_Dq8PaM5eQ2pwl8YPtVCc3SBTLz9SsWn1TkP46LSUZW4.DnzzYDvwPbQzNf57Xg2cxT5isydmXXsh; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:42:47 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3ec4de90c49c7-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "the united kingdom of great britain and northern ireland specifically scotland",
+    "gold_normalized": "the united kingdom of great britain and northern ireland",
+    "exact_match": false,
+    "contains_match": true
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "created_at": "2026-04-18T12:06:21.073098+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_779f731c6587",
+  "question": "Which award was received by the director of Bir Avuç Toprak?",
+  "question_type": "two_hop",
+  "template": "film_director_award",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q7603040",
+    "text": "State Artist"
+  },
+  "prediction_text": "State Artist",
+  "match": {
+    "prediction_normalized": "state artist",
+    "gold_normalized": "state artist",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q6046554",
+      "entity_name": "Bir Avuç Toprak",
+      "roles": [
+        "film"
+      ],
+      "source": "lexicon",
+      "score": 26
+    }
+  ],
+  "relation_path": [
+    "P57",
+    "P166"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q6046554"
+      ],
+      "candidate_count": 5,
+      "selected_triples": [
+        {
+          "source_id": "Q6046554",
+          "source_name": "Bir Avuç Toprak",
+          "source_roles": [
+            "film"
+          ],
+          "relation_id": "P57",
+          "relation_label": "director",
+          "target_id": "Q7107075",
+          "target_name": "Osman Seden",
+          "target_roles": [
+            "director"
+          ],
+          "score": 19.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q7107075"
+      ],
+      "candidate_count": 2,
+      "selected_triples": [
+        {
+          "source_id": "Q7107075",
+          "source_name": "Osman Seden",
+          "source_roles": [
+            "director"
+          ],
+          "relation_id": "P166",
+          "relation_label": "award received",
+          "target_id": "Q7603040",
+          "target_name": "Devlet Sanatçısı",
+          "target_roles": [
+            "award"
+          ],
+          "score": 18.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q6046554",
+        "seed_entity_name": "Bir Avuç Toprak",
+        "final_answers": [
+          {
+            "entity_id": "Q7603040",
+            "entity_name": "Devlet Sanatçısı"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q7603040"
+    ],
+    "candidate_texts": [
+      "Devlet Sanatçısı"
+    ],
+    "answer_text": "Devlet Sanatçısı"
+  },
+  "kg_summary": "Bir Avuç Toprak was directed by Osman Seden. Osman Seden received the award Devlet Sanatçısı.",
+  "expanded_query": "What award did Osman Seden, director of Bir Avuç Toprak, receive.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_779f731c6587::1",
+      "title": "Which award was received by the director of Bir Avuç Toprak?",
+      "body": "Bir Avuç Toprak was directed by Osman Fahir Seden usually credited as Osman F. Seden. Osman Fahir Seden usually credited as Osman F. Seden received the award State Artist.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6046554",
+      "metadata": {
+        "question_id": "qa_779f731c6587",
+        "template": "film_director_award",
+        "question_type": "two_hop"
+      },
+      "score": -49.70182654246291,
+      "snippet": "Bir Avuç Toprak was directed by Osman Fahir Seden usually credited as Osman F. Seden. Osman Fahir Seden usually credited as Osman F. Seden received the award State Artist."
+    },
+    {
+      "doc_id": "entity::Q6046554",
+      "title": "a handful of soil",
+      "body": "a handful of soil. Description: A Handful of Soil (Turkish: Bir Avuç Toprak) is a 1957 Turkish romantic drama film directed by Osman F. Seden. It stars Talat Artemel, Pervin Par, Turgut Özatay, Ayhan Isik, Atif Kaptan and Nubar Terziyan. Aliases: a handful of soil, handful of soil, Handful of Soil, Bir Avuç Toprak, bir avuç toprak, A Handful of Soil. Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q6046554",
+      "metadata": {
+        "entity_id": "Q6046554",
+        "aliases": [
+          "a handful of soil",
+          "handful of soil",
+          "Handful of Soil",
+          "Bir Avuç Toprak",
+          "bir avuç toprak",
+          "A Handful of Soil"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -34.31812303266811,
+      "snippet": "a handful of soil. Description: A Handful of Soil (Turkish: Bir Avuç Toprak) is a 1957 Turkish romantic drama film directed by Osman F. Seden. It stars Talat Artemel, Pervin Par, Turgut Özatay, Ayhan Isik, Atif Kaptan..."
+    },
+    {
+      "doc_id": "fact::Q7107075::P166::Q7603040",
+      "title": "Osman Fahir Seden - award received",
+      "body": "Osman Fahir Seden received the award state artist. Relation type: award received. Source roles: director. Target roles: award.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q7107075",
+      "metadata": {
+        "source_id": "Q7107075",
+        "target_id": "Q7603040",
+        "relation_id": "P166",
+        "relation_label": "award received"
+      },
+      "score": -23.73373989902246,
+      "snippet": "Osman Fahir Seden received the award state artist. Relation type: award received. Source roles: director. Target roles: award."
+    },
+    {
+      "doc_id": "path::qa_d4d52acedc7a::1",
+      "title": "Which award was received by the director of İnek Şaban?",
+      "body": "İnek Şaban was directed by Osman Fahir Seden usually credited as Osman F. Seden. Osman Fahir Seden usually credited as Osman F. Seden received the award State Artist.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6062891",
+      "metadata": {
+        "question_id": "qa_d4d52acedc7a",
+        "template": "film_director_award",
+        "question_type": "two_hop"
+      },
+      "score": -23.466212031737545,
+      "snippet": "İnek Şaban was directed by Osman Fahir Seden usually credited as Osman F. Seden. Osman Fahir Seden usually credited as Osman F. Seden received the award State Artist."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T12:06:20.412721+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 948,
+      "remaining_tokens": 11878,
+      "reset_requests_seconds": 4492.8,
+      "reset_tokens_seconds": 0.61,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:06:20 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "948",
+        "x-ratelimit-remaining-tokens": "11878",
+        "x-ratelimit-reset-requests": "1h14m52.8s",
+        "x-ratelimit-reset-tokens": "610ms",
+        "x-request-id": "req_01kpg7r5yhfqf9z578epwsgg78",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=7sCo2w10i91kpCIv.mjb8SJOUPKBiXuBioc7e9ANH5A-1776513980.3471982-1.0.1.1-s8Iat0dngCJ_FLpZAdr075QrVX0zpmnItSoNvNo6KZ5ERPsInCc9X_ZKDyfgTw4CoA0Xsx0etELXkh9SOnUEUcMaXrtRGDP5DlCTbBGw6bAyc7wHSqg7oVWObLa6Fngl; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:36:20 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee38af92e56dad2-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T12:06:21.070343+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 947,
+      "remaining_tokens": 11558,
+      "reset_requests_seconds": 4579.2,
+      "reset_tokens_seconds": 2.21,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:06:21 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "947",
+        "x-ratelimit-remaining-tokens": "11558",
+        "x-ratelimit-reset-requests": "1h16m19.2s",
+        "x-ratelimit-reset-tokens": "2.21s",
+        "x-request-id": "req_01kpg7r6qnf7fs2zwzzzmkk262",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=pVISIWLtiHrlI2pr6Mooxbibp4lt89AOgOP2an3P2CM-1776513981.1530137-1.0.1.1-dsG6nMPqtJq0ki6Z.ahTnsXyrs7QEI5kOKQd3W_7wkdtNGq9YTpampXJg9aHjhZefYQfYQeUg703cBJJk.9MVsK3Um6RyQKOSyR.x98Lx4r30EvRvPMjGGd90uONSQub; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:36:21 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee38afe3e336852-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

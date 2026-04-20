@@ -1,0 +1,134 @@
+{
+  "created_at": "2026-04-18T09:03:42.030423+00:00",
+  "status": "success",
+  "method": "vanilla_rag",
+  "question_id": "qa_26cd33a65acd",
+  "question": "Where was the director of Aci Zafer born?",
+  "question_type": "two_hop",
+  "template": "film_director_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q35997",
+    "text": "İzmir"
+  },
+  "prediction_text": "İzmir",
+  "expanded_query": null,
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_26cd33a65acd::1",
+      "title": "Where was the director of Aci Zafer born?",
+      "body": "Aci Zafer was directed by Halit Refiğ. Halit Refiğ was born in İzmir.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q18712718",
+      "metadata": {
+        "question_id": "qa_26cd33a65acd",
+        "template": "film_director_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -31.714926452565095,
+      "snippet": "Aci Zafer was directed by Halit Refiğ. Halit Refiğ was born in İzmir."
+    },
+    {
+      "doc_id": "entity::Q18712718",
+      "title": "acı zafer",
+      "body": "acı zafer. Description: Acı Zafer is a 1972 Turkish film directed by Halit Refiğ and starring Yilmaz Köksal, Deniz Erkanat, Turgut Özatay. Aliases: acı zafer, Acı Zafer, aci zafer, Aci Zafer. Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q18712718",
+      "metadata": {
+        "entity_id": "Q18712718",
+        "aliases": [
+          "acı zafer",
+          "Acı Zafer",
+          "aci zafer",
+          "Aci Zafer"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -19.880575521548472,
+      "snippet": "acı zafer. Description: Acı Zafer is a 1972 Turkish film directed by Halit Refiğ and starring Yilmaz Köksal, Deniz Erkanat, Turgut Özatay. Aliases: acı zafer, Acı Zafer, aci zafer, Aci Zafer. Roles: film. Domains: cin..."
+    },
+    {
+      "doc_id": "fact::Q18712718::P57::Q2237841",
+      "title": "acı zafer - director",
+      "body": "acı zafer was directed by halit refiğ. Relation type: director. Source roles: film. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q18712718",
+      "metadata": {
+        "source_id": "Q18712718",
+        "target_id": "Q2237841",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -12.56700202683896,
+      "snippet": "acı zafer was directed by halit refiğ. Relation type: director. Source roles: film. Target roles: director."
+    },
+    {
+      "doc_id": "path::qa_1d88f8ecd5cf::1",
+      "title": "Where was the director of Arabesk born?",
+      "body": "Arabesk was directed by Ertem Eğilmez. Ertem Eğilmez was born in Trabzon.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q1033926",
+      "metadata": {
+        "question_id": "qa_1d88f8ecd5cf",
+        "template": "film_director_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -12.306728483930819,
+      "snippet": "Arabesk was directed by Ertem Eğilmez. Ertem Eğilmez was born in Trabzon."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T09:03:42.027835+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 990,
+    "remaining_tokens": 11706,
+    "reset_requests_seconds": 864.0,
+    "reset_tokens_seconds": 1.47,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 09:03:42 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "990",
+      "x-ratelimit-remaining-tokens": "11706",
+      "x-ratelimit-reset-requests": "14m24s",
+      "x-ratelimit-reset-tokens": "1.47s",
+      "x-request-id": "req_01kpfx9rf9e1b9reb9j25rnrgx",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=60AmoQ0c9d12mtg.dwoMStAmyI6bzSRTrCjOBhmfst8-1776503022.0369914-1.0.1.1-m6oPyDertR83dQ3U3BaKS48s2irYpPAjO2DThelrIWE.dyUHRdhhwNHFw_gDkaJsH1f8l8uQiHyTof3MhiAZ5GTrUz3tcyYBEk6_2eYlX9_zW3xDWq5gwQvaYieu8MJh; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 09:33:42 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee27f6fb8b5333e-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "izmir",
+    "gold_normalized": "izmir",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "created_at": "2026-04-18T12:10:59.302100+00:00",
+  "status": "success",
+  "method": "vanilla_rag",
+  "question_id": "qa_e2df9418d912",
+  "question": "Which award was received by Moritz Johann Bleibtreu, a cast member of In July?",
+  "question_type": "two_hop",
+  "template": "film_cast_award",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q873842",
+    "text": "The Romy TV award in honor of the Austrian-born actress Romy Schneider"
+  },
+  "prediction_text": "The Romy TV award, Platinum Romy, or Silver Bear for Best Actor.",
+  "expanded_query": null,
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_e2df9418d912::1",
+      "title": "Which award was received by Moritz Johann Bleibtreu, a cast member of In July?",
+      "body": "In July has cast member Moritz Johann Bleibtreu. Moritz Johann Bleibtreu received the award The Romy TV award in honor of the Austrian-born actress Romy Schneider.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q494719",
+      "metadata": {
+        "question_id": "qa_e2df9418d912",
+        "template": "film_cast_award",
+        "question_type": "two_hop"
+      },
+      "score": -51.89839446677128,
+      "snippet": "In July has cast member Moritz Johann Bleibtreu. Moritz Johann Bleibtreu received the award The Romy TV award in honor of the Austrian-born actress Romy Schneider."
+    },
+    {
+      "doc_id": "fact::Q58603::P166::Q873842",
+      "title": "Moritz Johann Bleibtreu - award received",
+      "body": "Moritz Johann Bleibtreu received the award platinum romy. Relation type: award received. Source roles: cast_member, person_seed. Target roles: award.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q58603",
+      "metadata": {
+        "source_id": "Q58603",
+        "target_id": "Q873842",
+        "relation_id": "P166",
+        "relation_label": "award received"
+      },
+      "score": -40.49436656832678,
+      "snippet": "Moritz Johann Bleibtreu received the award platinum romy. Relation type: award received. Source roles: cast_member, person_seed. Target roles: award."
+    },
+    {
+      "doc_id": "fact::Q58603::P166::Q819973",
+      "title": "Moritz Johann Bleibtreu - award received",
+      "body": "Moritz Johann Bleibtreu received the award Silver Bear for Best Actor. Relation type: award received. Source roles: cast_member, person_seed. Target roles: award.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q58603",
+      "metadata": {
+        "source_id": "Q58603",
+        "target_id": "Q819973",
+        "relation_id": "P166",
+        "relation_label": "award received"
+      },
+      "score": -39.831630912632754,
+      "snippet": "Moritz Johann Bleibtreu received the award Silver Bear for Best Actor. Relation type: award received. Source roles: cast_member, person_seed. Target roles: award."
+    },
+    {
+      "doc_id": "entity::Q58603",
+      "title": "Moritz Johann Bleibtreu",
+      "body": "Moritz Johann Bleibtreu. Description: Moritz Johann Bleibtreu (German pronunciation: [ˈmoːʁɪts ˈjoːhan  ˈblaɪ̯ptʀɔɪ̯]; born 13 August 1971) is a German actor. Aliases: Moritz Johann Bleibtreu, Moritz Bliebtreu, moritz johann bleibtreu, moritz bleibtreu, moritz bliebtreu, Moritz Bleibtreu. Roles: cast_member, person_seed. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q58603",
+      "metadata": {
+        "entity_id": "Q58603",
+        "aliases": [
+          "Moritz Johann Bleibtreu",
+          "Moritz Bliebtreu",
+          "moritz johann bleibtreu",
+          "moritz bleibtreu",
+          "moritz bliebtreu",
+          "Moritz Bleibtreu"
+        ],
+        "roles": [
+          "cast_member",
+          "person_seed"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -31.90791736855693,
+      "snippet": "Moritz Johann Bleibtreu. Description: Moritz Johann Bleibtreu (German pronunciation: [ˈmoːʁɪts ˈjoːhan  ˈblaɪ̯ptʀɔɪ̯]; born 13 August 1971) is a German actor. Aliases: Moritz Johann Bleibtreu, Moritz Bliebtreu, moritz..."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:10:59.300867+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 896,
+    "remaining_tokens": 11218,
+    "reset_requests_seconds": 8985.6,
+    "reset_tokens_seconds": 3.909,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:10:59 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "896",
+      "x-ratelimit-remaining-tokens": "11218",
+      "x-ratelimit-reset-requests": "2h29m45.6s",
+      "x-ratelimit-reset-tokens": "3.909s",
+      "x-request-id": "req_01kpg80p5vezr8ftnw39kkvrf5",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=Mev9ZWqjwAD3F5VtXiS8aOIpI3Rm0dcUv.bBNL6GL94-1776514259.1095095-1.0.1.1-BKKP6wvNJXXgJ.ROUSVKzoSsJmUqv2nEIYfPOb431_fniaAluQE749H7P9RvQRpHYMhC0mzWhfxblcEm6Yz7ZNo4ya77_6m9GadAoOfNJ60c3ZfpHj41vpjM_9oZvHq3; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:40:59 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee391c76e83d175-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "the romy tv award platinum romy or silver bear for best actor",
+    "gold_normalized": "the romy tv award in honor of the austrian born actress romy schneider",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

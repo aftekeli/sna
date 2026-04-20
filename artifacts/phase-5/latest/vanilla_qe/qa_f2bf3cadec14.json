@@ -1,0 +1,182 @@
+{
+  "created_at": "2026-04-18T12:57:52.787118+00:00",
+  "status": "success",
+  "method": "vanilla_qe",
+  "question_id": "qa_f2bf3cadec14",
+  "question": "Which award was received by the director of King of the Doormen?",
+  "question_type": "two_hop",
+  "template": "film_director_award",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q7650000",
+    "text": "The Sutherland Trophy"
+  },
+  "prediction_text": "The Sutherland Trophy.",
+  "expanded_query": "Director of King of the Doormen award.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_f2bf3cadec14::1",
+      "title": "Which award was received by the director of King of the Doormen?",
+      "body": "King of the Doormen was directed by Zeki Ökten. Zeki Ökten received the award The Sutherland Trophy.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q12810220",
+      "metadata": {
+        "question_id": "qa_f2bf3cadec14",
+        "template": "film_director_award",
+        "question_type": "two_hop"
+      },
+      "score": -28.711086382677088,
+      "snippet": "King of the Doormen was directed by Zeki Ökten. Zeki Ökten received the award The Sutherland Trophy."
+    },
+    {
+      "doc_id": "entity::Q12810220",
+      "title": "Kapicilar Krali",
+      "body": "Kapicilar Krali. Description: King of the Doormen, (Turkish: Kapıcılar Kralı), is a 1976 Turkish comedy film featuring Kemal Sunal, Sevda Ferdağ, Bilge Zobu and Şevket Altuğ, produced by Arif and Abdurrahman Keskiner and, directed by Zeki Ökten. The movie is the third collaboration of Ökten and Sunal, following Hanzo and Şaşkın Damat, both shot in 1975. Kapıcılar Kralı is considered as one of the most memorable motion pictures of the career of Kemal Sunal. Along with Çöpçüler Kralı another movie of Sunal also directed by Zeki Ökten, Kapıcılar Kralı is also featured in the book 100 Yılın 100 Türk Filmi, written by Atilla Dorsay, Turkish film critic.The movie is decorated major local success, winning best director and best actor awards at 1977 International Antalya Golden Orange Film Festival, in which it was also runner-up of best motion picture after Kara Çarşaflı Gelin of director and producer Süreyya Duru. Thus, Kemal Sunal became the first comedy-genre actor ever to win the award. Movie is also inducted at 100 Yıl 100 Film, a publicly voted list that is gathering 100 best motion pictures of Turkish cinema, in honour of its centenary, published by Ministry of Culture and Tourism of Turkey, in 2014. The movie is ranked 36th out of 100 movies in total, after an online-voted pool of 367,620 voters. Aliases: Kapicilar Krali, kapıcılar kralı, Kapıcılar Kralı, King of the Doormen, king of the doormen, kapicilar krali. Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q12810220",
+      "metadata": {
+        "entity_id": "Q12810220",
+        "aliases": [
+          "Kapicilar Krali",
+          "kapıcılar kralı",
+          "Kapıcılar Kralı",
+          "King of the Doormen",
+          "king of the doormen",
+          "kapicilar krali"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -14.875483760319987,
+      "snippet": "Kapicilar Krali. Description: King of the Doormen, (Turkish: Kapıcılar Kralı), is a 1976 Turkish comedy film featuring Kemal Sunal, Sevda Ferdağ, Bilge Zobu and Şevket Altuğ, produced by Arif and Abdurrahman Keskiner..."
+    },
+    {
+      "doc_id": "entity::Q7744599",
+      "title": "Çöpçüler krali",
+      "body": "Çöpçüler krali. Description: The King of the Street Cleaners (Turkish: Çöpçüler Kralı), is a 1977 comedy drama film directed by Zeki Ökten and starring famous Turkish comedy actor Kemal Sunal. The film was written by Umur Bugay. Cahit Berkay and Özdemir Erdoğan composed the film music. The film won awards at the 15th Antalya Film Festival (Umur Bugay \"Best Screenplay\") and Şener Şen (\"Best Supporting Actor\"). Aliases: Çöpçüler krali, çöpçüler krali, Çöpçüler Kralı, king of the street cleaners, the king of the street cleaners, The King of the Street Cleaners, çöpçüler kralı, King of the Street Cleaners. Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q7744599",
+      "metadata": {
+        "entity_id": "Q7744599",
+        "aliases": [
+          "Çöpçüler krali",
+          "çöpçüler krali",
+          "Çöpçüler Kralı",
+          "king of the street cleaners",
+          "the king of the street cleaners",
+          "The King of the Street Cleaners",
+          "çöpçüler kralı",
+          "King of the Street Cleaners"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -10.462823356222724,
+      "snippet": "Çöpçüler krali. Description: The King of the Street Cleaners (Turkish: Çöpçüler Kralı), is a 1977 comedy drama film directed by Zeki Ökten and starring famous Turkish comedy actor Kemal Sunal. The film was written by..."
+    },
+    {
+      "doc_id": "fact::Q2739722::P166::Q7650000",
+      "title": "Zeki Okten - award received",
+      "body": "Zeki Okten received the award Sutherland Award. Relation type: award received. Source roles: director. Target roles: award.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q2739722",
+      "metadata": {
+        "source_id": "Q2739722",
+        "target_id": "Q7650000",
+        "relation_id": "P166",
+        "relation_label": "award received"
+      },
+      "score": -10.311258654196267,
+      "snippet": "Zeki Okten received the award Sutherland Award. Relation type: award received. Source roles: director. Target roles: award."
+    },
+    {
+      "doc_id": "fact::Q7107075::P166::Q7603040",
+      "title": "Osman Fahir Seden - award received",
+      "body": "Osman Fahir Seden received the award state artist. Relation type: award received. Source roles: director. Target roles: award.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q7107075",
+      "metadata": {
+        "source_id": "Q7107075",
+        "target_id": "Q7603040",
+        "relation_id": "P166",
+        "relation_label": "award received"
+      },
+      "score": -10.000655825126588,
+      "snippet": "Osman Fahir Seden received the award state artist. Relation type: award received. Source roles: director. Target roles: award."
+    },
+    {
+      "doc_id": "fact::Q3176600::P166::Q7241424",
+      "title": "lütfi akad - award received",
+      "body": "lütfi akad received the award Presidential Culture and Arts Grand Awards. Relation type: award received. Source roles: director. Target roles: award.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q3176600",
+      "metadata": {
+        "source_id": "Q3176600",
+        "target_id": "Q7241424",
+        "relation_id": "P166",
+        "relation_label": "award received"
+      },
+      "score": -9.883752818667066,
+      "snippet": "lütfi akad received the award Presidential Culture and Arts Grand Awards. Relation type: award received. Source roles: director. Target roles: award."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:57:52.775859+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 860,
+    "remaining_tokens": 11388,
+    "reset_requests_seconds": 12096.0,
+    "reset_tokens_seconds": 3.059,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:57:52 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "860",
+      "x-ratelimit-remaining-tokens": "11388",
+      "x-ratelimit-reset-requests": "3h21m36s",
+      "x-ratelimit-reset-tokens": "3.059s",
+      "x-request-id": "req_01kpgaphyvejks8nw18e0a89kg",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=36afbYnOij4LATJs5px52VhQzw2wpbyuN5gJqiUi3zU-1776517072.8366761-1.0.1.1-tE.mrKU5wmGPqCwscsjAbQCIsKxkvarvk.Hc4HmZj1JTq_qd36wACyGFVZ9DYeGPtjd6S_Cu_4Q2SJZrExQExepqrJmuuoD1FqTGEncoOxOTIRVeTddcVAhCeFl4TyO7; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:27:52 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3d6793992411f-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "the sutherland trophy",
+    "gold_normalized": "the sutherland trophy",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

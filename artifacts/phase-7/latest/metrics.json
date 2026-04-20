@@ -1,0 +1,3136 @@
+{
+  "created_at": "2026-04-18T13:15:53.172117+00:00",
+  "question_count": 50,
+  "question_ids": [
+    "qa_26cd33a65acd",
+    "qa_c2bd1aeb56de",
+    "qa_fa625a096ffb",
+    "qa_dec91d77e6cf",
+    "qa_1d88f8ecd5cf",
+    "qa_41602f1e45ed",
+    "qa_afcdaf7d352f",
+    "qa_d8aa86c24033",
+    "qa_779f731c6587",
+    "qa_d4d52acedc7a",
+    "qa_d406bf48e837",
+    "qa_f2bf3cadec14",
+    "qa_bb3348c757ee",
+    "qa_dcba1b612c86",
+    "qa_9ebc97ac2e4f",
+    "qa_104db2fbbec9",
+    "qa_4ae95238ae3e",
+    "qa_6c10516be4d1",
+    "qa_515c0f340473",
+    "qa_6efbcbaf0f9f",
+    "qa_95049c4cd79a",
+    "qa_baef96cb9ce7",
+    "qa_f7df086d2062",
+    "qa_59798c8c1dd1",
+    "qa_444d583ed375",
+    "qa_284c5e0ceb83",
+    "qa_e2df9418d912",
+    "qa_4e7de35a4787",
+    "qa_5610775fbf0e",
+    "qa_d78e27a4c2dc",
+    "qa_8dff5823c781",
+    "qa_45847cf61fb5",
+    "qa_e90dc0323aed",
+    "qa_ea1b335bfcbb",
+    "qa_2f68e5ea0524",
+    "qa_ca18f2482294",
+    "qa_eb46e42dc05a",
+    "qa_07e8f72b4442",
+    "qa_d6de5558a6c3",
+    "qa_2a6ac9643a80",
+    "qa_565c95482384",
+    "qa_fd2bb20d9589",
+    "qa_11ec48a42232",
+    "qa_ab897ab4eb0b",
+    "qa_f5a4909699e7",
+    "qa_ef87589de143",
+    "qa_f2af017e97bd",
+    "qa_056fc446ad92",
+    "qa_6e027a24320b",
+    "qa_25e417879724"
+  ],
+  "methods": [
+    "no_retrieval",
+    "vanilla_rag",
+    "vanilla_qe",
+    "kg_infused_rag"
+  ],
+  "by_method": {
+    "no_retrieval": {
+      "summary": {
+        "method": "no_retrieval",
+        "expected_total": 50,
+        "available_results": 50,
+        "coverage": 1.0,
+        "accuracy": 0.18,
+        "exact_match": 0.08,
+        "f1": 0.10010699826489301,
+        "retrieval_recall": 0.0,
+        "status_breakdown": {
+          "success": 50
+        }
+      },
+      "missing_question_ids": [],
+      "questions": [
+        {
+          "question_id": "qa_26cd33a65acd",
+          "question": "Where was the director of Aci Zafer born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Unknown",
+            "gold_answer_text": "İzmir",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_c2bd1aeb56de",
+          "question": "Where was the director of Ah Nerede born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Unknown",
+            "gold_answer_text": "Mustafakemalpaşa",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_fa625a096ffb",
+          "question": "Where was the director of Akvaryumda Sessiz born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Unknown",
+            "gold_answer_text": "İzmir",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_dec91d77e6cf",
+          "question": "Where was the director of Anadolu Kartalları born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Ömer Vargı, the director of Anadolu Kartalları, was born in Istanbul, Turkey",
+            "gold_answer_text": "Istanbul",
+            "accuracy": true,
+            "exact_match": false,
+            "contains_match": true,
+            "f1": 0.15384615384615385,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_1d88f8ecd5cf",
+          "question": "Where was the director of Arabesk born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Ertem Eğilmez, the director of Arabesk, was born in İzmir, Turkey.",
+            "gold_answer_text": "Trabzon",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_41602f1e45ed",
+          "question": "Where was the director of Aslan Pençesi born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Unknown",
+            "gold_answer_text": "Istanbul",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_afcdaf7d352f",
+          "question": "Where was the director of Banker Bilo born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Unknown",
+            "gold_answer_text": "Trabzon",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_d8aa86c24033",
+          "question": "Where was the director of Bitter Life born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "İzmir, Turkey",
+            "gold_answer_text": "Çanakkale Province",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_779f731c6587",
+          "question": "Which award was received by the director of Bir Avuç Toprak?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Unknown",
+            "gold_answer_text": "State Artist",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_d4d52acedc7a",
+          "question": "Which award was received by the director of İnek Şaban?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Unknown",
+            "gold_answer_text": "State Artist",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_d406bf48e837",
+          "question": "Which award was received by the director of Kanun namina?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Unknown",
+            "gold_answer_text": "Presidential Culture and Arts Grand Awards",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_f2bf3cadec14",
+          "question": "Which award was received by the director of King of the Doormen?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Unknown",
+            "gold_answer_text": "The Sutherland Trophy",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_bb3348c757ee",
+          "question": "Where did the director of Angel's Fall study?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Semih Kaplanoğlu, the director of Angel's Fall, studied Economics at Bogazici University.",
+            "gold_answer_text": "Dokuz Eylül University",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.125,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_dcba1b612c86",
+          "question": "Where did the director of Bitter Life study?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "İsmail Güneş, and later Metin Erksan, directed Bitter Life, but most notably Metin Erksan. Metin Erksan studied at Istanbul University, and later in Italy at the Centro Sperimentale di Cinematografia.",
+            "gold_answer_text": "Istanbul University",
+            "accuracy": true,
+            "exact_match": false,
+            "contains_match": true,
+            "f1": 0.125,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_9ebc97ac2e4f",
+          "question": "Where did the director of Do Not Forget Me Istanbul study?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Unknown",
+            "gold_answer_text": "The University of Southern California",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_104db2fbbec9",
+          "question": "Where did the director of Ember study?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Zeki Demirkubuz, the director of Ember, studied engineering.",
+            "gold_answer_text": "Istanbul University",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_4ae95238ae3e",
+          "question": "Where did the director of Grain study?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Semih Kaplanoğlu, the director of Grain, studied cinema at the Dokuz Eylül University in İzmir, Turkey.",
+            "gold_answer_text": "Dokuz Eylül University",
+            "accuracy": true,
+            "exact_match": false,
+            "contains_match": true,
+            "f1": 0.3157894736842105,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_6c10516be4d1",
+          "question": "Where was Tülin Özen, a cast member of 10 To 11, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Istanbul, Turkey.",
+            "gold_answer_text": "İskenderun",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_515c0f340473",
+          "question": "Where was Seiyō Uchino, a cast member of 125 Years Memory, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Unknown",
+            "gold_answer_text": "Kōhoku-ku",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_6efbcbaf0f9f",
+          "question": "Where was Shiori Kutsuna, a cast member of 125 Years Memory, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Kyoto, Japan.",
+            "gold_answer_text": "Killarney Heights",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_95049c4cd79a",
+          "question": "Where was Asuman Dabak, a cast member of Adem'in Trenleri, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Istanbul, Turkey",
+            "gold_answer_text": "Akhisar",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_baef96cb9ce7",
+          "question": "Where was Nurgül Yeşilçay, a cast member of Adem'in Trenleri, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Afyon, Turkey",
+            "gold_answer_text": "Afyonkarahisar",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_f7df086d2062",
+          "question": "Where was Tamer Karadağlı, a cast member of Alina, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Unknown",
+            "gold_answer_text": "Ankara",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_59798c8c1dd1",
+          "question": "Where was Ali Şen, a cast member of Banker Bilo, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Kardzhali, Bulgaria.",
+            "gold_answer_text": "Adana",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_444d583ed375",
+          "question": "Where was Berk Hakman, a cast member of Beyond the Hill, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Unknown",
+            "gold_answer_text": "Ankara",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_284c5e0ceb83",
+          "question": "Which award was received by Nuri Bilge Ceylan, a cast member of Climates?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Best Director at Cannes Film Festival.",
+            "gold_answer_text": "Presidential Culture and Arts Grand Awards",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_e2df9418d912",
+          "question": "Which award was received by Moritz Johann Bleibtreu, a cast member of In July?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Max Ophüls Preis",
+            "gold_answer_text": "The Romy TV award in honor of the Austrian-born actress Romy Schneider",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_4e7de35a4787",
+          "question": "Which award was received by Makram Jamil Khoury, a cast member of Inheritance?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Unknown",
+            "gold_answer_text": "The Israel Prize",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_5610775fbf0e",
+          "question": "Which award was received by Nora Marie Tschirner, a cast member of Kebab Connection?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Unknown",
+            "gold_answer_text": "The Romy TV award in honor of the Austrian-born actress Romy Schneider",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_d78e27a4c2dc",
+          "question": "Which award was received by Arsinée Khanjian, a cast member of The Cut?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Genie Award",
+            "gold_answer_text": "Genie Award for Best Performance by an Actress in a Leading Role",
+            "accuracy": true,
+            "exact_match": false,
+            "contains_match": true,
+            "f1": 0.2857142857142857,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_8dff5823c781",
+          "question": "In which country was the director of Ah Nerede born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Turkey",
+            "gold_answer_text": "Turkey",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_45847cf61fb5",
+          "question": "In which country was the director of Davaro born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Unknown",
+            "gold_answer_text": "Turkey",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_e90dc0323aed",
+          "question": "In which country was the director of Playing with Death born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Unknown",
+            "gold_answer_text": "Iran",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_ea1b335bfcbb",
+          "question": "In which country was the director of Shadows and Faces born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Turkey",
+            "gold_answer_text": "Cyprus",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_2f68e5ea0524",
+          "question": "In which country was the director of The Beauty from Peran born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Unknown",
+            "gold_answer_text": "Greece",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_ca18f2482294",
+          "question": "In which country is the school attended by the director of Do Not Forget Me Istanbul located?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Greece",
+            "gold_answer_text": "The United States of America",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_eb46e42dc05a",
+          "question": "In which country is the school attended by the director of Shadows and Faces located?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Turkey",
+            "gold_answer_text": "The United Kingdom of Great Britain and Northern Ireland",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_07e8f72b4442",
+          "question": "In which country is the school attended by the director of Angel's Fall located?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Unknown",
+            "gold_answer_text": "Turkey",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_d6de5558a6c3",
+          "question": "In which country is the school attended by the director of Bitter Life located?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Greece",
+            "gold_answer_text": "Turkey",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_2a6ac9643a80",
+          "question": "In which country is the school attended by the director of Dokuz Dagin Efesi located?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Unknown",
+            "gold_answer_text": "Turkey",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_565c95482384",
+          "question": "In which country was Kim Seol-hyun, a cast member of Ayla The Daughter of War, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "South Korea",
+            "gold_answer_text": "South Korea",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_fd2bb20d9589",
+          "question": "In which country was Aliye Rona, a cast member of Bloody Money, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Turkey",
+            "gold_answer_text": "Syria",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_11ec48a42232",
+          "question": "In which country was Ali Düşenkalkar, a cast member of Devrim Arabaları, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Turkey",
+            "gold_answer_text": "Cyprus",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_ab897ab4eb0b",
+          "question": "In which country was Gianni Capaldi, a cast member of Ghosts of Garip, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Scotland",
+            "gold_answer_text": "The United Kingdom of Great Britain and Northern Ireland",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_f5a4909699e7",
+          "question": "In which country was Selim Bayraktar, a cast member of Ghosts of Garip, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Turkey",
+            "gold_answer_text": "Iraq",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_ef87589de143",
+          "question": "Were the directors of Ah Nerede and Arabesk born in the same country?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Yes.",
+            "gold_answer_text": "yes",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_f2af017e97bd",
+          "question": "Were the directors of Ah Nerede and Playing with Death born in the same country?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Unknown",
+            "gold_answer_text": "no",
+            "accuracy": true,
+            "exact_match": false,
+            "contains_match": true,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_056fc446ad92",
+          "question": "Were the directors of Angel's Fall and Do Not Forget Me Istanbul educated in the same country?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Yes.",
+            "gold_answer_text": "no",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_6e027a24320b",
+          "question": "Were Tülin Özen from 10 To 11 and Asuman Dabak from Adem'in Trenleri born in the same country?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Yes.",
+            "gold_answer_text": "yes",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_25e417879724",
+          "question": "Were Tülin Özen from 10 To 11 and Seiyō Uchino from 125 Years Memory born in the same country?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Yes.",
+            "gold_answer_text": "no",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        }
+      ]
+    },
+    "vanilla_rag": {
+      "summary": {
+        "method": "vanilla_rag",
+        "expected_total": 50,
+        "available_results": 50,
+        "coverage": 1.0,
+        "accuracy": 0.96,
+        "exact_match": 0.82,
+        "f1": 0.9370505050505051,
+        "retrieval_recall": 1.0,
+        "status_breakdown": {
+          "success": 50
+        }
+      },
+      "missing_question_ids": [],
+      "questions": [
+        {
+          "question_id": "qa_26cd33a65acd",
+          "question": "Where was the director of Aci Zafer born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "İzmir",
+            "gold_answer_text": "İzmir",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_c2bd1aeb56de",
+          "question": "Where was the director of Ah Nerede born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Mustafakemalpaşa, Turkey.",
+            "gold_answer_text": "Mustafakemalpaşa",
+            "accuracy": true,
+            "exact_match": false,
+            "contains_match": true,
+            "f1": 0.6666666666666666,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_fa625a096ffb",
+          "question": "Where was the director of Akvaryumda Sessiz born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "İzmir",
+            "gold_answer_text": "İzmir",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_dec91d77e6cf",
+          "question": "Where was the director of Anadolu Kartalları born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Istanbul.",
+            "gold_answer_text": "Istanbul",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_1d88f8ecd5cf",
+          "question": "Where was the director of Arabesk born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Trabzon.",
+            "gold_answer_text": "Trabzon",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_41602f1e45ed",
+          "question": "Where was the director of Aslan Pençesi born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Istanbul.",
+            "gold_answer_text": "Istanbul",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_afcdaf7d352f",
+          "question": "Where was the director of Banker Bilo born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Trabzon.",
+            "gold_answer_text": "Trabzon",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_d8aa86c24033",
+          "question": "Where was the director of Bitter Life born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Çanakkale Province.",
+            "gold_answer_text": "Çanakkale Province",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_779f731c6587",
+          "question": "Which award was received by the director of Bir Avuç Toprak?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "State Artist.",
+            "gold_answer_text": "State Artist",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_d4d52acedc7a",
+          "question": "Which award was received by the director of İnek Şaban?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "State Artist.",
+            "gold_answer_text": "State Artist",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_d406bf48e837",
+          "question": "Which award was received by the director of Kanun namina?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Presidential Culture and Arts Grand Awards.",
+            "gold_answer_text": "Presidential Culture and Arts Grand Awards",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_f2bf3cadec14",
+          "question": "Which award was received by the director of King of the Doormen?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "The Sutherland Trophy.",
+            "gold_answer_text": "The Sutherland Trophy",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_bb3348c757ee",
+          "question": "Where did the director of Angel's Fall study?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Dokuz Eylül University.",
+            "gold_answer_text": "Dokuz Eylül University",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_dcba1b612c86",
+          "question": "Where did the director of Bitter Life study?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Istanbul University.",
+            "gold_answer_text": "Istanbul University",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_9ebc97ac2e4f",
+          "question": "Where did the director of Do Not Forget Me Istanbul study?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "The University of Southern California.",
+            "gold_answer_text": "The University of Southern California",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_104db2fbbec9",
+          "question": "Where did the director of Ember study?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Istanbul University.",
+            "gold_answer_text": "Istanbul University",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_4ae95238ae3e",
+          "question": "Where did the director of Grain study?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Dokuz Eylül University.",
+            "gold_answer_text": "Dokuz Eylül University",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_6c10516be4d1",
+          "question": "Where was Tülin Özen, a cast member of 10 To 11, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "İskenderun",
+            "gold_answer_text": "İskenderun",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_515c0f340473",
+          "question": "Where was Seiyō Uchino, a cast member of 125 Years Memory, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Kōhoku-ku, Yokohama, Japan.",
+            "gold_answer_text": "Kōhoku-ku",
+            "accuracy": true,
+            "exact_match": false,
+            "contains_match": true,
+            "f1": 0.6666666666666666,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_6efbcbaf0f9f",
+          "question": "Where was Shiori Kutsuna, a cast member of 125 Years Memory, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Killarney Heights, Australia",
+            "gold_answer_text": "Killarney Heights",
+            "accuracy": true,
+            "exact_match": false,
+            "contains_match": true,
+            "f1": 0.8,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_95049c4cd79a",
+          "question": "Where was Asuman Dabak, a cast member of Adem'in Trenleri, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Akhisar, Turkey.",
+            "gold_answer_text": "Akhisar",
+            "accuracy": true,
+            "exact_match": false,
+            "contains_match": true,
+            "f1": 0.6666666666666666,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_baef96cb9ce7",
+          "question": "Where was Nurgül Yeşilçay, a cast member of Adem'in Trenleri, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Afyonkarahisar.",
+            "gold_answer_text": "Afyonkarahisar",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_f7df086d2062",
+          "question": "Where was Tamer Karadağlı, a cast member of Alina, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Ankara",
+            "gold_answer_text": "Ankara",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_59798c8c1dd1",
+          "question": "Where was Ali Şen, a cast member of Banker Bilo, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Adana.",
+            "gold_answer_text": "Adana",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_444d583ed375",
+          "question": "Where was Berk Hakman, a cast member of Beyond the Hill, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Ankara",
+            "gold_answer_text": "Ankara",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_284c5e0ceb83",
+          "question": "Which award was received by Nuri Bilge Ceylan, a cast member of Climates?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Presidential Culture and Arts Grand Awards.",
+            "gold_answer_text": "Presidential Culture and Arts Grand Awards",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_e2df9418d912",
+          "question": "Which award was received by Moritz Johann Bleibtreu, a cast member of In July?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "The Romy TV award, Platinum Romy, or Silver Bear for Best Actor.",
+            "gold_answer_text": "The Romy TV award in honor of the Austrian-born actress Romy Schneider",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.4,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_4e7de35a4787",
+          "question": "Which award was received by Makram Jamil Khoury, a cast member of Inheritance?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "The Israel Prize.",
+            "gold_answer_text": "The Israel Prize",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_5610775fbf0e",
+          "question": "Which award was received by Nora Marie Tschirner, a cast member of Kebab Connection?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "The Romy TV award or platinum romy.",
+            "gold_answer_text": "The Romy TV award in honor of the Austrian-born actress Romy Schneider",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.5,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_d78e27a4c2dc",
+          "question": "Which award was received by Arsinée Khanjian, a cast member of The Cut?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Genie Award for Best Performance by an Actress in a Leading Role.",
+            "gold_answer_text": "Genie Award for Best Performance by an Actress in a Leading Role",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_8dff5823c781",
+          "question": "In which country was the director of Ah Nerede born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Turkey.",
+            "gold_answer_text": "Turkey",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_45847cf61fb5",
+          "question": "In which country was the director of Davaro born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Turkey.",
+            "gold_answer_text": "Turkey",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_e90dc0323aed",
+          "question": "In which country was the director of Playing with Death born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Iran.",
+            "gold_answer_text": "Iran",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_ea1b335bfcbb",
+          "question": "In which country was the director of Shadows and Faces born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Cyprus",
+            "gold_answer_text": "Cyprus",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_2f68e5ea0524",
+          "question": "In which country was the director of The Beauty from Peran born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Greece.",
+            "gold_answer_text": "Greece",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_ca18f2482294",
+          "question": "In which country is the school attended by the director of Do Not Forget Me Istanbul located?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "United States of America",
+            "gold_answer_text": "The United States of America",
+            "accuracy": true,
+            "exact_match": false,
+            "contains_match": true,
+            "f1": 0.888888888888889,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_eb46e42dc05a",
+          "question": "In which country is the school attended by the director of Shadows and Faces located?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "United Kingdom",
+            "gold_answer_text": "The United Kingdom of Great Britain and Northern Ireland",
+            "accuracy": true,
+            "exact_match": false,
+            "contains_match": true,
+            "f1": 0.3636363636363636,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_07e8f72b4442",
+          "question": "In which country is the school attended by the director of Angel's Fall located?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Turkey.",
+            "gold_answer_text": "Turkey",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_d6de5558a6c3",
+          "question": "In which country is the school attended by the director of Bitter Life located?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Turkey.",
+            "gold_answer_text": "Turkey",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_2a6ac9643a80",
+          "question": "In which country is the school attended by the director of Dokuz Dagin Efesi located?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Turkey",
+            "gold_answer_text": "Turkey",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_565c95482384",
+          "question": "In which country was Kim Seol-hyun, a cast member of Ayla The Daughter of War, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "South Korea.",
+            "gold_answer_text": "South Korea",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_fd2bb20d9589",
+          "question": "In which country was Aliye Rona, a cast member of Bloody Money, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Syria",
+            "gold_answer_text": "Syria",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_11ec48a42232",
+          "question": "In which country was Ali Düşenkalkar, a cast member of Devrim Arabaları, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Cyprus",
+            "gold_answer_text": "Cyprus",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_ab897ab4eb0b",
+          "question": "In which country was Gianni Capaldi, a cast member of Ghosts of Garip, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "The United Kingdom of Great Britain and Northern Ireland, specifically Scotland.",
+            "gold_answer_text": "The United Kingdom of Great Britain and Northern Ireland",
+            "accuracy": true,
+            "exact_match": false,
+            "contains_match": true,
+            "f1": 0.9,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_f5a4909699e7",
+          "question": "In which country was Selim Bayraktar, a cast member of Ghosts of Garip, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Iraq",
+            "gold_answer_text": "Iraq",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_ef87589de143",
+          "question": "Were the directors of Ah Nerede and Arabesk born in the same country?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Yes.",
+            "gold_answer_text": "yes",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_f2af017e97bd",
+          "question": "Were the directors of Ah Nerede and Playing with Death born in the same country?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "No.",
+            "gold_answer_text": "no",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_056fc446ad92",
+          "question": "Were the directors of Angel's Fall and Do Not Forget Me Istanbul educated in the same country?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "No.",
+            "gold_answer_text": "no",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_6e027a24320b",
+          "question": "Were Tülin Özen from 10 To 11 and Asuman Dabak from Adem'in Trenleri born in the same country?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Yes.",
+            "gold_answer_text": "yes",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_25e417879724",
+          "question": "Were Tülin Özen from 10 To 11 and Seiyō Uchino from 125 Years Memory born in the same country?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "No.",
+            "gold_answer_text": "no",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        }
+      ]
+    },
+    "vanilla_qe": {
+      "summary": {
+        "method": "vanilla_qe",
+        "expected_total": 50,
+        "available_results": 50,
+        "coverage": 1.0,
+        "accuracy": 0.96,
+        "exact_match": 0.8,
+        "f1": 0.9144570984570984,
+        "retrieval_recall": 1.0,
+        "status_breakdown": {
+          "success": 50
+        }
+      },
+      "missing_question_ids": [],
+      "questions": [
+        {
+          "question_id": "qa_26cd33a65acd",
+          "question": "Where was the director of Aci Zafer born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "İzmir.",
+            "gold_answer_text": "İzmir",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_c2bd1aeb56de",
+          "question": "Where was the director of Ah Nerede born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Mustafakemalpaşa, Turkey.",
+            "gold_answer_text": "Mustafakemalpaşa",
+            "accuracy": true,
+            "exact_match": false,
+            "contains_match": true,
+            "f1": 0.6666666666666666,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_fa625a096ffb",
+          "question": "Where was the director of Akvaryumda Sessiz born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "İzmir.",
+            "gold_answer_text": "İzmir",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_dec91d77e6cf",
+          "question": "Where was the director of Anadolu Kartalları born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Istanbul.",
+            "gold_answer_text": "Istanbul",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_1d88f8ecd5cf",
+          "question": "Where was the director of Arabesk born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Trabzon.",
+            "gold_answer_text": "Trabzon",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_41602f1e45ed",
+          "question": "Where was the director of Aslan Pençesi born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Istanbul",
+            "gold_answer_text": "Istanbul",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_afcdaf7d352f",
+          "question": "Where was the director of Banker Bilo born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Trabzon.",
+            "gold_answer_text": "Trabzon",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_d8aa86c24033",
+          "question": "Where was the director of Bitter Life born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Çanakkale Province.",
+            "gold_answer_text": "Çanakkale Province",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_779f731c6587",
+          "question": "Which award was received by the director of Bir Avuç Toprak?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "State Artist.",
+            "gold_answer_text": "State Artist",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_d4d52acedc7a",
+          "question": "Which award was received by the director of İnek Şaban?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "State Artist.",
+            "gold_answer_text": "State Artist",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_d406bf48e837",
+          "question": "Which award was received by the director of Kanun namina?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Presidential Culture and Arts Grand Awards.",
+            "gold_answer_text": "Presidential Culture and Arts Grand Awards",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_f2bf3cadec14",
+          "question": "Which award was received by the director of King of the Doormen?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "The Sutherland Trophy.",
+            "gold_answer_text": "The Sutherland Trophy",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_bb3348c757ee",
+          "question": "Where did the director of Angel's Fall study?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Dokuz Eylül University.",
+            "gold_answer_text": "Dokuz Eylül University",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_dcba1b612c86",
+          "question": "Where did the director of Bitter Life study?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Istanbul University.",
+            "gold_answer_text": "Istanbul University",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_9ebc97ac2e4f",
+          "question": "Where did the director of Do Not Forget Me Istanbul study?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "The University of Southern California.",
+            "gold_answer_text": "The University of Southern California",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_104db2fbbec9",
+          "question": "Where did the director of Ember study?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Istanbul University.",
+            "gold_answer_text": "Istanbul University",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_4ae95238ae3e",
+          "question": "Where did the director of Grain study?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Dokuz Eylül University.",
+            "gold_answer_text": "Dokuz Eylül University",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_6c10516be4d1",
+          "question": "Where was Tülin Özen, a cast member of 10 To 11, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "İskenderun.",
+            "gold_answer_text": "İskenderun",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_515c0f340473",
+          "question": "Where was Seiyō Uchino, a cast member of 125 Years Memory, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Kōhoku-ku, Yokohama, Japan.",
+            "gold_answer_text": "Kōhoku-ku",
+            "accuracy": true,
+            "exact_match": false,
+            "contains_match": true,
+            "f1": 0.6666666666666666,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_6efbcbaf0f9f",
+          "question": "Where was Shiori Kutsuna, a cast member of 125 Years Memory, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Killarney Heights, Australia",
+            "gold_answer_text": "Killarney Heights",
+            "accuracy": true,
+            "exact_match": false,
+            "contains_match": true,
+            "f1": 0.8,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_95049c4cd79a",
+          "question": "Where was Asuman Dabak, a cast member of Adem'in Trenleri, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Akhisar, Turkey.",
+            "gold_answer_text": "Akhisar",
+            "accuracy": true,
+            "exact_match": false,
+            "contains_match": true,
+            "f1": 0.6666666666666666,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_baef96cb9ce7",
+          "question": "Where was Nurgül Yeşilçay, a cast member of Adem'in Trenleri, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Afyonkarahisar.",
+            "gold_answer_text": "Afyonkarahisar",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_f7df086d2062",
+          "question": "Where was Tamer Karadağlı, a cast member of Alina, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Ankara",
+            "gold_answer_text": "Ankara",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_59798c8c1dd1",
+          "question": "Where was Ali Şen, a cast member of Banker Bilo, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Adana.",
+            "gold_answer_text": "Adana",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_444d583ed375",
+          "question": "Where was Berk Hakman, a cast member of Beyond the Hill, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Ankara, Turkey (also known as Angora)",
+            "gold_answer_text": "Ankara",
+            "accuracy": true,
+            "exact_match": false,
+            "contains_match": true,
+            "f1": 0.2857142857142857,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_284c5e0ceb83",
+          "question": "Which award was received by Nuri Bilge Ceylan, a cast member of Climates?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Presidential Culture and Arts Grand Awards.",
+            "gold_answer_text": "Presidential Culture and Arts Grand Awards",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_e2df9418d912",
+          "question": "Which award was received by Moritz Johann Bleibtreu, a cast member of In July?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Platinum Romy or Silver Bear for Best Actor or The Romy TV award.",
+            "gold_answer_text": "The Romy TV award in honor of the Austrian-born actress Romy Schneider",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.38461538461538464,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_4e7de35a4787",
+          "question": "Which award was received by Makram Jamil Khoury, a cast member of Inheritance?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "The Israel Prize.",
+            "gold_answer_text": "The Israel Prize",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_5610775fbf0e",
+          "question": "Which award was received by Nora Marie Tschirner, a cast member of Kebab Connection?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "The Romy TV award or platinum romy.",
+            "gold_answer_text": "The Romy TV award in honor of the Austrian-born actress Romy Schneider",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.5,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_d78e27a4c2dc",
+          "question": "Which award was received by Arsinée Khanjian, a cast member of The Cut?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Genie Award for Best Performance by an Actress in a Leading Role.",
+            "gold_answer_text": "Genie Award for Best Performance by an Actress in a Leading Role",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_8dff5823c781",
+          "question": "In which country was the director of Ah Nerede born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Turkey.",
+            "gold_answer_text": "Turkey",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_45847cf61fb5",
+          "question": "In which country was the director of Davaro born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Turkey",
+            "gold_answer_text": "Turkey",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_e90dc0323aed",
+          "question": "In which country was the director of Playing with Death born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Iran",
+            "gold_answer_text": "Iran",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_ea1b335bfcbb",
+          "question": "In which country was the director of Shadows and Faces born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Cyprus",
+            "gold_answer_text": "Cyprus",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_2f68e5ea0524",
+          "question": "In which country was the director of The Beauty from Peran born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Greece.",
+            "gold_answer_text": "Greece",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_ca18f2482294",
+          "question": "In which country is the school attended by the director of Do Not Forget Me Istanbul located?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "United States of America",
+            "gold_answer_text": "The United States of America",
+            "accuracy": true,
+            "exact_match": false,
+            "contains_match": true,
+            "f1": 0.888888888888889,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_eb46e42dc05a",
+          "question": "In which country is the school attended by the director of Shadows and Faces located?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "United Kingdom",
+            "gold_answer_text": "The United Kingdom of Great Britain and Northern Ireland",
+            "accuracy": true,
+            "exact_match": false,
+            "contains_match": true,
+            "f1": 0.3636363636363636,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_07e8f72b4442",
+          "question": "In which country is the school attended by the director of Angel's Fall located?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Turkey",
+            "gold_answer_text": "Turkey",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_d6de5558a6c3",
+          "question": "In which country is the school attended by the director of Bitter Life located?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Turkey",
+            "gold_answer_text": "Turkey",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_2a6ac9643a80",
+          "question": "In which country is the school attended by the director of Dokuz Dagin Efesi located?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Turkey.",
+            "gold_answer_text": "Turkey",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_565c95482384",
+          "question": "In which country was Kim Seol-hyun, a cast member of Ayla The Daughter of War, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "South Korea.",
+            "gold_answer_text": "South Korea",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_fd2bb20d9589",
+          "question": "In which country was Aliye Rona, a cast member of Bloody Money, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Syria",
+            "gold_answer_text": "Syria",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_11ec48a42232",
+          "question": "In which country was Ali Düşenkalkar, a cast member of Devrim Arabaları, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Cyprus",
+            "gold_answer_text": "Cyprus",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_ab897ab4eb0b",
+          "question": "In which country was Gianni Capaldi, a cast member of Ghosts of Garip, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "The United Kingdom",
+            "gold_answer_text": "The United Kingdom of Great Britain and Northern Ireland",
+            "accuracy": true,
+            "exact_match": false,
+            "contains_match": true,
+            "f1": 0.5,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_f5a4909699e7",
+          "question": "In which country was Selim Bayraktar, a cast member of Ghosts of Garip, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Iraq",
+            "gold_answer_text": "Iraq",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_ef87589de143",
+          "question": "Were the directors of Ah Nerede and Arabesk born in the same country?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Yes.",
+            "gold_answer_text": "yes",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_f2af017e97bd",
+          "question": "Were the directors of Ah Nerede and Playing with Death born in the same country?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "No.",
+            "gold_answer_text": "no",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_056fc446ad92",
+          "question": "Were the directors of Angel's Fall and Do Not Forget Me Istanbul educated in the same country?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "No.",
+            "gold_answer_text": "no",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_6e027a24320b",
+          "question": "Were Tülin Özen from 10 To 11 and Asuman Dabak from Adem'in Trenleri born in the same country?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Yes.",
+            "gold_answer_text": "yes",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_25e417879724",
+          "question": "Were Tülin Özen from 10 To 11 and Seiyō Uchino from 125 Years Memory born in the same country?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "No.",
+            "gold_answer_text": "no",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        }
+      ]
+    },
+    "kg_infused_rag": {
+      "summary": {
+        "method": "kg_infused_rag",
+        "expected_total": 50,
+        "available_results": 50,
+        "coverage": 1.0,
+        "accuracy": 0.98,
+        "exact_match": 0.98,
+        "f1": 0.98,
+        "retrieval_recall": 0.97,
+        "status_breakdown": {
+          "success": 50
+        }
+      },
+      "missing_question_ids": [],
+      "questions": [
+        {
+          "question_id": "qa_26cd33a65acd",
+          "question": "Where was the director of Aci Zafer born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Izmir",
+            "gold_answer_text": "İzmir",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_c2bd1aeb56de",
+          "question": "Where was the director of Ah Nerede born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "mustafakemalpasa",
+            "gold_answer_text": "Mustafakemalpaşa",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_fa625a096ffb",
+          "question": "Where was the director of Akvaryumda Sessiz born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "İzmir",
+            "gold_answer_text": "İzmir",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_dec91d77e6cf",
+          "question": "Where was the director of Anadolu Kartalları born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Istanbul",
+            "gold_answer_text": "Istanbul",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_1d88f8ecd5cf",
+          "question": "Where was the director of Arabesk born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Trabzon",
+            "gold_answer_text": "Trabzon",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_41602f1e45ed",
+          "question": "Where was the director of Aslan Pençesi born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Istanbul",
+            "gold_answer_text": "Istanbul",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_afcdaf7d352f",
+          "question": "Where was the director of Banker Bilo born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Trabzon",
+            "gold_answer_text": "Trabzon",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_d8aa86c24033",
+          "question": "Where was the director of Bitter Life born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Çanakkale Province",
+            "gold_answer_text": "Çanakkale Province",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_779f731c6587",
+          "question": "Which award was received by the director of Bir Avuç Toprak?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "State Artist",
+            "gold_answer_text": "State Artist",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_d4d52acedc7a",
+          "question": "Which award was received by the director of İnek Şaban?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "State Artist",
+            "gold_answer_text": "State Artist",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_d406bf48e837",
+          "question": "Which award was received by the director of Kanun namina?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Presidential Culture and Arts Grand Awards",
+            "gold_answer_text": "Presidential Culture and Arts Grand Awards",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_f2bf3cadec14",
+          "question": "Which award was received by the director of King of the Doormen?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "The Sutherland Trophy",
+            "gold_answer_text": "The Sutherland Trophy",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_bb3348c757ee",
+          "question": "Where did the director of Angel's Fall study?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Dokuz Eylül University",
+            "gold_answer_text": "Dokuz Eylül University",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_dcba1b612c86",
+          "question": "Where did the director of Bitter Life study?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Istanbul University",
+            "gold_answer_text": "Istanbul University",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_9ebc97ac2e4f",
+          "question": "Where did the director of Do Not Forget Me Istanbul study?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "unknown",
+            "gold_answer_text": "The University of Southern California",
+            "accuracy": false,
+            "exact_match": false,
+            "contains_match": false,
+            "f1": 0.0,
+            "retrieval_recall": 0.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_104db2fbbec9",
+          "question": "Where did the director of Ember study?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Istanbul University",
+            "gold_answer_text": "Istanbul University",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_4ae95238ae3e",
+          "question": "Where did the director of Grain study?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Dokuz Eylül University",
+            "gold_answer_text": "Dokuz Eylül University",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_6c10516be4d1",
+          "question": "Where was Tülin Özen, a cast member of 10 To 11, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "İskenderun",
+            "gold_answer_text": "İskenderun",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_515c0f340473",
+          "question": "Where was Seiyō Uchino, a cast member of 125 Years Memory, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Kōhoku-ku",
+            "gold_answer_text": "Kōhoku-ku",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_6efbcbaf0f9f",
+          "question": "Where was Shiori Kutsuna, a cast member of 125 Years Memory, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Killarney Heights",
+            "gold_answer_text": "Killarney Heights",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_95049c4cd79a",
+          "question": "Where was Asuman Dabak, a cast member of Adem'in Trenleri, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Akhisar",
+            "gold_answer_text": "Akhisar",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_baef96cb9ce7",
+          "question": "Where was Nurgül Yeşilçay, a cast member of Adem'in Trenleri, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Afyonkarahisar",
+            "gold_answer_text": "Afyonkarahisar",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_f7df086d2062",
+          "question": "Where was Tamer Karadağlı, a cast member of Alina, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Ankara",
+            "gold_answer_text": "Ankara",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_59798c8c1dd1",
+          "question": "Where was Ali Şen, a cast member of Banker Bilo, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Adana",
+            "gold_answer_text": "Adana",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_444d583ed375",
+          "question": "Where was Berk Hakman, a cast member of Beyond the Hill, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Ankara",
+            "gold_answer_text": "Ankara",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_284c5e0ceb83",
+          "question": "Which award was received by Nuri Bilge Ceylan, a cast member of Climates?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Presidential Culture and Arts Grand Awards",
+            "gold_answer_text": "Presidential Culture and Arts Grand Awards",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_e2df9418d912",
+          "question": "Which award was received by Moritz Johann Bleibtreu, a cast member of In July?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "The Romy TV award in honor of the Austrian-born actress Romy Schneider",
+            "gold_answer_text": "The Romy TV award in honor of the Austrian-born actress Romy Schneider",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_4e7de35a4787",
+          "question": "Which award was received by Makram Jamil Khoury, a cast member of Inheritance?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "The Israel Prize",
+            "gold_answer_text": "The Israel Prize",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_5610775fbf0e",
+          "question": "Which award was received by Nora Marie Tschirner, a cast member of Kebab Connection?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "The Romy TV award in honor of the Austrian-born actress Romy Schneider",
+            "gold_answer_text": "The Romy TV award in honor of the Austrian-born actress Romy Schneider",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_d78e27a4c2dc",
+          "question": "Which award was received by Arsinée Khanjian, a cast member of The Cut?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Genie Award for Best Performance by an Actress in a Leading Role",
+            "gold_answer_text": "Genie Award for Best Performance by an Actress in a Leading Role",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_8dff5823c781",
+          "question": "In which country was the director of Ah Nerede born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Turkey",
+            "gold_answer_text": "Turkey",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_45847cf61fb5",
+          "question": "In which country was the director of Davaro born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Turkey",
+            "gold_answer_text": "Turkey",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_e90dc0323aed",
+          "question": "In which country was the director of Playing with Death born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Iran",
+            "gold_answer_text": "Iran",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_ea1b335bfcbb",
+          "question": "In which country was the director of Shadows and Faces born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Cyprus",
+            "gold_answer_text": "Cyprus",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_2f68e5ea0524",
+          "question": "In which country was the director of The Beauty from Peran born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Greece",
+            "gold_answer_text": "Greece",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_ca18f2482294",
+          "question": "In which country is the school attended by the director of Do Not Forget Me Istanbul located?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "The United States of America",
+            "gold_answer_text": "The United States of America",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_eb46e42dc05a",
+          "question": "In which country is the school attended by the director of Shadows and Faces located?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "The United Kingdom of Great Britain and Northern Ireland",
+            "gold_answer_text": "The United Kingdom of Great Britain and Northern Ireland",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_07e8f72b4442",
+          "question": "In which country is the school attended by the director of Angel's Fall located?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Turkey",
+            "gold_answer_text": "Turkey",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_d6de5558a6c3",
+          "question": "In which country is the school attended by the director of Bitter Life located?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Turkey",
+            "gold_answer_text": "Turkey",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_2a6ac9643a80",
+          "question": "In which country is the school attended by the director of Dokuz Dagin Efesi located?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Turkey",
+            "gold_answer_text": "Turkey",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_565c95482384",
+          "question": "In which country was Kim Seol-hyun, a cast member of Ayla The Daughter of War, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "South Korea",
+            "gold_answer_text": "South Korea",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_fd2bb20d9589",
+          "question": "In which country was Aliye Rona, a cast member of Bloody Money, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Syria",
+            "gold_answer_text": "Syria",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_11ec48a42232",
+          "question": "In which country was Ali Düşenkalkar, a cast member of Devrim Arabaları, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Cyprus",
+            "gold_answer_text": "Cyprus",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_ab897ab4eb0b",
+          "question": "In which country was Gianni Capaldi, a cast member of Ghosts of Garip, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "The United Kingdom of Great Britain and Northern Ireland",
+            "gold_answer_text": "The United Kingdom of Great Britain and Northern Ireland",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_f5a4909699e7",
+          "question": "In which country was Selim Bayraktar, a cast member of Ghosts of Garip, born?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "Iraq",
+            "gold_answer_text": "Iraq",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_ef87589de143",
+          "question": "Were the directors of Ah Nerede and Arabesk born in the same country?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "yes",
+            "gold_answer_text": "yes",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_f2af017e97bd",
+          "question": "Were the directors of Ah Nerede and Playing with Death born in the same country?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "no",
+            "gold_answer_text": "no",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_056fc446ad92",
+          "question": "Were the directors of Angel's Fall and Do Not Forget Me Istanbul educated in the same country?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "no",
+            "gold_answer_text": "no",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 0.5
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_6e027a24320b",
+          "question": "Were Tülin Özen from 10 To 11 and Asuman Dabak from Adem'in Trenleri born in the same country?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "yes",
+            "gold_answer_text": "yes",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        },
+        {
+          "question_id": "qa_25e417879724",
+          "question": "Were Tülin Özen from 10 To 11 and Seiyō Uchino from 125 Years Memory born in the same country?",
+          "metrics": {
+            "status": "success",
+            "prediction_text": "no",
+            "gold_answer_text": "no",
+            "accuracy": true,
+            "exact_match": true,
+            "contains_match": true,
+            "f1": 1.0,
+            "retrieval_recall": 1.0
+          },
+          "result_status": "success"
+        }
+      ]
+    }
+  }
+}

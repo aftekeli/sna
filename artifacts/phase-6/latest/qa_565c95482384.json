@@ -1,0 +1,283 @@
+{
+  "created_at": "2026-04-18T12:06:24.187063+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_565c95482384",
+  "question": "In which country was Kim Seol-hyun, a cast member of Ayla The Daughter of War, born?",
+  "question_type": "three_hop",
+  "template": "film_cast_birth_place_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q884",
+    "text": "South Korea"
+  },
+  "prediction_text": "South Korea",
+  "match": {
+    "prediction_normalized": "south korea",
+    "gold_normalized": "south korea",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q16173210",
+      "entity_name": "Kim Sulhyun",
+      "roles": [
+        "cast_member"
+      ],
+      "source": "lexicon",
+      "score": 21
+    }
+  ],
+  "relation_path": [
+    "P19",
+    "P17"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q16173210"
+      ],
+      "candidate_count": 2,
+      "selected_triples": [
+        {
+          "source_id": "Q16173210",
+          "source_name": "Kim Sulhyun",
+          "source_roles": [
+            "cast_member"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q42099",
+          "target_name": "Puchon",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 16.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q42099"
+      ],
+      "candidate_count": 1,
+      "selected_triples": [
+        {
+          "source_id": "Q42099",
+          "source_name": "Puchon",
+          "source_roles": [
+            "birth_place"
+          ],
+          "relation_id": "P17",
+          "relation_label": "country",
+          "target_id": "Q884",
+          "target_name": "So. Korea",
+          "target_roles": [
+            "country"
+          ],
+          "score": 21.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q16173210",
+        "seed_entity_name": "Kim Sulhyun",
+        "final_answers": [
+          {
+            "entity_id": "Q884",
+            "entity_name": "So. Korea"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q884"
+    ],
+    "candidate_texts": [
+      "So. Korea"
+    ],
+    "answer_text": "So. Korea"
+  },
+  "kg_summary": "Kim Sulhyun was born in Puchon. Puchon is located in So. Korea.",
+  "expanded_query": "In which country was Kim Seol-hyun born; born in Puchon, located in So. Korea.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_565c95482384::1",
+      "title": "In which country was Kim Seol-hyun, a cast member of Ayla The Daughter of War, born?",
+      "body": "Ayla The Daughter of War has cast member Kim Seol-hyun. Kim Seol-hyun was born in Bucheon. Bucheon is located in South Korea.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q31193403",
+      "metadata": {
+        "question_id": "qa_565c95482384",
+        "template": "film_cast_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -52.21944362573943,
+      "snippet": "Ayla The Daughter of War has cast member Kim Seol-hyun. Kim Seol-hyun was born in Bucheon. Bucheon is located in South Korea."
+    },
+    {
+      "doc_id": "entity::Q16173210",
+      "title": "kim sulhyeon",
+      "body": "kim sulhyeon. Description: Kim Seol-hyun (Korean: 김설현; born 3 January 1995), better known by the mononym Seolhyun, is a South Korean singer and actress. She is a member of the South Korean girl group AOA and has starred in television dramas Ugly Alert (2013) and Orange Marmalade (2015). Aliases: kim sulhyeon, Kim Seol Hyeon, Kim Sul Hyeon, kim sul hyun, kim seolhyeon, Kim Sulhyun, kim seol hyeon, Kim Seol-hyun, kim sul-hyun, Kim Seol Hyun. Roles: cast_member. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q16173210",
+      "metadata": {
+        "entity_id": "Q16173210",
+        "aliases": [
+          "kim sulhyeon",
+          "Kim Seol Hyeon",
+          "Kim Sul Hyeon",
+          "kim sul hyun",
+          "kim seolhyeon",
+          "Kim Sulhyun",
+          "kim seol hyeon",
+          "Kim Seol-hyun",
+          "kim sul-hyun",
+          "Kim Seol Hyun"
+        ],
+        "roles": [
+          "cast_member"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -36.83817142876339,
+      "snippet": "kim sulhyeon. Description: Kim Seol-hyun (Korean: 김설현; born 3 January 1995), better known by the mononym Seolhyun, is a South Korean singer and actress. She is a member of the South Korean girl group AOA and has starr..."
+    },
+    {
+      "doc_id": "fact::Q16173210::P19::Q42099",
+      "title": "kim sulhyeon - place of birth",
+      "body": "kim sulhyeon was born in Bucheon, South Korea. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q16173210",
+      "metadata": {
+        "source_id": "Q16173210",
+        "target_id": "Q42099",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -23.276090144880996,
+      "snippet": "kim sulhyeon was born in Bucheon, South Korea. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place."
+    },
+    {
+      "doc_id": "entity::Q42099",
+      "title": "Bucheon, South Korea",
+      "body": "Bucheon, South Korea. Description: Bucheon (Korean pronunciation: [pu.tɕʰʌn]) is a city in Gyeonggi Province, South Korea. Bucheon is a satellite city of Seoul, 25 kilometres (16 miles) away. This city is located between Incheon and Seoul.Bucheon is the second most densely populated city in South Korea after Seoul, and as a result, administrative districts were abolished in July 2016 in favor of providing greater public service in community centers.Major manufacturing operations are located in the northern areas of the city, while the areas in the south where Seoul Subway Line 7 and Seoul Subway Line 1 pass are dense commercial and residential areas. Aliases: Bucheon, South Korea, bucheon-si, Puch'on, Bucheon, puch'on, puchon, bucheon, Tomikawa, Puchon, Puch'ŏn, Bucheon-Si. Roles: birth_place. Domains: cinema, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q42099",
+      "metadata": {
+        "entity_id": "Q42099",
+        "aliases": [
+          "Bucheon, South Korea",
+          "bucheon-si",
+          "Puch'on",
+          "Bucheon",
+          "puch'on",
+          "puchon, bucheon",
+          "Tomikawa",
+          "Puchon",
+          "Puch'ŏn",
+          "Bucheon-Si"
+        ],
+        "roles": [
+          "birth_place"
+        ],
+        "domains": [
+          "cinema",
+          "turkiye"
+        ]
+      },
+      "score": -20.031620572726972,
+      "snippet": "Bucheon, South Korea. Description: Bucheon (Korean pronunciation: [pu.tɕʰʌn]) is a city in Gyeonggi Province, South Korea. Bucheon is a satellite city of Seoul, 25 kilometres (16 miles) away. This city is located betw..."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T12:06:23.223627+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 946,
+      "remaining_tokens": 11810,
+      "reset_requests_seconds": 4665.6,
+      "reset_tokens_seconds": 0.95,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:06:23 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "946",
+        "x-ratelimit-remaining-tokens": "11810",
+        "x-ratelimit-reset-requests": "1h17m45.6s",
+        "x-ratelimit-reset-tokens": "950ms",
+        "x-request-id": "req_01kpg7r8hhf7pazaj11t7yngqb",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=TyGtFBrdd6NmrvwtlQ5qLzuliTyuJyFxyPjIMKS5qIY-1776513983.0025773-1.0.1.1-XdE7yVKqJwyX7PihbsGCWtOUQTKDVaWO2h.sIoIfENAm5tmqjYNvduiXEZxQYW4m3rkWhEO.k_tSfm8IF81g8f859uyN21eh3WB8Z9Al6PFCEFE1Id5hXWaq66bQyvTF; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:36:23 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee38b09c97c4e44-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T12:06:24.184525+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 945,
+      "remaining_tokens": 11419,
+      "reset_requests_seconds": 4752.0,
+      "reset_tokens_seconds": 2.905,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:06:24 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "945",
+        "x-ratelimit-remaining-tokens": "11419",
+        "x-ratelimit-reset-requests": "1h19m12s",
+        "x-ratelimit-reset-tokens": "2.905s",
+        "x-request-id": "req_01kpg7r9gveeyv18mry7g4zbb6",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=pz9l6_6Tek4UsCJCE5hEy9bHtqrKqg5D7eyzJjmyDUc-1776513984.0050216-1.0.1.1-X56EvZVhkALdRNfgAE9hA8h7dUy0k_bugo_njxTCDFnbzfINInyjQiFadGfV0HwoNZK_HemCRQ6ICL5zi32tJjEC6JtNe.Iz4Mv_JEtUUTgFsjWz4uhOms9ChBb9iK2b; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:36:24 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee38b100b3eae11-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

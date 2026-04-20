@@ -1,0 +1,316 @@
+{
+  "created_at": "2026-04-18T12:48:06.234397+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_45847cf61fb5",
+  "question": "In which country was the director of Davaro born?",
+  "question_type": "three_hop",
+  "template": "film_director_birth_place_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q43",
+    "text": "Turkey"
+  },
+  "prediction_text": "Turkey",
+  "match": {
+    "prediction_normalized": "turkey",
+    "gold_normalized": "turkey",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q6806566",
+      "entity_name": "Davaro",
+      "roles": [
+        "film"
+      ],
+      "source": "lexicon",
+      "score": 13
+    }
+  ],
+  "relation_path": [
+    "P57",
+    "P19",
+    "P17"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q6806566"
+      ],
+      "candidate_count": 6,
+      "selected_triples": [
+        {
+          "source_id": "Q6806566",
+          "source_name": "Davaro",
+          "source_roles": [
+            "film"
+          ],
+          "relation_id": "P57",
+          "relation_label": "director",
+          "target_id": "Q374415",
+          "target_name": "Kartal Tibet (born 27 March 1938)",
+          "target_roles": [
+            "director"
+          ],
+          "score": 19.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q374415"
+      ],
+      "candidate_count": 2,
+      "selected_triples": [
+        {
+          "source_id": "Q374415",
+          "source_name": "Kartal Tibet (born 27 March 1938)",
+          "source_roles": [
+            "director"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q3640",
+          "target_name": "Ankara",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 16.0
+        }
+      ]
+    },
+    {
+      "round_index": 3,
+      "frontier_entity_ids": [
+        "Q3640"
+      ],
+      "candidate_count": 1,
+      "selected_triples": [
+        {
+          "source_id": "Q3640",
+          "source_name": "Ankara",
+          "source_roles": [
+            "birth_place"
+          ],
+          "relation_id": "P17",
+          "relation_label": "country",
+          "target_id": "Q43",
+          "target_name": "Turkey",
+          "target_roles": [
+            "birth_place",
+            "country",
+            "country_root"
+          ],
+          "score": 21.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q6806566",
+        "seed_entity_name": "Davaro",
+        "final_answers": [
+          {
+            "entity_id": "Q43",
+            "entity_name": "Turkey"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q43"
+    ],
+    "candidate_texts": [
+      "Turkey"
+    ],
+    "answer_text": "Turkey"
+  },
+  "kg_summary": "Davaro was directed by Kartal Tibet (born 27 March 1938). Kartal Tibet (born 27 March 1938) was born in Ankara. Ankara is located in Turkey.",
+  "expanded_query": "In which country was Kartal Tibet born.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_45847cf61fb5::1",
+      "title": "In which country was the director of Davaro born?",
+      "body": "Davaro was directed by Kartal Tibet. Kartal Tibet was born in Ankara. Ankara is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6806566",
+      "metadata": {
+        "question_id": "qa_45847cf61fb5",
+        "template": "film_director_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -23.953252906151356,
+      "snippet": "Davaro was directed by Kartal Tibet. Kartal Tibet was born in Ankara. Ankara is located in Turkey."
+    },
+    {
+      "doc_id": "fact::Q374415::P19::Q3640",
+      "title": "kartal tibet - place of birth",
+      "body": "kartal tibet was born in Angora, Turkey. Relation type: place of birth. Source roles: director. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q374415",
+      "metadata": {
+        "source_id": "Q374415",
+        "target_id": "Q3640",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -18.793220290948913,
+      "snippet": "kartal tibet was born in Angora, Turkey. Relation type: place of birth. Source roles: director. Target roles: birth_place."
+    },
+    {
+      "doc_id": "entity::Q374415",
+      "title": "kartal tibet",
+      "body": "kartal tibet. Description: Kartal Tibet (born 27 March 1938) is a Turkish actor and film director. Some of his famous films include Ölmeyen Aşk, Dağlar Kızı, Senede Bir Gün, Sultan, Zübük, Gol Kralı, and Şalvar Davası. Tibet is also known for his action roles, especially that of the title series. Aliases: kartal tibet, Kartal Tibet. Roles: director. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q374415",
+      "metadata": {
+        "entity_id": "Q374415",
+        "aliases": [
+          "kartal tibet",
+          "Kartal Tibet"
+        ],
+        "roles": [
+          "director"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -17.936243864112317,
+      "snippet": "kartal tibet. Description: Kartal Tibet (born 27 March 1938) is a Turkish actor and film director. Some of his famous films include Ölmeyen Aşk, Dağlar Kızı, Senede Bir Gün, Sultan, Zübük, Gol Kralı, and Şalvar Davası..."
+    },
+    {
+      "doc_id": "fact::Q374415::P27::Q43",
+      "title": "kartal tibet - country of citizenship",
+      "body": "kartal tibet has country of citizenship turkiye. Relation type: country of citizenship. Source roles: director. Target roles: birth_place, country, country_root.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q374415",
+      "metadata": {
+        "source_id": "Q374415",
+        "target_id": "Q43",
+        "relation_id": "P27",
+        "relation_label": "country of citizenship"
+      },
+      "score": -16.521806366830404,
+      "snippet": "kartal tibet has country of citizenship turkiye. Relation type: country of citizenship. Source roles: director. Target roles: birth_place, country, country_root."
+    },
+    {
+      "doc_id": "fact::Q6094318::P57::Q374415",
+      "title": "zubuk - director",
+      "body": "zubuk was directed by kartal tibet. Relation type: director. Source roles: film. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6094318",
+      "metadata": {
+        "source_id": "Q6094318",
+        "target_id": "Q374415",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -14.285918447862112,
+      "snippet": "zubuk was directed by kartal tibet. Relation type: director. Source roles: film. Target roles: director."
+    },
+    {
+      "doc_id": "fact::Q6070626::P57::Q374415",
+      "title": "Şabaniye - director",
+      "body": "Şabaniye was directed by kartal tibet. Relation type: director. Source roles: film. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6070626",
+      "metadata": {
+        "source_id": "Q6070626",
+        "target_id": "Q374415",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -14.285918447862112,
+      "snippet": "Şabaniye was directed by kartal tibet. Relation type: director. Source roles: film. Target roles: director."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T12:48:01.515091+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 911,
+      "remaining_tokens": 11863,
+      "reset_requests_seconds": 7689.599,
+      "reset_tokens_seconds": 0.685,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:48:01 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "911",
+        "x-ratelimit-remaining-tokens": "11863",
+        "x-ratelimit-reset-requests": "2h8m9.599s",
+        "x-ratelimit-reset-tokens": "685ms",
+        "x-request-id": "req_01kpga4ga2em6ryt1wzapqwdhj",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=LPuuFqda655vannCaTMdYpz9N7vxEtFbJfNqzNgD7oE-1776516481.3239098-1.0.1.1-IXfXYKwLISgRCeqFHBnVg5GOHuk2nCCQrhKjxKDfm348kF9urdKCsKpP0oApMOzFjjNSWDZ2u8dkIdWTBFpvuk4kiIZWTOY_KykDWak0YodSE6qyhHdFvH.TInW3uiYL; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:18:01 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3c8084e50db46-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T12:48:06.222801+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 910,
+      "remaining_tokens": 11509,
+      "reset_requests_seconds": 7776.0,
+      "reset_tokens_seconds": 2.454,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:48:06 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "910",
+        "x-ratelimit-remaining-tokens": "11509",
+        "x-ratelimit-reset-requests": "2h9m36s",
+        "x-ratelimit-reset-tokens": "2.454s",
+        "x-request-id": "req_01kpga4n5mf73t7yy1npfcewn1",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=9oHeihXvvMJFCwGfvfq6Apd7tu82S8fc64WdaG4nodQ-1776516486.3044555-1.0.1.1-poJZitIFhDCsZ1JW7m_ZJDSIYiS7k8UtwU0xNovxBd_3wsrInKynrwThTHfAYFL75a.ehaXASENt7In8OLXHG5fa_jQbHRJFGkNApiaXGj.XPRpQVq.s4wG.i.NM.az_; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:18:06 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3c8276badbc3c-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T13:04:57.133047+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_e90dc0323aed",
+  "question": "In which country was the director of Playing with Death born?",
+  "question_type": "three_hop",
+  "template": "film_director_birth_place_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q794",
+    "text": "Iran"
+  },
+  "prediction_text": "Unknown",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:04:57.124223+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 779,
+    "remaining_tokens": 11902,
+    "reset_requests_seconds": 19094.4,
+    "reset_tokens_seconds": 0.489,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:04:57 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "779",
+      "x-ratelimit-remaining-tokens": "11902",
+      "x-ratelimit-reset-requests": "5h18m14.4s",
+      "x-ratelimit-reset-tokens": "489ms",
+      "x-request-id": "req_01kpgb3g9xfpxr8602pda3tq7p",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=qhmC1JEDSkgM6sdsI7fMvqWGiUfXUJp7ZQ.jXORr7p0-1776517497.1283116-1.0.1.1-yHtfWCNbFEgMHXB2cdoB4oVJBvqJvokUwdX0FEsvKyIQ1N4.JU45j.KvpwPvQ7L1Etp3vm1Q38RNutKbJKbfqWFT7AyZF_6MDYqCPRYduPQxdtJR8PH4KJebWZm4jcFY; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:34:57 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3e0d50de7788b-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "unknown",
+    "gold_normalized": "iran",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

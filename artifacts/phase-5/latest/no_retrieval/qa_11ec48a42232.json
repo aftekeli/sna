@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T13:12:12.053826+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_11ec48a42232",
+  "question": "In which country was Ali Düşenkalkar, a cast member of Devrim Arabaları, born?",
+  "question_type": "three_hop",
+  "template": "film_cast_birth_place_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q229",
+    "text": "Cyprus"
+  },
+  "prediction_text": "Turkey",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:12:12.042181+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 738,
+    "remaining_tokens": 11897,
+    "reset_requests_seconds": 22636.8,
+    "reset_tokens_seconds": 0.515,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:12:12 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "738",
+      "x-ratelimit-remaining-tokens": "11897",
+      "x-ratelimit-reset-requests": "6h17m16.8s",
+      "x-ratelimit-reset-tokens": "515ms",
+      "x-request-id": "req_01kpgbgs0ee1vth0gkq5j0dgzr",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=ATHPkFcaI_lEGM7uEfYfauzAGwc_bn0EVjHCV2ls8Mc-1776517932.0264366-1.0.1.1-8N575N0CtVNIWmVONqtDCHz1Rv.Xa4XdJCydCyTMK1REPdJNavH76ta0q.Zz5TJaT2Rxrk4R6edblotTQc8GMS7m31uPeJrdETpaPzyokiFRqCv_mCmcvaKQRv0gk8e8; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:42:12 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3eb732d61c28b-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "turkey",
+    "gold_normalized": "cyprus",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

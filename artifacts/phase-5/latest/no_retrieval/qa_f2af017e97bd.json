@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T11:59:02.539997+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_f2af017e97bd",
+  "question": "Were the directors of Ah Nerede and Playing with Death born in the same country?",
+  "question_type": "comparison",
+  "template": "film_director_birth_place_country__comparison",
+  "difficulty": "very_hard",
+  "gold_answer": {
+    "entity_id": null,
+    "text": "no"
+  },
+  "prediction_text": "Unknown",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T11:59:02.537010+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 970,
+    "remaining_tokens": 11101,
+    "reset_requests_seconds": 2592.0,
+    "reset_tokens_seconds": 4.495,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 11:59:02 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "970",
+      "x-ratelimit-remaining-tokens": "11101",
+      "x-ratelimit-reset-requests": "43m12s",
+      "x-ratelimit-reset-tokens": "4.495s",
+      "x-request-id": "req_01kpg7at95e8hsntvj0nzrm4nf",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=TfBUaG5UX5_rRHKOYn0BslToNyxfaiePdSan1rHswG0-1776513542.4146512-1.0.1.1-QfbMYj4XPF7Grjt7OLVdukkjm1F75NDXSn11xqvobKHacIikwxqMz4pPVhDySK0mnDxPgSENprjQFNO5PuuWKhcJUYfTC2k3rFq5IpyWwrwgUwTz1FdRiTX6IZjz34Xs; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:29:02 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee380481b0f0ed1-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "unknown",
+    "gold_normalized": "no",
+    "exact_match": false,
+    "contains_match": true
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T12:58:07.761248+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_9ebc97ac2e4f",
+  "question": "Where did the director of Do Not Forget Me Istanbul study?",
+  "question_type": "two_hop",
+  "template": "film_director_education",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q4614",
+    "text": "The University of Southern California"
+  },
+  "prediction_text": "Unknown",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:58:07.749600+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 857,
+    "remaining_tokens": 11911,
+    "reset_requests_seconds": 12355.199,
+    "reset_tokens_seconds": 0.445,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:58:07 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "857",
+      "x-ratelimit-remaining-tokens": "11911",
+      "x-ratelimit-reset-requests": "3h25m55.199s",
+      "x-ratelimit-reset-tokens": "445ms",
+      "x-request-id": "req_01kpgaq0mbe6treh30e1s5zt7h",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=jk8WEw3PNw0thIjYQ2IUB0n22zmYEgxORGQaXTQaLeo-1776517087.8626397-1.0.1.1-sXCx.njeVoIRDJ8pM02_1d7u_MfpT5kYTx3AaI9c9HGsf8.KwOgwUtmcMUslgVpBwFBsugWOJjVpZqRBru4e3bf2yTrpfPXn9Ba84jGV0pRV.qFni3htXhIwBbDDytTx; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:28:07 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3d6d728b73285-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "unknown",
+    "gold_normalized": "the university of southern california",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

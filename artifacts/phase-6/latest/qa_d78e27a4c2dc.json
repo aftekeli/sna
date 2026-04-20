@@ -1,0 +1,287 @@
+{
+  "created_at": "2026-04-18T13:04:52.168211+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_d78e27a4c2dc",
+  "question": "Which award was received by Arsinée Khanjian, a cast member of The Cut?",
+  "question_type": "two_hop",
+  "template": "film_cast_award",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q547316",
+    "text": "Genie Award for Best Performance by an Actress in a Leading Role"
+  },
+  "prediction_text": "Genie Award for Best Performance by an Actress in a Leading Role",
+  "match": {
+    "prediction_normalized": "genie award for best performance by an actress in a leading role",
+    "gold_normalized": "genie award for best performance by an actress in a leading role",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q465998",
+      "entity_name": "Arsinee Khanjian",
+      "roles": [
+        "cast_member",
+        "person_seed"
+      ],
+      "source": "lexicon",
+      "score": 22
+    }
+  ],
+  "relation_path": [
+    "P166"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q465998"
+      ],
+      "candidate_count": 2,
+      "selected_triples": [
+        {
+          "source_id": "Q465998",
+          "source_name": "Arsinee Khanjian",
+          "source_roles": [
+            "cast_member",
+            "person_seed"
+          ],
+          "relation_id": "P166",
+          "relation_label": "award received",
+          "target_id": "Q547316",
+          "target_name": "Genie Award for Best Performance by an Actress in a Leading Role",
+          "target_roles": [
+            "award"
+          ],
+          "score": 18.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q465998",
+        "seed_entity_name": "Arsinee Khanjian",
+        "final_answers": [
+          {
+            "entity_id": "Q547316",
+            "entity_name": "Genie Award for Best Performance by an Actress in a Leading Role"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q547316"
+    ],
+    "candidate_texts": [
+      "Genie Award for Best Performance by an Actress in a Leading Role"
+    ],
+    "answer_text": "Genie Award for Best Performance by an Actress in a Leading Role"
+  },
+  "kg_summary": "Arsinee Khanjian received the award Genie Award for Best Performance by an Actress in a Leading Role.",
+  "expanded_query": "Arsinée Khanjian, cast member of The Cut, received the Genie Award.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_d78e27a4c2dc::1",
+      "title": "Which award was received by Arsinée Khanjian, a cast member of The Cut?",
+      "body": "The Cut has cast member Arsinée Khanjian. Arsinée Khanjian received the award Genie Award for Best Performance by an Actress in a Leading Role.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q17512617",
+      "metadata": {
+        "question_id": "qa_d78e27a4c2dc",
+        "template": "film_cast_award",
+        "question_type": "two_hop"
+      },
+      "score": -50.7062134123701,
+      "snippet": "The Cut has cast member Arsinée Khanjian. Arsinée Khanjian received the award Genie Award for Best Performance by an Actress in a Leading Role."
+    },
+    {
+      "doc_id": "fact::Q465998::P166::Q547316",
+      "title": "Arsinee Khanjian - award received",
+      "body": "Arsinee Khanjian received the award Genie Award for Best Performance by an Actress in a Leading Role. Relation type: award received. Source roles: cast_member, person_seed. Target roles: award.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q465998",
+      "metadata": {
+        "source_id": "Q465998",
+        "target_id": "Q547316",
+        "relation_id": "P166",
+        "relation_label": "award received"
+      },
+      "score": -41.54866820871624,
+      "snippet": "Arsinee Khanjian received the award Genie Award for Best Performance by an Actress in a Leading Role. Relation type: award received. Source roles: cast_member, person_seed. Target roles: award."
+    },
+    {
+      "doc_id": "fact::Q17512617::P161::Q465998",
+      "title": "the cut (2014 film) - cast member",
+      "body": "the cut (2014 film) has cast member Arsinee Khanjian. Relation type: cast member. Source roles: film, film_seed. Target roles: cast_member, person_seed.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q17512617",
+      "metadata": {
+        "source_id": "Q17512617",
+        "target_id": "Q465998",
+        "relation_id": "P161",
+        "relation_label": "cast member"
+      },
+      "score": -26.233594888530337,
+      "snippet": "the cut (2014 film) has cast member Arsinee Khanjian. Relation type: cast member. Source roles: film, film_seed. Target roles: cast_member, person_seed."
+    },
+    {
+      "doc_id": "entity::Q465998",
+      "title": "Arsinee Khanjian",
+      "body": "Arsinee Khanjian. Description: Arsinée Khanjian (Western Armenian: Արսինէ Խանճեան, Eastern Armenian: Արսինե Խանջյան; born 6 September 1958) is an Armenian-Canadian actress and producer. Aliases: Arsinee Khanjian, arsinée khanjian, arsinee khangjian, arsinee khanjian, Arsinée Khanjian, Arsinee Khangjian. Roles: cast_member, person_seed. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q465998",
+      "metadata": {
+        "entity_id": "Q465998",
+        "aliases": [
+          "Arsinee Khanjian",
+          "arsinée khanjian",
+          "arsinee khangjian",
+          "arsinee khanjian",
+          "Arsinée Khanjian",
+          "Arsinee Khangjian"
+        ],
+        "roles": [
+          "cast_member",
+          "person_seed"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -23.130463349513,
+      "snippet": "Arsinee Khanjian. Description: Arsinée Khanjian (Western Armenian: Արսինէ Խանճեան, Eastern Armenian: Արսինե Խանջյան; born 6 September 1958) is an Armenian-Canadian actress and producer. Aliases: Arsinee Khanjian, arsi..."
+    },
+    {
+      "doc_id": "fact::Q465998::P19::Q3820",
+      "title": "Arsinee Khanjian - place of birth",
+      "body": "Arsinee Khanjian was born in Beiruit. Relation type: place of birth. Source roles: cast_member, person_seed. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q465998",
+      "metadata": {
+        "source_id": "Q465998",
+        "target_id": "Q3820",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -19.26909151971951,
+      "snippet": "Arsinee Khanjian was born in Beiruit. Relation type: place of birth. Source roles: cast_member, person_seed. Target roles: birth_place."
+    },
+    {
+      "doc_id": "entity::Q547316",
+      "title": "Genie Award for Best Performance by an Actress in a Leading Role",
+      "body": "Genie Award for Best Performance by an Actress in a Leading Role. Description: The Academy of Canadian Cinema & Television presents an annual award for Best Performance by an Actress in a Leading Role to the best performance by a lead actress in a Canadian film. The award was first presented in 1968 by the Canadian Film Awards, and was presented annually until 1978 with the exception of 1969, when no eligible feature films were submitted for award consideration, and 1974 due to the cancellation of the awards that year.From 1980 until 2012, the award was presented as part of the Genie Awards ceremony; since 2013, it has been presented as part of the Canadian Screen Awards.From 1980 to 1983, only Canadian actresses were eligible for the award; non-Canadian actresses appearing in Canadian films were instead considered for the separate Genie Award for Best Performance by a Foreign Actress. After 1983, the latter award was discontinued, and from 1986 both Canadian and foreign actresses were eligible for Best Performance by an Actress in a Leading Role. Aliases: Genie Award for Best Performance by an Actress in a Leading Role, Academy of Canadian Cinema and Television Award for Best Performance by an Actress in a Leading Role, academy of canadian cinema and television award for best performance by an actress in a leading role, canadian screen award for best actress, canadian screen award for best performance by an actress in a leading role, genie award for best performance by an actress in a leading role, Canadian Screen Award for Best Performance by an Actress in a Leading Role, Canadian Screen Award for Best Actress, Genie award for best performance by an actress in a leading role. Roles: award. Domains: award, cinema, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q547316",
+      "metadata": {
+        "entity_id": "Q547316",
+        "aliases": [
+          "Genie Award for Best Performance by an Actress in a Leading Role",
+          "Academy of Canadian Cinema and Television Award for Best Performance by an Actress in a Leading Role",
+          "academy of canadian cinema and television award for best performance by an actress in a leading role",
+          "canadian screen award for best actress",
+          "canadian screen award for best performance by an actress in a leading role",
+          "genie award for best performance by an actress in a leading role",
+          "Canadian Screen Award for Best Performance by an Actress in a Leading Role",
+          "Canadian Screen Award for Best Actress",
+          "Genie award for best performance by an actress in a leading role"
+        ],
+        "roles": [
+          "award"
+        ],
+        "domains": [
+          "award",
+          "cinema",
+          "turkiye"
+        ]
+      },
+      "score": -17.22288444782713,
+      "snippet": "Genie Award for Best Performance by an Actress in a Leading Role. Description: The Academy of Canadian Cinema & Television presents an annual award for Best Performance by an Actress in a Leading Role to the best perf..."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T13:04:47.162315+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 781,
+      "remaining_tokens": 11863,
+      "reset_requests_seconds": 18921.6,
+      "reset_tokens_seconds": 0.685,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 13:04:47 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "781",
+        "x-ratelimit-remaining-tokens": "11863",
+        "x-ratelimit-reset-requests": "5h15m21.6s",
+        "x-ratelimit-reset-tokens": "685ms",
+        "x-request-id": "req_01kpgb36h3fncrcbcz258jj934",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=CNyQl07F7TsLEimNQIWStjiq2Ly1sZhYm5FLN0r4loI-1776517487.119192-1.0.1.1-ccIGVyIYTD4gAdXVXW.k7fEWJHgnigq7mW_V.j1enDRYSLtzHF8SGLkz1BKD3Y_CnunkkMWBDqpeKrywytrSq5a89QT2.ssXniQ88Ah2UPcf68uVixUhDGK2UC59ZGsQ; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:34:47 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3e0967b305123-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T13:04:52.156029+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 780,
+      "remaining_tokens": 11336,
+      "reset_requests_seconds": 19008.0,
+      "reset_tokens_seconds": 3.32,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 13:04:52 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "780",
+        "x-ratelimit-remaining-tokens": "11336",
+        "x-ratelimit-reset-requests": "5h16m48s",
+        "x-ratelimit-reset-tokens": "3.32s",
+        "x-request-id": "req_01kpgb3beneyy9s1aexgje6ss6",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=hvaHOh34FDOQ.j6Y1ol_J18eKH6L2urBce1fYsqVS9Q-1776517492.1607244-1.0.1.1-3.VEUvjUvVwiMveR3TzaRRuzGzJR2waxrsFoDkfyL9Lv7YClvNfLyNts0BxTvMHUNGabMNSWRELjoroctutUanDP1jJ7ifNv1bClufoqypyI0Ui_f5mUi3lD8HxB0YaM; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:34:52 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3e0b609374f36-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

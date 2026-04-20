@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T12:06:49.948862+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_284c5e0ceb83",
+  "question": "Which award was received by Nuri Bilge Ceylan, a cast member of Climates?",
+  "question_type": "two_hop",
+  "template": "film_cast_award",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q7241424",
+    "text": "Presidential Culture and Arts Grand Awards"
+  },
+  "prediction_text": "Best Director at Cannes Film Festival.",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:06:49.947065+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 938,
+    "remaining_tokens": 11739,
+    "reset_requests_seconds": 5356.8,
+    "reset_tokens_seconds": 1.305,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:06:50 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "938",
+      "x-ratelimit-remaining-tokens": "11739",
+      "x-ratelimit-reset-requests": "1h29m16.8s",
+      "x-ratelimit-reset-tokens": "1.305s",
+      "x-request-id": "req_01kpg7s2pcfvmajzv46bt3q08b",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=ZNRLyeDxh.BYRLXi8KW0zgBRZhvg6rdiVFsaQGzy2N0-1776514009.7820568-1.0.1.1-CJd.3ROMuQimhS5ZbqrF6vC_vqIOu4i2thg23ENObLWPFJDH_NflRhXJiMICsSGvQIDy72alpIh0cFN4ayQPF2.uAj5GdbTfznKefDxNHR.7VIrX.XkeLcXh7nUsjPcy; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:36:50 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee38bb12b41ad37-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "best director at cannes film festival",
+    "gold_normalized": "presidential culture and arts grand awards",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

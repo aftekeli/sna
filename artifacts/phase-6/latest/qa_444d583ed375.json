@@ -1,0 +1,263 @@
+{
+  "created_at": "2026-04-18T13:03:22.096452+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_444d583ed375",
+  "question": "Where was Berk Hakman, a cast member of Beyond the Hill, born?",
+  "question_type": "two_hop",
+  "template": "film_cast_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q3640",
+    "text": "Ankara"
+  },
+  "prediction_text": "Ankara",
+  "match": {
+    "prediction_normalized": "ankara",
+    "gold_normalized": "ankara",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q6093425",
+      "entity_name": "Berk Hakman (born 14 August 1981)",
+      "roles": [
+        "cast_member"
+      ],
+      "source": "lexicon",
+      "score": 17
+    }
+  ],
+  "relation_path": [
+    "P19"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q6093425"
+      ],
+      "candidate_count": 2,
+      "selected_triples": [
+        {
+          "source_id": "Q6093425",
+          "source_name": "Berk Hakman (born 14 August 1981)",
+          "source_roles": [
+            "cast_member"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q3640",
+          "target_name": "Ankara",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 16.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q6093425",
+        "seed_entity_name": "Berk Hakman (born 14 August 1981)",
+        "final_answers": [
+          {
+            "entity_id": "Q3640",
+            "entity_name": "Ankara"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q3640"
+    ],
+    "candidate_texts": [
+      "Ankara"
+    ],
+    "answer_text": "Ankara"
+  },
+  "kg_summary": "Berk Hakman (born 14 August 1981) was born in Ankara.",
+  "expanded_query": "Berk Hakman birthplace Ankara.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_444d583ed375::1",
+      "title": "Where was Berk Hakman, a cast member of Beyond the Hill, born?",
+      "body": "Beyond the Hill has cast member Berk Hakman. Berk Hakman was born in Ankara.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6084082",
+      "metadata": {
+        "question_id": "qa_444d583ed375",
+        "template": "film_cast_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -26.660875308482755,
+      "snippet": "Beyond the Hill has cast member Berk Hakman. Berk Hakman was born in Ankara."
+    },
+    {
+      "doc_id": "entity::Q6093425",
+      "title": "berk hakman",
+      "body": "berk hakman. Description: Berk Hakman (born 14 August 1981) is a Turkish film and television actor. Aliases: berk hakman, Berk Hakman. Roles: cast_member. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q6093425",
+      "metadata": {
+        "entity_id": "Q6093425",
+        "aliases": [
+          "berk hakman",
+          "Berk Hakman"
+        ],
+        "roles": [
+          "cast_member"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -22.66248534182157,
+      "snippet": "berk hakman. Description: Berk Hakman (born 14 August 1981) is a Turkish film and television actor. Aliases: berk hakman, Berk Hakman. Roles: cast_member. Domains: cinema, people, turkiye."
+    },
+    {
+      "doc_id": "fact::Q6093425::P19::Q3640",
+      "title": "berk hakman - place of birth",
+      "body": "berk hakman was born in Angora, Turkey. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6093425",
+      "metadata": {
+        "source_id": "Q6093425",
+        "target_id": "Q3640",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -19.31639106719152,
+      "snippet": "berk hakman was born in Angora, Turkey. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place."
+    },
+    {
+      "doc_id": "fact::Q6093425::P27::Q43",
+      "title": "berk hakman - country of citizenship",
+      "body": "berk hakman has country of citizenship turkiye. Relation type: country of citizenship. Source roles: cast_member. Target roles: birth_place, country, country_root.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6093425",
+      "metadata": {
+        "source_id": "Q6093425",
+        "target_id": "Q43",
+        "relation_id": "P27",
+        "relation_label": "country of citizenship"
+      },
+      "score": -18.95902215995684,
+      "snippet": "berk hakman has country of citizenship turkiye. Relation type: country of citizenship. Source roles: cast_member. Target roles: birth_place, country, country_root."
+    },
+    {
+      "doc_id": "fact::Q6084082::P161::Q6093425",
+      "title": "Beyond the Hill - cast member",
+      "body": "Beyond the Hill has cast member berk hakman. Relation type: cast member. Source roles: film. Target roles: cast_member.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6084082",
+      "metadata": {
+        "source_id": "Q6084082",
+        "target_id": "Q6093425",
+        "relation_id": "P161",
+        "relation_label": "cast member"
+      },
+      "score": -15.398180605369056,
+      "snippet": "Beyond the Hill has cast member berk hakman. Relation type: cast member. Source roles: film. Target roles: cast_member."
+    },
+    {
+      "doc_id": "path::qa_45847cf61fb5::1",
+      "title": "In which country was the director of Davaro born?",
+      "body": "Davaro was directed by Kartal Tibet. Kartal Tibet was born in Ankara. Ankara is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6806566",
+      "metadata": {
+        "question_id": "qa_45847cf61fb5",
+        "template": "film_director_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -7.062762662967937,
+      "snippet": "Davaro was directed by Kartal Tibet. Kartal Tibet was born in Ankara. Ankara is located in Turkey."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T13:03:17.309085+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 799,
+      "remaining_tokens": 11871,
+      "reset_requests_seconds": 17366.4,
+      "reset_tokens_seconds": 0.644,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 13:03:17 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "799",
+        "x-ratelimit-remaining-tokens": "11871",
+        "x-ratelimit-reset-requests": "4h49m26.4s",
+        "x-ratelimit-reset-tokens": "644ms",
+        "x-request-id": "req_01kpgb0epjec3rqh33d9ygyja0",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=Fhnk9Icpor06.d74vdnzKaDNhbdrtXhhVzaZ0aSdE3E-1776517397.1806452-1.0.1.1-X6SjPtVpbLtBUNptGH2SUk8rV8U.ERoXprx1A5qt0pJibBbnYQxn5SCvvuaMGiiVIfegBvScX8NT5C1JrVAPP0lKEYG7J_BlXDyEb3FbpjHUeupn6jxUIARTIId3cnrJ; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:33:17 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3de6459161270-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T13:03:22.084584+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 798,
+      "remaining_tokens": 11565,
+      "reset_requests_seconds": 17452.8,
+      "reset_tokens_seconds": 2.175,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 13:03:22 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "798",
+        "x-ratelimit-remaining-tokens": "11565",
+        "x-ratelimit-reset-requests": "4h50m52.8s",
+        "x-ratelimit-reset-tokens": "2.175s",
+        "x-request-id": "req_01kpgb0khnf83r9x44jdgg882g",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=zcc0hJfk.C7ezfbp8XgK1MM7og7xRnOjxTS3pz39rD8-1776517402.144281-1.0.1.1-Xa165QEJWYv9HX8p6EtoaD1RgE5UDKKExwPaxzt6hp_VmVINNgo0.LDav7sEDcpx8iNAxNlQO.HhLxz4neiRifmPDOojJZHkTN6cTvw9W1c4KG7DEzUUB7k6W6MEN88M; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:33:22 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3de836bfdb657-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

@@ -1,0 +1,3707 @@
+[
+  {
+    "question_id": "qa_26cd33a65acd",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_director_birth_place",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Where was the director of Aci Zafer born?",
+    "gold_answer": {
+      "entity_id": "Q35997",
+      "text": "İzmir"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q18712718",
+        "text": "Aci Zafer"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_birth_place",
+        "entity_ids": [
+          "Q18712718",
+          "Q2237841",
+          "Q35997"
+        ],
+        "entity_texts": [
+          "Aci Zafer",
+          "Halit Refiğ",
+          "İzmir"
+        ],
+        "relation_ids": [
+          "P57",
+          "P19"
+        ],
+        "relation_texts": [
+          "director",
+          "place of birth"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q18712718",
+            "subject_text": "Aci Zafer",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q2237841",
+            "object_text": "Halit Refiğ"
+          },
+          {
+            "subject_id": "Q2237841",
+            "subject_text": "Halit Refiğ",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q35997",
+            "object_text": "İzmir"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_c2bd1aeb56de",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_director_birth_place",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Where was the director of Ah Nerede born?",
+    "gold_answer": {
+      "entity_id": "Q719537",
+      "text": "Mustafakemalpaşa"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q6081761",
+        "text": "Ah Nerede"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_birth_place",
+        "entity_ids": [
+          "Q6081761",
+          "Q6033250",
+          "Q719537"
+        ],
+        "entity_texts": [
+          "Ah Nerede",
+          "Orhan Aksoy",
+          "Mustafakemalpaşa"
+        ],
+        "relation_ids": [
+          "P57",
+          "P19"
+        ],
+        "relation_texts": [
+          "director",
+          "place of birth"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q6081761",
+            "subject_text": "Ah Nerede",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q6033250",
+            "object_text": "Orhan Aksoy"
+          },
+          {
+            "subject_id": "Q6033250",
+            "subject_text": "Orhan Aksoy",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q719537",
+            "object_text": "Mustafakemalpaşa"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_fa625a096ffb",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_director_birth_place",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Where was the director of Akvaryumda Sessiz born?",
+    "gold_answer": {
+      "entity_id": "Q35997",
+      "text": "İzmir"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q26963199",
+        "text": "Akvaryumda Sessiz"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_birth_place",
+        "entity_ids": [
+          "Q26963199",
+          "Q26702984",
+          "Q35997"
+        ],
+        "entity_texts": [
+          "Akvaryumda Sessiz",
+          "Tayfun Belet",
+          "İzmir"
+        ],
+        "relation_ids": [
+          "P57",
+          "P19"
+        ],
+        "relation_texts": [
+          "director",
+          "place of birth"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q26963199",
+            "subject_text": "Akvaryumda Sessiz",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q26702984",
+            "object_text": "Tayfun Belet"
+          },
+          {
+            "subject_id": "Q26702984",
+            "subject_text": "Tayfun Belet",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q35997",
+            "object_text": "İzmir"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_dec91d77e6cf",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_director_birth_place",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Where was the director of Anadolu Kartalları born?",
+    "gold_answer": {
+      "entity_id": "Q406",
+      "text": "Istanbul"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q2845101",
+        "text": "Anadolu Kartalları"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_birth_place",
+        "entity_ids": [
+          "Q2845101",
+          "Q6021948",
+          "Q406"
+        ],
+        "entity_texts": [
+          "Anadolu Kartalları",
+          "Ömer Vargı",
+          "Istanbul"
+        ],
+        "relation_ids": [
+          "P57",
+          "P19"
+        ],
+        "relation_texts": [
+          "director",
+          "place of birth"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q2845101",
+            "subject_text": "Anadolu Kartalları",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q6021948",
+            "object_text": "Ömer Vargı"
+          },
+          {
+            "subject_id": "Q6021948",
+            "subject_text": "Ömer Vargı",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q406",
+            "object_text": "Istanbul"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_1d88f8ecd5cf",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_director_birth_place",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Where was the director of Arabesk born?",
+    "gold_answer": {
+      "entity_id": "Q45301",
+      "text": "Trabzon"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q1033926",
+        "text": "Arabesk"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_birth_place",
+        "entity_ids": [
+          "Q1033926",
+          "Q3057501",
+          "Q45301"
+        ],
+        "entity_texts": [
+          "Arabesk",
+          "Ertem Eğilmez",
+          "Trabzon"
+        ],
+        "relation_ids": [
+          "P57",
+          "P19"
+        ],
+        "relation_texts": [
+          "director",
+          "place of birth"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q1033926",
+            "subject_text": "Arabesk",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q3057501",
+            "object_text": "Ertem Eğilmez"
+          },
+          {
+            "subject_id": "Q3057501",
+            "subject_text": "Ertem Eğilmez",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q45301",
+            "object_text": "Trabzon"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_41602f1e45ed",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_director_birth_place",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Where was the director of Aslan Pençesi born?",
+    "gold_answer": {
+      "entity_id": "Q406",
+      "text": "Istanbul"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q18712768",
+        "text": "Aslan Pençesi"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_birth_place",
+        "entity_ids": [
+          "Q18712768",
+          "Q6815170",
+          "Q406"
+        ],
+        "entity_texts": [
+          "Aslan Pençesi",
+          "Arif Memduh Ün",
+          "Istanbul"
+        ],
+        "relation_ids": [
+          "P57",
+          "P19"
+        ],
+        "relation_texts": [
+          "director",
+          "place of birth"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q18712768",
+            "subject_text": "Aslan Pençesi",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q6815170",
+            "object_text": "Arif Memduh Ün"
+          },
+          {
+            "subject_id": "Q6815170",
+            "subject_text": "Arif Memduh Ün",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q406",
+            "object_text": "Istanbul"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_afcdaf7d352f",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_director_birth_place",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Where was the director of Banker Bilo born?",
+    "gold_answer": {
+      "entity_id": "Q45301",
+      "text": "Trabzon"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q6074077",
+        "text": "Banker Bilo"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_birth_place",
+        "entity_ids": [
+          "Q6074077",
+          "Q3057501",
+          "Q45301"
+        ],
+        "entity_texts": [
+          "Banker Bilo",
+          "Ertem Eğilmez",
+          "Trabzon"
+        ],
+        "relation_ids": [
+          "P57",
+          "P19"
+        ],
+        "relation_texts": [
+          "director",
+          "place of birth"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q6074077",
+            "subject_text": "Banker Bilo",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q3057501",
+            "object_text": "Ertem Eğilmez"
+          },
+          {
+            "subject_id": "Q3057501",
+            "subject_text": "Ertem Eğilmez",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q45301",
+            "object_text": "Trabzon"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_d8aa86c24033",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_director_birth_place",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Where was the director of Bitter Life born?",
+    "gold_answer": {
+      "entity_id": "Q47813",
+      "text": "Çanakkale Province"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q12835393",
+        "text": "Bitter Life"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_birth_place",
+        "entity_ids": [
+          "Q12835393",
+          "Q936089",
+          "Q47813"
+        ],
+        "entity_texts": [
+          "Bitter Life",
+          "Metin Erksan",
+          "Çanakkale Province"
+        ],
+        "relation_ids": [
+          "P57",
+          "P19"
+        ],
+        "relation_texts": [
+          "director",
+          "place of birth"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q12835393",
+            "subject_text": "Bitter Life",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q936089",
+            "object_text": "Metin Erksan"
+          },
+          {
+            "subject_id": "Q936089",
+            "subject_text": "Metin Erksan",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q47813",
+            "object_text": "Çanakkale Province"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_779f731c6587",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_director_award",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Which award was received by the director of Bir Avuç Toprak?",
+    "gold_answer": {
+      "entity_id": "Q7603040",
+      "text": "State Artist"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q6046554",
+        "text": "Bir Avuç Toprak"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_award",
+        "entity_ids": [
+          "Q6046554",
+          "Q7107075",
+          "Q7603040"
+        ],
+        "entity_texts": [
+          "Bir Avuç Toprak",
+          "Osman Fahir Seden usually credited as Osman F. Seden",
+          "State Artist"
+        ],
+        "relation_ids": [
+          "P57",
+          "P166"
+        ],
+        "relation_texts": [
+          "director",
+          "award received"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q6046554",
+            "subject_text": "Bir Avuç Toprak",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q7107075",
+            "object_text": "Osman Fahir Seden usually credited as Osman F. Seden"
+          },
+          {
+            "subject_id": "Q7107075",
+            "subject_text": "Osman Fahir Seden usually credited as Osman F. Seden",
+            "relation_id": "P166",
+            "relation_text": "award received",
+            "object_id": "Q7603040",
+            "object_text": "State Artist"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_d4d52acedc7a",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_director_award",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Which award was received by the director of İnek Şaban?",
+    "gold_answer": {
+      "entity_id": "Q7603040",
+      "text": "State Artist"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q6062891",
+        "text": "İnek Şaban"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_award",
+        "entity_ids": [
+          "Q6062891",
+          "Q7107075",
+          "Q7603040"
+        ],
+        "entity_texts": [
+          "İnek Şaban",
+          "Osman Fahir Seden usually credited as Osman F. Seden",
+          "State Artist"
+        ],
+        "relation_ids": [
+          "P57",
+          "P166"
+        ],
+        "relation_texts": [
+          "director",
+          "award received"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q6062891",
+            "subject_text": "İnek Şaban",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q7107075",
+            "object_text": "Osman Fahir Seden usually credited as Osman F. Seden"
+          },
+          {
+            "subject_id": "Q7107075",
+            "subject_text": "Osman Fahir Seden usually credited as Osman F. Seden",
+            "relation_id": "P166",
+            "relation_text": "award received",
+            "object_id": "Q7603040",
+            "object_text": "State Artist"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_d406bf48e837",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_director_award",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Which award was received by the director of Kanun namina?",
+    "gold_answer": {
+      "entity_id": "Q7241424",
+      "text": "Presidential Culture and Arts Grand Awards"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q6083314",
+        "text": "Kanun namina"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_award",
+        "entity_ids": [
+          "Q6083314",
+          "Q3176600",
+          "Q7241424"
+        ],
+        "entity_texts": [
+          "Kanun namina",
+          "Ömer Akad",
+          "Presidential Culture and Arts Grand Awards"
+        ],
+        "relation_ids": [
+          "P57",
+          "P166"
+        ],
+        "relation_texts": [
+          "director",
+          "award received"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q6083314",
+            "subject_text": "Kanun namina",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q3176600",
+            "object_text": "Ömer Akad"
+          },
+          {
+            "subject_id": "Q3176600",
+            "subject_text": "Ömer Akad",
+            "relation_id": "P166",
+            "relation_text": "award received",
+            "object_id": "Q7241424",
+            "object_text": "Presidential Culture and Arts Grand Awards"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_f2bf3cadec14",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_director_award",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Which award was received by the director of King of the Doormen?",
+    "gold_answer": {
+      "entity_id": "Q7650000",
+      "text": "The Sutherland Trophy"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q12810220",
+        "text": "King of the Doormen"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_award",
+        "entity_ids": [
+          "Q12810220",
+          "Q2739722",
+          "Q7650000"
+        ],
+        "entity_texts": [
+          "King of the Doormen",
+          "Zeki Ökten",
+          "The Sutherland Trophy"
+        ],
+        "relation_ids": [
+          "P57",
+          "P166"
+        ],
+        "relation_texts": [
+          "director",
+          "award received"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q12810220",
+            "subject_text": "King of the Doormen",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q2739722",
+            "object_text": "Zeki Ökten"
+          },
+          {
+            "subject_id": "Q2739722",
+            "subject_text": "Zeki Ökten",
+            "relation_id": "P166",
+            "relation_text": "award received",
+            "object_id": "Q7650000",
+            "object_text": "The Sutherland Trophy"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_bb3348c757ee",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_director_education",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Where did the director of Angel's Fall study?",
+    "gold_answer": {
+      "entity_id": "Q1235258",
+      "text": "Dokuz Eylül University"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q6054381",
+        "text": "Angel's Fall"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_education",
+        "entity_ids": [
+          "Q6054381",
+          "Q1373349",
+          "Q1235258"
+        ],
+        "entity_texts": [
+          "Angel's Fall",
+          "Semih Kaplanoğlu",
+          "Dokuz Eylül University"
+        ],
+        "relation_ids": [
+          "P57",
+          "P69"
+        ],
+        "relation_texts": [
+          "director",
+          "educated at"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q6054381",
+            "subject_text": "Angel's Fall",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q1373349",
+            "object_text": "Semih Kaplanoğlu"
+          },
+          {
+            "subject_id": "Q1373349",
+            "subject_text": "Semih Kaplanoğlu",
+            "relation_id": "P69",
+            "relation_text": "educated at",
+            "object_id": "Q1235258",
+            "object_text": "Dokuz Eylül University"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_dcba1b612c86",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_director_education",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Where did the director of Bitter Life study?",
+    "gold_answer": {
+      "entity_id": "Q192964",
+      "text": "Istanbul University"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q12835393",
+        "text": "Bitter Life"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_education",
+        "entity_ids": [
+          "Q12835393",
+          "Q936089",
+          "Q192964"
+        ],
+        "entity_texts": [
+          "Bitter Life",
+          "Metin Erksan",
+          "Istanbul University"
+        ],
+        "relation_ids": [
+          "P57",
+          "P69"
+        ],
+        "relation_texts": [
+          "director",
+          "educated at"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q12835393",
+            "subject_text": "Bitter Life",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q936089",
+            "object_text": "Metin Erksan"
+          },
+          {
+            "subject_id": "Q936089",
+            "subject_text": "Metin Erksan",
+            "relation_id": "P69",
+            "relation_text": "educated at",
+            "object_id": "Q192964",
+            "object_text": "Istanbul University"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_9ebc97ac2e4f",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_director_education",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Where did the director of Do Not Forget Me Istanbul study?",
+    "gold_answer": {
+      "entity_id": "Q4614",
+      "text": "The University of Southern California"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q20065085",
+        "text": "Do Not Forget Me Istanbul"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_education",
+        "entity_ids": [
+          "Q20065085",
+          "Q2374086",
+          "Q4614"
+        ],
+        "entity_texts": [
+          "Do Not Forget Me Istanbul",
+          "Eric Nazarian",
+          "The University of Southern California"
+        ],
+        "relation_ids": [
+          "P57",
+          "P69"
+        ],
+        "relation_texts": [
+          "director",
+          "educated at"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q20065085",
+            "subject_text": "Do Not Forget Me Istanbul",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q2374086",
+            "object_text": "Eric Nazarian"
+          },
+          {
+            "subject_id": "Q2374086",
+            "subject_text": "Eric Nazarian",
+            "relation_id": "P69",
+            "relation_text": "educated at",
+            "object_id": "Q4614",
+            "object_text": "The University of Southern California"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_104db2fbbec9",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_director_education",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Where did the director of Ember study?",
+    "gold_answer": {
+      "entity_id": "Q192964",
+      "text": "Istanbul University"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q25479948",
+        "text": "Ember"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_education",
+        "entity_ids": [
+          "Q25479948",
+          "Q187261",
+          "Q192964"
+        ],
+        "entity_texts": [
+          "Ember",
+          "Zeki Demirkubuz",
+          "Istanbul University"
+        ],
+        "relation_ids": [
+          "P57",
+          "P69"
+        ],
+        "relation_texts": [
+          "director",
+          "educated at"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q25479948",
+            "subject_text": "Ember",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q187261",
+            "object_text": "Zeki Demirkubuz"
+          },
+          {
+            "subject_id": "Q187261",
+            "subject_text": "Zeki Demirkubuz",
+            "relation_id": "P69",
+            "relation_text": "educated at",
+            "object_id": "Q192964",
+            "object_text": "Istanbul University"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_4ae95238ae3e",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_director_education",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Where did the director of Grain study?",
+    "gold_answer": {
+      "entity_id": "Q1235258",
+      "text": "Dokuz Eylül University"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q19954477",
+        "text": "Grain"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_education",
+        "entity_ids": [
+          "Q19954477",
+          "Q1373349",
+          "Q1235258"
+        ],
+        "entity_texts": [
+          "Grain",
+          "Semih Kaplanoğlu",
+          "Dokuz Eylül University"
+        ],
+        "relation_ids": [
+          "P57",
+          "P69"
+        ],
+        "relation_texts": [
+          "director",
+          "educated at"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q19954477",
+            "subject_text": "Grain",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q1373349",
+            "object_text": "Semih Kaplanoğlu"
+          },
+          {
+            "subject_id": "Q1373349",
+            "subject_text": "Semih Kaplanoğlu",
+            "relation_id": "P69",
+            "relation_text": "educated at",
+            "object_id": "Q1235258",
+            "object_text": "Dokuz Eylül University"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_6c10516be4d1",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_cast_birth_place",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Where was Tülin Özen, a cast member of 10 To 11, born?",
+    "gold_answer": {
+      "entity_id": "Q174341",
+      "text": "İskenderun"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q3459778",
+        "text": "10 To 11"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_cast_birth_place",
+        "entity_ids": [
+          "Q3459778",
+          "Q6086955",
+          "Q174341"
+        ],
+        "entity_texts": [
+          "10 To 11",
+          "Tülin Özen",
+          "İskenderun"
+        ],
+        "relation_ids": [
+          "P161",
+          "P19"
+        ],
+        "relation_texts": [
+          "cast member",
+          "place of birth"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q3459778",
+            "subject_text": "10 To 11",
+            "relation_id": "P161",
+            "relation_text": "cast member",
+            "object_id": "Q6086955",
+            "object_text": "Tülin Özen"
+          },
+          {
+            "subject_id": "Q6086955",
+            "subject_text": "Tülin Özen",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q174341",
+            "object_text": "İskenderun"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_515c0f340473",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_cast_birth_place",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Where was Seiyō Uchino, a cast member of 125 Years Memory, born?",
+    "gold_answer": {
+      "entity_id": "Q1358965",
+      "text": "Kōhoku-ku"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q21787529",
+        "text": "125 Years Memory"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_cast_birth_place",
+        "entity_ids": [
+          "Q21787529",
+          "Q5355422",
+          "Q1358965"
+        ],
+        "entity_texts": [
+          "125 Years Memory",
+          "Seiyō Uchino",
+          "Kōhoku-ku"
+        ],
+        "relation_ids": [
+          "P161",
+          "P19"
+        ],
+        "relation_texts": [
+          "cast member",
+          "place of birth"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q21787529",
+            "subject_text": "125 Years Memory",
+            "relation_id": "P161",
+            "relation_text": "cast member",
+            "object_id": "Q5355422",
+            "object_text": "Seiyō Uchino"
+          },
+          {
+            "subject_id": "Q5355422",
+            "subject_text": "Seiyō Uchino",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q1358965",
+            "object_text": "Kōhoku-ku"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_6efbcbaf0f9f",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_cast_birth_place",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Where was Shiori Kutsuna, a cast member of 125 Years Memory, born?",
+    "gold_answer": {
+      "entity_id": "Q6407315",
+      "text": "Killarney Heights"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q21787529",
+        "text": "125 Years Memory"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_cast_birth_place",
+        "entity_ids": [
+          "Q21787529",
+          "Q4390382",
+          "Q6407315"
+        ],
+        "entity_texts": [
+          "125 Years Memory",
+          "Shiori Kutsuna",
+          "Killarney Heights"
+        ],
+        "relation_ids": [
+          "P161",
+          "P19"
+        ],
+        "relation_texts": [
+          "cast member",
+          "place of birth"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q21787529",
+            "subject_text": "125 Years Memory",
+            "relation_id": "P161",
+            "relation_text": "cast member",
+            "object_id": "Q4390382",
+            "object_text": "Shiori Kutsuna"
+          },
+          {
+            "subject_id": "Q4390382",
+            "subject_text": "Shiori Kutsuna",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q6407315",
+            "object_text": "Killarney Heights"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_95049c4cd79a",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_cast_birth_place",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Where was Asuman Dabak, a cast member of Adem'in Trenleri, born?",
+    "gold_answer": {
+      "entity_id": "Q209905",
+      "text": "Akhisar"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q6087125",
+        "text": "Adem'in Trenleri"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_cast_birth_place",
+        "entity_ids": [
+          "Q6087125",
+          "Q4811871",
+          "Q209905"
+        ],
+        "entity_texts": [
+          "Adem'in Trenleri",
+          "Asuman Dabak",
+          "Akhisar"
+        ],
+        "relation_ids": [
+          "P161",
+          "P19"
+        ],
+        "relation_texts": [
+          "cast member",
+          "place of birth"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q6087125",
+            "subject_text": "Adem'in Trenleri",
+            "relation_id": "P161",
+            "relation_text": "cast member",
+            "object_id": "Q4811871",
+            "object_text": "Asuman Dabak"
+          },
+          {
+            "subject_id": "Q4811871",
+            "subject_text": "Asuman Dabak",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q209905",
+            "object_text": "Akhisar"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_baef96cb9ce7",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_cast_birth_place",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Where was Nurgül Yeşilçay, a cast member of Adem'in Trenleri, born?",
+    "gold_answer": {
+      "entity_id": "Q166824",
+      "text": "Afyonkarahisar"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q6087125",
+        "text": "Adem'in Trenleri"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_cast_birth_place",
+        "entity_ids": [
+          "Q6087125",
+          "Q256292",
+          "Q166824"
+        ],
+        "entity_texts": [
+          "Adem'in Trenleri",
+          "Nurgül Yeşilçay",
+          "Afyonkarahisar"
+        ],
+        "relation_ids": [
+          "P161",
+          "P19"
+        ],
+        "relation_texts": [
+          "cast member",
+          "place of birth"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q6087125",
+            "subject_text": "Adem'in Trenleri",
+            "relation_id": "P161",
+            "relation_text": "cast member",
+            "object_id": "Q256292",
+            "object_text": "Nurgül Yeşilçay"
+          },
+          {
+            "subject_id": "Q256292",
+            "subject_text": "Nurgül Yeşilçay",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q166824",
+            "object_text": "Afyonkarahisar"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_f7df086d2062",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_cast_birth_place",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Where was Tamer Karadağlı, a cast member of Alina, born?",
+    "gold_answer": {
+      "entity_id": "Q3640",
+      "text": "Ankara"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q17150245",
+        "text": "Alina"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_cast_birth_place",
+        "entity_ids": [
+          "Q17150245",
+          "Q3041530",
+          "Q3640"
+        ],
+        "entity_texts": [
+          "Alina",
+          "Tamer Karadağlı",
+          "Ankara"
+        ],
+        "relation_ids": [
+          "P161",
+          "P19"
+        ],
+        "relation_texts": [
+          "cast member",
+          "place of birth"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q17150245",
+            "subject_text": "Alina",
+            "relation_id": "P161",
+            "relation_text": "cast member",
+            "object_id": "Q3041530",
+            "object_text": "Tamer Karadağlı"
+          },
+          {
+            "subject_id": "Q3041530",
+            "subject_text": "Tamer Karadağlı",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q3640",
+            "object_text": "Ankara"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_59798c8c1dd1",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_cast_birth_place",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Where was Ali Şen, a cast member of Banker Bilo, born?",
+    "gold_answer": {
+      "entity_id": "Q38545",
+      "text": "Adana"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q6074077",
+        "text": "Banker Bilo"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_cast_birth_place",
+        "entity_ids": [
+          "Q6074077",
+          "Q343040",
+          "Q38545"
+        ],
+        "entity_texts": [
+          "Banker Bilo",
+          "Ali Şen",
+          "Adana"
+        ],
+        "relation_ids": [
+          "P161",
+          "P19"
+        ],
+        "relation_texts": [
+          "cast member",
+          "place of birth"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q6074077",
+            "subject_text": "Banker Bilo",
+            "relation_id": "P161",
+            "relation_text": "cast member",
+            "object_id": "Q343040",
+            "object_text": "Ali Şen"
+          },
+          {
+            "subject_id": "Q343040",
+            "subject_text": "Ali Şen",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q38545",
+            "object_text": "Adana"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_444d583ed375",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_cast_birth_place",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Where was Berk Hakman, a cast member of Beyond the Hill, born?",
+    "gold_answer": {
+      "entity_id": "Q3640",
+      "text": "Ankara"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q6084082",
+        "text": "Beyond the Hill"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_cast_birth_place",
+        "entity_ids": [
+          "Q6084082",
+          "Q6093425",
+          "Q3640"
+        ],
+        "entity_texts": [
+          "Beyond the Hill",
+          "Berk Hakman",
+          "Ankara"
+        ],
+        "relation_ids": [
+          "P161",
+          "P19"
+        ],
+        "relation_texts": [
+          "cast member",
+          "place of birth"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q6084082",
+            "subject_text": "Beyond the Hill",
+            "relation_id": "P161",
+            "relation_text": "cast member",
+            "object_id": "Q6093425",
+            "object_text": "Berk Hakman"
+          },
+          {
+            "subject_id": "Q6093425",
+            "subject_text": "Berk Hakman",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q3640",
+            "object_text": "Ankara"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_284c5e0ceb83",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_cast_award",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Which award was received by Nuri Bilge Ceylan, a cast member of Climates?",
+    "gold_answer": {
+      "entity_id": "Q7241424",
+      "text": "Presidential Culture and Arts Grand Awards"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q2758737",
+        "text": "Climates"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_cast_award",
+        "entity_ids": [
+          "Q2758737",
+          "Q724172",
+          "Q7241424"
+        ],
+        "entity_texts": [
+          "Climates",
+          "Nuri Bilge Ceylan",
+          "Presidential Culture and Arts Grand Awards"
+        ],
+        "relation_ids": [
+          "P161",
+          "P166"
+        ],
+        "relation_texts": [
+          "cast member",
+          "award received"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q2758737",
+            "subject_text": "Climates",
+            "relation_id": "P161",
+            "relation_text": "cast member",
+            "object_id": "Q724172",
+            "object_text": "Nuri Bilge Ceylan"
+          },
+          {
+            "subject_id": "Q724172",
+            "subject_text": "Nuri Bilge Ceylan",
+            "relation_id": "P166",
+            "relation_text": "award received",
+            "object_id": "Q7241424",
+            "object_text": "Presidential Culture and Arts Grand Awards"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_e2df9418d912",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_cast_award",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Which award was received by Moritz Johann Bleibtreu, a cast member of In July?",
+    "gold_answer": {
+      "entity_id": "Q873842",
+      "text": "The Romy TV award in honor of the Austrian-born actress Romy Schneider"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q494719",
+        "text": "In July"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_cast_award",
+        "entity_ids": [
+          "Q494719",
+          "Q58603",
+          "Q873842"
+        ],
+        "entity_texts": [
+          "In July",
+          "Moritz Johann Bleibtreu",
+          "The Romy TV award in honor of the Austrian-born actress Romy Schneider"
+        ],
+        "relation_ids": [
+          "P161",
+          "P166"
+        ],
+        "relation_texts": [
+          "cast member",
+          "award received"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q494719",
+            "subject_text": "In July",
+            "relation_id": "P161",
+            "relation_text": "cast member",
+            "object_id": "Q58603",
+            "object_text": "Moritz Johann Bleibtreu"
+          },
+          {
+            "subject_id": "Q58603",
+            "subject_text": "Moritz Johann Bleibtreu",
+            "relation_id": "P166",
+            "relation_text": "award received",
+            "object_id": "Q873842",
+            "object_text": "The Romy TV award in honor of the Austrian-born actress Romy Schneider"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_4e7de35a4787",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_cast_award",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Which award was received by Makram Jamil Khoury, a cast member of Inheritance?",
+    "gold_answer": {
+      "entity_id": "Q616568",
+      "text": "The Israel Prize"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q3145038",
+        "text": "Inheritance"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_cast_award",
+        "entity_ids": [
+          "Q3145038",
+          "Q284051",
+          "Q616568"
+        ],
+        "entity_texts": [
+          "Inheritance",
+          "Makram Jamil Khoury",
+          "The Israel Prize"
+        ],
+        "relation_ids": [
+          "P161",
+          "P166"
+        ],
+        "relation_texts": [
+          "cast member",
+          "award received"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q3145038",
+            "subject_text": "Inheritance",
+            "relation_id": "P161",
+            "relation_text": "cast member",
+            "object_id": "Q284051",
+            "object_text": "Makram Jamil Khoury"
+          },
+          {
+            "subject_id": "Q284051",
+            "subject_text": "Makram Jamil Khoury",
+            "relation_id": "P166",
+            "relation_text": "award received",
+            "object_id": "Q616568",
+            "object_text": "The Israel Prize"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_5610775fbf0e",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_cast_award",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Which award was received by Nora Marie Tschirner, a cast member of Kebab Connection?",
+    "gold_answer": {
+      "entity_id": "Q873842",
+      "text": "The Romy TV award in honor of the Austrian-born actress Romy Schneider"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q567579",
+        "text": "Kebab Connection"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_cast_award",
+        "entity_ids": [
+          "Q567579",
+          "Q63228",
+          "Q873842"
+        ],
+        "entity_texts": [
+          "Kebab Connection",
+          "Nora Marie Tschirner",
+          "The Romy TV award in honor of the Austrian-born actress Romy Schneider"
+        ],
+        "relation_ids": [
+          "P161",
+          "P166"
+        ],
+        "relation_texts": [
+          "cast member",
+          "award received"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q567579",
+            "subject_text": "Kebab Connection",
+            "relation_id": "P161",
+            "relation_text": "cast member",
+            "object_id": "Q63228",
+            "object_text": "Nora Marie Tschirner"
+          },
+          {
+            "subject_id": "Q63228",
+            "subject_text": "Nora Marie Tschirner",
+            "relation_id": "P166",
+            "relation_text": "award received",
+            "object_id": "Q873842",
+            "object_text": "The Romy TV award in honor of the Austrian-born actress Romy Schneider"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_d78e27a4c2dc",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "two_hop",
+    "template": "film_cast_award",
+    "difficulty": "medium",
+    "hop_count": 2,
+    "reasoning_path_count": 1,
+    "question": "Which award was received by Arsinée Khanjian, a cast member of The Cut?",
+    "gold_answer": {
+      "entity_id": "Q547316",
+      "text": "Genie Award for Best Performance by an Actress in a Leading Role"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q17512617",
+        "text": "The Cut"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_cast_award",
+        "entity_ids": [
+          "Q17512617",
+          "Q465998",
+          "Q547316"
+        ],
+        "entity_texts": [
+          "The Cut",
+          "Arsinée Khanjian",
+          "Genie Award for Best Performance by an Actress in a Leading Role"
+        ],
+        "relation_ids": [
+          "P161",
+          "P166"
+        ],
+        "relation_texts": [
+          "cast member",
+          "award received"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q17512617",
+            "subject_text": "The Cut",
+            "relation_id": "P161",
+            "relation_text": "cast member",
+            "object_id": "Q465998",
+            "object_text": "Arsinée Khanjian"
+          },
+          {
+            "subject_id": "Q465998",
+            "subject_text": "Arsinée Khanjian",
+            "relation_id": "P166",
+            "relation_text": "award received",
+            "object_id": "Q547316",
+            "object_text": "Genie Award for Best Performance by an Actress in a Leading Role"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_8dff5823c781",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "three_hop",
+    "template": "film_director_birth_place_country",
+    "difficulty": "hard",
+    "hop_count": 3,
+    "reasoning_path_count": 1,
+    "question": "In which country was the director of Ah Nerede born?",
+    "gold_answer": {
+      "entity_id": "Q43",
+      "text": "Turkey"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q6081761",
+        "text": "Ah Nerede"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_birth_place_country",
+        "entity_ids": [
+          "Q6081761",
+          "Q6033250",
+          "Q719537",
+          "Q43"
+        ],
+        "entity_texts": [
+          "Ah Nerede",
+          "Orhan Aksoy",
+          "Mustafakemalpaşa",
+          "Turkey"
+        ],
+        "relation_ids": [
+          "P57",
+          "P19",
+          "P17"
+        ],
+        "relation_texts": [
+          "director",
+          "place of birth",
+          "country"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q6081761",
+            "subject_text": "Ah Nerede",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q6033250",
+            "object_text": "Orhan Aksoy"
+          },
+          {
+            "subject_id": "Q6033250",
+            "subject_text": "Orhan Aksoy",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q719537",
+            "object_text": "Mustafakemalpaşa"
+          },
+          {
+            "subject_id": "Q719537",
+            "subject_text": "Mustafakemalpaşa",
+            "relation_id": "P17",
+            "relation_text": "country",
+            "object_id": "Q43",
+            "object_text": "Turkey"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_45847cf61fb5",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "three_hop",
+    "template": "film_director_birth_place_country",
+    "difficulty": "hard",
+    "hop_count": 3,
+    "reasoning_path_count": 1,
+    "question": "In which country was the director of Davaro born?",
+    "gold_answer": {
+      "entity_id": "Q43",
+      "text": "Turkey"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q6806566",
+        "text": "Davaro"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_birth_place_country",
+        "entity_ids": [
+          "Q6806566",
+          "Q374415",
+          "Q3640",
+          "Q43"
+        ],
+        "entity_texts": [
+          "Davaro",
+          "Kartal Tibet",
+          "Ankara",
+          "Turkey"
+        ],
+        "relation_ids": [
+          "P57",
+          "P19",
+          "P17"
+        ],
+        "relation_texts": [
+          "director",
+          "place of birth",
+          "country"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q6806566",
+            "subject_text": "Davaro",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q374415",
+            "object_text": "Kartal Tibet"
+          },
+          {
+            "subject_id": "Q374415",
+            "subject_text": "Kartal Tibet",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q3640",
+            "object_text": "Ankara"
+          },
+          {
+            "subject_id": "Q3640",
+            "subject_text": "Ankara",
+            "relation_id": "P17",
+            "relation_text": "country",
+            "object_id": "Q43",
+            "object_text": "Turkey"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_e90dc0323aed",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "three_hop",
+    "template": "film_director_birth_place_country",
+    "difficulty": "hard",
+    "hop_count": 3,
+    "reasoning_path_count": 1,
+    "question": "In which country was the director of Playing with Death born?",
+    "gold_answer": {
+      "entity_id": "Q794",
+      "text": "Iran"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q7203434",
+        "text": "Playing with Death"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_birth_place_country",
+        "entity_ids": [
+          "Q7203434",
+          "Q5644666",
+          "Q3616",
+          "Q794"
+        ],
+        "entity_texts": [
+          "Playing with Death",
+          "Hamid Tamjidi",
+          "Tehran",
+          "Iran"
+        ],
+        "relation_ids": [
+          "P57",
+          "P19",
+          "P17"
+        ],
+        "relation_texts": [
+          "director",
+          "place of birth",
+          "country"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q7203434",
+            "subject_text": "Playing with Death",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q5644666",
+            "object_text": "Hamid Tamjidi"
+          },
+          {
+            "subject_id": "Q5644666",
+            "subject_text": "Hamid Tamjidi",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q3616",
+            "object_text": "Tehran"
+          },
+          {
+            "subject_id": "Q3616",
+            "subject_text": "Tehran",
+            "relation_id": "P17",
+            "relation_text": "country",
+            "object_id": "Q794",
+            "object_text": "Iran"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_ea1b335bfcbb",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "three_hop",
+    "template": "film_director_birth_place_country",
+    "difficulty": "hard",
+    "hop_count": 3,
+    "reasoning_path_count": 1,
+    "question": "In which country was the director of Shadows and Faces born?",
+    "gold_answer": {
+      "entity_id": "Q229",
+      "text": "Cyprus"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q7460798",
+        "text": "Shadows and Faces"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_birth_place_country",
+        "entity_ids": [
+          "Q7460798",
+          "Q3811192",
+          "Q193190",
+          "Q229"
+        ],
+        "entity_texts": [
+          "Shadows and Faces",
+          "Derviş Zaim",
+          "Famagusta",
+          "Cyprus"
+        ],
+        "relation_ids": [
+          "P57",
+          "P19",
+          "P17"
+        ],
+        "relation_texts": [
+          "director",
+          "place of birth",
+          "country"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q7460798",
+            "subject_text": "Shadows and Faces",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q3811192",
+            "object_text": "Derviş Zaim"
+          },
+          {
+            "subject_id": "Q3811192",
+            "subject_text": "Derviş Zaim",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q193190",
+            "object_text": "Famagusta"
+          },
+          {
+            "subject_id": "Q193190",
+            "subject_text": "Famagusta",
+            "relation_id": "P17",
+            "relation_text": "country",
+            "object_id": "Q229",
+            "object_text": "Cyprus"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_2f68e5ea0524",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "three_hop",
+    "template": "film_director_birth_place_country",
+    "difficulty": "hard",
+    "hop_count": 3,
+    "reasoning_path_count": 1,
+    "question": "In which country was the director of The Beauty from Peran born?",
+    "gold_answer": {
+      "entity_id": "Q41",
+      "text": "Greece"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q25999912",
+        "text": "The Beauty from Peran"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_birth_place_country",
+        "entity_ids": [
+          "Q25999912",
+          "Q3356874",
+          "Q204905",
+          "Q41"
+        ],
+        "entity_texts": [
+          "The Beauty from Peran",
+          "Orestis Laskos",
+          "Eleusis",
+          "Greece"
+        ],
+        "relation_ids": [
+          "P57",
+          "P19",
+          "P17"
+        ],
+        "relation_texts": [
+          "director",
+          "place of birth",
+          "country"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q25999912",
+            "subject_text": "The Beauty from Peran",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q3356874",
+            "object_text": "Orestis Laskos"
+          },
+          {
+            "subject_id": "Q3356874",
+            "subject_text": "Orestis Laskos",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q204905",
+            "object_text": "Eleusis"
+          },
+          {
+            "subject_id": "Q204905",
+            "subject_text": "Eleusis",
+            "relation_id": "P17",
+            "relation_text": "country",
+            "object_id": "Q41",
+            "object_text": "Greece"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_ca18f2482294",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "three_hop",
+    "template": "film_director_education_country",
+    "difficulty": "hard",
+    "hop_count": 3,
+    "reasoning_path_count": 1,
+    "question": "In which country is the school attended by the director of Do Not Forget Me Istanbul located?",
+    "gold_answer": {
+      "entity_id": "Q30",
+      "text": "The United States of America"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q20065085",
+        "text": "Do Not Forget Me Istanbul"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_education_country",
+        "entity_ids": [
+          "Q20065085",
+          "Q2374086",
+          "Q4614",
+          "Q30"
+        ],
+        "entity_texts": [
+          "Do Not Forget Me Istanbul",
+          "Eric Nazarian",
+          "The University of Southern California",
+          "The United States of America"
+        ],
+        "relation_ids": [
+          "P57",
+          "P69",
+          "P17"
+        ],
+        "relation_texts": [
+          "director",
+          "educated at",
+          "country"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q20065085",
+            "subject_text": "Do Not Forget Me Istanbul",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q2374086",
+            "object_text": "Eric Nazarian"
+          },
+          {
+            "subject_id": "Q2374086",
+            "subject_text": "Eric Nazarian",
+            "relation_id": "P69",
+            "relation_text": "educated at",
+            "object_id": "Q4614",
+            "object_text": "The University of Southern California"
+          },
+          {
+            "subject_id": "Q4614",
+            "subject_text": "The University of Southern California",
+            "relation_id": "P17",
+            "relation_text": "country",
+            "object_id": "Q30",
+            "object_text": "The United States of America"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_eb46e42dc05a",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "three_hop",
+    "template": "film_director_education_country",
+    "difficulty": "hard",
+    "hop_count": 3,
+    "reasoning_path_count": 1,
+    "question": "In which country is the school attended by the director of Shadows and Faces located?",
+    "gold_answer": {
+      "entity_id": "Q145",
+      "text": "The United Kingdom of Great Britain and Northern Ireland"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q7460798",
+        "text": "Shadows and Faces"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_education_country",
+        "entity_ids": [
+          "Q7460798",
+          "Q3811192",
+          "Q865528",
+          "Q145"
+        ],
+        "entity_texts": [
+          "Shadows and Faces",
+          "Derviş Zaim",
+          "The University of Warwick",
+          "The United Kingdom of Great Britain and Northern Ireland"
+        ],
+        "relation_ids": [
+          "P57",
+          "P69",
+          "P17"
+        ],
+        "relation_texts": [
+          "director",
+          "educated at",
+          "country"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q7460798",
+            "subject_text": "Shadows and Faces",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q3811192",
+            "object_text": "Derviş Zaim"
+          },
+          {
+            "subject_id": "Q3811192",
+            "subject_text": "Derviş Zaim",
+            "relation_id": "P69",
+            "relation_text": "educated at",
+            "object_id": "Q865528",
+            "object_text": "The University of Warwick"
+          },
+          {
+            "subject_id": "Q865528",
+            "subject_text": "The University of Warwick",
+            "relation_id": "P17",
+            "relation_text": "country",
+            "object_id": "Q145",
+            "object_text": "The United Kingdom of Great Britain and Northern Ireland"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_07e8f72b4442",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "three_hop",
+    "template": "film_director_education_country",
+    "difficulty": "hard",
+    "hop_count": 3,
+    "reasoning_path_count": 1,
+    "question": "In which country is the school attended by the director of Angel's Fall located?",
+    "gold_answer": {
+      "entity_id": "Q43",
+      "text": "Turkey"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q6054381",
+        "text": "Angel's Fall"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_education_country",
+        "entity_ids": [
+          "Q6054381",
+          "Q1373349",
+          "Q1235258",
+          "Q43"
+        ],
+        "entity_texts": [
+          "Angel's Fall",
+          "Semih Kaplanoğlu",
+          "Dokuz Eylül University",
+          "Turkey"
+        ],
+        "relation_ids": [
+          "P57",
+          "P69",
+          "P17"
+        ],
+        "relation_texts": [
+          "director",
+          "educated at",
+          "country"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q6054381",
+            "subject_text": "Angel's Fall",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q1373349",
+            "object_text": "Semih Kaplanoğlu"
+          },
+          {
+            "subject_id": "Q1373349",
+            "subject_text": "Semih Kaplanoğlu",
+            "relation_id": "P69",
+            "relation_text": "educated at",
+            "object_id": "Q1235258",
+            "object_text": "Dokuz Eylül University"
+          },
+          {
+            "subject_id": "Q1235258",
+            "subject_text": "Dokuz Eylül University",
+            "relation_id": "P17",
+            "relation_text": "country",
+            "object_id": "Q43",
+            "object_text": "Turkey"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_d6de5558a6c3",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "three_hop",
+    "template": "film_director_education_country",
+    "difficulty": "hard",
+    "hop_count": 3,
+    "reasoning_path_count": 1,
+    "question": "In which country is the school attended by the director of Bitter Life located?",
+    "gold_answer": {
+      "entity_id": "Q43",
+      "text": "Turkey"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q12835393",
+        "text": "Bitter Life"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_education_country",
+        "entity_ids": [
+          "Q12835393",
+          "Q936089",
+          "Q192964",
+          "Q43"
+        ],
+        "entity_texts": [
+          "Bitter Life",
+          "Metin Erksan",
+          "Istanbul University",
+          "Turkey"
+        ],
+        "relation_ids": [
+          "P57",
+          "P69",
+          "P17"
+        ],
+        "relation_texts": [
+          "director",
+          "educated at",
+          "country"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q12835393",
+            "subject_text": "Bitter Life",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q936089",
+            "object_text": "Metin Erksan"
+          },
+          {
+            "subject_id": "Q936089",
+            "subject_text": "Metin Erksan",
+            "relation_id": "P69",
+            "relation_text": "educated at",
+            "object_id": "Q192964",
+            "object_text": "Istanbul University"
+          },
+          {
+            "subject_id": "Q192964",
+            "subject_text": "Istanbul University",
+            "relation_id": "P17",
+            "relation_text": "country",
+            "object_id": "Q43",
+            "object_text": "Turkey"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_2a6ac9643a80",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "three_hop",
+    "template": "film_director_education_country",
+    "difficulty": "hard",
+    "hop_count": 3,
+    "reasoning_path_count": 1,
+    "question": "In which country is the school attended by the director of Dokuz Dagin Efesi located?",
+    "gold_answer": {
+      "entity_id": "Q43",
+      "text": "Turkey"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q6067860",
+        "text": "Dokuz Dagin Efesi"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_education_country",
+        "entity_ids": [
+          "Q6067860",
+          "Q936089",
+          "Q192964",
+          "Q43"
+        ],
+        "entity_texts": [
+          "Dokuz Dagin Efesi",
+          "Metin Erksan",
+          "Istanbul University",
+          "Turkey"
+        ],
+        "relation_ids": [
+          "P57",
+          "P69",
+          "P17"
+        ],
+        "relation_texts": [
+          "director",
+          "educated at",
+          "country"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q6067860",
+            "subject_text": "Dokuz Dagin Efesi",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q936089",
+            "object_text": "Metin Erksan"
+          },
+          {
+            "subject_id": "Q936089",
+            "subject_text": "Metin Erksan",
+            "relation_id": "P69",
+            "relation_text": "educated at",
+            "object_id": "Q192964",
+            "object_text": "Istanbul University"
+          },
+          {
+            "subject_id": "Q192964",
+            "subject_text": "Istanbul University",
+            "relation_id": "P17",
+            "relation_text": "country",
+            "object_id": "Q43",
+            "object_text": "Turkey"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_565c95482384",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "three_hop",
+    "template": "film_cast_birth_place_country",
+    "difficulty": "hard",
+    "hop_count": 3,
+    "reasoning_path_count": 1,
+    "question": "In which country was Kim Seol-hyun, a cast member of Ayla The Daughter of War, born?",
+    "gold_answer": {
+      "entity_id": "Q884",
+      "text": "South Korea"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q31193403",
+        "text": "Ayla The Daughter of War"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_cast_birth_place_country",
+        "entity_ids": [
+          "Q31193403",
+          "Q16173210",
+          "Q42099",
+          "Q884"
+        ],
+        "entity_texts": [
+          "Ayla The Daughter of War",
+          "Kim Seol-hyun",
+          "Bucheon",
+          "South Korea"
+        ],
+        "relation_ids": [
+          "P161",
+          "P19",
+          "P17"
+        ],
+        "relation_texts": [
+          "cast member",
+          "place of birth",
+          "country"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q31193403",
+            "subject_text": "Ayla The Daughter of War",
+            "relation_id": "P161",
+            "relation_text": "cast member",
+            "object_id": "Q16173210",
+            "object_text": "Kim Seol-hyun"
+          },
+          {
+            "subject_id": "Q16173210",
+            "subject_text": "Kim Seol-hyun",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q42099",
+            "object_text": "Bucheon"
+          },
+          {
+            "subject_id": "Q42099",
+            "subject_text": "Bucheon",
+            "relation_id": "P17",
+            "relation_text": "country",
+            "object_id": "Q884",
+            "object_text": "South Korea"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_fd2bb20d9589",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "three_hop",
+    "template": "film_cast_birth_place_country",
+    "difficulty": "hard",
+    "hop_count": 3,
+    "reasoning_path_count": 1,
+    "question": "In which country was Aliye Rona, a cast member of Bloody Money, born?",
+    "gold_answer": {
+      "entity_id": "Q858",
+      "text": "Syria"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q25999900",
+        "text": "Bloody Money"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_cast_birth_place_country",
+        "entity_ids": [
+          "Q25999900",
+          "Q4727547",
+          "Q238217",
+          "Q858"
+        ],
+        "entity_texts": [
+          "Bloody Money",
+          "Aliye Rona",
+          "Daraa",
+          "Syria"
+        ],
+        "relation_ids": [
+          "P161",
+          "P19",
+          "P17"
+        ],
+        "relation_texts": [
+          "cast member",
+          "place of birth",
+          "country"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q25999900",
+            "subject_text": "Bloody Money",
+            "relation_id": "P161",
+            "relation_text": "cast member",
+            "object_id": "Q4727547",
+            "object_text": "Aliye Rona"
+          },
+          {
+            "subject_id": "Q4727547",
+            "subject_text": "Aliye Rona",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q238217",
+            "object_text": "Daraa"
+          },
+          {
+            "subject_id": "Q238217",
+            "subject_text": "Daraa",
+            "relation_id": "P17",
+            "relation_text": "country",
+            "object_id": "Q858",
+            "object_text": "Syria"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_11ec48a42232",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "three_hop",
+    "template": "film_cast_birth_place_country",
+    "difficulty": "hard",
+    "hop_count": 3,
+    "reasoning_path_count": 1,
+    "question": "In which country was Ali Düşenkalkar, a cast member of Devrim Arabaları, born?",
+    "gold_answer": {
+      "entity_id": "Q229",
+      "text": "Cyprus"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q982946",
+        "text": "Devrim Arabaları"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_cast_birth_place_country",
+        "entity_ids": [
+          "Q982946",
+          "Q4724766",
+          "Q3856",
+          "Q229"
+        ],
+        "entity_texts": [
+          "Devrim Arabaları",
+          "Ali Düşenkalkar",
+          "Nicosia",
+          "Cyprus"
+        ],
+        "relation_ids": [
+          "P161",
+          "P19",
+          "P17"
+        ],
+        "relation_texts": [
+          "cast member",
+          "place of birth",
+          "country"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q982946",
+            "subject_text": "Devrim Arabaları",
+            "relation_id": "P161",
+            "relation_text": "cast member",
+            "object_id": "Q4724766",
+            "object_text": "Ali Düşenkalkar"
+          },
+          {
+            "subject_id": "Q4724766",
+            "subject_text": "Ali Düşenkalkar",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q3856",
+            "object_text": "Nicosia"
+          },
+          {
+            "subject_id": "Q3856",
+            "subject_text": "Nicosia",
+            "relation_id": "P17",
+            "relation_text": "country",
+            "object_id": "Q229",
+            "object_text": "Cyprus"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_ab897ab4eb0b",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "three_hop",
+    "template": "film_cast_birth_place_country",
+    "difficulty": "hard",
+    "hop_count": 3,
+    "reasoning_path_count": 1,
+    "question": "In which country was Gianni Capaldi, a cast member of Ghosts of Garip, born?",
+    "gold_answer": {
+      "entity_id": "Q145",
+      "text": "The United Kingdom of Great Britain and Northern Ireland"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q23022350",
+        "text": "Ghosts of Garip"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_cast_birth_place_country",
+        "entity_ids": [
+          "Q23022350",
+          "Q5558187",
+          "Q737547",
+          "Q145"
+        ],
+        "entity_texts": [
+          "Ghosts of Garip",
+          "Gianni Capaldi",
+          "Motherwell",
+          "The United Kingdom of Great Britain and Northern Ireland"
+        ],
+        "relation_ids": [
+          "P161",
+          "P19",
+          "P17"
+        ],
+        "relation_texts": [
+          "cast member",
+          "place of birth",
+          "country"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q23022350",
+            "subject_text": "Ghosts of Garip",
+            "relation_id": "P161",
+            "relation_text": "cast member",
+            "object_id": "Q5558187",
+            "object_text": "Gianni Capaldi"
+          },
+          {
+            "subject_id": "Q5558187",
+            "subject_text": "Gianni Capaldi",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q737547",
+            "object_text": "Motherwell"
+          },
+          {
+            "subject_id": "Q737547",
+            "subject_text": "Motherwell",
+            "relation_id": "P17",
+            "relation_text": "country",
+            "object_id": "Q145",
+            "object_text": "The United Kingdom of Great Britain and Northern Ireland"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_f5a4909699e7",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "three_hop",
+    "template": "film_cast_birth_place_country",
+    "difficulty": "hard",
+    "hop_count": 3,
+    "reasoning_path_count": 1,
+    "question": "In which country was Selim Bayraktar, a cast member of Ghosts of Garip, born?",
+    "gold_answer": {
+      "entity_id": "Q796",
+      "text": "Iraq"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q23022350",
+        "text": "Ghosts of Garip"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_cast_birth_place_country",
+        "entity_ids": [
+          "Q23022350",
+          "Q6030503",
+          "Q173310",
+          "Q796"
+        ],
+        "entity_texts": [
+          "Ghosts of Garip",
+          "Selim Bayraktar",
+          "Kirkuk",
+          "Iraq"
+        ],
+        "relation_ids": [
+          "P161",
+          "P19",
+          "P17"
+        ],
+        "relation_texts": [
+          "cast member",
+          "place of birth",
+          "country"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q23022350",
+            "subject_text": "Ghosts of Garip",
+            "relation_id": "P161",
+            "relation_text": "cast member",
+            "object_id": "Q6030503",
+            "object_text": "Selim Bayraktar"
+          },
+          {
+            "subject_id": "Q6030503",
+            "subject_text": "Selim Bayraktar",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q173310",
+            "object_text": "Kirkuk"
+          },
+          {
+            "subject_id": "Q173310",
+            "subject_text": "Kirkuk",
+            "relation_id": "P17",
+            "relation_text": "country",
+            "object_id": "Q796",
+            "object_text": "Iraq"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_ef87589de143",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "comparison",
+    "template": "film_director_birth_place_country__comparison",
+    "comparison_base_template": "film_director_birth_place_country",
+    "difficulty": "very_hard",
+    "hop_count": 3,
+    "reasoning_path_count": 2,
+    "question": "Were the directors of Ah Nerede and Arabesk born in the same country?",
+    "gold_answer": {
+      "entity_id": null,
+      "text": "yes"
+    },
+    "comparison_metadata": {
+      "same_answer_requested": true,
+      "left_answer_text": "Turkey",
+      "right_answer_text": "Turkey",
+      "left_answer_id": "Q43",
+      "right_answer_id": "Q43"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q6081761",
+        "text": "Ah Nerede"
+      },
+      {
+        "entity_id": "Q1033926",
+        "text": "Arabesk"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_birth_place_country",
+        "entity_ids": [
+          "Q6081761",
+          "Q6033250",
+          "Q719537",
+          "Q43"
+        ],
+        "entity_texts": [
+          "Ah Nerede",
+          "Orhan Aksoy",
+          "Mustafakemalpaşa",
+          "Turkey"
+        ],
+        "relation_ids": [
+          "P57",
+          "P19",
+          "P17"
+        ],
+        "relation_texts": [
+          "director",
+          "place of birth",
+          "country"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q6081761",
+            "subject_text": "Ah Nerede",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q6033250",
+            "object_text": "Orhan Aksoy"
+          },
+          {
+            "subject_id": "Q6033250",
+            "subject_text": "Orhan Aksoy",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q719537",
+            "object_text": "Mustafakemalpaşa"
+          },
+          {
+            "subject_id": "Q719537",
+            "subject_text": "Mustafakemalpaşa",
+            "relation_id": "P17",
+            "relation_text": "country",
+            "object_id": "Q43",
+            "object_text": "Turkey"
+          }
+        ]
+      },
+      {
+        "template": "film_director_birth_place_country",
+        "entity_ids": [
+          "Q1033926",
+          "Q3057501",
+          "Q45301",
+          "Q43"
+        ],
+        "entity_texts": [
+          "Arabesk",
+          "Ertem Eğilmez",
+          "Trabzon",
+          "Turkey"
+        ],
+        "relation_ids": [
+          "P57",
+          "P19",
+          "P17"
+        ],
+        "relation_texts": [
+          "director",
+          "place of birth",
+          "country"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q1033926",
+            "subject_text": "Arabesk",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q3057501",
+            "object_text": "Ertem Eğilmez"
+          },
+          {
+            "subject_id": "Q3057501",
+            "subject_text": "Ertem Eğilmez",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q45301",
+            "object_text": "Trabzon"
+          },
+          {
+            "subject_id": "Q45301",
+            "subject_text": "Trabzon",
+            "relation_id": "P17",
+            "relation_text": "country",
+            "object_id": "Q43",
+            "object_text": "Turkey"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_f2af017e97bd",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "comparison",
+    "template": "film_director_birth_place_country__comparison",
+    "comparison_base_template": "film_director_birth_place_country",
+    "difficulty": "very_hard",
+    "hop_count": 3,
+    "reasoning_path_count": 2,
+    "question": "Were the directors of Ah Nerede and Playing with Death born in the same country?",
+    "gold_answer": {
+      "entity_id": null,
+      "text": "no"
+    },
+    "comparison_metadata": {
+      "same_answer_requested": false,
+      "left_answer_text": "Turkey",
+      "right_answer_text": "Iran",
+      "left_answer_id": "Q43",
+      "right_answer_id": "Q794"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q6081761",
+        "text": "Ah Nerede"
+      },
+      {
+        "entity_id": "Q7203434",
+        "text": "Playing with Death"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_birth_place_country",
+        "entity_ids": [
+          "Q6081761",
+          "Q6033250",
+          "Q719537",
+          "Q43"
+        ],
+        "entity_texts": [
+          "Ah Nerede",
+          "Orhan Aksoy",
+          "Mustafakemalpaşa",
+          "Turkey"
+        ],
+        "relation_ids": [
+          "P57",
+          "P19",
+          "P17"
+        ],
+        "relation_texts": [
+          "director",
+          "place of birth",
+          "country"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q6081761",
+            "subject_text": "Ah Nerede",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q6033250",
+            "object_text": "Orhan Aksoy"
+          },
+          {
+            "subject_id": "Q6033250",
+            "subject_text": "Orhan Aksoy",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q719537",
+            "object_text": "Mustafakemalpaşa"
+          },
+          {
+            "subject_id": "Q719537",
+            "subject_text": "Mustafakemalpaşa",
+            "relation_id": "P17",
+            "relation_text": "country",
+            "object_id": "Q43",
+            "object_text": "Turkey"
+          }
+        ]
+      },
+      {
+        "template": "film_director_birth_place_country",
+        "entity_ids": [
+          "Q7203434",
+          "Q5644666",
+          "Q3616",
+          "Q794"
+        ],
+        "entity_texts": [
+          "Playing with Death",
+          "Hamid Tamjidi",
+          "Tehran",
+          "Iran"
+        ],
+        "relation_ids": [
+          "P57",
+          "P19",
+          "P17"
+        ],
+        "relation_texts": [
+          "director",
+          "place of birth",
+          "country"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q7203434",
+            "subject_text": "Playing with Death",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q5644666",
+            "object_text": "Hamid Tamjidi"
+          },
+          {
+            "subject_id": "Q5644666",
+            "subject_text": "Hamid Tamjidi",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q3616",
+            "object_text": "Tehran"
+          },
+          {
+            "subject_id": "Q3616",
+            "subject_text": "Tehran",
+            "relation_id": "P17",
+            "relation_text": "country",
+            "object_id": "Q794",
+            "object_text": "Iran"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_056fc446ad92",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "comparison",
+    "template": "film_director_education_country__comparison",
+    "comparison_base_template": "film_director_education_country",
+    "difficulty": "very_hard",
+    "hop_count": 3,
+    "reasoning_path_count": 2,
+    "question": "Were the directors of Angel's Fall and Do Not Forget Me Istanbul educated in the same country?",
+    "gold_answer": {
+      "entity_id": null,
+      "text": "no"
+    },
+    "comparison_metadata": {
+      "same_answer_requested": false,
+      "left_answer_text": "Turkey",
+      "right_answer_text": "The United States of America",
+      "left_answer_id": "Q43",
+      "right_answer_id": "Q30"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q6054381",
+        "text": "Angel's Fall"
+      },
+      {
+        "entity_id": "Q20065085",
+        "text": "Do Not Forget Me Istanbul"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_director_education_country",
+        "entity_ids": [
+          "Q6054381",
+          "Q1373349",
+          "Q1235258",
+          "Q43"
+        ],
+        "entity_texts": [
+          "Angel's Fall",
+          "Semih Kaplanoğlu",
+          "Dokuz Eylül University",
+          "Turkey"
+        ],
+        "relation_ids": [
+          "P57",
+          "P69",
+          "P17"
+        ],
+        "relation_texts": [
+          "director",
+          "educated at",
+          "country"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q6054381",
+            "subject_text": "Angel's Fall",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q1373349",
+            "object_text": "Semih Kaplanoğlu"
+          },
+          {
+            "subject_id": "Q1373349",
+            "subject_text": "Semih Kaplanoğlu",
+            "relation_id": "P69",
+            "relation_text": "educated at",
+            "object_id": "Q1235258",
+            "object_text": "Dokuz Eylül University"
+          },
+          {
+            "subject_id": "Q1235258",
+            "subject_text": "Dokuz Eylül University",
+            "relation_id": "P17",
+            "relation_text": "country",
+            "object_id": "Q43",
+            "object_text": "Turkey"
+          }
+        ]
+      },
+      {
+        "template": "film_director_education_country",
+        "entity_ids": [
+          "Q20065085",
+          "Q2374086",
+          "Q4614",
+          "Q30"
+        ],
+        "entity_texts": [
+          "Do Not Forget Me Istanbul",
+          "Eric Nazarian",
+          "The University of Southern California",
+          "The United States of America"
+        ],
+        "relation_ids": [
+          "P57",
+          "P69",
+          "P17"
+        ],
+        "relation_texts": [
+          "director",
+          "educated at",
+          "country"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q20065085",
+            "subject_text": "Do Not Forget Me Istanbul",
+            "relation_id": "P57",
+            "relation_text": "director",
+            "object_id": "Q2374086",
+            "object_text": "Eric Nazarian"
+          },
+          {
+            "subject_id": "Q2374086",
+            "subject_text": "Eric Nazarian",
+            "relation_id": "P69",
+            "relation_text": "educated at",
+            "object_id": "Q4614",
+            "object_text": "The University of Southern California"
+          },
+          {
+            "subject_id": "Q4614",
+            "subject_text": "The University of Southern California",
+            "relation_id": "P17",
+            "relation_text": "country",
+            "object_id": "Q30",
+            "object_text": "The United States of America"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_6e027a24320b",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "comparison",
+    "template": "film_cast_birth_place_country__comparison",
+    "comparison_base_template": "film_cast_birth_place_country",
+    "difficulty": "very_hard",
+    "hop_count": 3,
+    "reasoning_path_count": 2,
+    "question": "Were Tülin Özen from 10 To 11 and Asuman Dabak from Adem'in Trenleri born in the same country?",
+    "gold_answer": {
+      "entity_id": null,
+      "text": "yes"
+    },
+    "comparison_metadata": {
+      "same_answer_requested": true,
+      "left_answer_text": "Turkey",
+      "right_answer_text": "Turkey",
+      "left_answer_id": "Q43",
+      "right_answer_id": "Q43"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q3459778",
+        "text": "10 To 11"
+      },
+      {
+        "entity_id": "Q6087125",
+        "text": "Adem'in Trenleri"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_cast_birth_place_country",
+        "entity_ids": [
+          "Q3459778",
+          "Q6086955",
+          "Q174341",
+          "Q43"
+        ],
+        "entity_texts": [
+          "10 To 11",
+          "Tülin Özen",
+          "İskenderun",
+          "Turkey"
+        ],
+        "relation_ids": [
+          "P161",
+          "P19",
+          "P17"
+        ],
+        "relation_texts": [
+          "cast member",
+          "place of birth",
+          "country"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q3459778",
+            "subject_text": "10 To 11",
+            "relation_id": "P161",
+            "relation_text": "cast member",
+            "object_id": "Q6086955",
+            "object_text": "Tülin Özen"
+          },
+          {
+            "subject_id": "Q6086955",
+            "subject_text": "Tülin Özen",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q174341",
+            "object_text": "İskenderun"
+          },
+          {
+            "subject_id": "Q174341",
+            "subject_text": "İskenderun",
+            "relation_id": "P17",
+            "relation_text": "country",
+            "object_id": "Q43",
+            "object_text": "Turkey"
+          }
+        ]
+      },
+      {
+        "template": "film_cast_birth_place_country",
+        "entity_ids": [
+          "Q6087125",
+          "Q4811871",
+          "Q209905",
+          "Q43"
+        ],
+        "entity_texts": [
+          "Adem'in Trenleri",
+          "Asuman Dabak",
+          "Akhisar",
+          "Turkey"
+        ],
+        "relation_ids": [
+          "P161",
+          "P19",
+          "P17"
+        ],
+        "relation_texts": [
+          "cast member",
+          "place of birth",
+          "country"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q6087125",
+            "subject_text": "Adem'in Trenleri",
+            "relation_id": "P161",
+            "relation_text": "cast member",
+            "object_id": "Q4811871",
+            "object_text": "Asuman Dabak"
+          },
+          {
+            "subject_id": "Q4811871",
+            "subject_text": "Asuman Dabak",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q209905",
+            "object_text": "Akhisar"
+          },
+          {
+            "subject_id": "Q209905",
+            "subject_text": "Akhisar",
+            "relation_id": "P17",
+            "relation_text": "country",
+            "object_id": "Q43",
+            "object_text": "Turkey"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  },
+  {
+    "question_id": "qa_25e417879724",
+    "language": "en",
+    "domain": "turkish_cinema",
+    "question_type": "comparison",
+    "template": "film_cast_birth_place_country__comparison",
+    "comparison_base_template": "film_cast_birth_place_country",
+    "difficulty": "very_hard",
+    "hop_count": 3,
+    "reasoning_path_count": 2,
+    "question": "Were Tülin Özen from 10 To 11 and Seiyō Uchino from 125 Years Memory born in the same country?",
+    "gold_answer": {
+      "entity_id": null,
+      "text": "no"
+    },
+    "comparison_metadata": {
+      "same_answer_requested": false,
+      "left_answer_text": "Turkey",
+      "right_answer_text": "Japan",
+      "left_answer_id": "Q43",
+      "right_answer_id": "Q17"
+    },
+    "seed_entities": [
+      {
+        "entity_id": "Q3459778",
+        "text": "10 To 11"
+      },
+      {
+        "entity_id": "Q21787529",
+        "text": "125 Years Memory"
+      }
+    ],
+    "supporting_paths": [
+      {
+        "template": "film_cast_birth_place_country",
+        "entity_ids": [
+          "Q3459778",
+          "Q6086955",
+          "Q174341",
+          "Q43"
+        ],
+        "entity_texts": [
+          "10 To 11",
+          "Tülin Özen",
+          "İskenderun",
+          "Turkey"
+        ],
+        "relation_ids": [
+          "P161",
+          "P19",
+          "P17"
+        ],
+        "relation_texts": [
+          "cast member",
+          "place of birth",
+          "country"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q3459778",
+            "subject_text": "10 To 11",
+            "relation_id": "P161",
+            "relation_text": "cast member",
+            "object_id": "Q6086955",
+            "object_text": "Tülin Özen"
+          },
+          {
+            "subject_id": "Q6086955",
+            "subject_text": "Tülin Özen",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q174341",
+            "object_text": "İskenderun"
+          },
+          {
+            "subject_id": "Q174341",
+            "subject_text": "İskenderun",
+            "relation_id": "P17",
+            "relation_text": "country",
+            "object_id": "Q43",
+            "object_text": "Turkey"
+          }
+        ]
+      },
+      {
+        "template": "film_cast_birth_place_country",
+        "entity_ids": [
+          "Q21787529",
+          "Q5355422",
+          "Q1358965",
+          "Q17"
+        ],
+        "entity_texts": [
+          "125 Years Memory",
+          "Seiyō Uchino",
+          "Kōhoku-ku",
+          "Japan"
+        ],
+        "relation_ids": [
+          "P161",
+          "P19",
+          "P17"
+        ],
+        "relation_texts": [
+          "cast member",
+          "place of birth",
+          "country"
+        ],
+        "triples": [
+          {
+            "subject_id": "Q21787529",
+            "subject_text": "125 Years Memory",
+            "relation_id": "P161",
+            "relation_text": "cast member",
+            "object_id": "Q5355422",
+            "object_text": "Seiyō Uchino"
+          },
+          {
+            "subject_id": "Q5355422",
+            "subject_text": "Seiyō Uchino",
+            "relation_id": "P19",
+            "relation_text": "place of birth",
+            "object_id": "Q1358965",
+            "object_text": "Kōhoku-ku"
+          },
+          {
+            "subject_id": "Q1358965",
+            "subject_text": "Kōhoku-ku",
+            "relation_id": "P17",
+            "relation_text": "country",
+            "object_id": "Q17",
+            "object_text": "Japan"
+          }
+        ]
+      }
+    ],
+    "raw_triple_verified": true
+  }
+]

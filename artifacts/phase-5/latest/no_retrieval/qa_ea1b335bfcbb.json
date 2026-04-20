@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T13:09:06.475688+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_ea1b335bfcbb",
+  "question": "In which country was the director of Shadows and Faces born?",
+  "question_type": "three_hop",
+  "template": "film_director_birth_place_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q229",
+    "text": "Cyprus"
+  },
+  "prediction_text": "Turkey",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:09:06.461249+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 774,
+    "remaining_tokens": 11902,
+    "reset_requests_seconds": 19526.4,
+    "reset_tokens_seconds": 0.489,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:09:06 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "774",
+      "x-ratelimit-remaining-tokens": "11902",
+      "x-ratelimit-reset-requests": "5h25m26.4s",
+      "x-ratelimit-reset-tokens": "489ms",
+      "x-request-id": "req_01kpgbb3wwfgatyyjqyrxpd6md",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=CKZu7NhQoyTjFw1CYjlYkMDb9OQR2to9IgzA6DcakSk-1776517746.5679588-1.0.1.1-RQ4Nw_wlVCdUsAJQwJwtVKUXPsrkkfTkRkpvf2i0iiL1VRbhuw8teHaVL7HlbLzNl3mxfuMBFvm8YUPUVpyzo9Ova.6giD1LqJCOrAhbfwSZhqP6wBHvW2VmFJSi5qZm; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:39:06 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3e6ec08ea26ad-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "turkey",
+    "gold_normalized": "cyprus",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

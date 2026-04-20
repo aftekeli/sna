@@ -1,0 +1,176 @@
+{
+  "created_at": "2026-04-18T13:12:57.114948+00:00",
+  "status": "success",
+  "method": "vanilla_qe",
+  "question_id": "qa_ab897ab4eb0b",
+  "question": "In which country was Gianni Capaldi, a cast member of Ghosts of Garip, born?",
+  "question_type": "three_hop",
+  "template": "film_cast_birth_place_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q145",
+    "text": "The United Kingdom of Great Britain and Northern Ireland"
+  },
+  "prediction_text": "The United Kingdom",
+  "expanded_query": "What is the country of birth of Gianni Capaldi, a cast member of Ghosts of Garip.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_ab897ab4eb0b::1",
+      "title": "In which country was Gianni Capaldi, a cast member of Ghosts of Garip, born?",
+      "body": "Ghosts of Garip has cast member Gianni Capaldi. Gianni Capaldi was born in Motherwell. Motherwell is located in The United Kingdom of Great Britain and Northern Ireland.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q23022350",
+      "metadata": {
+        "question_id": "qa_ab897ab4eb0b",
+        "template": "film_cast_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -38.382744882911894,
+      "snippet": "Ghosts of Garip has cast member Gianni Capaldi. Gianni Capaldi was born in Motherwell. Motherwell is located in The United Kingdom of Great Britain and Northern Ireland."
+    },
+    {
+      "doc_id": "fact::Q23022350::P161::Q5558187",
+      "title": "Ghosts of Garip - cast member",
+      "body": "Ghosts of Garip has cast member gianni capaldi. Relation type: cast member. Source roles: film. Target roles: cast_member.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q23022350",
+      "metadata": {
+        "source_id": "Q23022350",
+        "target_id": "Q5558187",
+        "relation_id": "P161",
+        "relation_label": "cast member"
+      },
+      "score": -33.301311634273205,
+      "snippet": "Ghosts of Garip has cast member gianni capaldi. Relation type: cast member. Source roles: film. Target roles: cast_member."
+    },
+    {
+      "doc_id": "entity::Q23022350",
+      "title": "Ghosts of Garip",
+      "body": "Ghosts of Garip. Description: The Ghosts of Garip a.k.a. Kanlı Girdap & Vlad's Legacy directed by Patricio Valladares, is a Turkish Film. Gianni Capaldi and Selma Ergeç star in this found footage horror film. Film was released on 11 July 2016 in Turkey. Aliases: Ghosts of Garip, ghosts of garip, the ghosts of garip, The Ghosts of Garip, The Ghosts of Garip (2016 film), the ghosts of garip (2016 film). Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q23022350",
+      "metadata": {
+        "entity_id": "Q23022350",
+        "aliases": [
+          "Ghosts of Garip",
+          "ghosts of garip",
+          "the ghosts of garip",
+          "The Ghosts of Garip",
+          "The Ghosts of Garip (2016 film)",
+          "the ghosts of garip (2016 film)"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -32.62927255098252,
+      "snippet": "Ghosts of Garip. Description: The Ghosts of Garip a.k.a. Kanlı Girdap & Vlad's Legacy directed by Patricio Valladares, is a Turkish Film. Gianni Capaldi and Selma Ergeç star in this found footage horror film. Film was..."
+    },
+    {
+      "doc_id": "entity::Q5558187",
+      "title": "gianni capaldi",
+      "body": "gianni capaldi. Description: Gianni Capaldi is a Scottish film and television actor as well as a film and television producer. Aliases: gianni capaldi, Gianni Capaldi. Roles: cast_member. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q5558187",
+      "metadata": {
+        "entity_id": "Q5558187",
+        "aliases": [
+          "gianni capaldi",
+          "Gianni Capaldi"
+        ],
+        "roles": [
+          "cast_member"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -22.56979476014063,
+      "snippet": "gianni capaldi. Description: Gianni Capaldi is a Scottish film and television actor as well as a film and television producer. Aliases: gianni capaldi, Gianni Capaldi. Roles: cast_member. Domains: cinema, people, turk..."
+    },
+    {
+      "doc_id": "fact::Q5558187::P27::Q145",
+      "title": "gianni capaldi - country of citizenship",
+      "body": "gianni capaldi has country of citizenship royaume-uni. Relation type: country of citizenship. Source roles: cast_member. Target roles: country.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q5558187",
+      "metadata": {
+        "source_id": "Q5558187",
+        "target_id": "Q145",
+        "relation_id": "P27",
+        "relation_label": "country of citizenship"
+      },
+      "score": -20.144597824791852,
+      "snippet": "gianni capaldi has country of citizenship royaume-uni. Relation type: country of citizenship. Source roles: cast_member. Target roles: country."
+    },
+    {
+      "doc_id": "fact::Q5558187::P19::Q737547",
+      "title": "gianni capaldi - place of birth",
+      "body": "gianni capaldi was born in Motherwell, Scotland. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q5558187",
+      "metadata": {
+        "source_id": "Q5558187",
+        "target_id": "Q737547",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -19.537471660929445,
+      "snippet": "gianni capaldi was born in Motherwell, Scotland. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:12:57.095934+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 729,
+    "remaining_tokens": 11457,
+    "reset_requests_seconds": 23414.4,
+    "reset_tokens_seconds": 2.715,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:12:57 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "729",
+      "x-ratelimit-remaining-tokens": "11457",
+      "x-ratelimit-reset-requests": "6h30m14.4s",
+      "x-ratelimit-reset-tokens": "2.715s",
+      "x-request-id": "req_01kpgbj52nfc79k0rabqhvnmz9",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=elwrVk7p7SJLPYV3lJ4gx7r3Vo5s8fWFHGw1A8t2Fzw-1776517977.1519783-1.0.1.1-Ma6vfsozP5DmcMK7yiDo5Y3deEYT9tUfGQbpwL_zmV6TZYdeA4s5.Bd.m3T8RJo.pYc5TSGJcP26ZnvcGvdCQBMkviZe6Kk2GUAY5TKpsai1SnJ0fFCN8sOLAYwKDsyg; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:42:57 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3ec8d3b420ed1-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "the united kingdom",
+    "gold_normalized": "the united kingdom of great britain and northern ireland",
+    "exact_match": false,
+    "contains_match": true
+  }
+}

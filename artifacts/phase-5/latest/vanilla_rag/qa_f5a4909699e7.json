@@ -1,0 +1,175 @@
+{
+  "created_at": "2026-04-18T13:13:17.038008+00:00",
+  "status": "success",
+  "method": "vanilla_rag",
+  "question_id": "qa_f5a4909699e7",
+  "question": "In which country was Selim Bayraktar, a cast member of Ghosts of Garip, born?",
+  "question_type": "three_hop",
+  "template": "film_cast_birth_place_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q796",
+    "text": "Iraq"
+  },
+  "prediction_text": "Iraq",
+  "expanded_query": null,
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_f5a4909699e7::1",
+      "title": "In which country was Selim Bayraktar, a cast member of Ghosts of Garip, born?",
+      "body": "Ghosts of Garip has cast member Selim Bayraktar. Selim Bayraktar was born in Kirkuk. Kirkuk is located in Iraq.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q23022350",
+      "metadata": {
+        "question_id": "qa_f5a4909699e7",
+        "template": "film_cast_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -45.131607584447366,
+      "snippet": "Ghosts of Garip has cast member Selim Bayraktar. Selim Bayraktar was born in Kirkuk. Kirkuk is located in Iraq."
+    },
+    {
+      "doc_id": "fact::Q23022350::P161::Q6030503",
+      "title": "Ghosts of Garip - cast member",
+      "body": "Ghosts of Garip has cast member selim bayraktar. Relation type: cast member. Source roles: film. Target roles: cast_member.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q23022350",
+      "metadata": {
+        "source_id": "Q23022350",
+        "target_id": "Q6030503",
+        "relation_id": "P161",
+        "relation_label": "cast member"
+      },
+      "score": -33.17062179097571,
+      "snippet": "Ghosts of Garip has cast member selim bayraktar. Relation type: cast member. Source roles: film. Target roles: cast_member."
+    },
+    {
+      "doc_id": "path::qa_ab897ab4eb0b::1",
+      "title": "In which country was Gianni Capaldi, a cast member of Ghosts of Garip, born?",
+      "body": "Ghosts of Garip has cast member Gianni Capaldi. Gianni Capaldi was born in Motherwell. Motherwell is located in The United Kingdom of Great Britain and Northern Ireland.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q23022350",
+      "metadata": {
+        "question_id": "qa_ab897ab4eb0b",
+        "template": "film_cast_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -24.181953102916573,
+      "snippet": "Ghosts of Garip has cast member Gianni Capaldi. Gianni Capaldi was born in Motherwell. Motherwell is located in The United Kingdom of Great Britain and Northern Ireland."
+    },
+    {
+      "doc_id": "entity::Q6030503",
+      "title": "selim bayraktar",
+      "body": "selim bayraktar. Description: Selim Bayraktar (born 17 June 1975) is an Iraqi-Turkish actor best known for his role as \"Sümbül Ağa\" in Muhteşem Yüzyıl. Aliases: selim bayraktar, Selim Bayraktar. Roles: cast_member. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q6030503",
+      "metadata": {
+        "entity_id": "Q6030503",
+        "aliases": [
+          "selim bayraktar",
+          "Selim Bayraktar"
+        ],
+        "roles": [
+          "cast_member"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -23.3285513547469,
+      "snippet": "selim bayraktar. Description: Selim Bayraktar (born 17 June 1975) is an Iraqi-Turkish actor best known for his role as \"Sümbül Ağa\" in Muhteşem Yüzyıl. Aliases: selim bayraktar, Selim Bayraktar. Roles: cast_member. Do..."
+    },
+    {
+      "doc_id": "entity::Q23022350",
+      "title": "Ghosts of Garip",
+      "body": "Ghosts of Garip. Description: The Ghosts of Garip a.k.a. Kanlı Girdap & Vlad's Legacy directed by Patricio Valladares, is a Turkish Film. Gianni Capaldi and Selma Ergeç star in this found footage horror film. Film was released on 11 July 2016 in Turkey. Aliases: Ghosts of Garip, ghosts of garip, the ghosts of garip, The Ghosts of Garip, The Ghosts of Garip (2016 film), the ghosts of garip (2016 film). Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q23022350",
+      "metadata": {
+        "entity_id": "Q23022350",
+        "aliases": [
+          "Ghosts of Garip",
+          "ghosts of garip",
+          "the ghosts of garip",
+          "The Ghosts of Garip",
+          "The Ghosts of Garip (2016 film)",
+          "the ghosts of garip (2016 film)"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -22.058315027541518,
+      "snippet": "Ghosts of Garip. Description: The Ghosts of Garip a.k.a. Kanlı Girdap & Vlad's Legacy directed by Patricio Valladares, is a Turkish Film. Gianni Capaldi and Selma Ergeç star in this found footage horror film. Film was..."
+    },
+    {
+      "doc_id": "fact::Q6030503::P19::Q173310",
+      "title": "selim bayraktar - place of birth",
+      "body": "selim bayraktar was born in kirkuk (city). Relation type: place of birth. Source roles: cast_member. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6030503",
+      "metadata": {
+        "source_id": "Q6030503",
+        "target_id": "Q173310",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -21.964227085190355,
+      "snippet": "selim bayraktar was born in kirkuk (city). Relation type: place of birth. Source roles: cast_member. Target roles: birth_place."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:13:17.020081+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 725,
+    "remaining_tokens": 11415,
+    "reset_requests_seconds": 23760.0,
+    "reset_tokens_seconds": 2.925,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:13:17 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "725",
+      "x-ratelimit-remaining-tokens": "11415",
+      "x-ratelimit-reset-requests": "6h36m0s",
+      "x-ratelimit-reset-tokens": "2.925s",
+      "x-request-id": "req_01kpgbjrftersv5ywpz2wws71f",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=yPFjMC3ACA_CX4gglV33_1GDnKmHWXw6VLHpJWe6NjQ-1776517997.0291228-1.0.1.1-EKDdjJgHdvetsdhBGjHYQgEVmQf3btfbtLfFtEdGTxLiwKKHF7_EWdupBA2H4rJGTuMMqbOpJkSZ_7YO3d5_ge7moE.eU0H1EMm3TUXIuPn0uBgDNX78rg_kn5W7.G.2; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:43:17 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3ed09688ff26b-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "iraq",
+    "gold_normalized": "iraq",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

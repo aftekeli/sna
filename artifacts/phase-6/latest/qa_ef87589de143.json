@@ -1,0 +1,345 @@
+{
+  "created_at": "2026-04-18T10:06:09.197004+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_ef87589de143",
+  "question": "Were the directors of Ah Nerede and Arabesk born in the same country?",
+  "question_type": "comparison",
+  "template": "film_director_birth_place_country__comparison",
+  "difficulty": "very_hard",
+  "gold_answer": {
+    "entity_id": null,
+    "text": "yes"
+  },
+  "prediction_text": "yes",
+  "match": {
+    "prediction_normalized": "yes",
+    "gold_normalized": "yes",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q6081761",
+      "entity_name": "Ah Nerede",
+      "roles": [
+        "film",
+        "film_seed"
+      ],
+      "source": "neo4j_fulltext",
+      "score": 22.771869659423828
+    },
+    {
+      "entity_id": "Q1033926",
+      "entity_name": "Arabesk",
+      "roles": [
+        "film"
+      ],
+      "source": "neo4j_fulltext",
+      "score": 12.547256469726562
+    }
+  ],
+  "relation_path": [
+    "P57",
+    "P19",
+    "P17"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q6081761",
+        "Q1033926"
+      ],
+      "candidate_count": 11,
+      "selected_triples": [
+        {
+          "source_id": "Q6081761",
+          "source_name": "Ah Nerede",
+          "source_roles": [
+            "film",
+            "film_seed"
+          ],
+          "relation_id": "P57",
+          "relation_label": "director",
+          "target_id": "Q6033250",
+          "target_name": "Orhan Aksoy",
+          "target_roles": [
+            "director"
+          ],
+          "score": 19.0
+        },
+        {
+          "source_id": "Q1033926",
+          "source_name": "Arabesk",
+          "source_roles": [
+            "film"
+          ],
+          "relation_id": "P57",
+          "relation_label": "director",
+          "target_id": "Q3057501",
+          "target_name": "Ertem Egilmez",
+          "target_roles": [
+            "director"
+          ],
+          "score": 19.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q6033250",
+        "Q3057501"
+      ],
+      "candidate_count": 4,
+      "selected_triples": [
+        {
+          "source_id": "Q6033250",
+          "source_name": "Orhan Aksoy",
+          "source_roles": [
+            "director"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q719537",
+          "target_name": "mustafakemalpasa",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 16.0
+        },
+        {
+          "source_id": "Q3057501",
+          "source_name": "Ertem Egilmez",
+          "source_roles": [
+            "director"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q45301",
+          "target_name": "Ardesen",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 16.0
+        }
+      ]
+    },
+    {
+      "round_index": 3,
+      "frontier_entity_ids": [
+        "Q719537",
+        "Q45301"
+      ],
+      "candidate_count": 2,
+      "selected_triples": [
+        {
+          "source_id": "Q719537",
+          "source_name": "mustafakemalpasa",
+          "source_roles": [
+            "birth_place"
+          ],
+          "relation_id": "P17",
+          "relation_label": "country",
+          "target_id": "Q43",
+          "target_name": "Turkey",
+          "target_roles": [
+            "birth_place",
+            "country",
+            "country_root"
+          ],
+          "score": 21.0
+        },
+        {
+          "source_id": "Q45301",
+          "source_name": "Ardesen",
+          "source_roles": [
+            "birth_place"
+          ],
+          "relation_id": "P17",
+          "relation_label": "country",
+          "target_id": "Q43",
+          "target_name": "Turkey",
+          "target_roles": [
+            "birth_place",
+            "country",
+            "country_root"
+          ],
+          "score": 21.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q6081761",
+        "seed_entity_name": "Ah Nerede",
+        "final_answers": [
+          {
+            "entity_id": "Q43",
+            "entity_name": "Turkey"
+          }
+        ]
+      },
+      {
+        "seed_entity_id": "Q1033926",
+        "seed_entity_name": "Arabesk",
+        "final_answers": [
+          {
+            "entity_id": "Q43",
+            "entity_name": "Turkey"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q43"
+    ],
+    "candidate_texts": [
+      "Turkey"
+    ],
+    "answer_text": "yes"
+  },
+  "kg_summary": "Ah Nerede was directed by Orhan Aksoy. Arabesk was directed by Ertem Egilmez. Orhan Aksoy was born in mustafakemalpasa. Ertem Egilmez was born in Ardesen. mustafakemalpasa is located in Turkey. Ardesen is located in Turkey.",
+  "expanded_query": "Were Orhan Aksoy and Ertem Egilmez, directors of Ah Nerede and Arabesk, born in the same country, specifically Turkey?",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_ef87589de143::1",
+      "title": "Were the directors of Ah Nerede and Arabesk born in the same country?",
+      "body": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa. Mustafakemalpaşa is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6081761",
+      "metadata": {
+        "question_id": "qa_ef87589de143",
+        "template": "film_director_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -63.69003002375771,
+      "snippet": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa. Mustafakemalpaşa is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_ef87589de143::2",
+      "title": "Were the directors of Ah Nerede and Arabesk born in the same country?",
+      "body": "Arabesk was directed by Ertem Eğilmez. Ertem Eğilmez was born in Trabzon. Trabzon is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6081761",
+      "metadata": {
+        "question_id": "qa_ef87589de143",
+        "template": "film_director_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -61.67148597078358,
+      "snippet": "Arabesk was directed by Ertem Eğilmez. Ertem Eğilmez was born in Trabzon. Trabzon is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_f2af017e97bd::1",
+      "title": "Were the directors of Ah Nerede and Playing with Death born in the same country?",
+      "body": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa. Mustafakemalpaşa is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6081761",
+      "metadata": {
+        "question_id": "qa_f2af017e97bd",
+        "template": "film_director_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -56.32810198110515,
+      "snippet": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa. Mustafakemalpaşa is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_8dff5823c781::1",
+      "title": "In which country was the director of Ah Nerede born?",
+      "body": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa. Mustafakemalpaşa is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6081761",
+      "metadata": {
+        "question_id": "qa_8dff5823c781",
+        "template": "film_director_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -37.91015646442325,
+      "snippet": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa. Mustafakemalpaşa is located in Turkey."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T10:06:08.436922+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 993,
+      "remaining_tokens": 11831,
+      "reset_requests_seconds": 604.8,
+      "reset_tokens_seconds": 0.845,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 10:06:08 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "993",
+        "x-ratelimit-remaining-tokens": "11831",
+        "x-ratelimit-reset-requests": "10m4.8s",
+        "x-ratelimit-reset-tokens": "845ms",
+        "x-request-id": "req_01kpg0w2wnfwy82vp47mvrepet",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=ax9UL9I4OIubbKUfexskLQVMHji00Oe0.1nj7D8wao0-1776506768.254688-1.0.1.1-XCzpMbR5b5cDiN37p4LZHsZs5tfu489FhsQWJj5qz8fpzxnfY3JkV6RMqVgmeX9rnig6qI1mS5tj8r_DfaLeoBvhiACPVwPsBDq7OHFcao.VcvHp.taTLF2Mlmgt0nCw; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 10:36:08 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee2dae599c0b0d2-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T10:06:09.193935+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 992,
+      "remaining_tokens": 11530,
+      "reset_requests_seconds": 691.2,
+      "reset_tokens_seconds": 2.35,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 10:06:09 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "992",
+        "x-ratelimit-remaining-tokens": "11530",
+        "x-ratelimit-reset-requests": "11m31.2s",
+        "x-ratelimit-reset-tokens": "2.35s",
+        "x-request-id": "req_01kpg0w3pefx49zx2ht87mxdzx",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=KsEs1UfsWJ.SQw7AkOxrlMJoWoxI1n_YO3M_kyQxhCY-1776506769.0814257-1.0.1.1-EBfTQDSSwIYVhHvdKiKkiGGoOmYNSdeueYuRfKIYhIOCijheG4LuBqCIggVTyq2lcz4UvV8WYmPtKte2H2QxMFL0HW9.x4OXWKMMGYfzvO0V828utb_D7KBGPI.XsloR; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 10:36:09 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee2daeacc239862-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

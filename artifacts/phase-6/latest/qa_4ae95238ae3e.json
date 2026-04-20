@@ -1,0 +1,287 @@
+{
+  "created_at": "2026-04-18T12:59:32.873076+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_4ae95238ae3e",
+  "question": "Where did the director of Grain study?",
+  "question_type": "two_hop",
+  "template": "film_director_education",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q1235258",
+    "text": "Dokuz Eylül University"
+  },
+  "prediction_text": "Dokuz Eylül University",
+  "match": {
+    "prediction_normalized": "dokuz eylul university",
+    "gold_normalized": "dokuz eylul university",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q19954477",
+      "entity_name": "Grain (Buğday)",
+      "roles": [
+        "film"
+      ],
+      "source": "neo4j_fulltext",
+      "score": 11.75161075592041
+    }
+  ],
+  "relation_path": [
+    "P57",
+    "P69"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q19954477"
+      ],
+      "candidate_count": 3,
+      "selected_triples": [
+        {
+          "source_id": "Q19954477",
+          "source_name": "Grain (Buğday)",
+          "source_roles": [
+            "film"
+          ],
+          "relation_id": "P57",
+          "relation_label": "director",
+          "target_id": "Q1373349",
+          "target_name": "Semih Kaplanoğlu",
+          "target_roles": [
+            "director"
+          ],
+          "score": 19.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q1373349"
+      ],
+      "candidate_count": 3,
+      "selected_triples": [
+        {
+          "source_id": "Q1373349",
+          "source_name": "Semih Kaplanoğlu",
+          "source_roles": [
+            "director"
+          ],
+          "relation_id": "P69",
+          "relation_label": "educated at",
+          "target_id": "Q1235258",
+          "target_name": "9 Eylul University",
+          "target_roles": [
+            "education_entity"
+          ],
+          "score": 16.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q19954477",
+        "seed_entity_name": "Grain (Buğday)",
+        "final_answers": [
+          {
+            "entity_id": "Q1235258",
+            "entity_name": "9 Eylul University"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q1235258"
+    ],
+    "candidate_texts": [
+      "9 Eylul University"
+    ],
+    "answer_text": "9 Eylul University"
+  },
+  "kg_summary": "Grain (Buğday) was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at 9 Eylul University.",
+  "expanded_query": "Where did Semih Kaplanoğlu study.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_4ae95238ae3e::1",
+      "title": "Where did the director of Grain study?",
+      "body": "Grain was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q19954477",
+      "metadata": {
+        "question_id": "qa_4ae95238ae3e",
+        "template": "film_director_education",
+        "question_type": "two_hop"
+      },
+      "score": -36.25981026676392,
+      "snippet": "Grain was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University."
+    },
+    {
+      "doc_id": "path::qa_bb3348c757ee::1",
+      "title": "Where did the director of Angel's Fall study?",
+      "body": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6054381",
+      "metadata": {
+        "question_id": "qa_bb3348c757ee",
+        "template": "film_director_education",
+        "question_type": "two_hop"
+      },
+      "score": -35.04885747695361,
+      "snippet": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University."
+    },
+    {
+      "doc_id": "path::qa_104db2fbbec9::1",
+      "title": "Where did the director of Ember study?",
+      "body": "Ember was directed by Zeki Demirkubuz. Zeki Demirkubuz studied at Istanbul University.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q25479948",
+      "metadata": {
+        "question_id": "qa_104db2fbbec9",
+        "template": "film_director_education",
+        "question_type": "two_hop"
+      },
+      "score": -20.096528422949635,
+      "snippet": "Ember was directed by Zeki Demirkubuz. Zeki Demirkubuz studied at Istanbul University."
+    },
+    {
+      "doc_id": "path::qa_dcba1b612c86::1",
+      "title": "Where did the director of Bitter Life study?",
+      "body": "Bitter Life was directed by Metin Erksan. Metin Erksan studied at Istanbul University.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q12835393",
+      "metadata": {
+        "question_id": "qa_dcba1b612c86",
+        "template": "film_director_education",
+        "question_type": "two_hop"
+      },
+      "score": -19.681425680079254,
+      "snippet": "Bitter Life was directed by Metin Erksan. Metin Erksan studied at Istanbul University."
+    },
+    {
+      "doc_id": "entity::Q1373349",
+      "title": "Semih Kaplanoğlu",
+      "body": "Semih Kaplanoğlu. Description: Semih Kaplanoğlu (born 4 April 1963) is a Turkish screenwriter, film director and producer. Aliases: Semih Kaplanoğlu, semih kaplanoglu, Semih Kaplanoglu, semih kaplanoğlu. Roles: director. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q1373349",
+      "metadata": {
+        "entity_id": "Q1373349",
+        "aliases": [
+          "Semih Kaplanoğlu",
+          "semih kaplanoglu",
+          "Semih Kaplanoglu",
+          "semih kaplanoğlu"
+        ],
+        "roles": [
+          "director"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -19.21270050898721,
+      "snippet": "Semih Kaplanoğlu. Description: Semih Kaplanoğlu (born 4 April 1963) is a Turkish screenwriter, film director and producer. Aliases: Semih Kaplanoğlu, semih kaplanoglu, Semih Kaplanoglu, semih kaplanoğlu. Roles: direct..."
+    },
+    {
+      "doc_id": "path::qa_9ebc97ac2e4f::1",
+      "title": "Where did the director of Do Not Forget Me Istanbul study?",
+      "body": "Do Not Forget Me Istanbul was directed by Eric Nazarian. Eric Nazarian studied at The University of Southern California.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q20065085",
+      "metadata": {
+        "question_id": "qa_9ebc97ac2e4f",
+        "template": "film_director_education",
+        "question_type": "two_hop"
+      },
+      "score": -18.00762579929919,
+      "snippet": "Do Not Forget Me Istanbul was directed by Eric Nazarian. Eric Nazarian studied at The University of Southern California."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T12:59:28.111145+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 841,
+      "remaining_tokens": 11870,
+      "reset_requests_seconds": 13737.6,
+      "reset_tokens_seconds": 0.65,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:59:28 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "841",
+        "x-ratelimit-remaining-tokens": "11870",
+        "x-ratelimit-reset-requests": "3h48m57.6s",
+        "x-ratelimit-reset-tokens": "650ms",
+        "x-request-id": "req_01kpgasetfena8wqnfszythzgp",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=jRLjaD82tk6fRKD76R8D0bTtQ6S5V_xbcMYX1tP0iFM-1776517167.9297774-1.0.1.1-RCduIvFeP980wAXovDzaQbJ89KFSXyYVsgheI8HFTAzG0ebUCABlRVp5ymrlQJlLzFnc9TnO.TtZJ0_cc6fXqOGsM4aqVn3KIwHfVNkG8.GxwYlJXHxI6r8kcL_85h_f; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:29:28 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3d8cb8b4d788b-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T12:59:32.863800+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 840,
+      "remaining_tokens": 11541,
+      "reset_requests_seconds": 13824.0,
+      "reset_tokens_seconds": 2.295,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:59:33 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "840",
+        "x-ratelimit-remaining-tokens": "11541",
+        "x-ratelimit-reset-requests": "3h50m24s",
+        "x-ratelimit-reset-tokens": "2.295s",
+        "x-request-id": "req_01kpgaskq0ep3t04kzbsyhtyef",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=hl27dKkRVuzJL3s9JtZyEUhvgUeLygewj.RMSqu8wgM-1776517172.9350162-1.0.1.1-5khWxSc63dbT8lZi8NymFy5xe6uc4OEoQWyFNUxqONiamA93kgXnnVTodWuHxXKKiFS5SA7vA096UYpb88Yr2SjjaeS_n4lLMFWH_RunEParx53jyvKR884Dxi4Ucug8; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:29:33 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3d8eadf7b5ed6-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

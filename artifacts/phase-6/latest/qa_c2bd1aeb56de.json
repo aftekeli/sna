@@ -1,0 +1,249 @@
+{
+  "created_at": "2026-04-18T11:57:47.664470+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_c2bd1aeb56de",
+  "question": "Where was the director of Ah Nerede born?",
+  "question_type": "two_hop",
+  "template": "film_director_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q719537",
+    "text": "Mustafakemalpaşa"
+  },
+  "prediction_text": "mustafakemalpasa",
+  "match": {
+    "prediction_normalized": "mustafakemalpasa",
+    "gold_normalized": "mustafakemalpasa",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q6081761",
+      "entity_name": "Ah Nerede",
+      "roles": [
+        "film",
+        "film_seed"
+      ],
+      "source": "lexicon",
+      "score": 18
+    }
+  ],
+  "relation_path": [
+    "P57",
+    "P19"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q6081761"
+      ],
+      "candidate_count": 6,
+      "selected_triples": [
+        {
+          "source_id": "Q6081761",
+          "source_name": "Ah Nerede",
+          "source_roles": [
+            "film",
+            "film_seed"
+          ],
+          "relation_id": "P57",
+          "relation_label": "director",
+          "target_id": "Q6033250",
+          "target_name": "Orhan Aksoy",
+          "target_roles": [
+            "director"
+          ],
+          "score": 19.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q6033250"
+      ],
+      "candidate_count": 2,
+      "selected_triples": [
+        {
+          "source_id": "Q6033250",
+          "source_name": "Orhan Aksoy",
+          "source_roles": [
+            "director"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q719537",
+          "target_name": "mustafakemalpasa",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 16.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q6081761",
+        "seed_entity_name": "Ah Nerede",
+        "final_answers": [
+          {
+            "entity_id": "Q719537",
+            "entity_name": "mustafakemalpasa"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q719537"
+    ],
+    "candidate_texts": [
+      "mustafakemalpasa"
+    ],
+    "answer_text": "mustafakemalpasa"
+  },
+  "kg_summary": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in mustafakemalpasa.",
+  "expanded_query": "Where was Orhan Aksoy born, the director of Ah Nerede.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_c2bd1aeb56de::1",
+      "title": "Where was the director of Ah Nerede born?",
+      "body": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6081761",
+      "metadata": {
+        "question_id": "qa_c2bd1aeb56de",
+        "template": "film_director_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -44.0369985208702,
+      "snippet": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa."
+    },
+    {
+      "doc_id": "path::qa_8dff5823c781::1",
+      "title": "In which country was the director of Ah Nerede born?",
+      "body": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa. Mustafakemalpaşa is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6081761",
+      "metadata": {
+        "question_id": "qa_8dff5823c781",
+        "template": "film_director_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -37.333350581902366,
+      "snippet": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa. Mustafakemalpaşa is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_ef87589de143::1",
+      "title": "Were the directors of Ah Nerede and Arabesk born in the same country?",
+      "body": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa. Mustafakemalpaşa is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6081761",
+      "metadata": {
+        "question_id": "qa_ef87589de143",
+        "template": "film_director_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -34.91940906710596,
+      "snippet": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa. Mustafakemalpaşa is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_f2af017e97bd::1",
+      "title": "Were the directors of Ah Nerede and Playing with Death born in the same country?",
+      "body": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa. Mustafakemalpaşa is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6081761",
+      "metadata": {
+        "question_id": "qa_f2af017e97bd",
+        "template": "film_director_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -34.50160045641284,
+      "snippet": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa. Mustafakemalpaşa is located in Turkey."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T11:57:46.960084+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 994,
+      "remaining_tokens": 11692,
+      "reset_requests_seconds": 518.4,
+      "reset_tokens_seconds": 1.54,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 11:57:47 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "994",
+        "x-ratelimit-remaining-tokens": "11692",
+        "x-ratelimit-reset-requests": "8m38.4s",
+        "x-ratelimit-reset-tokens": "1.54s",
+        "x-request-id": "req_01kpg78gm6f2jbm45tgh0sk6sm",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=hJetR.T1AC4T0FsxbkpTBsSrbZAJI5T5EEWQuD.ASyQ-1776513466.9939835-1.0.1.1-KnLc9LchsHjIs2_krgtjxhPl2riL.Vvc1UTpYkt5YL5BF7VLXQFW5WoEhypm4_IS4C_Sw5WAa9omCWeLMeR5.AHhEigZcgC7mqNjW0q1L.iMmVawfiAdHl3Wuc._m.Y6; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:27:47 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee37e70be62c5fd-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T11:57:47.662139+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 993,
+      "remaining_tokens": 11438,
+      "reset_requests_seconds": 604.8,
+      "reset_tokens_seconds": 2.81,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 11:57:47 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "993",
+        "x-ratelimit-remaining-tokens": "11438",
+        "x-ratelimit-reset-requests": "10m4.8s",
+        "x-ratelimit-reset-tokens": "2.81s",
+        "x-request-id": "req_01kpg78h9zfyrvxk96hgcw009h",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=6nDMeCiZGs7NTn0F9nFHDHohIG6dvOMl8GCHL9SVSSw-1776513467.6882324-1.0.1.1-z60j06G4xgGDDzHMFu.ZYVR6t5Q9IY0brwTfUDaXBzdWdPxBwxQCF0TRGBZC5bJMWKBfvueyO6gPcD1KAcmeLuLCDtxHuPk2gW8idlallN4fNc0Q.LJ4jElkuPFoPzuP; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:27:47 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee37e7508fe5aaa-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

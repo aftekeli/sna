@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T12:52:03.786954+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_d406bf48e837",
+  "question": "Which award was received by the director of Kanun namina?",
+  "question_type": "two_hop",
+  "template": "film_director_award",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q7241424",
+    "text": "Presidential Culture and Arts Grand Awards"
+  },
+  "prediction_text": "Unknown",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:52:03.778939+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 867,
+    "remaining_tokens": 11912,
+    "reset_requests_seconds": 11491.2,
+    "reset_tokens_seconds": 0.44,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:52:03 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "867",
+      "x-ratelimit-remaining-tokens": "11912",
+      "x-ratelimit-reset-requests": "3h11m31.2s",
+      "x-ratelimit-reset-tokens": "440ms",
+      "x-request-id": "req_01kpgabx1ee8ya872jyqrp0w01",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=dcu_1Sl_oeL71ucjtyNpH5KP09li1fDNLxPNvcuPnKs-1776516723.7364347-1.0.1.1-t5N4tSY7v.jHnIk_VV4.5dvtdQzGBnaSJ85CJOMRz6Zk405j_Ay5D.Sra0TbF_6s8KYM9ZWamxAQsEIonxhXtIoL_CR6x0FimaGnqZ7IsM.VzL2aemwc3xeG1wT_ytKJ; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:22:03 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3cdf3595edad2-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "unknown",
+    "gold_normalized": "presidential culture and arts grand awards",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

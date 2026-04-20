@@ -1,0 +1,169 @@
+{
+  "created_at": "2026-04-18T13:03:32.330649+00:00",
+  "status": "success",
+  "method": "vanilla_rag",
+  "question_id": "qa_4e7de35a4787",
+  "question": "Which award was received by Makram Jamil Khoury, a cast member of Inheritance?",
+  "question_type": "two_hop",
+  "template": "film_cast_award",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q616568",
+    "text": "The Israel Prize"
+  },
+  "prediction_text": "The Israel Prize.",
+  "expanded_query": null,
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_4e7de35a4787::1",
+      "title": "Which award was received by Makram Jamil Khoury, a cast member of Inheritance?",
+      "body": "Inheritance has cast member Makram Jamil Khoury. Makram Jamil Khoury received the award The Israel Prize.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q3145038",
+      "metadata": {
+        "question_id": "qa_4e7de35a4787",
+        "template": "film_cast_award",
+        "question_type": "two_hop"
+      },
+      "score": -57.81776026596718,
+      "snippet": "Inheritance has cast member Makram Jamil Khoury. Makram Jamil Khoury received the award The Israel Prize."
+    },
+    {
+      "doc_id": "fact::Q284051::P166::Q616568",
+      "title": "Makram Khoury - award received",
+      "body": "Makram Khoury received the award Prize Israel. Relation type: award received. Source roles: cast_member, person_seed. Target roles: award.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q284051",
+      "metadata": {
+        "source_id": "Q284051",
+        "target_id": "Q616568",
+        "relation_id": "P166",
+        "relation_label": "award received"
+      },
+      "score": -32.171355949898796,
+      "snippet": "Makram Khoury received the award Prize Israel. Relation type: award received. Source roles: cast_member, person_seed. Target roles: award."
+    },
+    {
+      "doc_id": "entity::Q284051",
+      "title": "Makram Khoury",
+      "body": "Makram Khoury. Description: Makram Jamil Khoury (Arabic: مكرم  خوري‎, Hebrew: מכרם ח'ורי‎) is an Arab-Israeli actor, born 30 May 1945 in Jerusalem. He was the youngest artist and the first Arab to win the Israel Prize, the highest civic honor in Israel.Makram is active in films, on the stage, and on television. Aliases: Makram Khoury, makram khoury, Makram Khouri, makram khouri, makram khuri, Makram J. Khoury, Makram Khuri, makram j. khoury. Roles: cast_member, person_seed. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q284051",
+      "metadata": {
+        "entity_id": "Q284051",
+        "aliases": [
+          "Makram Khoury",
+          "makram khoury",
+          "Makram Khouri",
+          "makram khouri",
+          "makram khuri",
+          "Makram J. Khoury",
+          "Makram Khuri",
+          "makram j. khoury"
+        ],
+        "roles": [
+          "cast_member",
+          "person_seed"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -27.24627577196492,
+      "snippet": "Makram Khoury. Description: Makram Jamil Khoury (Arabic: مكرم  خوري‎, Hebrew: מכרם ח'ורי‎) is an Arab-Israeli actor, born 30 May 1945 in Jerusalem. He was the youngest artist and the first Arab to win the Israel Prize..."
+    },
+    {
+      "doc_id": "fact::Q3145038::P161::Q284051",
+      "title": "The Inheritance (2012 film) - cast member",
+      "body": "The Inheritance (2012 film) has cast member Makram Khoury. Relation type: cast member. Source roles: film, film_seed. Target roles: cast_member, person_seed.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q3145038",
+      "metadata": {
+        "source_id": "Q3145038",
+        "target_id": "Q284051",
+        "relation_id": "P161",
+        "relation_label": "cast member"
+      },
+      "score": -22.557869409772238,
+      "snippet": "The Inheritance (2012 film) has cast member Makram Khoury. Relation type: cast member. Source roles: film, film_seed. Target roles: cast_member, person_seed."
+    },
+    {
+      "doc_id": "fact::Q284051::P27::Q801",
+      "title": "Makram Khoury - country of citizenship",
+      "body": "Makram Khoury has country of citizenship ISRAEL. Relation type: country of citizenship. Source roles: cast_member, person_seed. Target roles: country.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q284051",
+      "metadata": {
+        "source_id": "Q284051",
+        "target_id": "Q801",
+        "relation_id": "P27",
+        "relation_label": "country of citizenship"
+      },
+      "score": -18.502185722657263,
+      "snippet": "Makram Khoury has country of citizenship ISRAEL. Relation type: country of citizenship. Source roles: cast_member, person_seed. Target roles: country."
+    },
+    {
+      "doc_id": "path::qa_d406bf48e837::1",
+      "title": "Which award was received by the director of Kanun namina?",
+      "body": "Kanun namina was directed by Ömer Akad. Ömer Akad received the award Presidential Culture and Arts Grand Awards.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6083314",
+      "metadata": {
+        "question_id": "qa_d406bf48e837",
+        "template": "film_director_award",
+        "question_type": "two_hop"
+      },
+      "score": -18.211208360195428,
+      "snippet": "Kanun namina was directed by Ömer Akad. Ömer Akad received the award Presidential Culture and Arts Grand Awards."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:03:32.319554+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 796,
+    "remaining_tokens": 11463,
+    "reset_requests_seconds": 17625.6,
+    "reset_tokens_seconds": 2.685,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:03:32 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "796",
+      "x-ratelimit-remaining-tokens": "11463",
+      "x-ratelimit-reset-requests": "4h53m45.6s",
+      "x-ratelimit-reset-tokens": "2.685s",
+      "x-request-id": "req_01kpgb0xbreearjgyp85qsn1y4",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=LFhLQ2WIBavzel3XIiltPRLwiDxF3lLtoN0BTO2lggg-1776517412.1961644-1.0.1.1-cF60gbtNkz.nRdW6syP.QBeZnzBaRSqa7wHffT9Xb0fZmUqfHQbpBwI.ELfM5BY1emO8EGaFVa4go1_TRe4NeGVWcy1kPOwYcpSpYXHACme3vnz0sRC84Cejyk1UX.Dz; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:33:32 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3dec23902b1f0-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "the israel prize",
+    "gold_normalized": "the israel prize",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

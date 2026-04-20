@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T11:57:48.407319+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_8dff5823c781",
+  "question": "In which country was the director of Ah Nerede born?",
+  "question_type": "three_hop",
+  "template": "film_director_birth_place_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q43",
+    "text": "Turkey"
+  },
+  "prediction_text": "Turkey",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T11:57:48.404634+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 992,
+    "remaining_tokens": 11506,
+    "reset_requests_seconds": 691.2,
+    "reset_tokens_seconds": 2.469,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 11:57:48 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "992",
+      "x-ratelimit-remaining-tokens": "11506",
+      "x-ratelimit-reset-requests": "11m31.2s",
+      "x-ratelimit-reset-tokens": "2.469s",
+      "x-request-id": "req_01kpg78hzqep2rm4jkb4w3yadr",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=wySAjHobGObxRwO3BOxhUd4FkHatuLFi8S6P.q4X16c-1776513468.3867018-1.0.1.1-7yR6N8tfu17PmGugRg1rNUkuYGPfvxX3eDDM3_cbvTDSA_lAqEJry2dLj278dIntvEf4UBi0FMLV0VxObwqsd_l6VcUh0aRtrVh0ROq7U.gbOxmljEGglTF6yGHkv01u; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:27:48 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee37e796eb40d37-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "turkey",
+    "gold_normalized": "turkey",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

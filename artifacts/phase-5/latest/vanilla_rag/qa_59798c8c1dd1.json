@@ -1,0 +1,162 @@
+{
+  "created_at": "2026-04-18T13:02:20.480589+00:00",
+  "status": "success",
+  "method": "vanilla_rag",
+  "question_id": "qa_59798c8c1dd1",
+  "question": "Where was Ali Şen, a cast member of Banker Bilo, born?",
+  "question_type": "two_hop",
+  "template": "film_cast_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q38545",
+    "text": "Adana"
+  },
+  "prediction_text": "Adana.",
+  "expanded_query": null,
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_59798c8c1dd1::1",
+      "title": "Where was Ali Şen, a cast member of Banker Bilo, born?",
+      "body": "Banker Bilo has cast member Ali Şen. Ali Şen was born in Adana.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6074077",
+      "metadata": {
+        "question_id": "qa_59798c8c1dd1",
+        "template": "film_cast_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -43.53248174602178,
+      "snippet": "Banker Bilo has cast member Ali Şen. Ali Şen was born in Adana."
+    },
+    {
+      "doc_id": "fact::Q6074077::P161::Q343040",
+      "title": "banker bilo - cast member",
+      "body": "banker bilo has cast member Ali Sen. Relation type: cast member. Source roles: film. Target roles: cast_member.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6074077",
+      "metadata": {
+        "source_id": "Q6074077",
+        "target_id": "Q343040",
+        "relation_id": "P161",
+        "relation_label": "cast member"
+      },
+      "score": -31.335828680815887,
+      "snippet": "banker bilo has cast member Ali Sen. Relation type: cast member. Source roles: film. Target roles: cast_member."
+    },
+    {
+      "doc_id": "path::qa_afcdaf7d352f::1",
+      "title": "Where was the director of Banker Bilo born?",
+      "body": "Banker Bilo was directed by Ertem Eğilmez. Ertem Eğilmez was born in Trabzon.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6074077",
+      "metadata": {
+        "question_id": "qa_afcdaf7d352f",
+        "template": "film_director_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -27.745887502265006,
+      "snippet": "Banker Bilo was directed by Ertem Eğilmez. Ertem Eğilmez was born in Trabzon."
+    },
+    {
+      "doc_id": "entity::Q6074077",
+      "title": "banker bilo",
+      "body": "banker bilo. Description: Banker Bilo is a 1980 Turkish language comedy film directed and produced by Ertem Egilmez.The film features Ilyas Salman, Meral Zeren, Sener Sen and Ahu Tugba in the lead role. The film was one of the most popular Turkish comedy films released in 1980's. Aliases: banker bilo, Banker Bilo. Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q6074077",
+      "metadata": {
+        "entity_id": "Q6074077",
+        "aliases": [
+          "banker bilo",
+          "Banker Bilo"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -25.537993787162506,
+      "snippet": "banker bilo. Description: Banker Bilo is a 1980 Turkish language comedy film directed and produced by Ertem Egilmez.The film features Ilyas Salman, Meral Zeren, Sener Sen and Ahu Tugba in the lead role. The film was o..."
+    },
+    {
+      "doc_id": "fact::Q6074077::P57::Q3057501",
+      "title": "banker bilo - director",
+      "body": "banker bilo was directed by Ertem Egilmez. Relation type: director. Source roles: film. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6074077",
+      "metadata": {
+        "source_id": "Q6074077",
+        "target_id": "Q3057501",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -20.585318581968444,
+      "snippet": "banker bilo was directed by Ertem Egilmez. Relation type: director. Source roles: film. Target roles: director."
+    },
+    {
+      "doc_id": "fact::Q6074077::P495::Q43",
+      "title": "banker bilo - country of origin",
+      "body": "banker bilo has country of origin turkiye. Relation type: country of origin. Source roles: film. Target roles: birth_place, country, country_root.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6074077",
+      "metadata": {
+        "source_id": "Q6074077",
+        "target_id": "Q43",
+        "relation_id": "P495",
+        "relation_label": "country of origin"
+      },
+      "score": -18.54313978412864,
+      "snippet": "banker bilo has country of origin turkiye. Relation type: country of origin. Source roles: film. Target roles: birth_place, country, country_root."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:02:20.471402+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 808,
+    "remaining_tokens": 11570,
+    "reset_requests_seconds": 16588.8,
+    "reset_tokens_seconds": 2.15,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:02:20 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "808",
+      "x-ratelimit-remaining-tokens": "11570",
+      "x-ratelimit-reset-requests": "4h36m28.8s",
+      "x-ratelimit-reset-tokens": "2.15s",
+      "x-request-id": "req_01kpgayq5de0esr5n795ph9d4k",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=vDDc8nzfT476aJMjyZVJZsjRjOy4wGlQ9svCZxO.wnY-1776517340.310983-1.0.1.1-9rqa.r_vX6tih6UYX7PZXGslRz.qb52mSUs7dbDfESsnCaIy3sTfHr_RzUMXdHMtLjrNVkhoh97lY1XQKlZy4s_GsPDUSw6uCYic3cqIoY8d3pccEZmiI0TEzlcV34pC; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:32:20 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3dd00fe60e1a1-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "adana",
+    "gold_normalized": "adana",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

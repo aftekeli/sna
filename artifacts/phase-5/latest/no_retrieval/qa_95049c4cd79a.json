@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T13:00:45.343645+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_95049c4cd79a",
+  "question": "Where was Asuman Dabak, a cast member of Adem'in Trenleri, born?",
+  "question_type": "two_hop",
+  "template": "film_cast_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q209905",
+    "text": "Akhisar"
+  },
+  "prediction_text": "Istanbul, Turkey",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:00:45.334472+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 827,
+    "remaining_tokens": 11899,
+    "reset_requests_seconds": 14947.199,
+    "reset_tokens_seconds": 0.505,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:00:45 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "827",
+      "x-ratelimit-remaining-tokens": "11899",
+      "x-ratelimit-reset-requests": "4h9m7.199s",
+      "x-ratelimit-reset-tokens": "505ms",
+      "x-request-id": "req_01kpgavtb4e4z9rv873rt37js9",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=ZS7xQuqs20kZuXkvthIMwik.4.EsWtMKcJx5sLxYXaY-1776517245.2640808-1.0.1.1-2mMn6r7zkr3AGA2So_MijrA.KzZimjRO2hQZZHyYIa94F2uuWTIJeR2tvom0cIAjp_MI5aAKf79K00NwSS5gqKwq3MkWNPFxsXmhofN6jGQxnGwtyYU7abQXhVgytSfr; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:30:45 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3daaeed553d66-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "istanbul turkey",
+    "gold_normalized": "akhisar",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

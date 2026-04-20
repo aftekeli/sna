@@ -1,0 +1,171 @@
+{
+  "created_at": "2026-04-18T13:01:30.276525+00:00",
+  "status": "success",
+  "method": "vanilla_qe",
+  "question_id": "qa_baef96cb9ce7",
+  "question": "Where was Nurgül Yeşilçay, a cast member of Adem'in Trenleri, born?",
+  "question_type": "two_hop",
+  "template": "film_cast_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q166824",
+    "text": "Afyonkarahisar"
+  },
+  "prediction_text": "Afyonkarahisar.",
+  "expanded_query": "Where was Nurgül Yeşilçay born; birthplace of Nurgül Yeşilçay, cast member of Adem'in Trenleri.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_baef96cb9ce7::1",
+      "title": "Where was Nurgül Yeşilçay, a cast member of Adem'in Trenleri, born?",
+      "body": "Adem'in Trenleri has cast member Nurgül Yeşilçay. Nurgül Yeşilçay was born in Afyonkarahisar.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6087125",
+      "metadata": {
+        "question_id": "qa_baef96cb9ce7",
+        "template": "film_cast_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -68.22041523633456,
+      "snippet": "Adem'in Trenleri has cast member Nurgül Yeşilçay. Nurgül Yeşilçay was born in Afyonkarahisar."
+    },
+    {
+      "doc_id": "entity::Q256292",
+      "title": "Nurgul Yesilcay",
+      "body": "Nurgul Yesilcay. Description: Nurgül Yeşilçay (born 26 March 1976) is a Turkish stage and film actress. Aliases: Nurgul Yesilcay, Nurgül Yesilçay, nurgul yesilcay, nurgül yesilcay, nurgül, nurgül yeşilçay, nurgül yesilçay, Yeşilçay, Nurgül Yeşilçay, yeşilçay. Roles: cast_member. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q256292",
+      "metadata": {
+        "entity_id": "Q256292",
+        "aliases": [
+          "Nurgul Yesilcay",
+          "Nurgül Yesilçay",
+          "nurgul yesilcay",
+          "nurgül yesilcay",
+          "nurgül",
+          "nurgül yeşilçay",
+          "nurgül yesilçay",
+          "Yeşilçay",
+          "Nurgül Yeşilçay",
+          "yeşilçay"
+        ],
+        "roles": [
+          "cast_member"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -47.269203753875885,
+      "snippet": "Nurgul Yesilcay. Description: Nurgül Yeşilçay (born 26 March 1976) is a Turkish stage and film actress. Aliases: Nurgul Yesilcay, Nurgül Yesilçay, nurgul yesilcay, nurgül yesilcay, nurgül, nurgül yeşilçay, nurgül yesi..."
+    },
+    {
+      "doc_id": "fact::Q256292::P19::Q166824",
+      "title": "Nurgul Yesilcay - place of birth",
+      "body": "Nurgul Yesilcay was born in Afyonkarahisar. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q256292",
+      "metadata": {
+        "source_id": "Q256292",
+        "target_id": "Q166824",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -40.24352399978948,
+      "snippet": "Nurgul Yesilcay was born in Afyonkarahisar. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place."
+    },
+    {
+      "doc_id": "fact::Q256292::P69::Q483758",
+      "title": "Nurgul Yesilcay - educated at",
+      "body": "Nurgul Yesilcay studied at anadolu university. Relation type: educated at. Source roles: cast_member. Target roles: education_entity.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q256292",
+      "metadata": {
+        "source_id": "Q256292",
+        "target_id": "Q483758",
+        "relation_id": "P69",
+        "relation_label": "educated at"
+      },
+      "score": -37.40631082635563,
+      "snippet": "Nurgul Yesilcay studied at anadolu university. Relation type: educated at. Source roles: cast_member. Target roles: education_entity."
+    },
+    {
+      "doc_id": "fact::Q256292::P27::Q43",
+      "title": "Nurgul Yesilcay - country of citizenship",
+      "body": "Nurgul Yesilcay has country of citizenship turkiye. Relation type: country of citizenship. Source roles: cast_member. Target roles: birth_place, country, country_root.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q256292",
+      "metadata": {
+        "source_id": "Q256292",
+        "target_id": "Q43",
+        "relation_id": "P27",
+        "relation_label": "country of citizenship"
+      },
+      "score": -36.02063393014757,
+      "snippet": "Nurgul Yesilcay has country of citizenship turkiye. Relation type: country of citizenship. Source roles: cast_member. Target roles: birth_place, country, country_root."
+    },
+    {
+      "doc_id": "fact::Q3472837::P161::Q256292",
+      "title": "istanbul tales - cast member",
+      "body": "istanbul tales has cast member Nurgul Yesilcay. Relation type: cast member. Source roles: film, film_seed. Target roles: cast_member.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q3472837",
+      "metadata": {
+        "source_id": "Q3472837",
+        "target_id": "Q256292",
+        "relation_id": "P161",
+        "relation_label": "cast member"
+      },
+      "score": -29.30557594553997,
+      "snippet": "istanbul tales has cast member Nurgul Yesilcay. Relation type: cast member. Source roles: film, film_seed. Target roles: cast_member."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:01:30.260049+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 818,
+    "remaining_tokens": 11434,
+    "reset_requests_seconds": 15724.8,
+    "reset_tokens_seconds": 2.83,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:01:30 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "818",
+      "x-ratelimit-remaining-tokens": "11434",
+      "x-ratelimit-reset-requests": "4h22m4.8s",
+      "x-ratelimit-reset-tokens": "2.83s",
+      "x-request-id": "req_01kpgax6a6efw8aae2m3petv6s",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=.tqM1z91qLB8NwriYjlGfxXJd6ODd1alihg9m9Uduk4-1776517290.28983-1.0.1.1-ogXz5.QitjYuCmBdEb5rWPTjTWosTAFBmnpma9NN2R8K.5gg_NTUbxaWSL7QYeRvDVnY1M8kPsM7iPIIcXvoemGqo.9VpASvdbBHPc8TNlQOWwWHOMoTELnHcMykI6qQ; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:31:30 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3dbc84891e116-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "afyonkarahisar",
+    "gold_normalized": "afyonkarahisar",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

@@ -1,0 +1,329 @@
+{
+  "created_at": "2026-04-18T13:10:01.629812+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_2f68e5ea0524",
+  "question": "In which country was the director of The Beauty from Peran born?",
+  "question_type": "three_hop",
+  "template": "film_director_birth_place_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q41",
+    "text": "Greece"
+  },
+  "prediction_text": "Greece",
+  "match": {
+    "prediction_normalized": "greece",
+    "gold_normalized": "greece",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q25999912",
+      "entity_name": "Beyoglu güzeli",
+      "roles": [
+        "film"
+      ],
+      "source": "lexicon",
+      "score": 34
+    }
+  ],
+  "relation_path": [
+    "P57",
+    "P19",
+    "P17"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q25999912"
+      ],
+      "candidate_count": 3,
+      "selected_triples": [
+        {
+          "source_id": "Q25999912",
+          "source_name": "Beyoglu güzeli",
+          "source_roles": [
+            "film"
+          ],
+          "relation_id": "P57",
+          "relation_label": "director",
+          "target_id": "Q3356874",
+          "target_name": "Orestis Laskos",
+          "target_roles": [
+            "director"
+          ],
+          "score": 19.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q3356874"
+      ],
+      "candidate_count": 2,
+      "selected_triples": [
+        {
+          "source_id": "Q3356874",
+          "source_name": "Orestis Laskos",
+          "source_roles": [
+            "director"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q204905",
+          "target_name": "Elevsis",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 16.0
+        }
+      ]
+    },
+    {
+      "round_index": 3,
+      "frontier_entity_ids": [
+        "Q204905"
+      ],
+      "candidate_count": 1,
+      "selected_triples": [
+        {
+          "source_id": "Q204905",
+          "source_name": "Elevsis",
+          "source_roles": [
+            "birth_place"
+          ],
+          "relation_id": "P17",
+          "relation_label": "country",
+          "target_id": "Q41",
+          "target_name": "Grcka",
+          "target_roles": [
+            "country"
+          ],
+          "score": 21.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q25999912",
+        "seed_entity_name": "Beyoglu güzeli",
+        "final_answers": [
+          {
+            "entity_id": "Q41",
+            "entity_name": "Grcka"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q41"
+    ],
+    "candidate_texts": [
+      "Grcka"
+    ],
+    "answer_text": "Grcka"
+  },
+  "kg_summary": "Beyoglu güzeli was directed by Orestis Laskos. Orestis Laskos was born in Elevsis. Elevsis is located in Grcka.",
+  "expanded_query": "In which country was Orestis Laskos born.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_2f68e5ea0524::1",
+      "title": "In which country was the director of The Beauty from Peran born?",
+      "body": "The Beauty from Peran was directed by Orestis Laskos. Orestis Laskos was born in Eleusis. Eleusis is located in Greece.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q25999912",
+      "metadata": {
+        "question_id": "qa_2f68e5ea0524",
+        "template": "film_director_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -26.273364340257444,
+      "snippet": "The Beauty from Peran was directed by Orestis Laskos. Orestis Laskos was born in Eleusis. Eleusis is located in Greece."
+    },
+    {
+      "doc_id": "fact::Q3356874::P19::Q204905",
+      "title": "Orestis Laskos - place of birth",
+      "body": "Orestis Laskos was born in elefsis airport. Relation type: place of birth. Source roles: director. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q3356874",
+      "metadata": {
+        "source_id": "Q3356874",
+        "target_id": "Q204905",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -22.20568490972882,
+      "snippet": "Orestis Laskos was born in elefsis airport. Relation type: place of birth. Source roles: director. Target roles: birth_place."
+    },
+    {
+      "doc_id": "entity::Q3356874",
+      "title": "Orestis Laskos",
+      "body": "Orestis Laskos. Description: Orestis Laskos (Greek: Ορέστης Λάσκος; 11 November 1907 – 17 October 1992) was a Greek film director, screenwriter and actor. He directed 55 films between 1931 and 1971. He also wrote scripts for 24 films between 1929 and 1971. Aliases: Orestis Laskos, orestis laskos. Roles: director. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q3356874",
+      "metadata": {
+        "entity_id": "Q3356874",
+        "aliases": [
+          "Orestis Laskos",
+          "orestis laskos"
+        ],
+        "roles": [
+          "director"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -21.35694809262793,
+      "snippet": "Orestis Laskos. Description: Orestis Laskos (Greek: Ορέστης Λάσκος; 11 November 1907 – 17 October 1992) was a Greek film director, screenwriter and actor. He directed 55 films between 1931 and 1971. He also wrote scri..."
+    },
+    {
+      "doc_id": "fact::Q3356874::P27::Q41",
+      "title": "Orestis Laskos - country of citizenship",
+      "body": "Orestis Laskos has country of citizenship hellada. Relation type: country of citizenship. Source roles: director. Target roles: country.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q3356874",
+      "metadata": {
+        "source_id": "Q3356874",
+        "target_id": "Q41",
+        "relation_id": "P27",
+        "relation_label": "country of citizenship"
+      },
+      "score": -20.318959636512705,
+      "snippet": "Orestis Laskos has country of citizenship hellada. Relation type: country of citizenship. Source roles: director. Target roles: country."
+    },
+    {
+      "doc_id": "fact::Q25999912::P57::Q3356874",
+      "title": "Beauty from Peran - director",
+      "body": "Beauty from Peran was directed by Orestis Laskos. Relation type: director. Source roles: film. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q25999912",
+      "metadata": {
+        "source_id": "Q25999912",
+        "target_id": "Q3356874",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -16.48268271436674,
+      "snippet": "Beauty from Peran was directed by Orestis Laskos. Relation type: director. Source roles: film. Target roles: director."
+    },
+    {
+      "doc_id": "entity::Q25999912",
+      "title": "Beauty from Peran",
+      "body": "Beauty from Peran. Description: The Beauty from Peran (Greek: I oraia tou Peran, Turkish: Beyoğlu güzeli) is a 1953 Greek-Turkish romance film directed by Vedat Örfi Bengü and Orestis Laskos and starring Katia Linta, Süha Dogan and Muazzez Arçay. Aliases: Beauty from Peran, Beyoglu güzeli, The Beauty from Peran, I oraia tou Peran, the beauty from peran, i oraia tou peran, beauty from peran, beyoglu güzeli. Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q25999912",
+      "metadata": {
+        "entity_id": "Q25999912",
+        "aliases": [
+          "Beauty from Peran",
+          "Beyoglu güzeli",
+          "The Beauty from Peran",
+          "I oraia tou Peran",
+          "the beauty from peran",
+          "i oraia tou peran",
+          "beauty from peran",
+          "beyoglu güzeli"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -9.84121703800846,
+      "snippet": "Beauty from Peran. Description: The Beauty from Peran (Greek: I oraia tou Peran, Turkish: Beyoğlu güzeli) is a 1953 Greek-Turkish romance film directed by Vedat Örfi Bengü and Orestis Laskos and starring Katia Linta,..."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T13:09:56.618478+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 764,
+      "remaining_tokens": 11856,
+      "reset_requests_seconds": 20390.399,
+      "reset_tokens_seconds": 0.72,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 13:09:56 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "764",
+        "x-ratelimit-remaining-tokens": "11856",
+        "x-ratelimit-reset-requests": "5h39m50.399s",
+        "x-ratelimit-reset-tokens": "720ms",
+        "x-request-id": "req_01kpgbcmv8fs3r5rjdw7z47eap",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=4D7cOBQk4lWFII4FDyI0GQ3dwsa6QDCzyIhh8ICwOJk-1776517796.6920137-1.0.1.1-y35aHCFeauEUXulZxcTVHEHWHpabZdNu3VYcnf9iw19z_uRL2ilB4r93ux1.lGeG_dH40BvnFm8gU_2NcpUS9KEU2TzofeRODS_CPn.mjv9JfETnO7Ri6Y8suHP.PVPB; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:39:56 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3e8255a02e1a1-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T13:10:01.619172+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 763,
+      "remaining_tokens": 11354,
+      "reset_requests_seconds": 20476.8,
+      "reset_tokens_seconds": 3.23,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 13:10:01 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "763",
+        "x-ratelimit-remaining-tokens": "11354",
+        "x-ratelimit-reset-requests": "5h41m16.8s",
+        "x-ratelimit-reset-tokens": "3.23s",
+        "x-request-id": "req_01kpgbcskbfsvsabqjege5xqys",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=miI9VUn8yDxXI5LEtL.0orZleDCm9xDoQ1qHfCp0wNk-1776517801.5583458-1.0.1.1-cZ6d6t5W33SjGMg2tb8uitOGLtJXqPtK6RwiXXh2jSj8aKKGK6ajtBrdLgltmYhplBduPKPveGv5F6QXGXPTOAT8ly4naSbnRbMvRr3z5szPDztNaUswpmF2Y0jF0Fhs; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:40:01 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3e843bb1de430-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

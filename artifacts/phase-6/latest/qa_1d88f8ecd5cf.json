@@ -1,0 +1,248 @@
+{
+  "created_at": "2026-04-18T12:10:39.492153+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_1d88f8ecd5cf",
+  "question": "Where was the director of Arabesk born?",
+  "question_type": "two_hop",
+  "template": "film_director_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q45301",
+    "text": "Trabzon"
+  },
+  "prediction_text": "Trabzon",
+  "match": {
+    "prediction_normalized": "trabzon",
+    "gold_normalized": "trabzon",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q1033926",
+      "entity_name": "Arabesk",
+      "roles": [
+        "film"
+      ],
+      "source": "neo4j_fulltext",
+      "score": 12.277796745300293
+    }
+  ],
+  "relation_path": [
+    "P57",
+    "P19"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q1033926"
+      ],
+      "candidate_count": 5,
+      "selected_triples": [
+        {
+          "source_id": "Q1033926",
+          "source_name": "Arabesk",
+          "source_roles": [
+            "film"
+          ],
+          "relation_id": "P57",
+          "relation_label": "director",
+          "target_id": "Q3057501",
+          "target_name": "Ertem Egilmez",
+          "target_roles": [
+            "director"
+          ],
+          "score": 19.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q3057501"
+      ],
+      "candidate_count": 2,
+      "selected_triples": [
+        {
+          "source_id": "Q3057501",
+          "source_name": "Ertem Egilmez",
+          "source_roles": [
+            "director"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q45301",
+          "target_name": "Ardesen",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 16.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q1033926",
+        "seed_entity_name": "Arabesk",
+        "final_answers": [
+          {
+            "entity_id": "Q45301",
+            "entity_name": "Ardesen"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q45301"
+    ],
+    "candidate_texts": [
+      "Ardesen"
+    ],
+    "answer_text": "Ardesen"
+  },
+  "kg_summary": "Arabesk was directed by Ertem Egilmez. Ertem Egilmez was born in Ardesen.",
+  "expanded_query": "Where was Ertem Egilmez born; director of Arabesk.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_1d88f8ecd5cf::1",
+      "title": "Where was the director of Arabesk born?",
+      "body": "Arabesk was directed by Ertem Eğilmez. Ertem Eğilmez was born in Trabzon.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q1033926",
+      "metadata": {
+        "question_id": "qa_1d88f8ecd5cf",
+        "template": "film_director_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -34.726010170095336,
+      "snippet": "Arabesk was directed by Ertem Eğilmez. Ertem Eğilmez was born in Trabzon."
+    },
+    {
+      "doc_id": "path::qa_ef87589de143::2",
+      "title": "Were the directors of Ah Nerede and Arabesk born in the same country?",
+      "body": "Arabesk was directed by Ertem Eğilmez. Ertem Eğilmez was born in Trabzon. Trabzon is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6081761",
+      "metadata": {
+        "question_id": "qa_ef87589de143",
+        "template": "film_director_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -25.522577884815895,
+      "snippet": "Arabesk was directed by Ertem Eğilmez. Ertem Eğilmez was born in Trabzon. Trabzon is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_afcdaf7d352f::1",
+      "title": "Where was the director of Banker Bilo born?",
+      "body": "Banker Bilo was directed by Ertem Eğilmez. Ertem Eğilmez was born in Trabzon.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6074077",
+      "metadata": {
+        "question_id": "qa_afcdaf7d352f",
+        "template": "film_director_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -25.226998746423362,
+      "snippet": "Banker Bilo was directed by Ertem Eğilmez. Ertem Eğilmez was born in Trabzon."
+    },
+    {
+      "doc_id": "fact::Q1033926::P57::Q3057501",
+      "title": "arabesk (film) - director",
+      "body": "arabesk (film) was directed by Ertem Egilmez. Relation type: director. Source roles: film. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q1033926",
+      "metadata": {
+        "source_id": "Q1033926",
+        "target_id": "Q3057501",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -25.087364583744126,
+      "snippet": "arabesk (film) was directed by Ertem Egilmez. Relation type: director. Source roles: film. Target roles: director."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T12:10:38.714219+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 917,
+      "remaining_tokens": 11857,
+      "reset_requests_seconds": 7171.2,
+      "reset_tokens_seconds": 0.715,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:10:38 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "917",
+        "x-ratelimit-remaining-tokens": "11857",
+        "x-ratelimit-reset-requests": "1h59m31.2s",
+        "x-ratelimit-reset-tokens": "715ms",
+        "x-request-id": "req_01kpg80297ewybp4y7m4r64v45",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=RaKhYbF_kSCnD.CKg.1_w5NLpNPcP0A92nXFsi_gLOU-1776514238.736969-1.0.1.1-uznvFJuSLLk32Hi.as.tPImJkGTrq_VitL7K8VYrPfsbnqBMeeEmI_v_eSenkUwgTwlFkOacBLAR75Wg.d4CrRHrWNGHrU6nDlnPSgtfNGvpbujWFqSSFWjNvDZhAjk.; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:40:38 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee391481df5ddf3-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T12:10:39.486558+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 916,
+      "remaining_tokens": 11659,
+      "reset_requests_seconds": 7257.6,
+      "reset_tokens_seconds": 1.705,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:10:39 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "916",
+        "x-ratelimit-remaining-tokens": "11659",
+        "x-ratelimit-reset-requests": "2h0m57.6s",
+        "x-ratelimit-reset-tokens": "1.705s",
+        "x-request-id": "req_01kpg802ypfjhsyt2cgeyatpwh",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=ZA4vwHoeyOPBtySGMJP3ifE_MNbJiCwC701497djzWs-1776514239.4240928-1.0.1.1-3UWCxSFf5d6wloQasO1NGIwZ7URnyebNEN1M.yPkM1C92zcFhc1BUi3uoNyxkevaouERm.XaJkQreJKVgeCgWsGlzFrWca_BnqGFWKED7vuCSAh4oG5hxy08wjJDnjQh; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:40:39 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3914c6a6eb1f0-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

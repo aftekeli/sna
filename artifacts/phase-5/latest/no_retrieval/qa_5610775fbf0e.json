@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T13:03:57.091625+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_5610775fbf0e",
+  "question": "Which award was received by Nora Marie Tschirner, a cast member of Kebab Connection?",
+  "question_type": "two_hop",
+  "template": "film_cast_award",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q873842",
+    "text": "The Romy TV award in honor of the Austrian-born actress Romy Schneider"
+  },
+  "prediction_text": "Unknown",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:03:57.081252+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 791,
+    "remaining_tokens": 11898,
+    "reset_requests_seconds": 18057.6,
+    "reset_tokens_seconds": 0.51,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:03:57 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "791",
+      "x-ratelimit-remaining-tokens": "11898",
+      "x-ratelimit-reset-requests": "5h0m57.6s",
+      "x-ratelimit-reset-tokens": "510ms",
+      "x-request-id": "req_01kpgb1nr3fanrc92tk5e4s3jx",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=BupPRLiMPYLWcf7Z0QGy61Ivg6gn8_j3ihakTHWX6N8-1776517437.1669106-1.0.1.1-fgoegrAG_qlL6BITNcgT5ZbV_Z89V1JD_dRM5erwuRaz.iWNI13IJGU0D9iYDAZhmPXE3XGReFybD2VlrI8DIhGnl56J8M8fOFJCR_RNKtJFpcr5jHqGP4FUWdZZPCPD; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:33:57 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3df5e49fa3f36-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "unknown",
+    "gold_normalized": "the romy tv award in honor of the austrian born actress romy schneider",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

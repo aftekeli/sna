@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T11:58:49.612988+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_779f731c6587",
+  "question": "Which award was received by the director of Bir Avuç Toprak?",
+  "question_type": "two_hop",
+  "template": "film_director_award",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q7603040",
+    "text": "State Artist"
+  },
+  "prediction_text": "Unknown",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T11:58:49.609385+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 982,
+    "remaining_tokens": 11919,
+    "reset_requests_seconds": 1555.199,
+    "reset_tokens_seconds": 0.405,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 11:58:49 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "982",
+      "x-ratelimit-remaining-tokens": "11919",
+      "x-ratelimit-reset-requests": "25m55.199s",
+      "x-ratelimit-reset-tokens": "405ms",
+      "x-request-id": "req_01kpg7adrffb2bwp8rmx6fawhz",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=3COeg5FmT6QRTmdPENJobmPxEBrYl.ohbTsCl3pb3sc-1776513529.592411-1.0.1.1-5F5IeHm2DZxryudESi8Vk8z33VTxcyIU__sHytCaUQR6q5EaohzTvtUyihJVbCC_AHV2.4VXXkfVlWihWNJkRxAPG1TZjsOCZ69lpTLsD4BbmCriTTvQJ0cTpeGwjNX_; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:28:49 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee37ff7feb43d66-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "unknown",
+    "gold_normalized": "state artist",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "created_at": "2026-04-18T12:59:02.854828+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_104db2fbbec9",
+  "question": "Where did the director of Ember study?",
+  "question_type": "two_hop",
+  "template": "film_director_education",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q192964",
+    "text": "Istanbul University"
+  },
+  "prediction_text": "Istanbul University",
+  "match": {
+    "prediction_normalized": "istanbul university",
+    "gold_normalized": "istanbul university",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q25479948",
+      "entity_name": "Ember (film)",
+      "roles": [
+        "film"
+      ],
+      "source": "neo4j_fulltext",
+      "score": 12.356474876403809
+    }
+  ],
+  "relation_path": [
+    "P57",
+    "P69"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q25479948"
+      ],
+      "candidate_count": 4,
+      "selected_triples": [
+        {
+          "source_id": "Q25479948",
+          "source_name": "Ember (film)",
+          "source_roles": [
+            "film"
+          ],
+          "relation_id": "P57",
+          "relation_label": "director",
+          "target_id": "Q187261",
+          "target_name": "zeki demirkubuz",
+          "target_roles": [
+            "director",
+            "person_seed"
+          ],
+          "score": 19.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q187261"
+      ],
+      "candidate_count": 3,
+      "selected_triples": [
+        {
+          "source_id": "Q187261",
+          "source_name": "zeki demirkubuz",
+          "source_roles": [
+            "director",
+            "person_seed"
+          ],
+          "relation_id": "P69",
+          "relation_label": "educated at",
+          "target_id": "Q192964",
+          "target_name": "Darulfunun",
+          "target_roles": [
+            "education_entity"
+          ],
+          "score": 16.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q25479948",
+        "seed_entity_name": "Ember (film)",
+        "final_answers": [
+          {
+            "entity_id": "Q192964",
+            "entity_name": "Darulfunun"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q192964"
+    ],
+    "candidate_texts": [
+      "Darulfunun"
+    ],
+    "answer_text": "Darulfunun"
+  },
+  "kg_summary": "Ember (film) was directed by zeki demirkubuz. zeki demirkubuz studied at Darulfunun.",
+  "expanded_query": "The director of Ember, Zeki Demirkubuz, studied at Darulfunun.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_104db2fbbec9::1",
+      "title": "Where did the director of Ember study?",
+      "body": "Ember was directed by Zeki Demirkubuz. Zeki Demirkubuz studied at Istanbul University.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q25479948",
+      "metadata": {
+        "question_id": "qa_104db2fbbec9",
+        "template": "film_director_education",
+        "question_type": "two_hop"
+      },
+      "score": -38.46680608773887,
+      "snippet": "Ember was directed by Zeki Demirkubuz. Zeki Demirkubuz studied at Istanbul University."
+    },
+    {
+      "doc_id": "fact::Q187261::P69::Q192964",
+      "title": "zeki demirkubuz - educated at",
+      "body": "zeki demirkubuz studied at Daruelfuenun. Relation type: educated at. Source roles: director, person_seed. Target roles: education_entity.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q187261",
+      "metadata": {
+        "source_id": "Q187261",
+        "target_id": "Q192964",
+        "relation_id": "P69",
+        "relation_label": "educated at"
+      },
+      "score": -27.79073755210088,
+      "snippet": "zeki demirkubuz studied at Daruelfuenun. Relation type: educated at. Source roles: director, person_seed. Target roles: education_entity."
+    },
+    {
+      "doc_id": "fact::Q25479948::P57::Q187261",
+      "title": "Ember (film) - director",
+      "body": "Ember (film) was directed by zeki demirkubuz. Relation type: director. Source roles: film. Target roles: director, person_seed.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q25479948",
+      "metadata": {
+        "source_id": "Q25479948",
+        "target_id": "Q187261",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -25.540245264647506,
+      "snippet": "Ember (film) was directed by zeki demirkubuz. Relation type: director. Source roles: film. Target roles: director, person_seed."
+    },
+    {
+      "doc_id": "entity::Q25479948",
+      "title": "Ember (film)",
+      "body": "Ember (film). Description: Ember (Turkish: Kor) is Turkish director Zeki Demirkubuz's 11th film and is featured in the International Golden Tulip Competition. Shooting began on February 2015 in various districts of Istanbul, especially Eyüp and Güzeltepe. The Turkish-German co-production stars Taner Birsel, Aslıhan Gürbüz, Caner Cindoruk, İştar Gökseven, Talha Yayıkçı, Dolunay Soysert and Çağlar Çorumlu in the leading roles. The film was selected to be screened in the Contemporary World Cinema section at the 2016 Toronto International Film Festival. Aliases: Ember (film), ember (film). Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q25479948",
+      "metadata": {
+        "entity_id": "Q25479948",
+        "aliases": [
+          "Ember (film)",
+          "ember (film)"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -21.488014683602696,
+      "snippet": "Ember (film). Description: Ember (Turkish: Kor) is Turkish director Zeki Demirkubuz's 11th film and is featured in the International Golden Tulip Competition. Shooting began on February 2015 in various districts of Is..."
+    },
+    {
+      "doc_id": "entity::Q187261",
+      "title": "zeki demirkubuz",
+      "body": "zeki demirkubuz. Description: Zeki Demirkubuz (born 1 October 1964 in Isparta, Turkey) is a contemporary Turkish film director, screenwriter, producer and film editor. Aliases: zeki demirkubuz, Zeki Demirkubuz. Roles: director, person_seed. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q187261",
+      "metadata": {
+        "entity_id": "Q187261",
+        "aliases": [
+          "zeki demirkubuz",
+          "Zeki Demirkubuz"
+        ],
+        "roles": [
+          "director",
+          "person_seed"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -20.519224089517643,
+      "snippet": "zeki demirkubuz. Description: Zeki Demirkubuz (born 1 October 1964 in Isparta, Turkey) is a contemporary Turkish film director, screenwriter, producer and film editor. Aliases: zeki demirkubuz, Zeki Demirkubuz. Roles:..."
+    },
+    {
+      "doc_id": "fact::Q187261::P19::Q171031",
+      "title": "zeki demirkubuz - place of birth",
+      "body": "zeki demirkubuz was born in isparta. Relation type: place of birth. Source roles: director, person_seed. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q187261",
+      "metadata": {
+        "source_id": "Q187261",
+        "target_id": "Q171031",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -17.856598852246876,
+      "snippet": "zeki demirkubuz was born in isparta. Relation type: place of birth. Source roles: director, person_seed. Target roles: birth_place."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T12:58:57.870660+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 847,
+      "remaining_tokens": 11876,
+      "reset_requests_seconds": 13219.199,
+      "reset_tokens_seconds": 0.62,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:58:58 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "847",
+        "x-ratelimit-remaining-tokens": "11876",
+        "x-ratelimit-reset-requests": "3h40m19.199s",
+        "x-ratelimit-reset-tokens": "620ms",
+        "x-request-id": "req_01kpgarhhpf98sa3p54gyy31as",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=9F4Lm6Wrvi5BlA8XrloXmGeFxloCQdxPVUEoWz3Ut5U-1776517137.9539554-1.0.1.1-UnJ78uiTbgBxAe6lySYT8VGx06r.aSDdEeOxGoJTCnO2CnsENHc_j.xS9XxPz1nIUjbGnILCUW7rti1nY0SHQIZBa_a1B5oCC0O2U10ByJKmHhaQGETv7O4Q1gMz9d8A; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:28:58 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3d810384d9cd2-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T12:59:02.839450+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 846,
+      "remaining_tokens": 11431,
+      "reset_requests_seconds": 13305.6,
+      "reset_tokens_seconds": 2.845,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:59:03 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "846",
+        "x-ratelimit-remaining-tokens": "11431",
+        "x-ratelimit-reset-requests": "3h41m45.6s",
+        "x-ratelimit-reset-tokens": "2.845s",
+        "x-request-id": "req_01kpgarpcjf2d8kwx9kv7rpyyj",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=XM.5oSnw8woY5dgFmCPlzvDS3yKWDF9D7xvYcM5BH5E-1776517142.9087708-1.0.1.1-MnBW3Bsa0jRXGBEGTJ5mqbcrZuLvr.fmitfKOCOL.42EdhEo4ZDDY5Xq0vHsFA8iZ4yyPsD2Esx.MafyVndCTZecRGsCH_q5d.8MifPD5IYNV8wbMR6tQ5KrxbgvGIU4; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:29:03 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3d82f2d93b657-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

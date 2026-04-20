@@ -1,0 +1,124 @@
+{
+  "created_at": "2026-04-18T12:06:50.712523+00:00",
+  "status": "success",
+  "method": "vanilla_rag",
+  "question_id": "qa_284c5e0ceb83",
+  "question": "Which award was received by Nuri Bilge Ceylan, a cast member of Climates?",
+  "question_type": "two_hop",
+  "template": "film_cast_award",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q7241424",
+    "text": "Presidential Culture and Arts Grand Awards"
+  },
+  "prediction_text": "Presidential Culture and Arts Grand Awards.",
+  "expanded_query": null,
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_284c5e0ceb83::1",
+      "title": "Which award was received by Nuri Bilge Ceylan, a cast member of Climates?",
+      "body": "Climates has cast member Nuri Bilge Ceylan. Nuri Bilge Ceylan received the award Presidential Culture and Arts Grand Awards.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q2758737",
+      "metadata": {
+        "question_id": "qa_284c5e0ceb83",
+        "template": "film_cast_award",
+        "question_type": "two_hop"
+      },
+      "score": -53.650073135390166,
+      "snippet": "Climates has cast member Nuri Bilge Ceylan. Nuri Bilge Ceylan received the award Presidential Culture and Arts Grand Awards."
+    },
+    {
+      "doc_id": "fact::Q724172::P166::Q844804",
+      "title": "nuri bilge ceylan - award received",
+      "body": "nuri bilge ceylan received the award Grand Prix (Cannes Festival). Relation type: award received. Source roles: cast_member, person_seed. Target roles: award.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q724172",
+      "metadata": {
+        "source_id": "Q724172",
+        "target_id": "Q844804",
+        "relation_id": "P166",
+        "relation_label": "award received"
+      },
+      "score": -37.82271132425121,
+      "snippet": "nuri bilge ceylan received the award Grand Prix (Cannes Festival). Relation type: award received. Source roles: cast_member, person_seed. Target roles: award."
+    },
+    {
+      "doc_id": "fact::Q724172::P166::Q179808",
+      "title": "nuri bilge ceylan - award received",
+      "body": "nuri bilge ceylan received the award palme d'or 1939–1959. Relation type: award received. Source roles: cast_member, person_seed. Target roles: award.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q724172",
+      "metadata": {
+        "source_id": "Q724172",
+        "target_id": "Q179808",
+        "relation_id": "P166",
+        "relation_label": "award received"
+      },
+      "score": -37.617960495624814,
+      "snippet": "nuri bilge ceylan received the award palme d'or 1939–1959. Relation type: award received. Source roles: cast_member, person_seed. Target roles: award."
+    },
+    {
+      "doc_id": "fact::Q724172::P166::Q7241424",
+      "title": "nuri bilge ceylan - award received",
+      "body": "nuri bilge ceylan received the award Presidential Culture and Arts Grand Awards. Relation type: award received. Source roles: cast_member, person_seed. Target roles: award.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q724172",
+      "metadata": {
+        "source_id": "Q724172",
+        "target_id": "Q7241424",
+        "relation_id": "P166",
+        "relation_label": "award received"
+      },
+      "score": -37.41549497434324,
+      "snippet": "nuri bilge ceylan received the award Presidential Culture and Arts Grand Awards. Relation type: award received. Source roles: cast_member, person_seed. Target roles: award."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:06:50.707302+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 937,
+    "remaining_tokens": 11604,
+    "reset_requests_seconds": 5443.2,
+    "reset_tokens_seconds": 1.98,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:06:50 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "937",
+      "x-ratelimit-remaining-tokens": "11604",
+      "x-ratelimit-reset-requests": "1h30m43.2s",
+      "x-ratelimit-reset-tokens": "1.98s",
+      "x-request-id": "req_01kpg7s3jcfvra9mbgx0a18cey",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=yqwBMAxNAXYDCqUrs.NydmoigYEeOxerdxEEIn6A_Cg-1776514010.6781702-1.0.1.1-CG1iBQp_dF4emlZdHnWH4mn9W_eamwNx6DJap6vaF6GR8x5SgnRK2KhnJ4A7EqTcqK4qSZQirwsy4WSbR3ASuvW52PqqpfNML6oQJy1.4tM27r07CRZExDnxuoUMW9z8; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:36:50 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee38bb6baa40c48-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "presidential culture and arts grand awards",
+    "gold_normalized": "presidential culture and arts grand awards",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "created_at": "2026-04-18T12:59:53.043710+00:00",
+  "status": "success",
+  "method": "vanilla_qe",
+  "question_id": "qa_515c0f340473",
+  "question": "Where was Seiyō Uchino, a cast member of 125 Years Memory, born?",
+  "question_type": "two_hop",
+  "template": "film_cast_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q1358965",
+    "text": "Kōhoku-ku"
+  },
+  "prediction_text": "Kōhoku-ku, Yokohama, Japan.",
+  "expanded_query": "Where was Seiyō Uchino born; answer should be a location.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_515c0f340473::1",
+      "title": "Where was Seiyō Uchino, a cast member of 125 Years Memory, born?",
+      "body": "125 Years Memory has cast member Seiyō Uchino. Seiyō Uchino was born in Kōhoku-ku.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q21787529",
+      "metadata": {
+        "question_id": "qa_515c0f340473",
+        "template": "film_cast_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -28.769031315352773,
+      "snippet": "125 Years Memory has cast member Seiyō Uchino. Seiyō Uchino was born in Kōhoku-ku."
+    },
+    {
+      "doc_id": "entity::Q5355422",
+      "title": "Masaaki Uchino",
+      "body": "Masaaki Uchino. Description: Seiyō Uchino (内野 聖陽, Uchino Seiyō, born September 16, 1968, in Kōhoku-ku, Yokohama, Kanagawa Prefecture, Japan) is a Japanese actor who is represented by Stardust Promotion. Aliases: Masaaki Uchino, seiyou uchino, Seiyo Uchino, seiyo uchino, 内野聖陽, Seiyō Uchino, seiyō uchino, masaaki uchino, Seiyou Uchino. Roles: cast_member. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q5355422",
+      "metadata": {
+        "entity_id": "Q5355422",
+        "aliases": [
+          "Masaaki Uchino",
+          "seiyou uchino",
+          "Seiyo Uchino",
+          "seiyo uchino",
+          "内野聖陽",
+          "Seiyō Uchino",
+          "seiyō uchino",
+          "masaaki uchino",
+          "Seiyou Uchino"
+        ],
+        "roles": [
+          "cast_member"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -23.751817827628788,
+      "snippet": "Masaaki Uchino. Description: Seiyō Uchino (内野 聖陽, Uchino Seiyō, born September 16, 1968, in Kōhoku-ku, Yokohama, Kanagawa Prefecture, Japan) is a Japanese actor who is represented by Stardust Promotion. Aliases: Masaa..."
+    },
+    {
+      "doc_id": "path::qa_25e417879724::2",
+      "title": "Were Tülin Özen from 10 To 11 and Seiyō Uchino from 125 Years Memory born in the same country?",
+      "body": "125 Years Memory has cast member Seiyō Uchino. Seiyō Uchino was born in Kōhoku-ku. Kōhoku-ku is located in Japan.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q3459778",
+      "metadata": {
+        "question_id": "qa_25e417879724",
+        "template": "film_cast_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -22.412223979536712,
+      "snippet": "125 Years Memory has cast member Seiyō Uchino. Seiyō Uchino was born in Kōhoku-ku. Kōhoku-ku is located in Japan."
+    },
+    {
+      "doc_id": "path::qa_25e417879724::1",
+      "title": "Were Tülin Özen from 10 To 11 and Seiyō Uchino from 125 Years Memory born in the same country?",
+      "body": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun. İskenderun is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q3459778",
+      "metadata": {
+        "question_id": "qa_25e417879724",
+        "template": "film_cast_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -16.176287839549037,
+      "snippet": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun. İskenderun is located in Turkey."
+    },
+    {
+      "doc_id": "fact::Q5355422::P19::Q1358965",
+      "title": "Masaaki Uchino - place of birth",
+      "body": "Masaaki Uchino was born in Kouhoku-ku, Yokohama. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q5355422",
+      "metadata": {
+        "source_id": "Q5355422",
+        "target_id": "Q1358965",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -11.706638681938712,
+      "snippet": "Masaaki Uchino was born in Kouhoku-ku, Yokohama. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place."
+    },
+    {
+      "doc_id": "fact::Q5355422::P27::Q17",
+      "title": "Masaaki Uchino - country of citizenship",
+      "body": "Masaaki Uchino has country of citizenship p:jp. Relation type: country of citizenship. Source roles: cast_member. Target roles: country.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q5355422",
+      "metadata": {
+        "source_id": "Q5355422",
+        "target_id": "Q17",
+        "relation_id": "P27",
+        "relation_label": "country of citizenship"
+      },
+      "score": -9.156587592753791,
+      "snippet": "Masaaki Uchino has country of citizenship p:jp. Relation type: country of citizenship. Source roles: cast_member. Target roles: country."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:59:53.035114+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 836,
+    "remaining_tokens": 11417,
+    "reset_requests_seconds": 14169.6,
+    "reset_tokens_seconds": 2.915,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:59:53 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "836",
+      "x-ratelimit-remaining-tokens": "11417",
+      "x-ratelimit-reset-requests": "3h56m9.6s",
+      "x-ratelimit-reset-tokens": "2.915s",
+      "x-request-id": "req_01kpgat76qesvrvp30yhafn1ep",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=2pKGT_Ko185rmD79hBEpFQw7.Lse94QUv4mf8Pkg6Ng-1776517192.8970664-1.0.1.1-VLBJi.2ZMhNOarc45Rg3pVsrCchDeV1Y.4i31Ke5nF4YxlYlAwqKx6aHsm0Arz1g1RWiDJ2XuF.eprrCNc7HF_q5nBcRTz3W9MToF1iU9TaVNVLdWQbOt5o5YMGyLQxv; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:29:53 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3d9679b42b210-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "kohoku ku yokohama japan",
+    "gold_normalized": "kohoku ku",
+    "exact_match": false,
+    "contains_match": true
+  }
+}

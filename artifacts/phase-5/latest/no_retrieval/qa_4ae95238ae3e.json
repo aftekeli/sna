@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T12:59:08.054530+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_4ae95238ae3e",
+  "question": "Where did the director of Grain study?",
+  "question_type": "two_hop",
+  "template": "film_director_education",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q1235258",
+    "text": "Dokuz Eylül University"
+  },
+  "prediction_text": "Semih Kaplanoğlu, the director of Grain, studied cinema at the Dokuz Eylül University in İzmir, Turkey.",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:59:08.027779+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 845,
+    "remaining_tokens": 11915,
+    "reset_requests_seconds": 13392.0,
+    "reset_tokens_seconds": 0.425,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:59:08 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "845",
+      "x-ratelimit-remaining-tokens": "11915",
+      "x-ratelimit-reset-requests": "3h43m12s",
+      "x-ratelimit-reset-tokens": "425ms",
+      "x-request-id": "req_01kpgarv87fb7960czd5wt65ke",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=TUQFc3vG5efDDmcRUttVV2WG9VHR1nAu.cE7.Dn0RUk-1776517147.8916397-1.0.1.1-dFF0WIiiW6fmQ_kJniV6f7SaWxjuiBHLwIlB.UuLymINe.Z180egFfAeUfQHels79ZQyyhPYIc1ZrqOvf4a6xCKmqqVItx7hJVJsYiOqrUy5fzxnQad10.TplgZy8M32; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:29:08 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3d84e590fd175-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "semih kaplanoglu the director of grain studied cinema at the dokuz eylul university in izmir turkey",
+    "gold_normalized": "dokuz eylul university",
+    "exact_match": false,
+    "contains_match": true
+  }
+}

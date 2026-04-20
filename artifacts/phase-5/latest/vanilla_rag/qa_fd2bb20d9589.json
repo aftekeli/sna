@@ -1,0 +1,176 @@
+{
+  "created_at": "2026-04-18T12:48:46.315178+00:00",
+  "status": "success",
+  "method": "vanilla_rag",
+  "question_id": "qa_fd2bb20d9589",
+  "question": "In which country was Aliye Rona, a cast member of Bloody Money, born?",
+  "question_type": "three_hop",
+  "template": "film_cast_birth_place_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q858",
+    "text": "Syria"
+  },
+  "prediction_text": "Syria",
+  "expanded_query": null,
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_fd2bb20d9589::1",
+      "title": "In which country was Aliye Rona, a cast member of Bloody Money, born?",
+      "body": "Bloody Money has cast member Aliye Rona. Aliye Rona was born in Daraa. Daraa is located in Syria.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q25999900",
+      "metadata": {
+        "question_id": "qa_fd2bb20d9589",
+        "template": "film_cast_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -46.925918711242275,
+      "snippet": "Bloody Money has cast member Aliye Rona. Aliye Rona was born in Daraa. Daraa is located in Syria."
+    },
+    {
+      "doc_id": "fact::Q25999911::P161::Q4727547",
+      "title": "The Bloody Farm - cast member",
+      "body": "The Bloody Farm has cast member aliye rona. Relation type: cast member. Source roles: film. Target roles: cast_member.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q25999911",
+      "metadata": {
+        "source_id": "Q25999911",
+        "target_id": "Q4727547",
+        "relation_id": "P161",
+        "relation_label": "cast member"
+      },
+      "score": -24.154553962803398,
+      "snippet": "The Bloody Farm has cast member aliye rona. Relation type: cast member. Source roles: film. Target roles: cast_member."
+    },
+    {
+      "doc_id": "entity::Q25999900",
+      "title": "kanli para",
+      "body": "kanli para. Description: The Bloody Money (Turkish: Kanlı Para) is a 1953 Turkish adventure film directed by Orhon M. Ariburnu  and starring Ayhan Isik and Nedret Güvenç. Aliases: kanli para, Kanli para, Bloody Money, the bloody money, The Bloody Money, bloody money. Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q25999900",
+      "metadata": {
+        "entity_id": "Q25999900",
+        "aliases": [
+          "kanli para",
+          "Kanli para",
+          "Bloody Money",
+          "the bloody money",
+          "The Bloody Money",
+          "bloody money"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -21.910291334763784,
+      "snippet": "kanli para. Description: The Bloody Money (Turkish: Kanlı Para) is a 1953 Turkish adventure film directed by Orhon M. Ariburnu  and starring Ayhan Isik and Nedret Güvenç. Aliases: kanli para, Kanli para, Bloody Money,..."
+    },
+    {
+      "doc_id": "entity::Q4727547",
+      "title": "aliye rona",
+      "body": "aliye rona. Description: Aliye Rona (née Dilligil, 1921 – 29 August 1996) was a Turkish film actress starring in more than 130 movies, mostly of drama and romance genre, from 1947 until her death.She was born in Daraa, French Mandate for Syria and the Lebanon (today southwestern Syria). After acting in theater, she transferred to cinema in 1947.Aliye Rona, who was sister of Avni Dilligil, actor, screenwriter and film director, and had a marriage with the actor Zihni Rona, died on 29 August 1996 in Istanbul. Aliases: aliye rona, Aliye Rona. Roles: cast_member. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q4727547",
+      "metadata": {
+        "entity_id": "Q4727547",
+        "aliases": [
+          "aliye rona",
+          "Aliye Rona"
+        ],
+        "roles": [
+          "cast_member"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -21.81596095902799,
+      "snippet": "aliye rona. Description: Aliye Rona (née Dilligil, 1921 – 29 August 1996) was a Turkish film actress starring in more than 130 movies, mostly of drama and romance genre, from 1947 until her death.She was born in Daraa..."
+    },
+    {
+      "doc_id": "fact::Q4727547::P19::Q238217",
+      "title": "aliye rona - place of birth",
+      "body": "aliye rona was born in dera'a. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q4727547",
+      "metadata": {
+        "source_id": "Q4727547",
+        "target_id": "Q238217",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -21.665183860165225,
+      "snippet": "aliye rona was born in dera'a. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place."
+    },
+    {
+      "doc_id": "fact::Q4727547::P27::Q43",
+      "title": "aliye rona - country of citizenship",
+      "body": "aliye rona has country of citizenship turkiye. Relation type: country of citizenship. Source roles: cast_member. Target roles: birth_place, country, country_root.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q4727547",
+      "metadata": {
+        "source_id": "Q4727547",
+        "target_id": "Q43",
+        "relation_id": "P27",
+        "relation_label": "country of citizenship"
+      },
+      "score": -19.36993557953742,
+      "snippet": "aliye rona has country of citizenship turkiye. Relation type: country of citizenship. Source roles: cast_member. Target roles: birth_place, country, country_root."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:48:46.305787+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 902,
+    "remaining_tokens": 11462,
+    "reset_requests_seconds": 8467.2,
+    "reset_tokens_seconds": 2.69,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:48:46 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "902",
+      "x-ratelimit-remaining-tokens": "11462",
+      "x-ratelimit-reset-requests": "2h21m7.2s",
+      "x-ratelimit-reset-tokens": "2.69s",
+      "x-request-id": "req_01kpga5w95fexba48dac0xzktd",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=BEoQB4moKj2xC9uQ_JEPorgdgMcg6X6ifARYvjF6rik-1776516526.3526847-1.0.1.1-VOAM.VAGcdnGEN4ZETuSfvlcfmO.RUqUYSo0GPgnfJuyEM4oH3fcGkUJS10kqD5INNhDsjoElyywDYg5bkYhKcK4VoPvzkfcOzfIRrtDXjo9R5OJCltexyrX7jsP0HX3; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:18:46 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3c921bf9a355c-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "syria",
+    "gold_normalized": "syria",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

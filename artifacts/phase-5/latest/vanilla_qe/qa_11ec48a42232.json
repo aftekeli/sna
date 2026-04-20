@@ -1,0 +1,182 @@
+{
+  "created_at": "2026-04-18T13:12:27.045614+00:00",
+  "status": "success",
+  "method": "vanilla_qe",
+  "question_id": "qa_11ec48a42232",
+  "question": "In which country was Ali Düşenkalkar, a cast member of Devrim Arabaları, born?",
+  "question_type": "three_hop",
+  "template": "film_cast_birth_place_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q229",
+    "text": "Cyprus"
+  },
+  "prediction_text": "Cyprus",
+  "expanded_query": "What is the country of birth of Ali Düşenkalkar, a cast member of Devrim Arabaları.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_11ec48a42232::1",
+      "title": "In which country was Ali Düşenkalkar, a cast member of Devrim Arabaları, born?",
+      "body": "Devrim Arabaları has cast member Ali Düşenkalkar. Ali Düşenkalkar was born in Nicosia. Nicosia is located in Cyprus.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q982946",
+      "metadata": {
+        "question_id": "qa_11ec48a42232",
+        "template": "film_cast_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -36.03157294874116,
+      "snippet": "Devrim Arabaları has cast member Ali Düşenkalkar. Ali Düşenkalkar was born in Nicosia. Nicosia is located in Cyprus."
+    },
+    {
+      "doc_id": "fact::Q982946::P161::Q4724766",
+      "title": "Devrim Arabaları - cast member",
+      "body": "Devrim Arabaları has cast member Ali Dusenkalkar. Relation type: cast member. Source roles: film, film_seed. Target roles: cast_member.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q982946",
+      "metadata": {
+        "source_id": "Q982946",
+        "target_id": "Q4724766",
+        "relation_id": "P161",
+        "relation_label": "cast member"
+      },
+      "score": -30.65002379039322,
+      "snippet": "Devrim Arabaları has cast member Ali Dusenkalkar. Relation type: cast member. Source roles: film, film_seed. Target roles: cast_member."
+    },
+    {
+      "doc_id": "entity::Q982946",
+      "title": "Devrim Arabaları",
+      "body": "Devrim Arabaları. Description: Cars of the Revolution (Turkish: Devrim Arabaları) is a 2008 Turkish drama film written and directed by Tolga Örnek. Aliases: Devrim Arabaları, Devrim Arabalari, devrim arabaları, devrim arabalari, cars of the revolution, Cars of the Revolution, Devrim arabalari. Roles: film, film_seed. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q982946",
+      "metadata": {
+        "entity_id": "Q982946",
+        "aliases": [
+          "Devrim Arabaları",
+          "Devrim Arabalari",
+          "devrim arabaları",
+          "devrim arabalari",
+          "cars of the revolution",
+          "Cars of the Revolution",
+          "Devrim arabalari"
+        ],
+        "roles": [
+          "film",
+          "film_seed"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -21.933277204015774,
+      "snippet": "Devrim Arabaları. Description: Cars of the Revolution (Turkish: Devrim Arabaları) is a 2008 Turkish drama film written and directed by Tolga Örnek. Aliases: Devrim Arabaları, Devrim Arabalari, devrim arabaları, devrim..."
+    },
+    {
+      "doc_id": "entity::Q4724766",
+      "title": "Ali Dusenkalkar",
+      "body": "Ali Dusenkalkar. Description: Ali Düşenkalkar (born 1961) is a Turkish Cypriot actor based in Turkey. Aliases: Ali Dusenkalkar, ali dusenkalkar, Ali Düşenkalkar, Ali Düsenkalkar, ali düşenkalkar, ali düsenkalkar. Roles: cast_member. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q4724766",
+      "metadata": {
+        "entity_id": "Q4724766",
+        "aliases": [
+          "Ali Dusenkalkar",
+          "ali dusenkalkar",
+          "Ali Düşenkalkar",
+          "Ali Düsenkalkar",
+          "ali düşenkalkar",
+          "ali düsenkalkar"
+        ],
+        "roles": [
+          "cast_member"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -21.487047039032674,
+      "snippet": "Ali Dusenkalkar. Description: Ali Düşenkalkar (born 1961) is a Turkish Cypriot actor based in Turkey. Aliases: Ali Dusenkalkar, ali dusenkalkar, Ali Düşenkalkar, Ali Düsenkalkar, ali düşenkalkar, ali düsenkalkar. Role..."
+    },
+    {
+      "doc_id": "fact::Q982946::P495::Q43",
+      "title": "Devrim Arabaları - country of origin",
+      "body": "Devrim Arabaları has country of origin turkiye. Relation type: country of origin. Source roles: film, film_seed. Target roles: birth_place, country, country_root.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q982946",
+      "metadata": {
+        "source_id": "Q982946",
+        "target_id": "Q43",
+        "relation_id": "P495",
+        "relation_label": "country of origin"
+      },
+      "score": -18.452580329948223,
+      "snippet": "Devrim Arabaları has country of origin turkiye. Relation type: country of origin. Source roles: film, film_seed. Target roles: birth_place, country, country_root."
+    },
+    {
+      "doc_id": "fact::Q4724766::P19::Q3856",
+      "title": "Ali Dusenkalkar - place of birth",
+      "body": "Ali Dusenkalkar was born in lefkoåÿa. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q4724766",
+      "metadata": {
+        "source_id": "Q4724766",
+        "target_id": "Q3856",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -17.6272669964361,
+      "snippet": "Ali Dusenkalkar was born in lefkoåÿa. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:12:27.037252+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 735,
+    "remaining_tokens": 11445,
+    "reset_requests_seconds": 22896.0,
+    "reset_tokens_seconds": 2.775,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:12:27 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "735",
+      "x-ratelimit-remaining-tokens": "11445",
+      "x-ratelimit-reset-requests": "6h21m36s",
+      "x-ratelimit-reset-tokens": "2.775s",
+      "x-request-id": "req_01kpgbh7r3e54vvyysqkhhyn61",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=R01JclV56kLoo.zd9op1DVRKj6M8NFEMW_uHIcksKls-1776517947.1171608-1.0.1.1-xzh1J5MS.SJB6zfcWhB892y7nIyim.sYQR_HWZPfsvMeR97VRPxItswnwJvkmATK0vQ4Q48A26wgT26KparVZus3BPBvNht0hwSlaEw2nddt4zX_4F_I.VSgnsLorRYU; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:42:27 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3ebd1783d2ff7-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "cyprus",
+    "gold_normalized": "cyprus",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "created_at": "2026-04-18T13:03:12.326727+00:00",
+  "status": "success",
+  "method": "vanilla_qe",
+  "question_id": "qa_444d583ed375",
+  "question": "Where was Berk Hakman, a cast member of Beyond the Hill, born?",
+  "question_type": "two_hop",
+  "template": "film_cast_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q3640",
+    "text": "Ankara"
+  },
+  "prediction_text": "Ankara, Turkey (also known as Angora)",
+  "expanded_query": "Berk Hakman birthplace",
+  "retrieved_documents": [
+    {
+      "doc_id": "entity::Q6093425",
+      "title": "berk hakman",
+      "body": "berk hakman. Description: Berk Hakman (born 14 August 1981) is a Turkish film and television actor. Aliases: berk hakman, Berk Hakman. Roles: cast_member. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q6093425",
+      "metadata": {
+        "entity_id": "Q6093425",
+        "aliases": [
+          "berk hakman",
+          "Berk Hakman"
+        ],
+        "roles": [
+          "cast_member"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -22.66248534182157,
+      "snippet": "berk hakman. Description: Berk Hakman (born 14 August 1981) is a Turkish film and television actor. Aliases: berk hakman, Berk Hakman. Roles: cast_member. Domains: cinema, people, turkiye."
+    },
+    {
+      "doc_id": "path::qa_444d583ed375::1",
+      "title": "Where was Berk Hakman, a cast member of Beyond the Hill, born?",
+      "body": "Beyond the Hill has cast member Berk Hakman. Berk Hakman was born in Ankara.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6084082",
+      "metadata": {
+        "question_id": "qa_444d583ed375",
+        "template": "film_cast_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -21.106652500471096,
+      "snippet": "Beyond the Hill has cast member Berk Hakman. Berk Hakman was born in Ankara."
+    },
+    {
+      "doc_id": "fact::Q6093425::P19::Q3640",
+      "title": "berk hakman - place of birth",
+      "body": "berk hakman was born in Angora, Turkey. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6093425",
+      "metadata": {
+        "source_id": "Q6093425",
+        "target_id": "Q3640",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -19.31639106719152,
+      "snippet": "berk hakman was born in Angora, Turkey. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place."
+    },
+    {
+      "doc_id": "fact::Q6093425::P27::Q43",
+      "title": "berk hakman - country of citizenship",
+      "body": "berk hakman has country of citizenship turkiye. Relation type: country of citizenship. Source roles: cast_member. Target roles: birth_place, country, country_root.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6093425",
+      "metadata": {
+        "source_id": "Q6093425",
+        "target_id": "Q43",
+        "relation_id": "P27",
+        "relation_label": "country of citizenship"
+      },
+      "score": -18.95902215995684,
+      "snippet": "berk hakman has country of citizenship turkiye. Relation type: country of citizenship. Source roles: cast_member. Target roles: birth_place, country, country_root."
+    },
+    {
+      "doc_id": "fact::Q6084082::P161::Q6093425",
+      "title": "Beyond the Hill - cast member",
+      "body": "Beyond the Hill has cast member berk hakman. Relation type: cast member. Source roles: film. Target roles: cast_member.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6084082",
+      "metadata": {
+        "source_id": "Q6084082",
+        "target_id": "Q6093425",
+        "relation_id": "P161",
+        "relation_label": "cast member"
+      },
+      "score": -15.398180605369056,
+      "snippet": "Beyond the Hill has cast member berk hakman. Relation type: cast member. Source roles: film. Target roles: cast_member."
+    },
+    {
+      "doc_id": "entity::Q204905",
+      "title": "elefsis airport",
+      "body": "elefsis airport. Description: Eleusis (Greek: Ελευσίνα Elefsina, Ancient Greek: Ἐλευσίς Eleusis) is a town and municipality in West Attica, Greece. It is situated about 18 kilometres (11 miles) northwest from the centre of Athens. It is located in the Thriasian Plain, at the northernmost end of the Saronic Gulf. North of Eleusis are Mandra and Magoula, while Aspropyrgos is to the northeast.Eleusis is the seat of administration of West Attica regional unit. It is the site of the Eleusinian Mysteries and the birthplace of Aeschylus.  Today, Eleusis is a major industrial centre, with the largest oil refinery in Greece as well as the home of the Aeschylia Festival, the longest-lived arts event in the Attica Region.On 11 November 2016 Eleusis was named the European Capital of Culture for 2021. Aliases: elefsis airport, Elevsis, elefsina, greece, elefsis, elevsis, eleusina, Elefsis airport, eleysina, Elefsina, eleusinian. Roles: birth_place. Domains: cinema, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q204905",
+      "metadata": {
+        "entity_id": "Q204905",
+        "aliases": [
+          "elefsis airport",
+          "Elevsis",
+          "elefsina, greece",
+          "elefsis",
+          "elevsis",
+          "eleusina",
+          "Elefsis airport",
+          "eleysina",
+          "Elefsina",
+          "eleusinian"
+        ],
+        "roles": [
+          "birth_place"
+        ],
+        "domains": [
+          "cinema",
+          "turkiye"
+        ]
+      },
+      "score": -3.1003301333508895,
+      "snippet": "elefsis airport. Description: Eleusis (Greek: Ελευσίνα Elefsina, Ancient Greek: Ἐλευσίς Eleusis) is a town and municipality in West Attica, Greece. It is situated about 18 kilometres (11 miles) northwest from the cent..."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:03:12.308386+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 800,
+    "remaining_tokens": 11497,
+    "reset_requests_seconds": 17280.0,
+    "reset_tokens_seconds": 2.514,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:03:12 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "800",
+      "x-ratelimit-remaining-tokens": "11497",
+      "x-ratelimit-reset-requests": "4h48m0s",
+      "x-ratelimit-reset-tokens": "2.514s",
+      "x-request-id": "req_01kpgb09s4f64spjns770a14ea",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=DP_1AJayAuWheaykh1y1ycJHXIwkL5aqj.OZAvs7OMc-1776517392.142963-1.0.1.1-.cq176Y7wcFlurJfp_ijwNTvpNED13TtC9L2LnmBTn8x.4ZbsCkyje6EyL2294RtffBubz1V6b.4BY4Q10zrLeB7Ua4p6pA0hf_Iahkze6rbpCreHItN_ZDGsXQz8SUS; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:33:12 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3de44e80047fa-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "ankara turkey also known as angora",
+    "gold_normalized": "ankara",
+    "exact_match": false,
+    "contains_match": true
+  }
+}

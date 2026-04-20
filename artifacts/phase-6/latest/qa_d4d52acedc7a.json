@@ -1,0 +1,259 @@
+{
+  "created_at": "2026-04-18T12:10:45.105120+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_d4d52acedc7a",
+  "question": "Which award was received by the director of İnek Şaban?",
+  "question_type": "two_hop",
+  "template": "film_director_award",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q7603040",
+    "text": "State Artist"
+  },
+  "prediction_text": "State Artist",
+  "match": {
+    "prediction_normalized": "state artist",
+    "gold_normalized": "state artist",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q6062891",
+      "entity_name": "i̇nek şaban",
+      "roles": [
+        "film"
+      ],
+      "source": "lexicon",
+      "score": 19
+    }
+  ],
+  "relation_path": [
+    "P57",
+    "P166"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q6062891"
+      ],
+      "candidate_count": 2,
+      "selected_triples": [
+        {
+          "source_id": "Q6062891",
+          "source_name": "i̇nek şaban",
+          "source_roles": [
+            "film"
+          ],
+          "relation_id": "P57",
+          "relation_label": "director",
+          "target_id": "Q7107075",
+          "target_name": "Osman Seden",
+          "target_roles": [
+            "director"
+          ],
+          "score": 19.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q7107075"
+      ],
+      "candidate_count": 2,
+      "selected_triples": [
+        {
+          "source_id": "Q7107075",
+          "source_name": "Osman Seden",
+          "source_roles": [
+            "director"
+          ],
+          "relation_id": "P166",
+          "relation_label": "award received",
+          "target_id": "Q7603040",
+          "target_name": "Devlet Sanatçısı",
+          "target_roles": [
+            "award"
+          ],
+          "score": 18.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q6062891",
+        "seed_entity_name": "i̇nek şaban",
+        "final_answers": [
+          {
+            "entity_id": "Q7603040",
+            "entity_name": "Devlet Sanatçısı"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q7603040"
+    ],
+    "candidate_texts": [
+      "Devlet Sanatçısı"
+    ],
+    "answer_text": "Devlet Sanatçısı"
+  },
+  "kg_summary": "i̇nek şaban was directed by Osman Seden. Osman Seden received the award Devlet Sanatçısı.",
+  "expanded_query": "Director of İnek Şaban, Osman Seden, received Devlet Sanatçısı award.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_d4d52acedc7a::1",
+      "title": "Which award was received by the director of İnek Şaban?",
+      "body": "İnek Şaban was directed by Osman Fahir Seden usually credited as Osman F. Seden. Osman Fahir Seden usually credited as Osman F. Seden received the award State Artist.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6062891",
+      "metadata": {
+        "question_id": "qa_d4d52acedc7a",
+        "template": "film_director_award",
+        "question_type": "two_hop"
+      },
+      "score": -45.36731320879399,
+      "snippet": "İnek Şaban was directed by Osman Fahir Seden usually credited as Osman F. Seden. Osman Fahir Seden usually credited as Osman F. Seden received the award State Artist."
+    },
+    {
+      "doc_id": "fact::Q6062891::P57::Q7107075",
+      "title": "i̇nek şaban - director",
+      "body": "i̇nek şaban was directed by Osman Fahir Seden. Relation type: director. Source roles: film. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6062891",
+      "metadata": {
+        "source_id": "Q6062891",
+        "target_id": "Q7107075",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -33.2904243846225,
+      "snippet": "i̇nek şaban was directed by Osman Fahir Seden. Relation type: director. Source roles: film. Target roles: director."
+    },
+    {
+      "doc_id": "entity::Q6062891",
+      "title": "i̇nek şaban",
+      "body": "i̇nek şaban. Description: İnek Şaban is a 1979 Turkish comedy film directed by Osman F. Seden. Aliases: i̇nek şaban, İnek Şaban. Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q6062891",
+      "metadata": {
+        "entity_id": "Q6062891",
+        "aliases": [
+          "i̇nek şaban",
+          "İnek Şaban"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -31.774482718535893,
+      "snippet": "i̇nek şaban. Description: İnek Şaban is a 1979 Turkish comedy film directed by Osman F. Seden. Aliases: i̇nek şaban, İnek Şaban. Roles: film. Domains: cinema, film, turkiye."
+    },
+    {
+      "doc_id": "fact::Q7107075::P166::Q7603040",
+      "title": "Osman Fahir Seden - award received",
+      "body": "Osman Fahir Seden received the award state artist. Relation type: award received. Source roles: director. Target roles: award.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q7107075",
+      "metadata": {
+        "source_id": "Q7107075",
+        "target_id": "Q7603040",
+        "relation_id": "P166",
+        "relation_label": "award received"
+      },
+      "score": -30.75061669869197,
+      "snippet": "Osman Fahir Seden received the award state artist. Relation type: award received. Source roles: director. Target roles: award."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T12:10:44.408525+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 911,
+      "remaining_tokens": 11753,
+      "reset_requests_seconds": 7689.599,
+      "reset_tokens_seconds": 1.234,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:10:44 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "911",
+        "x-ratelimit-remaining-tokens": "11753",
+        "x-ratelimit-reset-requests": "2h8m9.599s",
+        "x-ratelimit-reset-tokens": "1.234s",
+        "x-request-id": "req_01kpg807meexxsbd7a25ywrkax",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=bdZ9ITD5SLU1LOmHL0snNSf6dirXnmiaMjwWjY8abss-1776514244.2151008-1.0.1.1-xa9ZfhO6tEUQauDZRIEPtLaEjjhOY0bMu_7byZIBHFN0x7J8lM9Gtl_KFZXFOqBbikh41FzVUEez4mgErXOtEIkQw3jCke7EDosnYnx7kiSuFWf8Ch1tv0dEOk9HnRh8; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:40:44 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3916a59fb9904-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T12:10:45.102037+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 910,
+      "remaining_tokens": 11556,
+      "reset_requests_seconds": 7776.0,
+      "reset_tokens_seconds": 2.219,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:10:45 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "910",
+        "x-ratelimit-remaining-tokens": "11556",
+        "x-ratelimit-reset-requests": "2h9m36s",
+        "x-ratelimit-reset-tokens": "2.219s",
+        "x-request-id": "req_01kpg808g9fkd9h9skrb482xe6",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=y6mb0RmJyyK2JueAR6hjjoWiuSOvuqmeYmPTAVdJ6S8-1776514245.106986-1.0.1.1-yjp2_mCu5aUtRrrxZqluTmtYtP8NpSfFTm32J9uKXoku9_ZRMh2xbmC89TpZ1RLc2cmJdah_1ydkXx3JetcFGfbPoTcgglefDRan800RzTiZmbK7YvI34LdNHMPEEWZT; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:40:45 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3916fee7c1a64-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "created_at": "2026-04-18T12:10:52.158999+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_dcba1b612c86",
+  "question": "Where did the director of Bitter Life study?",
+  "question_type": "two_hop",
+  "template": "film_director_education",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q192964",
+    "text": "Istanbul University"
+  },
+  "prediction_text": "Istanbul University",
+  "match": {
+    "prediction_normalized": "istanbul university",
+    "gold_normalized": "istanbul university",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q12835393",
+      "entity_name": "Bitter Life (film)",
+      "roles": [
+        "film"
+      ],
+      "source": "neo4j_fulltext",
+      "score": 20.466585159301758
+    }
+  ],
+  "relation_path": [
+    "P57",
+    "P69"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q12835393"
+      ],
+      "candidate_count": 4,
+      "selected_triples": [
+        {
+          "source_id": "Q12835393",
+          "source_name": "Bitter Life (film)",
+          "source_roles": [
+            "film"
+          ],
+          "relation_id": "P57",
+          "relation_label": "director",
+          "target_id": "Q936089",
+          "target_name": "metin erksan",
+          "target_roles": [
+            "director"
+          ],
+          "score": 19.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q936089"
+      ],
+      "candidate_count": 3,
+      "selected_triples": [
+        {
+          "source_id": "Q936089",
+          "source_name": "metin erksan",
+          "source_roles": [
+            "director"
+          ],
+          "relation_id": "P69",
+          "relation_label": "educated at",
+          "target_id": "Q192964",
+          "target_name": "Darulfunun",
+          "target_roles": [
+            "education_entity"
+          ],
+          "score": 16.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q12835393",
+        "seed_entity_name": "Bitter Life (film)",
+        "final_answers": [
+          {
+            "entity_id": "Q192964",
+            "entity_name": "Darulfunun"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q192964"
+    ],
+    "candidate_texts": [
+      "Darulfunun"
+    ],
+    "answer_text": "Darulfunun"
+  },
+  "kg_summary": "Bitter Life (film) was directed by metin erksan. metin erksan studied at Darulfunun.",
+  "expanded_query": "The director of Bitter Life, Metin Erksan, studied at Darulfunun.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_dcba1b612c86::1",
+      "title": "Where did the director of Bitter Life study?",
+      "body": "Bitter Life was directed by Metin Erksan. Metin Erksan studied at Istanbul University.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q12835393",
+      "metadata": {
+        "question_id": "qa_dcba1b612c86",
+        "template": "film_director_education",
+        "question_type": "two_hop"
+      },
+      "score": -43.00837100790473,
+      "snippet": "Bitter Life was directed by Metin Erksan. Metin Erksan studied at Istanbul University."
+    },
+    {
+      "doc_id": "path::qa_d6de5558a6c3::1",
+      "title": "In which country is the school attended by the director of Bitter Life located?",
+      "body": "Bitter Life was directed by Metin Erksan. Metin Erksan studied at Istanbul University. Istanbul University is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q12835393",
+      "metadata": {
+        "question_id": "qa_d6de5558a6c3",
+        "template": "film_director_education_country",
+        "question_type": "three_hop"
+      },
+      "score": -39.843743147073944,
+      "snippet": "Bitter Life was directed by Metin Erksan. Metin Erksan studied at Istanbul University. Istanbul University is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_d8aa86c24033::1",
+      "title": "Where was the director of Bitter Life born?",
+      "body": "Bitter Life was directed by Metin Erksan. Metin Erksan was born in Çanakkale Province.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q12835393",
+      "metadata": {
+        "question_id": "qa_d8aa86c24033",
+        "template": "film_director_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -34.31644750170613,
+      "snippet": "Bitter Life was directed by Metin Erksan. Metin Erksan was born in Çanakkale Province."
+    },
+    {
+      "doc_id": "fact::Q12835393::P57::Q936089",
+      "title": "Bitter Life (film) - director",
+      "body": "Bitter Life (film) was directed by metin erksan. Relation type: director. Source roles: film. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q12835393",
+      "metadata": {
+        "source_id": "Q12835393",
+        "target_id": "Q936089",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -31.013624442128783,
+      "snippet": "Bitter Life (film) was directed by metin erksan. Relation type: director. Source roles: film. Target roles: director."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T12:10:51.096200+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 905,
+      "remaining_tokens": 11868,
+      "reset_requests_seconds": 8208.0,
+      "reset_tokens_seconds": 0.659,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:10:51 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "905",
+        "x-ratelimit-remaining-tokens": "11868",
+        "x-ratelimit-reset-requests": "2h16m48s",
+        "x-ratelimit-reset-tokens": "659ms",
+        "x-request-id": "req_01kpg80e9reyhrpdp2gwr2qfej",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=1.yZjxNSBjUbI5CETK.uX2heJJh_k0bfwJw_umcXrYc-1776514251.0416276-1.0.1.1-zzg33McIW2NvDtXuT0nEBLTLlvV9vSxLqzAvZ1_KWRyXPXDx5BK2OHuf_RQ8XnKvfIYaIkf3zrgRanOqfxTJ7r5SSoW7_w3iTuyfGFc7WlveajqwdM7ewxx65Y7Vbd4L; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:40:51 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee391950ca63101-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T12:10:52.157742+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 904,
+      "remaining_tokens": 11662,
+      "reset_requests_seconds": 8294.4,
+      "reset_tokens_seconds": 1.69,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:10:52 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "904",
+        "x-ratelimit-remaining-tokens": "11662",
+        "x-ratelimit-reset-requests": "2h18m14.4s",
+        "x-ratelimit-reset-tokens": "1.69s",
+        "x-request-id": "req_01kpg80f3meymaa3zr5ppxa7w2",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=QDg7e.ZEzwkae3.W3nCX2poIaewv7j1gAMw7opyIl34-1776514251.8703287-1.0.1.1-Bm10Wp9BNPO7q4g7338qV4aphTbBRIAMI.O3gEF0btkMOjArfnELZtzte69JMYfi1yEZfl89koidtH.bKihslsbTuaSboQSmXjnVN2sBEpYHtb254xO_62HEyP1YzJlY; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:40:52 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3919a2bf60d26-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "created_at": "2026-04-18T12:58:02.864725+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_f2bf3cadec14",
+  "question": "Which award was received by the director of King of the Doormen?",
+  "question_type": "two_hop",
+  "template": "film_director_award",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q7650000",
+    "text": "The Sutherland Trophy"
+  },
+  "prediction_text": "The Sutherland Trophy",
+  "match": {
+    "prediction_normalized": "the sutherland trophy",
+    "gold_normalized": "the sutherland trophy",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q12810220",
+      "entity_name": "Kapicilar Krali",
+      "roles": [
+        "film"
+      ],
+      "source": "lexicon",
+      "score": 32
+    }
+  ],
+  "relation_path": [
+    "P57",
+    "P166"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q12810220"
+      ],
+      "candidate_count": 3,
+      "selected_triples": [
+        {
+          "source_id": "Q12810220",
+          "source_name": "Kapicilar Krali",
+          "source_roles": [
+            "film"
+          ],
+          "relation_id": "P57",
+          "relation_label": "director",
+          "target_id": "Q2739722",
+          "target_name": "Zeki Okten",
+          "target_roles": [
+            "director"
+          ],
+          "score": 19.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q2739722"
+      ],
+      "candidate_count": 2,
+      "selected_triples": [
+        {
+          "source_id": "Q2739722",
+          "source_name": "Zeki Okten",
+          "source_roles": [
+            "director"
+          ],
+          "relation_id": "P166",
+          "relation_label": "award received",
+          "target_id": "Q7650000",
+          "target_name": "Sutherland Award",
+          "target_roles": [
+            "award"
+          ],
+          "score": 18.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q12810220",
+        "seed_entity_name": "Kapicilar Krali",
+        "final_answers": [
+          {
+            "entity_id": "Q7650000",
+            "entity_name": "Sutherland Award"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q7650000"
+    ],
+    "candidate_texts": [
+      "Sutherland Award"
+    ],
+    "answer_text": "Sutherland Award"
+  },
+  "kg_summary": "Kapicilar Krali was directed by Zeki Okten. Zeki Okten received the award Sutherland Award.",
+  "expanded_query": "Zeki Okten, director of King of the Doormen, received the Sutherland Award.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_f2bf3cadec14::1",
+      "title": "Which award was received by the director of King of the Doormen?",
+      "body": "King of the Doormen was directed by Zeki Ökten. Zeki Ökten received the award The Sutherland Trophy.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q12810220",
+      "metadata": {
+        "question_id": "qa_f2bf3cadec14",
+        "template": "film_director_award",
+        "question_type": "two_hop"
+      },
+      "score": -60.25655830503333,
+      "snippet": "King of the Doormen was directed by Zeki Ökten. Zeki Ökten received the award The Sutherland Trophy."
+    },
+    {
+      "doc_id": "fact::Q2739722::P166::Q7650000",
+      "title": "Zeki Okten - award received",
+      "body": "Zeki Okten received the award Sutherland Award. Relation type: award received. Source roles: director. Target roles: award.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q2739722",
+      "metadata": {
+        "source_id": "Q2739722",
+        "target_id": "Q7650000",
+        "relation_id": "P166",
+        "relation_label": "award received"
+      },
+      "score": -43.57682726911888,
+      "snippet": "Zeki Okten received the award Sutherland Award. Relation type: award received. Source roles: director. Target roles: award."
+    },
+    {
+      "doc_id": "entity::Q12810220",
+      "title": "Kapicilar Krali",
+      "body": "Kapicilar Krali. Description: King of the Doormen, (Turkish: Kapıcılar Kralı), is a 1976 Turkish comedy film featuring Kemal Sunal, Sevda Ferdağ, Bilge Zobu and Şevket Altuğ, produced by Arif and Abdurrahman Keskiner and, directed by Zeki Ökten. The movie is the third collaboration of Ökten and Sunal, following Hanzo and Şaşkın Damat, both shot in 1975. Kapıcılar Kralı is considered as one of the most memorable motion pictures of the career of Kemal Sunal. Along with Çöpçüler Kralı another movie of Sunal also directed by Zeki Ökten, Kapıcılar Kralı is also featured in the book 100 Yılın 100 Türk Filmi, written by Atilla Dorsay, Turkish film critic.The movie is decorated major local success, winning best director and best actor awards at 1977 International Antalya Golden Orange Film Festival, in which it was also runner-up of best motion picture after Kara Çarşaflı Gelin of director and producer Süreyya Duru. Thus, Kemal Sunal became the first comedy-genre actor ever to win the award. Movie is also inducted at 100 Yıl 100 Film, a publicly voted list that is gathering 100 best motion pictures of Turkish cinema, in honour of its centenary, published by Ministry of Culture and Tourism of Turkey, in 2014. The movie is ranked 36th out of 100 movies in total, after an online-voted pool of 367,620 voters. Aliases: Kapicilar Krali, kapıcılar kralı, Kapıcılar Kralı, King of the Doormen, king of the doormen, kapicilar krali. Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q12810220",
+      "metadata": {
+        "entity_id": "Q12810220",
+        "aliases": [
+          "Kapicilar Krali",
+          "kapıcılar kralı",
+          "Kapıcılar Kralı",
+          "King of the Doormen",
+          "king of the doormen",
+          "kapicilar krali"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -24.446456823898274,
+      "snippet": "Kapicilar Krali. Description: King of the Doormen, (Turkish: Kapıcılar Kralı), is a 1976 Turkish comedy film featuring Kemal Sunal, Sevda Ferdağ, Bilge Zobu and Şevket Altuğ, produced by Arif and Abdurrahman Keskiner..."
+    },
+    {
+      "doc_id": "fact::Q187272::P166::Q7603040",
+      "title": "Zeki Muren - award received",
+      "body": "Zeki Muren received the award state artist. Relation type: award received. Source roles: cast_member. Target roles: award.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q187272",
+      "metadata": {
+        "source_id": "Q187272",
+        "target_id": "Q7603040",
+        "relation_id": "P166",
+        "relation_label": "award received"
+      },
+      "score": -23.703619874286098,
+      "snippet": "Zeki Muren received the award state artist. Relation type: award received. Source roles: cast_member. Target roles: award."
+    },
+    {
+      "doc_id": "entity::Q2739722",
+      "title": "Zeki Okten",
+      "body": "Zeki Okten. Description: Zeki Ökten (4 August 1941 – 19 December 2009) was a Turkish film director. Aliases: Zeki Okten, zeki ökten, zeki okten, Zeki Ökten. Roles: director. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q2739722",
+      "metadata": {
+        "entity_id": "Q2739722",
+        "aliases": [
+          "Zeki Okten",
+          "zeki ökten",
+          "zeki okten",
+          "Zeki Ökten"
+        ],
+        "roles": [
+          "director"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -22.079803377712693,
+      "snippet": "Zeki Okten. Description: Zeki Ökten (4 August 1941 – 19 December 2009) was a Turkish film director. Aliases: Zeki Okten, zeki ökten, zeki okten, Zeki Ökten. Roles: director. Domains: cinema, people, turkiye."
+    },
+    {
+      "doc_id": "entity::Q7650000",
+      "title": "Sutherland Award",
+      "body": "Sutherland Award. Description: The Sutherland Trophy was created in 1958 by the British Film Institute as an annual award for \"the maker of the most original and imaginative [first or second feature] film introduced at the National Film Theatre during the year\". In 1997, the criteria changed to honour the maker of the most original and imaginative first feature screened during the London Film Festival.The award is a sculpture in silver by Gerald Benney. It is presented on the closing night of the Festival. The award was named after the British Film Institute's patron, George Sutherland-Leveson-Gower, 5th Duke of Sutherland. Aliases: Sutherland Award, sutherland award, sutherland prize, sutherland trophy, Sutherland Prize, Sutherland Trophy. Roles: award. Domains: award, cinema, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q7650000",
+      "metadata": {
+        "entity_id": "Q7650000",
+        "aliases": [
+          "Sutherland Award",
+          "sutherland award",
+          "sutherland prize",
+          "sutherland trophy",
+          "Sutherland Prize",
+          "Sutherland Trophy"
+        ],
+        "roles": [
+          "award"
+        ],
+        "domains": [
+          "award",
+          "cinema",
+          "turkiye"
+        ]
+      },
+      "score": -21.228460895259516,
+      "snippet": "Sutherland Award. Description: The Sutherland Trophy was created in 1958 by the British Film Institute as an annual award for \"the maker of the most original and imaginative [first or second feature] film introduced a..."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T12:57:57.776786+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 859,
+      "remaining_tokens": 11882,
+      "reset_requests_seconds": 12182.4,
+      "reset_tokens_seconds": 0.59,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:57:57 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "859",
+        "x-ratelimit-remaining-tokens": "11882",
+        "x-ratelimit-reset-requests": "3h23m2.4s",
+        "x-ratelimit-reset-tokens": "590ms",
+        "x-request-id": "req_01kpgappv6e4pbzb3mj82wcp17",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=FZNck2Dwh7gT2jOEM9d2MM5fX6vALjLdBJOBU9NFskM-1776517077.841666-1.0.1.1-kpJRrNvPEcvO5f3H6Y6cPmurVgpjpjPvmc.AP3kByqDFctBH.M27lmbgikWtYDwIYgtnN_SxXNFVuzBNG5TpDmnmuiE69KxaojijRYvOpBRZBJsVsGWvHWQUVNkV30ty; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:27:57 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3d6988e81b0d2-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T12:58:02.852586+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 858,
+      "remaining_tokens": 11362,
+      "reset_requests_seconds": 12268.8,
+      "reset_tokens_seconds": 3.19,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:58:03 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "858",
+        "x-ratelimit-remaining-tokens": "11362",
+        "x-ratelimit-reset-requests": "3h24m28.8s",
+        "x-ratelimit-reset-tokens": "3.19s",
+        "x-request-id": "req_01kpgapvqweyjb1nwkfcf55rq6",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=ETDztpzwpbd9ARBGeNFoE..JTPT8vnfa7YiBoJI9Udo-1776517082.8548887-1.0.1.1-zQSBcNui3RKuRv_AT1AoAcAGhQ5Kztrg2qFodVAXW3ylRibL3YDWgWU0wtybLAjpKtfwqzos6oj8WPTMHaSkyWaB1ak4TgFZj.zdX5ulB5Eh77tUKiiiUEOHbxi7wiAx; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:28:03 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3d6b7d8db17cc-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

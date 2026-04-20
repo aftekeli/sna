@@ -1,0 +1,269 @@
+{
+  "created_at": "2026-04-18T13:00:03.155745+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_515c0f340473",
+  "question": "Where was Seiyō Uchino, a cast member of 125 Years Memory, born?",
+  "question_type": "two_hop",
+  "template": "film_cast_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q1358965",
+    "text": "Kōhoku-ku"
+  },
+  "prediction_text": "Kōhoku-ku",
+  "match": {
+    "prediction_normalized": "kohoku ku",
+    "gold_normalized": "kohoku ku",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q5355422",
+      "entity_name": "Seiyo Uchino",
+      "roles": [
+        "cast_member"
+      ],
+      "source": "lexicon",
+      "score": 18
+    }
+  ],
+  "relation_path": [
+    "P19"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q5355422"
+      ],
+      "candidate_count": 2,
+      "selected_triples": [
+        {
+          "source_id": "Q5355422",
+          "source_name": "Seiyo Uchino",
+          "source_roles": [
+            "cast_member"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q1358965",
+          "target_name": "Kohoku-ku",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 16.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q5355422",
+        "seed_entity_name": "Seiyo Uchino",
+        "final_answers": [
+          {
+            "entity_id": "Q1358965",
+            "entity_name": "Kohoku-ku"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q1358965"
+    ],
+    "candidate_texts": [
+      "Kohoku-ku"
+    ],
+    "answer_text": "Kohoku-ku"
+  },
+  "kg_summary": "Seiyo Uchino was born in Kohoku-ku.",
+  "expanded_query": "Where was Seiyō Uchino born; Seiyō Uchino birthplace.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_515c0f340473::1",
+      "title": "Where was Seiyō Uchino, a cast member of 125 Years Memory, born?",
+      "body": "125 Years Memory has cast member Seiyō Uchino. Seiyō Uchino was born in Kōhoku-ku.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q21787529",
+      "metadata": {
+        "question_id": "qa_515c0f340473",
+        "template": "film_cast_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -49.58668703889434,
+      "snippet": "125 Years Memory has cast member Seiyō Uchino. Seiyō Uchino was born in Kōhoku-ku."
+    },
+    {
+      "doc_id": "entity::Q5355422",
+      "title": "Masaaki Uchino",
+      "body": "Masaaki Uchino. Description: Seiyō Uchino (内野 聖陽, Uchino Seiyō, born September 16, 1968, in Kōhoku-ku, Yokohama, Kanagawa Prefecture, Japan) is a Japanese actor who is represented by Stardust Promotion. Aliases: Masaaki Uchino, seiyou uchino, Seiyo Uchino, seiyo uchino, 内野聖陽, Seiyō Uchino, seiyō uchino, masaaki uchino, Seiyou Uchino. Roles: cast_member. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q5355422",
+      "metadata": {
+        "entity_id": "Q5355422",
+        "aliases": [
+          "Masaaki Uchino",
+          "seiyou uchino",
+          "Seiyo Uchino",
+          "seiyo uchino",
+          "内野聖陽",
+          "Seiyō Uchino",
+          "seiyō uchino",
+          "masaaki uchino",
+          "Seiyou Uchino"
+        ],
+        "roles": [
+          "cast_member"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -46.27135006436544,
+      "snippet": "Masaaki Uchino. Description: Seiyō Uchino (内野 聖陽, Uchino Seiyō, born September 16, 1968, in Kōhoku-ku, Yokohama, Kanagawa Prefecture, Japan) is a Japanese actor who is represented by Stardust Promotion. Aliases: Masaa..."
+    },
+    {
+      "doc_id": "path::qa_25e417879724::2",
+      "title": "Were Tülin Özen from 10 To 11 and Seiyō Uchino from 125 Years Memory born in the same country?",
+      "body": "125 Years Memory has cast member Seiyō Uchino. Seiyō Uchino was born in Kōhoku-ku. Kōhoku-ku is located in Japan.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q3459778",
+      "metadata": {
+        "question_id": "qa_25e417879724",
+        "template": "film_cast_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -42.065798301948284,
+      "snippet": "125 Years Memory has cast member Seiyō Uchino. Seiyō Uchino was born in Kōhoku-ku. Kōhoku-ku is located in Japan."
+    },
+    {
+      "doc_id": "path::qa_25e417879724::1",
+      "title": "Were Tülin Özen from 10 To 11 and Seiyō Uchino from 125 Years Memory born in the same country?",
+      "body": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun. İskenderun is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q3459778",
+      "metadata": {
+        "question_id": "qa_25e417879724",
+        "template": "film_cast_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -29.556645153988878,
+      "snippet": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun. İskenderun is located in Turkey."
+    },
+    {
+      "doc_id": "fact::Q5355422::P19::Q1358965",
+      "title": "Masaaki Uchino - place of birth",
+      "body": "Masaaki Uchino was born in Kouhoku-ku, Yokohama. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q5355422",
+      "metadata": {
+        "source_id": "Q5355422",
+        "target_id": "Q1358965",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -20.806053006888096,
+      "snippet": "Masaaki Uchino was born in Kouhoku-ku, Yokohama. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place."
+    },
+    {
+      "doc_id": "fact::Q5355422::P27::Q17",
+      "title": "Masaaki Uchino - country of citizenship",
+      "body": "Masaaki Uchino has country of citizenship p:jp. Relation type: country of citizenship. Source roles: cast_member. Target roles: country.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q5355422",
+      "metadata": {
+        "source_id": "Q5355422",
+        "target_id": "Q17",
+        "relation_id": "P27",
+        "relation_label": "country of citizenship"
+      },
+      "score": -18.313175185507582,
+      "snippet": "Masaaki Uchino has country of citizenship p:jp. Relation type: country of citizenship. Source roles: cast_member. Target roles: country."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T12:59:57.951169+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 835,
+      "remaining_tokens": 11879,
+      "reset_requests_seconds": 14256.0,
+      "reset_tokens_seconds": 0.605,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:59:58 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "835",
+        "x-ratelimit-remaining-tokens": "11879",
+        "x-ratelimit-reset-requests": "3h57m36s",
+        "x-ratelimit-reset-tokens": "605ms",
+        "x-request-id": "req_01kpgatc4jfcxv23qq48c18tsy",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=O.8j8cVUVVUiBmUE9iY2DuOO3TQ7cd8n7_n3Wc2g0hs-1776517197.9490616-1.0.1.1-pBkIXNCIXUzWRMxdOoYOWG4NrbfR6Mm67KQdPdV04o4VJiH5i9t1bSgA6xOv.r8VltK.EvDWuoadduitGXFms_FuFuT3Tk4B51Pw3JH73qyEnW77l_6W8s8qIjhvWYH3; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:29:58 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3d9872f99e206-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T13:00:03.147053+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 834,
+      "remaining_tokens": 11389,
+      "reset_requests_seconds": 14342.4,
+      "reset_tokens_seconds": 3.054,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 13:00:03 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "834",
+        "x-ratelimit-remaining-tokens": "11389",
+        "x-ratelimit-reset-requests": "3h59m2.4s",
+        "x-ratelimit-reset-tokens": "3.054s",
+        "x-request-id": "req_01kpgatgzvfdy8g3a6by83c93q",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=GKqKAfflg1FJLvJPwkQ70K09UDk5t03YWOWJmj3cpkA-1776517202.9186704-1.0.1.1-f1PMKeYa9MKY1AP2Tseuu13RkvijCJBWzmQ8r8jfztpJr7PR1XB8SXJMayBBhdmJCVCe_emu.mbMcLJuVgCLStqfjbWnuZ_mPZRBZdUQMoJlnyDgSLqpAE1O1zCfwdy4; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:30:03 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3d9a63a100d26-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

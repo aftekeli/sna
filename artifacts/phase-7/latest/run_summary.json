@@ -1,0 +1,217 @@
+{
+  "created_at": "2026-04-18T13:14:07.344625+00:00",
+  "status": "completed",
+  "stop_reason": null,
+  "methods": [
+    "no_retrieval",
+    "vanilla_rag",
+    "vanilla_qe",
+    "kg_infused_rag"
+  ],
+  "question_ids": [
+    "qa_2a6ac9643a80",
+    "qa_11ec48a42232",
+    "qa_ab897ab4eb0b",
+    "qa_f5a4909699e7",
+    "qa_6e027a24320b"
+  ],
+  "attempted_runs": 20,
+  "runs": [
+    {
+      "question_id": "qa_2a6ac9643a80",
+      "method": "no_retrieval",
+      "status": "success"
+    },
+    {
+      "question_id": "qa_2a6ac9643a80",
+      "method": "vanilla_rag",
+      "status": "success"
+    },
+    {
+      "question_id": "qa_2a6ac9643a80",
+      "method": "vanilla_qe",
+      "status": "success"
+    },
+    {
+      "question_id": "qa_2a6ac9643a80",
+      "method": "kg_infused_rag",
+      "status": "success"
+    },
+    {
+      "question_id": "qa_11ec48a42232",
+      "method": "no_retrieval",
+      "status": "success"
+    },
+    {
+      "question_id": "qa_11ec48a42232",
+      "method": "vanilla_rag",
+      "status": "success"
+    },
+    {
+      "question_id": "qa_11ec48a42232",
+      "method": "vanilla_qe",
+      "status": "success"
+    },
+    {
+      "question_id": "qa_11ec48a42232",
+      "method": "kg_infused_rag",
+      "status": "success"
+    },
+    {
+      "question_id": "qa_ab897ab4eb0b",
+      "method": "no_retrieval",
+      "status": "success"
+    },
+    {
+      "question_id": "qa_ab897ab4eb0b",
+      "method": "vanilla_rag",
+      "status": "success"
+    },
+    {
+      "question_id": "qa_ab897ab4eb0b",
+      "method": "vanilla_qe",
+      "status": "success"
+    },
+    {
+      "question_id": "qa_ab897ab4eb0b",
+      "method": "kg_infused_rag",
+      "status": "success"
+    },
+    {
+      "question_id": "qa_f5a4909699e7",
+      "method": "no_retrieval",
+      "status": "success"
+    },
+    {
+      "question_id": "qa_f5a4909699e7",
+      "method": "vanilla_rag",
+      "status": "success"
+    },
+    {
+      "question_id": "qa_f5a4909699e7",
+      "method": "vanilla_qe",
+      "status": "success"
+    },
+    {
+      "question_id": "qa_f5a4909699e7",
+      "method": "kg_infused_rag",
+      "status": "success"
+    },
+    {
+      "question_id": "qa_6e027a24320b",
+      "method": "no_retrieval",
+      "status": "success"
+    },
+    {
+      "question_id": "qa_6e027a24320b",
+      "method": "vanilla_rag",
+      "status": "success"
+    },
+    {
+      "question_id": "qa_6e027a24320b",
+      "method": "vanilla_qe",
+      "status": "success"
+    },
+    {
+      "question_id": "qa_6e027a24320b",
+      "method": "kg_infused_rag",
+      "status": "success"
+    }
+  ],
+  "coverage": {
+    "created_at": "2026-04-18T13:14:07.326252+00:00",
+    "question_count": 5,
+    "question_ids": [
+      "qa_2a6ac9643a80",
+      "qa_11ec48a42232",
+      "qa_ab897ab4eb0b",
+      "qa_f5a4909699e7",
+      "qa_6e027a24320b"
+    ],
+    "methods": [
+      "no_retrieval",
+      "vanilla_rag",
+      "vanilla_qe",
+      "kg_infused_rag"
+    ],
+    "by_method": {
+      "no_retrieval": {
+        "method": "no_retrieval",
+        "expected_total": 5,
+        "available_results": 5,
+        "coverage": 1.0,
+        "success_count": 5,
+        "paused_count": 0,
+        "error_count": 0,
+        "missing_question_ids": []
+      },
+      "vanilla_rag": {
+        "method": "vanilla_rag",
+        "expected_total": 5,
+        "available_results": 5,
+        "coverage": 1.0,
+        "success_count": 5,
+        "paused_count": 0,
+        "error_count": 0,
+        "missing_question_ids": []
+      },
+      "vanilla_qe": {
+        "method": "vanilla_qe",
+        "expected_total": 5,
+        "available_results": 5,
+        "coverage": 1.0,
+        "success_count": 5,
+        "paused_count": 0,
+        "error_count": 0,
+        "missing_question_ids": []
+      },
+      "kg_infused_rag": {
+        "method": "kg_infused_rag",
+        "expected_total": 5,
+        "available_results": 5,
+        "coverage": 1.0,
+        "success_count": 5,
+        "paused_count": 0,
+        "error_count": 0,
+        "missing_question_ids": []
+      }
+    }
+  },
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:14:07.113003+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 715,
+    "remaining_tokens": 11372,
+    "reset_requests_seconds": 24623.999,
+    "reset_tokens_seconds": 3.14,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:14:07 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "715",
+      "x-ratelimit-remaining-tokens": "11372",
+      "x-ratelimit-reset-requests": "6h50m23.999s",
+      "x-ratelimit-reset-tokens": "3.14s",
+      "x-request-id": "req_01kpgbm9c7f1vbhh89r6snxjqf",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=mWoMxQbRFqLrqySEdfiC8xmnNu3Jv67xUjb4h5M_peA-1776518047.091021-1.0.1.1-13xR13FkYVF9A6e_L7P4yOBT1qh31HbILH5omoKi4rX0gA3xn3EL9PuODsuBVU14ns9DttoblCagGM6gDAAEZ96BU6FE9.I01ILPI9kH5FYq4ssNe7M3oz0MqzL3ek7a; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:44:07 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3ee425fd4d2a3-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  }
+}

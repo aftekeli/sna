@@ -1,0 +1,281 @@
+{
+  "created_at": "2026-04-18T12:58:32.927524+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_9ebc97ac2e4f",
+  "question": "Where did the director of Do Not Forget Me Istanbul study?",
+  "question_type": "two_hop",
+  "template": "film_director_education",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q4614",
+    "text": "The University of Southern California"
+  },
+  "prediction_text": "unknown",
+  "match": {
+    "prediction_normalized": "unknown",
+    "gold_normalized": "the university of southern california",
+    "exact_match": false,
+    "contains_match": false
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q20065085",
+      "entity_name": "do not forget me istanbul",
+      "roles": [
+        "film",
+        "film_seed"
+      ],
+      "source": "lexicon",
+      "score": 40
+    }
+  ],
+  "relation_path": [
+    "P57",
+    "P69"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q20065085"
+      ],
+      "candidate_count": 14,
+      "selected_triples": [
+        {
+          "source_id": "Q20065085",
+          "source_name": "do not forget me istanbul",
+          "source_roles": [
+            "film",
+            "film_seed"
+          ],
+          "relation_id": "P57",
+          "relation_label": "director",
+          "target_id": "Q2827768",
+          "target_name": "Aida Begic",
+          "target_roles": [
+            "director"
+          ],
+          "score": 19.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q2827768"
+      ],
+      "candidate_count": 1,
+      "selected_triples": [
+        {
+          "source_id": "Q2827768",
+          "source_name": "Aida Begic",
+          "source_roles": [
+            "director"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q11194",
+          "target_name": "Rajvosa",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 4.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q20065085",
+        "seed_entity_name": "do not forget me istanbul",
+        "final_answers": []
+      }
+    ],
+    "candidate_entity_ids": [],
+    "candidate_texts": [],
+    "answer_text": null
+  },
+  "kg_summary": "do not forget me istanbul was directed by Aida Begic. Aida Begic was born in Rajvosa.",
+  "expanded_query": "Where did Aida Begic study.",
+  "retrieved_documents": [
+    {
+      "doc_id": "entity::Q2827768",
+      "title": "Aida Begic",
+      "body": "Aida Begic. Description: Aida Begić (born 9 May 1976) is a Bosnian film director and screenwriter. Aliases: Aida Begic, aida begic, aida begić, Aida Begić. Roles: director. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q2827768",
+      "metadata": {
+        "entity_id": "Q2827768",
+        "aliases": [
+          "Aida Begic",
+          "aida begic",
+          "aida begić",
+          "Aida Begić"
+        ],
+        "roles": [
+          "director"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -23.452783564605266,
+      "snippet": "Aida Begic. Description: Aida Begić (born 9 May 1976) is a Bosnian film director and screenwriter. Aliases: Aida Begic, aida begic, aida begić, Aida Begić. Roles: director. Domains: cinema, people, turkiye."
+    },
+    {
+      "doc_id": "path::qa_104db2fbbec9::1",
+      "title": "Where did the director of Ember study?",
+      "body": "Ember was directed by Zeki Demirkubuz. Zeki Demirkubuz studied at Istanbul University.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q25479948",
+      "metadata": {
+        "question_id": "qa_104db2fbbec9",
+        "template": "film_director_education",
+        "question_type": "two_hop"
+      },
+      "score": -20.096528422949635,
+      "snippet": "Ember was directed by Zeki Demirkubuz. Zeki Demirkubuz studied at Istanbul University."
+    },
+    {
+      "doc_id": "path::qa_4ae95238ae3e::1",
+      "title": "Where did the director of Grain study?",
+      "body": "Grain was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q19954477",
+      "metadata": {
+        "question_id": "qa_4ae95238ae3e",
+        "template": "film_director_education",
+        "question_type": "two_hop"
+      },
+      "score": -19.88681114968485,
+      "snippet": "Grain was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University."
+    },
+    {
+      "doc_id": "path::qa_dcba1b612c86::1",
+      "title": "Where did the director of Bitter Life study?",
+      "body": "Bitter Life was directed by Metin Erksan. Metin Erksan studied at Istanbul University.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q12835393",
+      "metadata": {
+        "question_id": "qa_dcba1b612c86",
+        "template": "film_director_education",
+        "question_type": "two_hop"
+      },
+      "score": -19.681425680079254,
+      "snippet": "Bitter Life was directed by Metin Erksan. Metin Erksan studied at Istanbul University."
+    },
+    {
+      "doc_id": "fact::Q2827768::P19::Q11194",
+      "title": "Aida Begic - place of birth",
+      "body": "Aida Begic was born in Rajvosa. Relation type: place of birth. Source roles: director. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q2827768",
+      "metadata": {
+        "source_id": "Q2827768",
+        "target_id": "Q11194",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -19.56221696976499,
+      "snippet": "Aida Begic was born in Rajvosa. Relation type: place of birth. Source roles: director. Target roles: birth_place."
+    },
+    {
+      "doc_id": "path::qa_bb3348c757ee::1",
+      "title": "Where did the director of Angel's Fall study?",
+      "body": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6054381",
+      "metadata": {
+        "question_id": "qa_bb3348c757ee",
+        "template": "film_director_education",
+        "question_type": "two_hop"
+      },
+      "score": -19.089958296987987,
+      "snippet": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T12:58:27.890033+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 853,
+      "remaining_tokens": 11873,
+      "reset_requests_seconds": 12700.8,
+      "reset_tokens_seconds": 0.635,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:58:28 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "853",
+        "x-ratelimit-remaining-tokens": "11873",
+        "x-ratelimit-reset-requests": "3h31m40.8s",
+        "x-ratelimit-reset-tokens": "635ms",
+        "x-request-id": "req_01kpgaqm81f45a7e109a4ywx0f",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=44EztQJPtLLuIVLlHs3ssUJcqfsbySLs9ffrLoyD5Wk-1776517107.94821-1.0.1.1-.8lgN3Y5fqDRTMF0CjaHeVcg8CFbogGjNmQnq5W6Xm668ez7MqNVvbbNAknIWkAzR7uGArgAbLyjRfsz.mT1jOPkEXkrGk70PXu5Hm7xOOM9eTj.GZfX1DkwbVW6UsNU; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:28:28 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3d754a9dac5fd-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T12:58:32.919364+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 852,
+      "remaining_tokens": 11565,
+      "reset_requests_seconds": 12787.199,
+      "reset_tokens_seconds": 2.175,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:58:33 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "852",
+        "x-ratelimit-remaining-tokens": "11565",
+        "x-ratelimit-reset-requests": "3h33m7.199s",
+        "x-ratelimit-reset-tokens": "2.175s",
+        "x-request-id": "req_01kpgaqs4hebps673hfv7v56r8",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=gKd9TsOETX0NlX2Ev5Noxc3Jy7JJf6pV96PK1qhlvqY-1776517112.954636-1.0.1.1-qmvH6wv04O7xso4uYl2Fw3H7Ls9iB8eXgZWSH5LhGcNBTcgVyOTrBWoiw9ksYZ25rbeeHylEvKiXHRs_6gTDeATIDVH8vIkq4sJcZAiys1RnVu01664a6DyFw32AGEE1; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:28:33 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3d773fd77dad2-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

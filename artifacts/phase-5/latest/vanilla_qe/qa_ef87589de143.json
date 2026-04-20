@@ -1,0 +1,121 @@
+{
+  "created_at": "2026-04-18T11:57:56.932984+00:00",
+  "status": "success",
+  "method": "vanilla_qe",
+  "question_id": "qa_ef87589de143",
+  "question": "Were the directors of Ah Nerede and Arabesk born in the same country?",
+  "question_type": "comparison",
+  "template": "film_director_birth_place_country__comparison",
+  "difficulty": "very_hard",
+  "gold_answer": {
+    "entity_id": null,
+    "text": "yes"
+  },
+  "prediction_text": "Yes.",
+  "expanded_query": "Directors of Ah Nerede and Arabesk nationality comparison.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_ef87589de143::1",
+      "title": "Were the directors of Ah Nerede and Arabesk born in the same country?",
+      "body": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa. Mustafakemalpaşa is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6081761",
+      "metadata": {
+        "question_id": "qa_ef87589de143",
+        "template": "film_director_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -29.866506259003064,
+      "snippet": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa. Mustafakemalpaşa is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_ef87589de143::2",
+      "title": "Were the directors of Ah Nerede and Arabesk born in the same country?",
+      "body": "Arabesk was directed by Ertem Eğilmez. Ertem Eğilmez was born in Trabzon. Trabzon is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6081761",
+      "metadata": {
+        "question_id": "qa_ef87589de143",
+        "template": "film_director_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -28.532010870696475,
+      "snippet": "Arabesk was directed by Ertem Eğilmez. Ertem Eğilmez was born in Trabzon. Trabzon is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_f2af017e97bd::1",
+      "title": "Were the directors of Ah Nerede and Playing with Death born in the same country?",
+      "body": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa. Mustafakemalpaşa is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6081761",
+      "metadata": {
+        "question_id": "qa_f2af017e97bd",
+        "template": "film_director_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -23.000528033956304,
+      "snippet": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa. Mustafakemalpaşa is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_f2af017e97bd::2",
+      "title": "Were the directors of Ah Nerede and Playing with Death born in the same country?",
+      "body": "Playing with Death was directed by Hamid Tamjidi. Hamid Tamjidi was born in Tehran. Tehran is located in Iran.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6081761",
+      "metadata": {
+        "question_id": "qa_f2af017e97bd",
+        "template": "film_director_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -19.295984327223202,
+      "snippet": "Playing with Death was directed by Hamid Tamjidi. Hamid Tamjidi was born in Tehran. Tehran is located in Iran."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T11:57:56.931797+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 983,
+    "remaining_tokens": 11146,
+    "reset_requests_seconds": 1468.8,
+    "reset_tokens_seconds": 4.27,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 11:57:57 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "983",
+      "x-ratelimit-remaining-tokens": "11146",
+      "x-ratelimit-reset-requests": "24m28.8s",
+      "x-ratelimit-reset-tokens": "4.27s",
+      "x-request-id": "req_01kpg78t3te0cbzj2zty9ffkh8",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=F.qe9k9Ejn7esI2bTVWJjjOSoYQA8PHBaITlSa6YquM-1776513476.6484773-1.0.1.1-TkURavpX4xKMuzbzkdW9zCM2Qa6oHFLuwjJysfpFOuA7KCco0piCHBZb8M_4Hx.K4icPSPehbUj7Taz9uj6IU00BtEU2uV_SMbfcdU8P78hi3LefueU60i9QrxCrAp8r; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:27:57 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee37ead0a658b2e-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "yes",
+    "gold_normalized": "yes",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

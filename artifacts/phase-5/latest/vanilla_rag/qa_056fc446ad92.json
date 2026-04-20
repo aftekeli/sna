@@ -1,0 +1,161 @@
+{
+  "created_at": "2026-04-18T12:49:16.311470+00:00",
+  "status": "success",
+  "method": "vanilla_rag",
+  "question_id": "qa_056fc446ad92",
+  "question": "Were the directors of Angel's Fall and Do Not Forget Me Istanbul educated in the same country?",
+  "question_type": "comparison",
+  "template": "film_director_education_country__comparison",
+  "difficulty": "very_hard",
+  "gold_answer": {
+    "entity_id": null,
+    "text": "no"
+  },
+  "prediction_text": "No.",
+  "expanded_query": null,
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_056fc446ad92::1",
+      "title": "Were the directors of Angel's Fall and Do Not Forget Me Istanbul educated in the same country?",
+      "body": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University. Dokuz Eylül University is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6054381",
+      "metadata": {
+        "question_id": "qa_056fc446ad92",
+        "template": "film_director_education_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -65.43535110286922,
+      "snippet": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University. Dokuz Eylül University is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_056fc446ad92::2",
+      "title": "Were the directors of Angel's Fall and Do Not Forget Me Istanbul educated in the same country?",
+      "body": "Do Not Forget Me Istanbul was directed by Eric Nazarian. Eric Nazarian studied at The University of Southern California. The University of Southern California is located in The United States of America.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6054381",
+      "metadata": {
+        "question_id": "qa_056fc446ad92",
+        "template": "film_director_education_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -65.20055009545193,
+      "snippet": "Do Not Forget Me Istanbul was directed by Eric Nazarian. Eric Nazarian studied at The University of Southern California. The University of Southern California is located in The United States of America."
+    },
+    {
+      "doc_id": "entity::Q20065085",
+      "title": "do not forget me istanbul",
+      "body": "do not forget me istanbul. Description: Do Not Forget Me Istanbul is a 2012 Greek / Turkish anthology film. Aliases: do not forget me istanbul, Do Not Forget Me Istanbul. Roles: film, film_seed. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q20065085",
+      "metadata": {
+        "entity_id": "Q20065085",
+        "aliases": [
+          "do not forget me istanbul",
+          "Do Not Forget Me Istanbul"
+        ],
+        "roles": [
+          "film",
+          "film_seed"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -37.710933467450545,
+      "snippet": "do not forget me istanbul. Description: Do Not Forget Me Istanbul is a 2012 Greek / Turkish anthology film. Aliases: do not forget me istanbul, Do Not Forget Me Istanbul. Roles: film, film_seed. Domains: cinema, film,..."
+    },
+    {
+      "doc_id": "path::qa_9ebc97ac2e4f::1",
+      "title": "Where did the director of Do Not Forget Me Istanbul study?",
+      "body": "Do Not Forget Me Istanbul was directed by Eric Nazarian. Eric Nazarian studied at The University of Southern California.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q20065085",
+      "metadata": {
+        "question_id": "qa_9ebc97ac2e4f",
+        "template": "film_director_education",
+        "question_type": "two_hop"
+      },
+      "score": -35.66214917892845,
+      "snippet": "Do Not Forget Me Istanbul was directed by Eric Nazarian. Eric Nazarian studied at The University of Southern California."
+    },
+    {
+      "doc_id": "path::qa_ca18f2482294::1",
+      "title": "In which country is the school attended by the director of Do Not Forget Me Istanbul located?",
+      "body": "Do Not Forget Me Istanbul was directed by Eric Nazarian. Eric Nazarian studied at The University of Southern California. The University of Southern California is located in The United States of America.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q20065085",
+      "metadata": {
+        "question_id": "qa_ca18f2482294",
+        "template": "film_director_education_country",
+        "question_type": "three_hop"
+      },
+      "score": -34.23529614312658,
+      "snippet": "Do Not Forget Me Istanbul was directed by Eric Nazarian. Eric Nazarian studied at The University of Southern California. The University of Southern California is located in The United States of America."
+    },
+    {
+      "doc_id": "fact::Q20065085::P495::Q41",
+      "title": "do not forget me istanbul - country of origin",
+      "body": "do not forget me istanbul has country of origin hellada. Relation type: country of origin. Source roles: film, film_seed. Target roles: country.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q20065085",
+      "metadata": {
+        "source_id": "Q20065085",
+        "target_id": "Q41",
+        "relation_id": "P495",
+        "relation_label": "country of origin"
+      },
+      "score": -33.3380677998234,
+      "snippet": "do not forget me istanbul has country of origin hellada. Relation type: country of origin. Source roles: film, film_seed. Target roles: country."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:49:16.300430+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 896,
+    "remaining_tokens": 11555,
+    "reset_requests_seconds": 8985.6,
+    "reset_tokens_seconds": 2.225,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:49:16 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "896",
+      "x-ratelimit-remaining-tokens": "11555",
+      "x-ratelimit-reset-requests": "2h29m45.6s",
+      "x-ratelimit-reset-tokens": "2.225s",
+      "x-request-id": "req_01kpga6skcf35sfqap77rcm8gt",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=KtPDhlSVo56puPGhisbdnyOQjw9phPzBcHso8ELxC.Y-1776516556.3745413-1.0.1.1-zOOfgC5806AXM9E6WNTrQbZDUl_Lz.WeUNphprZq7J2XqLvCRUzAkHw0Hp_j0vZfRhJDRm2nJ0H4ErxXwvUcynI0V7iI1e4axO8sXNm0OGHNkjgjaFDquAiymXsJZXKS; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:19:16 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3c9dd5b4996f6-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "no",
+    "gold_normalized": "no",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

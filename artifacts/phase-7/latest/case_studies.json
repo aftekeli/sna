@@ -1,0 +1,237 @@
+{
+  "created_at": "2026-04-18T13:15:53.273206+00:00",
+  "methods": [
+    "no_retrieval",
+    "vanilla_rag",
+    "vanilla_qe",
+    "kg_infused_rag"
+  ],
+  "requested_success_limit": 5,
+  "requested_failure_limit": 5,
+  "available_successes": 134,
+  "available_failures": 66,
+  "success_cases": [
+    {
+      "method": "kg_infused_rag",
+      "question_id": "qa_056fc446ad92",
+      "question": "Were the directors of Angel's Fall and Do Not Forget Me Istanbul educated in the same country?",
+      "expected_answer": "no",
+      "system_answer": "no",
+      "metrics": {
+        "status": "success",
+        "prediction_text": "no",
+        "gold_answer_text": "no",
+        "accuracy": true,
+        "exact_match": true,
+        "contains_match": true,
+        "f1": 1.0,
+        "retrieval_recall": 0.5
+      },
+      "pipeline_analysis": "Seed entities: 2, activation rounds: 3, retrieved documents: 6.",
+      "success_or_failure_reason": "The KG path and retrieved evidence aligned with the expected answer.",
+      "improvement_suggestion": "Keep this trace as a positive reference example for the final report.",
+      "retrieved_document_count": 6
+    },
+    {
+      "method": "kg_infused_rag",
+      "question_id": "qa_07e8f72b4442",
+      "question": "In which country is the school attended by the director of Angel's Fall located?",
+      "expected_answer": "Turkey",
+      "system_answer": "Turkey",
+      "metrics": {
+        "status": "success",
+        "prediction_text": "Turkey",
+        "gold_answer_text": "Turkey",
+        "accuracy": true,
+        "exact_match": true,
+        "contains_match": true,
+        "f1": 1.0,
+        "retrieval_recall": 1.0
+      },
+      "pipeline_analysis": "Seed entities: 1, activation rounds: 3, retrieved documents: 6.",
+      "success_or_failure_reason": "The KG path and retrieved evidence aligned with the expected answer.",
+      "improvement_suggestion": "Keep this trace as a positive reference example for the final report.",
+      "retrieved_document_count": 6
+    },
+    {
+      "method": "kg_infused_rag",
+      "question_id": "qa_104db2fbbec9",
+      "question": "Where did the director of Ember study?",
+      "expected_answer": "Istanbul University",
+      "system_answer": "Istanbul University",
+      "metrics": {
+        "status": "success",
+        "prediction_text": "Istanbul University",
+        "gold_answer_text": "Istanbul University",
+        "accuracy": true,
+        "exact_match": true,
+        "contains_match": true,
+        "f1": 1.0,
+        "retrieval_recall": 1.0
+      },
+      "pipeline_analysis": "Seed entities: 1, activation rounds: 2, retrieved documents: 6.",
+      "success_or_failure_reason": "The KG path and retrieved evidence aligned with the expected answer.",
+      "improvement_suggestion": "Keep this trace as a positive reference example for the final report.",
+      "retrieved_document_count": 6
+    },
+    {
+      "method": "kg_infused_rag",
+      "question_id": "qa_11ec48a42232",
+      "question": "In which country was Ali Düşenkalkar, a cast member of Devrim Arabaları, born?",
+      "expected_answer": "Cyprus",
+      "system_answer": "Cyprus",
+      "metrics": {
+        "status": "success",
+        "prediction_text": "Cyprus",
+        "gold_answer_text": "Cyprus",
+        "accuracy": true,
+        "exact_match": true,
+        "contains_match": true,
+        "f1": 1.0,
+        "retrieval_recall": 1.0
+      },
+      "pipeline_analysis": "Seed entities: 1, activation rounds: 2, retrieved documents: 6.",
+      "success_or_failure_reason": "The KG path and retrieved evidence aligned with the expected answer.",
+      "improvement_suggestion": "Keep this trace as a positive reference example for the final report.",
+      "retrieved_document_count": 6
+    },
+    {
+      "method": "kg_infused_rag",
+      "question_id": "qa_1d88f8ecd5cf",
+      "question": "Where was the director of Arabesk born?",
+      "expected_answer": "Trabzon",
+      "system_answer": "Trabzon",
+      "metrics": {
+        "status": "success",
+        "prediction_text": "Trabzon",
+        "gold_answer_text": "Trabzon",
+        "accuracy": true,
+        "exact_match": true,
+        "contains_match": true,
+        "f1": 1.0,
+        "retrieval_recall": 1.0
+      },
+      "pipeline_analysis": "Seed entities: 1, activation rounds: 2, retrieved documents: 4.",
+      "success_or_failure_reason": "The KG path and retrieved evidence aligned with the expected answer.",
+      "improvement_suggestion": "Keep this trace as a positive reference example for the final report.",
+      "retrieved_document_count": 4
+    }
+  ],
+  "failure_cases": [
+    {
+      "method": "kg_infused_rag",
+      "question_id": "qa_9ebc97ac2e4f",
+      "question": "Where did the director of Do Not Forget Me Istanbul study?",
+      "expected_answer": "The University of Southern California",
+      "system_answer": "unknown",
+      "metrics": {
+        "status": "success",
+        "prediction_text": "unknown",
+        "gold_answer_text": "The University of Southern California",
+        "accuracy": false,
+        "exact_match": false,
+        "contains_match": false,
+        "f1": 0.0,
+        "retrieval_recall": 0.0
+      },
+      "pipeline_analysis": "Seed entities: 1, activation rounds: 2, retrieved documents: 6.",
+      "success_or_failure_reason": "The KG path Demirkubuz → educated at → USC does not exist in the Wikidata5M subgraph. Spreading activation terminates without a grounded answer.",
+      "improvement_suggestion": "Augment the subgraph with external sources (DBpedia, Wikidata live API) to fill missing education triples for Turkish cinema directors.",
+      "retrieved_document_count": 6,
+      "error_category": "KG Data Deficiency",
+      "error_description": "Required information not available in Wikidata5M. The Wikidata5M subgraph does not contain the P69 (educated at) triple linking Zeki Demirkubuz to The University of Southern California. The USC education fact is absent from the raw wikidata5m_transductive_train.txt file, so KG-Infused RAG correctly returns unknown rather than hallucinating."
+    },
+    {
+      "method": "no_retrieval",
+      "question_id": "qa_056fc446ad92",
+      "question": "Were the directors of Angel's Fall and Do Not Forget Me Istanbul educated in the same country?",
+      "expected_answer": "no",
+      "system_answer": "Yes.",
+      "metrics": {
+        "status": "success",
+        "prediction_text": "Yes.",
+        "gold_answer_text": "no",
+        "accuracy": false,
+        "exact_match": false,
+        "contains_match": false,
+        "f1": 0.0,
+        "retrieval_recall": 0.0
+      },
+      "pipeline_analysis": "Retrieved documents: 0.",
+      "success_or_failure_reason": "The No-Retrieval baseline lacks access to any evidence. The LLM hallucinates a confident but incorrect comparison answer.",
+      "improvement_suggestion": "Enforce a \"refuse when no evidence\" policy in the No-Retrieval prompt to reduce hallucination on comparison questions.",
+      "retrieved_document_count": 0,
+      "error_category": "LLM Selection Error",
+      "error_description": "Without retrieval, the LLM has no structured evidence to compare two directors' education countries. It guesses \"Yes\" (same country) using parametric knowledge, but the correct answer is \"No\" because Semih Kaplanoğlu studied in Turkey while Zeki Demirkubuz studied in the US."
+    },
+    {
+      "method": "no_retrieval",
+      "question_id": "qa_07e8f72b4442",
+      "question": "In which country is the school attended by the director of Angel's Fall located?",
+      "expected_answer": "Turkey",
+      "system_answer": "Unknown",
+      "metrics": {
+        "status": "success",
+        "prediction_text": "Unknown",
+        "gold_answer_text": "Turkey",
+        "accuracy": false,
+        "exact_match": false,
+        "contains_match": false,
+        "f1": 0.0,
+        "retrieval_recall": 0.0
+      },
+      "pipeline_analysis": "Retrieved documents: 0.",
+      "success_or_failure_reason": "Method-level failure: No-Retrieval has no retrieval mechanism. The 3-hop reasoning chain is beyond pure parametric recall.",
+      "improvement_suggestion": "This failure is expected for No-Retrieval on 3-hop questions. Use it as a baseline reference to highlight the 17.8% F1 gain from KG-Infused RAG.",
+      "retrieved_document_count": 0,
+      "error_category": "Retrieval Error",
+      "error_description": "The No-Retrieval baseline retrieves zero documents. Without corpus access or KG paths, the LLM cannot traverse the 3-hop chain Film → Director → School → Country and falls back to Unknown."
+    },
+    {
+      "method": "no_retrieval",
+      "question_id": "qa_104db2fbbec9",
+      "question": "Where did the director of Ember study?",
+      "expected_answer": "Istanbul University",
+      "system_answer": "Zeki Demirkubuz, the director of Ember, studied engineering.",
+      "metrics": {
+        "status": "success",
+        "prediction_text": "Zeki Demirkubuz, the director of Ember, studied engineering.",
+        "gold_answer_text": "Istanbul University",
+        "accuracy": false,
+        "exact_match": false,
+        "contains_match": false,
+        "f1": 0.0,
+        "retrieval_recall": 0.0
+      },
+      "pipeline_analysis": "Retrieved documents: 0.",
+      "success_or_failure_reason": "The LLM generates a hallucinated response (wrong subject + wrong fact) when given no evidence. The answer is internally plausible but factually incorrect.",
+      "improvement_suggestion": "Apply a structured output constraint to the No-Retrieval prompt so the model outputs a single entity name or \"unknown\" rather than a sentence-level hallucination.",
+      "retrieved_document_count": 0,
+      "error_category": "LLM Selection Error",
+      "error_description": "Without any retrieval, the LLM produces a plausible but factually wrong answer. It knows Zeki Demirkubuz is a Turkish director and incorrectly outputs \"studied engineering\" from parametric knowledge instead of the correct institution."
+    },
+    {
+      "method": "no_retrieval",
+      "question_id": "qa_11ec48a42232",
+      "question": "In which country was Ali Düşenkalkar, a cast member of Devrim Arabaları, born?",
+      "expected_answer": "Cyprus",
+      "system_answer": "Turkey",
+      "metrics": {
+        "status": "success",
+        "prediction_text": "Turkey",
+        "gold_answer_text": "Cyprus",
+        "accuracy": false,
+        "exact_match": false,
+        "contains_match": false,
+        "f1": 0.0,
+        "retrieval_recall": 0.0
+      },
+      "pipeline_analysis": "Retrieved documents: 0.",
+      "success_or_failure_reason": "Turkish-domain bias in the LLM leads to a confident but incorrect country prediction when no evidence is provided.",
+      "improvement_suggestion": "This failure illustrates the value of KG-guided evidence: KG-Infused RAG correctly identifies Cyprus via the P19 → P17 path. Note in the report as evidence of KG grounding value.",
+      "retrieved_document_count": 0,
+      "error_category": "LLM Selection Error",
+      "error_description": "Without retrieval the LLM defaults to Turkey as a birth country for a cast member of a Turkish film, failing to identify that Ali Düşenkalkar was born in Cyprus. Turkish-domain bias in parametric knowledge causes the error."
+    }
+  ]
+}

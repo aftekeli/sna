@@ -1,0 +1,308 @@
+{
+  "created_at": "2026-04-18T13:10:31.598607+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_ca18f2482294",
+  "question": "In which country is the school attended by the director of Do Not Forget Me Istanbul located?",
+  "question_type": "three_hop",
+  "template": "film_director_education_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q30",
+    "text": "The United States of America"
+  },
+  "prediction_text": "The United States of America",
+  "match": {
+    "prediction_normalized": "the united states of america",
+    "gold_normalized": "the united states of america",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q20065085",
+      "entity_name": "do not forget me istanbul",
+      "roles": [
+        "film",
+        "film_seed"
+      ],
+      "source": "lexicon",
+      "score": 40
+    }
+  ],
+  "relation_path": [
+    "P57",
+    "P69",
+    "P17"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q20065085"
+      ],
+      "candidate_count": 14,
+      "selected_triples": [
+        {
+          "source_id": "Q20065085",
+          "source_name": "do not forget me istanbul",
+          "source_roles": [
+            "film",
+            "film_seed"
+          ],
+          "relation_id": "P57",
+          "relation_label": "director",
+          "target_id": "Q2827768",
+          "target_name": "Aida Begic",
+          "target_roles": [
+            "director"
+          ],
+          "score": 19.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q2827768"
+      ],
+      "candidate_count": 1,
+      "selected_triples": [
+        {
+          "source_id": "Q2827768",
+          "source_name": "Aida Begic",
+          "source_roles": [
+            "director"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q11194",
+          "target_name": "Rajvosa",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 4.0
+        }
+      ]
+    },
+    {
+      "round_index": 3,
+      "frontier_entity_ids": [
+        "Q11194"
+      ],
+      "candidate_count": 1,
+      "selected_triples": [
+        {
+          "source_id": "Q11194",
+          "source_name": "Rajvosa",
+          "source_roles": [
+            "birth_place"
+          ],
+          "relation_id": "P17",
+          "relation_label": "country",
+          "target_id": "Q12560",
+          "target_name": "Osmanic Empire",
+          "target_roles": [
+            "birth_place",
+            "country"
+          ],
+          "score": 21.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q20065085",
+        "seed_entity_name": "do not forget me istanbul",
+        "final_answers": []
+      }
+    ],
+    "candidate_entity_ids": [],
+    "candidate_texts": [],
+    "answer_text": null
+  },
+  "kg_summary": "do not forget me istanbul was directed by Aida Begic. Aida Begic was born in Rajvosa. Rajvosa is located in Osmanic Empire.",
+  "expanded_query": "In which country is the school attended by Aida Begic, director of Do Not Forget Me Istanbul, located.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_ca18f2482294::1",
+      "title": "In which country is the school attended by the director of Do Not Forget Me Istanbul located?",
+      "body": "Do Not Forget Me Istanbul was directed by Eric Nazarian. Eric Nazarian studied at The University of Southern California. The University of Southern California is located in The United States of America.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q20065085",
+      "metadata": {
+        "question_id": "qa_ca18f2482294",
+        "template": "film_director_education_country",
+        "question_type": "three_hop"
+      },
+      "score": -53.078476337111766,
+      "snippet": "Do Not Forget Me Istanbul was directed by Eric Nazarian. Eric Nazarian studied at The University of Southern California. The University of Southern California is located in The United States of America."
+    },
+    {
+      "doc_id": "fact::Q20065085::P57::Q2827768",
+      "title": "do not forget me istanbul - director",
+      "body": "do not forget me istanbul was directed by Aida Begic. Relation type: director. Source roles: film, film_seed. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q20065085",
+      "metadata": {
+        "source_id": "Q20065085",
+        "target_id": "Q2827768",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -52.1636109136658,
+      "snippet": "do not forget me istanbul was directed by Aida Begic. Relation type: director. Source roles: film, film_seed. Target roles: director."
+    },
+    {
+      "doc_id": "entity::Q20065085",
+      "title": "do not forget me istanbul",
+      "body": "do not forget me istanbul. Description: Do Not Forget Me Istanbul is a 2012 Greek / Turkish anthology film. Aliases: do not forget me istanbul, Do Not Forget Me Istanbul. Roles: film, film_seed. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q20065085",
+      "metadata": {
+        "entity_id": "Q20065085",
+        "aliases": [
+          "do not forget me istanbul",
+          "Do Not Forget Me Istanbul"
+        ],
+        "roles": [
+          "film",
+          "film_seed"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -38.3913178019333,
+      "snippet": "do not forget me istanbul. Description: Do Not Forget Me Istanbul is a 2012 Greek / Turkish anthology film. Aliases: do not forget me istanbul, Do Not Forget Me Istanbul. Roles: film, film_seed. Domains: cinema, film,..."
+    },
+    {
+      "doc_id": "path::qa_9ebc97ac2e4f::1",
+      "title": "Where did the director of Do Not Forget Me Istanbul study?",
+      "body": "Do Not Forget Me Istanbul was directed by Eric Nazarian. Eric Nazarian studied at The University of Southern California.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q20065085",
+      "metadata": {
+        "question_id": "qa_9ebc97ac2e4f",
+        "template": "film_director_education",
+        "question_type": "two_hop"
+      },
+      "score": -37.38696648051236,
+      "snippet": "Do Not Forget Me Istanbul was directed by Eric Nazarian. Eric Nazarian studied at The University of Southern California."
+    },
+    {
+      "doc_id": "fact::Q20065085::P57::Q2335956",
+      "title": "do not forget me istanbul - director",
+      "body": "do not forget me istanbul was directed by Stefan Arsenijevic. Relation type: director. Source roles: film, film_seed. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q20065085",
+      "metadata": {
+        "source_id": "Q20065085",
+        "target_id": "Q2335956",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -37.21467657811355,
+      "snippet": "do not forget me istanbul was directed by Stefan Arsenijevic. Relation type: director. Source roles: film, film_seed. Target roles: director."
+    },
+    {
+      "doc_id": "fact::Q20065085::P57::Q2374086",
+      "title": "do not forget me istanbul - director",
+      "body": "do not forget me istanbul was directed by Eric Nazarian. Relation type: director. Source roles: film, film_seed. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q20065085",
+      "metadata": {
+        "source_id": "Q20065085",
+        "target_id": "Q2374086",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -37.21467657811355,
+      "snippet": "do not forget me istanbul was directed by Eric Nazarian. Relation type: director. Source roles: film, film_seed. Target roles: director."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T13:10:26.839207+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 758,
+      "remaining_tokens": 11853,
+      "reset_requests_seconds": 20908.8,
+      "reset_tokens_seconds": 0.735,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 13:10:27 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "758",
+        "x-ratelimit-remaining-tokens": "11853",
+        "x-ratelimit-reset-requests": "5h48m28.8s",
+        "x-ratelimit-reset-tokens": "735ms",
+        "x-request-id": "req_01kpgbdj3re43v3p9pffszz0m3",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=TePeoO91EViKYykJc2jmQ8VabUv39Hk4ny1oaG4Ihek-1776517826.6580863-1.0.1.1-CO53yfq1W9jy9y8nKKgyY6CQGvBFc4Qdi7rPKoZJmB23sbBiW.GVaYyVHE8bFrsQFnlxOr9lN4QB7XDQtRW9V.R5NFPOpLJyNABN3WFsNXUnvfoSEWoUAg3o2.0aru1Y; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:40:27 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3e8e099534135-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T13:10:31.590096+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 757,
+      "remaining_tokens": 11502,
+      "reset_requests_seconds": 20995.2,
+      "reset_tokens_seconds": 2.49,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 13:10:31 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "757",
+        "x-ratelimit-remaining-tokens": "11502",
+        "x-ratelimit-reset-requests": "5h49m55.2s",
+        "x-ratelimit-reset-tokens": "2.49s",
+        "x-request-id": "req_01kpgbdpz8e4tt33xv137v45ks",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=PudcP1UBvkIpBu49bAmepr2nZx8YJFKxKrzUfU0J78A-1776517831.634225-1.0.1.1-arql7QmJbphA0uoaZKhxG92KEV0i_SOdJCMQRwBShPvvTQ2KNE8JSdxJ1DbUpKvnD.T._wTcqPDch3TKLudiifYiVdyViS8n65bpxDMug2nWrjMl1RfqjP60lHtYVz91; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:40:31 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3e8ffbdec17cc-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

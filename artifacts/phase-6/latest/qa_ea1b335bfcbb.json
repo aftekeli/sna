@@ -1,0 +1,317 @@
+{
+  "created_at": "2026-04-18T13:09:31.512462+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_ea1b335bfcbb",
+  "question": "In which country was the director of Shadows and Faces born?",
+  "question_type": "three_hop",
+  "template": "film_director_birth_place_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q229",
+    "text": "Cyprus"
+  },
+  "prediction_text": "Cyprus",
+  "match": {
+    "prediction_normalized": "cyprus",
+    "gold_normalized": "cyprus",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q7460798",
+      "entity_name": "Shadows and Faces",
+      "roles": [
+        "film"
+      ],
+      "source": "lexicon",
+      "score": 28
+    }
+  ],
+  "relation_path": [
+    "P57",
+    "P19",
+    "P17"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q7460798"
+      ],
+      "candidate_count": 5,
+      "selected_triples": [
+        {
+          "source_id": "Q7460798",
+          "source_name": "Shadows and Faces",
+          "source_roles": [
+            "film"
+          ],
+          "relation_id": "P57",
+          "relation_label": "director",
+          "target_id": "Q3811192",
+          "target_name": "Dervis Zaim",
+          "target_roles": [
+            "director"
+          ],
+          "score": 19.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q3811192"
+      ],
+      "candidate_count": 2,
+      "selected_triples": [
+        {
+          "source_id": "Q3811192",
+          "source_name": "Dervis Zaim",
+          "source_roles": [
+            "director"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q193190",
+          "target_name": "Magusa",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 16.0
+        }
+      ]
+    },
+    {
+      "round_index": 3,
+      "frontier_entity_ids": [
+        "Q193190"
+      ],
+      "candidate_count": 1,
+      "selected_triples": [
+        {
+          "source_id": "Q193190",
+          "source_name": "Magusa",
+          "source_roles": [
+            "birth_place"
+          ],
+          "relation_id": "P17",
+          "relation_label": "country",
+          "target_id": "Q229",
+          "target_name": "Ciprus",
+          "target_roles": [
+            "country"
+          ],
+          "score": 21.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q7460798",
+        "seed_entity_name": "Shadows and Faces",
+        "final_answers": [
+          {
+            "entity_id": "Q229",
+            "entity_name": "Ciprus"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q229"
+    ],
+    "candidate_texts": [
+      "Ciprus"
+    ],
+    "answer_text": "Ciprus"
+  },
+  "kg_summary": "Shadows and Faces was directed by Dervis Zaim. Dervis Zaim was born in Magusa. Magusa is located in Ciprus.",
+  "expanded_query": "In which country was Dervis Zaim born.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_ea1b335bfcbb::1",
+      "title": "In which country was the director of Shadows and Faces born?",
+      "body": "Shadows and Faces was directed by Derviş Zaim. Derviş Zaim was born in Famagusta. Famagusta is located in Cyprus.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q7460798",
+      "metadata": {
+        "question_id": "qa_ea1b335bfcbb",
+        "template": "film_director_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -26.16492205352182,
+      "snippet": "Shadows and Faces was directed by Derviş Zaim. Derviş Zaim was born in Famagusta. Famagusta is located in Cyprus."
+    },
+    {
+      "doc_id": "entity::Q3811192",
+      "title": "derviş zaim",
+      "body": "derviş zaim. Description: Derviş Zaim (born Derviş Zaimağaoğlu in 1964 in Famagusta, Cyprus) is a Turkish Cypriot filmmaker and novelist, who has twice won the Golden Orange for Best Director for Elephants and Grass (2000) and Dot (2008); Golden Oranges for Best Film and Best Screenplay for Somersault in a Coffin (1996); and the Yunus Nadi literary prize for his debut novel Ares in Wonderland (1995). Aliases: derviş zaim, Dervis Zaim, dervish zaim, Dervish Zaim, dervis zaim, Derviş Zaim. Roles: director. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q3811192",
+      "metadata": {
+        "entity_id": "Q3811192",
+        "aliases": [
+          "derviş zaim",
+          "Dervis Zaim",
+          "dervish zaim",
+          "Dervish Zaim",
+          "dervis zaim",
+          "Derviş Zaim"
+        ],
+        "roles": [
+          "director"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -22.400263456818163,
+      "snippet": "derviş zaim. Description: Derviş Zaim (born Derviş Zaimağaoğlu in 1964 in Famagusta, Cyprus) is a Turkish Cypriot filmmaker and novelist, who has twice won the Golden Orange for Best Director for Elephants and Grass (..."
+    },
+    {
+      "doc_id": "fact::Q3811192::P19::Q193190",
+      "title": "derviş zaim - place of birth",
+      "body": "derviş zaim was born in Gazimağusa. Relation type: place of birth. Source roles: director. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q3811192",
+      "metadata": {
+        "source_id": "Q3811192",
+        "target_id": "Q193190",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -21.890542147906903,
+      "snippet": "derviş zaim was born in Gazimağusa. Relation type: place of birth. Source roles: director. Target roles: birth_place."
+    },
+    {
+      "doc_id": "path::qa_eb46e42dc05a::1",
+      "title": "In which country is the school attended by the director of Shadows and Faces located?",
+      "body": "Shadows and Faces was directed by Derviş Zaim. Derviş Zaim studied at The University of Warwick. The University of Warwick is located in The United Kingdom of Great Britain and Northern Ireland.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q7460798",
+      "metadata": {
+        "question_id": "qa_eb46e42dc05a",
+        "template": "film_director_education_country",
+        "question_type": "three_hop"
+      },
+      "score": -21.2251151591095,
+      "snippet": "Shadows and Faces was directed by Derviş Zaim. Derviş Zaim studied at The University of Warwick. The University of Warwick is located in The United Kingdom of Great Britain and Northern Ireland."
+    },
+    {
+      "doc_id": "fact::Q3811192::P69::Q865528",
+      "title": "derviş zaim - educated at",
+      "body": "derviş zaim studied at List of notable Warwick students. Relation type: educated at. Source roles: director. Target roles: education_entity.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q3811192",
+      "metadata": {
+        "source_id": "Q3811192",
+        "target_id": "Q865528",
+        "relation_id": "P69",
+        "relation_label": "educated at"
+      },
+      "score": -18.428967726605872,
+      "snippet": "derviş zaim studied at List of notable Warwick students. Relation type: educated at. Source roles: director. Target roles: education_entity."
+    },
+    {
+      "doc_id": "fact::Q7460798::P57::Q3811192",
+      "title": "Shadows and Faces - director",
+      "body": "Shadows and Faces was directed by derviş zaim. Relation type: director. Source roles: film. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q7460798",
+      "metadata": {
+        "source_id": "Q7460798",
+        "target_id": "Q3811192",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -16.102178304359985,
+      "snippet": "Shadows and Faces was directed by derviş zaim. Relation type: director. Source roles: film. Target roles: director."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T13:09:26.623351+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 770,
+      "remaining_tokens": 11858,
+      "reset_requests_seconds": 19872.0,
+      "reset_tokens_seconds": 0.71,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 13:09:26 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "770",
+        "x-ratelimit-remaining-tokens": "11858",
+        "x-ratelimit-reset-requests": "5h31m12s",
+        "x-ratelimit-reset-tokens": "710ms",
+        "x-request-id": "req_01kpgbbqhmfkbtzvbhqcf32mpj",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=TF9cIRDeHpzmzD3ulmSamXuCmFwgQhHcMGKKU4tfzsA-1776517766.68886-1.0.1.1-aZ5BXyEmWnrlOaXICULf8I8CXO9WWrjVehC_F7cru8uoZNALX9GIvX09Ckj.rwTHba8wn7rkWvhnSkAy_1eosMzxyeItTOhBmgc4Dv0rxiLpFelzq.fpD6SCnA9iOHLc; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:39:26 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3e769cd953bfa-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T13:09:31.498983+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 769,
+      "remaining_tokens": 11421,
+      "reset_requests_seconds": 19958.4,
+      "reset_tokens_seconds": 2.895,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 13:09:31 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "769",
+        "x-ratelimit-remaining-tokens": "11421",
+        "x-ratelimit-reset-requests": "5h32m38.4s",
+        "x-ratelimit-reset-tokens": "2.895s",
+        "x-request-id": "req_01kpgbbwaheyp85e5607hzyk4h",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=_.iK.5xcRyqFVO56EDlEPgp0wylSpDlHF7RE54yIe78-1776517771.5781777-1.0.1.1-Zr2cnl6x7qLUWRl12n8ptWGBke_lJgVcKmsY1D3GLw.QHi2_5rLKVABK2fJpk3eWKYw97saXzt1rjqAzYLeTC3QiRbVZYKuiVTp26gMpaXIZnAIGy3t_SB.DNdmOd23d; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:39:31 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3e78858b5cd0f-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T13:02:15.598380+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_59798c8c1dd1",
+  "question": "Where was Ali Şen, a cast member of Banker Bilo, born?",
+  "question_type": "two_hop",
+  "template": "film_cast_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q38545",
+    "text": "Adana"
+  },
+  "prediction_text": "Kardzhali, Bulgaria.",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:02:15.576668+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 809,
+    "remaining_tokens": 11902,
+    "reset_requests_seconds": 16502.4,
+    "reset_tokens_seconds": 0.489,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:02:15 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "809",
+      "x-ratelimit-remaining-tokens": "11902",
+      "x-ratelimit-reset-requests": "4h35m2.4s",
+      "x-ratelimit-reset-tokens": "489ms",
+      "x-request-id": "req_01kpgayjbyeqk9b3bsd5dpkjrg",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=CDYV2mY1GnHWA6H78IJBD1A2OzGPtT_qpq3_nTlJfNs-1776517335.399502-1.0.1.1-gxRm6_R.nQv6p4XZXebUbaEBS6..kR6Zfd1fJFeplXyoCHKmZ33WAdAU9kR62.jAKnrTrDbM0tLNt_XqWiPVnNaBJkyx7C9MWaTT.o83rOrRfCFsK9G83CGgJUtHTodS; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:32:15 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3dce23e1017cc-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "kardzhali bulgaria",
+    "gold_normalized": "adana",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

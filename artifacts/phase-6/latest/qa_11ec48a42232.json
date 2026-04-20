@@ -1,0 +1,291 @@
+{
+  "created_at": "2026-04-18T13:12:37.018942+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_11ec48a42232",
+  "question": "In which country was Ali Düşenkalkar, a cast member of Devrim Arabaları, born?",
+  "question_type": "three_hop",
+  "template": "film_cast_birth_place_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q229",
+    "text": "Cyprus"
+  },
+  "prediction_text": "Cyprus",
+  "match": {
+    "prediction_normalized": "cyprus",
+    "gold_normalized": "cyprus",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q4724766",
+      "entity_name": "Ali Dusenkalkar",
+      "roles": [
+        "cast_member"
+      ],
+      "source": "lexicon",
+      "score": 21
+    }
+  ],
+  "relation_path": [
+    "P19",
+    "P17"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q4724766"
+      ],
+      "candidate_count": 1,
+      "selected_triples": [
+        {
+          "source_id": "Q4724766",
+          "source_name": "Ali Dusenkalkar",
+          "source_roles": [
+            "cast_member"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q3856",
+          "target_name": "Lefkoşa",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 16.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q3856"
+      ],
+      "candidate_count": 1,
+      "selected_triples": [
+        {
+          "source_id": "Q3856",
+          "source_name": "Lefkoşa",
+          "source_roles": [
+            "birth_place"
+          ],
+          "relation_id": "P17",
+          "relation_label": "country",
+          "target_id": "Q229",
+          "target_name": "Ciprus",
+          "target_roles": [
+            "country"
+          ],
+          "score": 21.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q4724766",
+        "seed_entity_name": "Ali Dusenkalkar",
+        "final_answers": [
+          {
+            "entity_id": "Q229",
+            "entity_name": "Ciprus"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q229"
+    ],
+    "candidate_texts": [
+      "Ciprus"
+    ],
+    "answer_text": "Ciprus"
+  },
+  "kg_summary": "Ali Dusenkalkar was born in Lefkoşa. Lefkoşa is located in Ciprus.",
+  "expanded_query": "In which country was Ali Düşenkalkar born; Ali Düşenkalkar was born in Lefkoşa, Lefkoşa is located in Cyprus.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_11ec48a42232::1",
+      "title": "In which country was Ali Düşenkalkar, a cast member of Devrim Arabaları, born?",
+      "body": "Devrim Arabaları has cast member Ali Düşenkalkar. Ali Düşenkalkar was born in Nicosia. Nicosia is located in Cyprus.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q982946",
+      "metadata": {
+        "question_id": "qa_11ec48a42232",
+        "template": "film_cast_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -58.36773412896881,
+      "snippet": "Devrim Arabaları has cast member Ali Düşenkalkar. Ali Düşenkalkar was born in Nicosia. Nicosia is located in Cyprus."
+    },
+    {
+      "doc_id": "entity::Q4724766",
+      "title": "Ali Dusenkalkar",
+      "body": "Ali Dusenkalkar. Description: Ali Düşenkalkar (born 1961) is a Turkish Cypriot actor based in Turkey. Aliases: Ali Dusenkalkar, ali dusenkalkar, Ali Düşenkalkar, Ali Düsenkalkar, ali düşenkalkar, ali düsenkalkar. Roles: cast_member. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q4724766",
+      "metadata": {
+        "entity_id": "Q4724766",
+        "aliases": [
+          "Ali Dusenkalkar",
+          "ali dusenkalkar",
+          "Ali Düşenkalkar",
+          "Ali Düsenkalkar",
+          "ali düşenkalkar",
+          "ali düsenkalkar"
+        ],
+        "roles": [
+          "cast_member"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -46.761578797008404,
+      "snippet": "Ali Dusenkalkar. Description: Ali Düşenkalkar (born 1961) is a Turkish Cypriot actor based in Turkey. Aliases: Ali Dusenkalkar, ali dusenkalkar, Ali Düşenkalkar, Ali Düsenkalkar, ali düşenkalkar, ali düsenkalkar. Role..."
+    },
+    {
+      "doc_id": "fact::Q4724766::P19::Q3856",
+      "title": "Ali Dusenkalkar - place of birth",
+      "body": "Ali Dusenkalkar was born in lefkoåÿa. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q4724766",
+      "metadata": {
+        "source_id": "Q4724766",
+        "target_id": "Q3856",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -40.99703888874557,
+      "snippet": "Ali Dusenkalkar was born in lefkoåÿa. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place."
+    },
+    {
+      "doc_id": "fact::Q982946::P161::Q4724766",
+      "title": "Devrim Arabaları - cast member",
+      "body": "Devrim Arabaları has cast member Ali Dusenkalkar. Relation type: cast member. Source roles: film, film_seed. Target roles: cast_member.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q982946",
+      "metadata": {
+        "source_id": "Q982946",
+        "target_id": "Q4724766",
+        "relation_id": "P161",
+        "relation_label": "cast member"
+      },
+      "score": -26.714443366382216,
+      "snippet": "Devrim Arabaları has cast member Ali Dusenkalkar. Relation type: cast member. Source roles: film, film_seed. Target roles: cast_member."
+    },
+    {
+      "doc_id": "path::qa_59798c8c1dd1::1",
+      "title": "Where was Ali Şen, a cast member of Banker Bilo, born?",
+      "body": "Banker Bilo has cast member Ali Şen. Ali Şen was born in Adana.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6074077",
+      "metadata": {
+        "question_id": "qa_59798c8c1dd1",
+        "template": "film_cast_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -23.60805946172949,
+      "snippet": "Banker Bilo has cast member Ali Şen. Ali Şen was born in Adana."
+    },
+    {
+      "doc_id": "path::qa_ea1b335bfcbb::1",
+      "title": "In which country was the director of Shadows and Faces born?",
+      "body": "Shadows and Faces was directed by Derviş Zaim. Derviş Zaim was born in Famagusta. Famagusta is located in Cyprus.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q7460798",
+      "metadata": {
+        "question_id": "qa_ea1b335bfcbb",
+        "template": "film_director_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -23.012373486160485,
+      "snippet": "Shadows and Faces was directed by Derviş Zaim. Derviş Zaim was born in Famagusta. Famagusta is located in Cyprus."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T13:12:32.021229+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 734,
+      "remaining_tokens": 11860,
+      "reset_requests_seconds": 22982.4,
+      "reset_tokens_seconds": 0.7,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 13:12:32 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "734",
+        "x-ratelimit-remaining-tokens": "11860",
+        "x-ratelimit-reset-requests": "6h23m2.4s",
+        "x-ratelimit-reset-tokens": "700ms",
+        "x-request-id": "req_01kpgbhch0e6ms45as932ztfpx",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=a38FTwrhX2UABkYQGkEEgDeoY6g4jNxaqUDtOh56GUU-1776517952.0102987-1.0.1.1-mB8TAk5TUigzCMqG8YSJ6mwrhHHmA5Iw9EBUfKhMddim2mIN3jGaMotwg8eLigN7olLK3brVM85WS.R0epIbDHgtWj8qaFeb58XbsBwVGtXJzwREo8x8aosIQxLdoi1N; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:42:32 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3ebf00ac8788b-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T13:12:37.007454+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 733,
+      "remaining_tokens": 11472,
+      "reset_requests_seconds": 23068.8,
+      "reset_tokens_seconds": 2.639,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 13:12:37 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "733",
+        "x-ratelimit-remaining-tokens": "11472",
+        "x-ratelimit-reset-requests": "6h24m28.8s",
+        "x-ratelimit-reset-tokens": "2.639s",
+        "x-request-id": "req_01kpgbhhdpe7wac4nr51z9e838",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=i_Vzvkby.WOjjk5qh2tNNSR1t42oEnrHbH1e77zOh5c-1776517957.0250368-1.0.1.1-q7ICuSlxG9qSlFlOWC63b9.oyBnRhPlonlHUkKb1ZpjcbCcgqnplkedFbuItfr5UifxgwQUcfRC8m0qjnd388Uer7DQk0x9ejjqExd6W_7G4zM4hpwZ1RqxDGYj3a8YP; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:42:37 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3ec0f6e1d1628-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T12:06:55.088387+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_25e417879724",
+  "question": "Were Tülin Özen from 10 To 11 and Seiyō Uchino from 125 Years Memory born in the same country?",
+  "question_type": "comparison",
+  "template": "film_cast_birth_place_country__comparison",
+  "difficulty": "very_hard",
+  "gold_answer": {
+    "entity_id": null,
+    "text": "no"
+  },
+  "prediction_text": "Yes.",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:06:55.086660+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 932,
+    "remaining_tokens": 11335,
+    "reset_requests_seconds": 5875.2,
+    "reset_tokens_seconds": 3.325,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:06:55 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "932",
+      "x-ratelimit-remaining-tokens": "11335",
+      "x-ratelimit-reset-requests": "1h37m55.2s",
+      "x-ratelimit-reset-tokens": "3.325s",
+      "x-request-id": "req_01kpg7s7qtfwar8fxeq04r1nvv",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=.oAjQurr8TpOIFjr1dKr1GRjtdDOIXaq5j4tDJMSm0c-1776514014.9491522-1.0.1.1-HlWyCeiQ0KeMZSy3bsdXNQQmO9iCeR8ZsRr.C.CL7tcMPpCsQ4.0i_vVmV739H25nzpeVz6mtgo.Ds6AOA5kcxpJ4mgkpCUk_EQz59MIe6RHT1MmcteeZMNU..KMwvYt; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:36:55 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee38bd169a20c48-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "yes",
+    "gold_normalized": "no",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

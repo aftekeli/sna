@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T13:13:42.155326+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_6e027a24320b",
+  "question": "Were Tülin Özen from 10 To 11 and Asuman Dabak from Adem'in Trenleri born in the same country?",
+  "question_type": "comparison",
+  "template": "film_cast_birth_place_country__comparison",
+  "difficulty": "very_hard",
+  "gold_answer": {
+    "entity_id": null,
+    "text": "yes"
+  },
+  "prediction_text": "Yes.",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:13:42.147533+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 720,
+    "remaining_tokens": 11891,
+    "reset_requests_seconds": 24192.0,
+    "reset_tokens_seconds": 0.545,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:13:42 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "720",
+      "x-ratelimit-remaining-tokens": "11891",
+      "x-ratelimit-reset-requests": "6h43m12s",
+      "x-ratelimit-reset-tokens": "545ms",
+      "x-request-id": "req_01kpgbkgyvfq5tkk0h2vxkfmgm",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=9QOeyv4sMZ48dFo1l5BTiDcodAZlrePIpQWByE2W23E-1776518022.0845172-1.0.1.1-7a78ZNKHQoOhh81pFtuw..hy6B2N4Oar_Ng8hWr8IsbbvV7J7CAckAwmOUPK0CL63Eg079C72rYY2wrUZi4_DjXVaM82XTTkYiEEYc1jDT9tHA_Pvtsue2hfbbg0qb5j; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:43:42 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3eda60a118b2e-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "yes",
+    "gold_normalized": "yes",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

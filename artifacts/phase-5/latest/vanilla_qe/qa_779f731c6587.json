@@ -1,0 +1,137 @@
+{
+  "created_at": "2026-04-18T11:58:51.801574+00:00",
+  "status": "success",
+  "method": "vanilla_qe",
+  "question_id": "qa_779f731c6587",
+  "question": "Which award was received by the director of Bir Avuç Toprak?",
+  "question_type": "two_hop",
+  "template": "film_director_award",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q7603040",
+    "text": "State Artist"
+  },
+  "prediction_text": "State Artist.",
+  "expanded_query": "Director of Bir Avuç Toprak award.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_779f731c6587::1",
+      "title": "Which award was received by the director of Bir Avuç Toprak?",
+      "body": "Bir Avuç Toprak was directed by Osman Fahir Seden usually credited as Osman F. Seden. Osman Fahir Seden usually credited as Osman F. Seden received the award State Artist.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6046554",
+      "metadata": {
+        "question_id": "qa_779f731c6587",
+        "template": "film_director_award",
+        "question_type": "two_hop"
+      },
+      "score": -33.33509765076295,
+      "snippet": "Bir Avuç Toprak was directed by Osman Fahir Seden usually credited as Osman F. Seden. Osman Fahir Seden usually credited as Osman F. Seden received the award State Artist."
+    },
+    {
+      "doc_id": "entity::Q6046554",
+      "title": "a handful of soil",
+      "body": "a handful of soil. Description: A Handful of Soil (Turkish: Bir Avuç Toprak) is a 1957 Turkish romantic drama film directed by Osman F. Seden. It stars Talat Artemel, Pervin Par, Turgut Özatay, Ayhan Isik, Atif Kaptan and Nubar Terziyan. Aliases: a handful of soil, handful of soil, Handful of Soil, Bir Avuç Toprak, bir avuç toprak, A Handful of Soil. Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q6046554",
+      "metadata": {
+        "entity_id": "Q6046554",
+        "aliases": [
+          "a handful of soil",
+          "handful of soil",
+          "Handful of Soil",
+          "Bir Avuç Toprak",
+          "bir avuç toprak",
+          "A Handful of Soil"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -26.213955523593057,
+      "snippet": "a handful of soil. Description: A Handful of Soil (Turkish: Bir Avuç Toprak) is a 1957 Turkish romantic drama film directed by Osman F. Seden. It stars Talat Artemel, Pervin Par, Turgut Özatay, Ayhan Isik, Atif Kaptan..."
+    },
+    {
+      "doc_id": "fact::Q20002323::P57::Q936089",
+      "title": "ölmüs bir kadinin evraki metrukesi - director",
+      "body": "ölmüs bir kadinin evraki metrukesi was directed by metin erksan. Relation type: director. Source roles: film. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q20002323",
+      "metadata": {
+        "source_id": "Q20002323",
+        "target_id": "Q936089",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -11.497595246147428,
+      "snippet": "ölmüs bir kadinin evraki metrukesi was directed by metin erksan. Relation type: director. Source roles: film. Target roles: director."
+    },
+    {
+      "doc_id": "fact::Q18712807::P57::Q2237841",
+      "title": "bir turk'e gonul verdim - director",
+      "body": "bir turk'e gonul verdim was directed by halit refiğ. Relation type: director. Source roles: film. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q18712807",
+      "metadata": {
+        "source_id": "Q18712807",
+        "target_id": "Q2237841",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -11.497595246147428,
+      "snippet": "bir turk'e gonul verdim was directed by halit refiğ. Relation type: director. Source roles: film. Target roles: director."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T11:58:51.798210+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 979,
+    "remaining_tokens": 11446,
+    "reset_requests_seconds": 1814.4,
+    "reset_tokens_seconds": 2.77,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 11:58:52 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "979",
+      "x-ratelimit-remaining-tokens": "11446",
+      "x-ratelimit-reset-requests": "30m14.4s",
+      "x-ratelimit-reset-tokens": "2.77s",
+      "x-request-id": "req_01kpg7afzwfbfv1qw5exzz48z2",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=.mR5bdvZs39f75ix1J3yMFqtntBYXdk.kgfidezi0s0-1776513531.8778512-1.0.1.1-LrqUXcOdBdZUNlyjCBGn6nG1y5UTv1GXplSDi4UU2N6bHhPtIulFQ9FiODP2hiAvZTxgLPiQooGYLa.2dglsPnp32tTUgH0UxPeuKnJXFclgiEuVSE8omm8WBp35.tMo; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:28:52 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3800639c0788b-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "state artist",
+    "gold_normalized": "state artist",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

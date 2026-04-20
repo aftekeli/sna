@@ -1,0 +1,305 @@
+{
+  "created_at": "2026-04-18T13:13:37.026016+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_f5a4909699e7",
+  "question": "In which country was Selim Bayraktar, a cast member of Ghosts of Garip, born?",
+  "question_type": "three_hop",
+  "template": "film_cast_birth_place_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q796",
+    "text": "Iraq"
+  },
+  "prediction_text": "Iraq",
+  "match": {
+    "prediction_normalized": "iraq",
+    "gold_normalized": "iraq",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q6030503",
+      "entity_name": "Selim Bayraktar (born 17 June 1975)",
+      "roles": [
+        "cast_member"
+      ],
+      "source": "lexicon",
+      "score": 21
+    }
+  ],
+  "relation_path": [
+    "P19",
+    "P17"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q6030503"
+      ],
+      "candidate_count": 2,
+      "selected_triples": [
+        {
+          "source_id": "Q6030503",
+          "source_name": "Selim Bayraktar (born 17 June 1975)",
+          "source_roles": [
+            "cast_member"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q173310",
+          "target_name": "Karkuk",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 16.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q173310"
+      ],
+      "candidate_count": 1,
+      "selected_triples": [
+        {
+          "source_id": "Q173310",
+          "source_name": "Karkuk",
+          "source_roles": [
+            "birth_place"
+          ],
+          "relation_id": "P17",
+          "relation_label": "country",
+          "target_id": "Q796",
+          "target_name": "IRAQ",
+          "target_roles": [
+            "country"
+          ],
+          "score": 21.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q6030503",
+        "seed_entity_name": "Selim Bayraktar (born 17 June 1975)",
+        "final_answers": [
+          {
+            "entity_id": "Q796",
+            "entity_name": "IRAQ"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q796"
+    ],
+    "candidate_texts": [
+      "IRAQ"
+    ],
+    "answer_text": "IRAQ"
+  },
+  "kg_summary": "Selim Bayraktar (born 17 June 1975) was born in Karkuk. Karkuk is located in IRAQ.",
+  "expanded_query": "Selim Bayraktar birth country.",
+  "retrieved_documents": [
+    {
+      "doc_id": "entity::Q6030503",
+      "title": "selim bayraktar",
+      "body": "selim bayraktar. Description: Selim Bayraktar (born 17 June 1975) is an Iraqi-Turkish actor best known for his role as \"Sümbül Ağa\" in Muhteşem Yüzyıl. Aliases: selim bayraktar, Selim Bayraktar. Roles: cast_member. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q6030503",
+      "metadata": {
+        "entity_id": "Q6030503",
+        "aliases": [
+          "selim bayraktar",
+          "Selim Bayraktar"
+        ],
+        "roles": [
+          "cast_member"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -21.271824294555127,
+      "snippet": "selim bayraktar. Description: Selim Bayraktar (born 17 June 1975) is an Iraqi-Turkish actor best known for his role as \"Sümbül Ağa\" in Muhteşem Yüzyıl. Aliases: selim bayraktar, Selim Bayraktar. Roles: cast_member. Do..."
+    },
+    {
+      "doc_id": "path::qa_f5a4909699e7::1",
+      "title": "In which country was Selim Bayraktar, a cast member of Ghosts of Garip, born?",
+      "body": "Ghosts of Garip has cast member Selim Bayraktar. Selim Bayraktar was born in Kirkuk. Kirkuk is located in Iraq.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q23022350",
+      "metadata": {
+        "question_id": "qa_f5a4909699e7",
+        "template": "film_cast_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -20.525990313156875,
+      "snippet": "Ghosts of Garip has cast member Selim Bayraktar. Selim Bayraktar was born in Kirkuk. Kirkuk is located in Iraq."
+    },
+    {
+      "doc_id": "fact::Q6030503::P27::Q796",
+      "title": "selim bayraktar - country of citizenship",
+      "body": "selim bayraktar has country of citizenship komara iraqê. Relation type: country of citizenship. Source roles: cast_member. Target roles: country.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6030503",
+      "metadata": {
+        "source_id": "Q6030503",
+        "target_id": "Q796",
+        "relation_id": "P27",
+        "relation_label": "country of citizenship"
+      },
+      "score": -19.906613227127174,
+      "snippet": "selim bayraktar has country of citizenship komara iraqê. Relation type: country of citizenship. Source roles: cast_member. Target roles: country."
+    },
+    {
+      "doc_id": "fact::Q6030503::P19::Q173310",
+      "title": "selim bayraktar - place of birth",
+      "body": "selim bayraktar was born in kirkuk (city). Relation type: place of birth. Source roles: cast_member. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6030503",
+      "metadata": {
+        "source_id": "Q6030503",
+        "target_id": "Q173310",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -19.29948769348001,
+      "snippet": "selim bayraktar was born in kirkuk (city). Relation type: place of birth. Source roles: cast_member. Target roles: birth_place."
+    },
+    {
+      "doc_id": "fact::Q23022350::P161::Q6030503",
+      "title": "Ghosts of Garip - cast member",
+      "body": "Ghosts of Garip has cast member selim bayraktar. Relation type: cast member. Source roles: film. Target roles: cast_member.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q23022350",
+      "metadata": {
+        "source_id": "Q23022350",
+        "target_id": "Q6030503",
+        "relation_id": "P161",
+        "relation_label": "cast member"
+      },
+      "score": -14.836843731565143,
+      "snippet": "Ghosts of Garip has cast member selim bayraktar. Relation type: cast member. Source roles: film. Target roles: cast_member."
+    },
+    {
+      "doc_id": "entity::Q3472837",
+      "title": "istanbul tales",
+      "body": "istanbul tales. Description: Istanbul Tales (Turkish: Anlat İstanbul) is a 2005 Turkish drama-anthology film, directed by Selim Demirdelen, Kudret Sabancı, Ümit Ünal, Yücel Yolcu and Ömür Atay  , which tells five interconnected stories set in modern-day Istanbul based on the fairytales Snow White, Cinderella, Pied Piper, Sleeping Beauty and Little Red Riding Hood. The film, which went on nationwide general release on 11 March 2005, won several awards including Best Film at the 24th International Istanbul Film Festival. Aliases: istanbul tales, anlat i̇stanbul, Anlat istanbul, Anlat Istanbul, anlat istanbul, Istanbul tales, Istanbul Tales, Anlat İstanbul. Roles: film, film_seed. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q3472837",
+      "metadata": {
+        "entity_id": "Q3472837",
+        "aliases": [
+          "istanbul tales",
+          "anlat i̇stanbul",
+          "Anlat istanbul",
+          "Anlat Istanbul",
+          "anlat istanbul",
+          "Istanbul tales",
+          "Istanbul Tales",
+          "Anlat İstanbul"
+        ],
+        "roles": [
+          "film",
+          "film_seed"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -3.918778639598285,
+      "snippet": "istanbul tales. Description: Istanbul Tales (Turkish: Anlat İstanbul) is a 2005 Turkish drama-anthology film, directed by Selim Demirdelen, Kudret Sabancı, Ümit Ünal, Yücel Yolcu and Ömür Atay  , which tells five inte..."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T13:13:32.080829+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 722,
+      "remaining_tokens": 11857,
+      "reset_requests_seconds": 24019.2,
+      "reset_tokens_seconds": 0.715,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 13:13:32 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "722",
+        "x-ratelimit-remaining-tokens": "11857",
+        "x-ratelimit-reset-requests": "6h40m19.2s",
+        "x-ratelimit-reset-tokens": "715ms",
+        "x-request-id": "req_01kpgbk74yfnar68qsbkwwcwq5",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=vmpcTh04TpMfdQSBxFU0mF_C.gX1b0.dQpe3Ozq_R98-1776518012.0406835-1.0.1.1-euFy9Pit8bh_UNLnJCeM46yh5VNXUhkMSqiROsGARIpwJITtcqKw9_uoHr.JhfoaSBkjJ6eEhIC_UEC15As39Fe3HsOh5weHGsoEfnY8ldCRuq7skJJ9br3Pxv7XAFSC; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:43:32 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3ed673b67e430-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T13:13:37.012435+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 721,
+      "remaining_tokens": 11375,
+      "reset_requests_seconds": 24105.6,
+      "reset_tokens_seconds": 3.125,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 13:13:37 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "721",
+        "x-ratelimit-remaining-tokens": "11375",
+        "x-ratelimit-reset-requests": "6h41m45.6s",
+        "x-ratelimit-reset-tokens": "3.125s",
+        "x-request-id": "req_01kpgbkc2xewq8phtttvymcgev",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=p39QXByNLiOzeO0E347vPzFb6mEoEN7frvsmqSHVo0M-1776518017.0950027-1.0.1.1-MaZeHlvhWCqR0VcrlhJTWtftAn18ndf.Oqha7N24VVYt5.drf6Jr2YudSNK1kibnwSmttn7Q_Wr7WlJQc.DhHry39byEOoi5.u_4G7GQZNuHUsnxH1Pdmcan235odywp; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:43:37 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3ed86de75b76c-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

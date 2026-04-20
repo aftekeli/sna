@@ -1,0 +1,345 @@
+{
+  "created_at": "2026-04-18T11:59:09.915068+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_f2af017e97bd",
+  "question": "Were the directors of Ah Nerede and Playing with Death born in the same country?",
+  "question_type": "comparison",
+  "template": "film_director_birth_place_country__comparison",
+  "difficulty": "very_hard",
+  "gold_answer": {
+    "entity_id": null,
+    "text": "no"
+  },
+  "prediction_text": "no",
+  "match": {
+    "prediction_normalized": "no",
+    "gold_normalized": "no",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q7203434",
+      "entity_name": "Playing with Death",
+      "roles": [
+        "film"
+      ],
+      "source": "lexicon",
+      "score": 29
+    },
+    {
+      "entity_id": "Q6081761",
+      "entity_name": "Ah Nerede",
+      "roles": [
+        "film",
+        "film_seed"
+      ],
+      "source": "lexicon",
+      "score": 18
+    }
+  ],
+  "relation_path": [
+    "P57",
+    "P19",
+    "P17"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q7203434",
+        "Q6081761"
+      ],
+      "candidate_count": 9,
+      "selected_triples": [
+        {
+          "source_id": "Q7203434",
+          "source_name": "Playing with Death",
+          "source_roles": [
+            "film"
+          ],
+          "relation_id": "P57",
+          "relation_label": "director",
+          "target_id": "Q5644666",
+          "target_name": "Hamid tamjidi",
+          "target_roles": [
+            "director"
+          ],
+          "score": 19.0
+        },
+        {
+          "source_id": "Q6081761",
+          "source_name": "Ah Nerede",
+          "source_roles": [
+            "film",
+            "film_seed"
+          ],
+          "relation_id": "P57",
+          "relation_label": "director",
+          "target_id": "Q6033250",
+          "target_name": "Orhan Aksoy",
+          "target_roles": [
+            "director"
+          ],
+          "score": 19.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q5644666",
+        "Q6033250"
+      ],
+      "candidate_count": 4,
+      "selected_triples": [
+        {
+          "source_id": "Q5644666",
+          "source_name": "Hamid tamjidi",
+          "source_roles": [
+            "director"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q3616",
+          "target_name": "Tehran city",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 16.0
+        },
+        {
+          "source_id": "Q6033250",
+          "source_name": "Orhan Aksoy",
+          "source_roles": [
+            "director"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q719537",
+          "target_name": "mustafakemalpasa",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 16.0
+        }
+      ]
+    },
+    {
+      "round_index": 3,
+      "frontier_entity_ids": [
+        "Q3616",
+        "Q719537"
+      ],
+      "candidate_count": 2,
+      "selected_triples": [
+        {
+          "source_id": "Q3616",
+          "source_name": "Tehran city",
+          "source_roles": [
+            "birth_place"
+          ],
+          "relation_id": "P17",
+          "relation_label": "country",
+          "target_id": "Q794",
+          "target_name": "The Islamic Republic of Iran",
+          "target_roles": [
+            "country"
+          ],
+          "score": 21.0
+        },
+        {
+          "source_id": "Q719537",
+          "source_name": "mustafakemalpasa",
+          "source_roles": [
+            "birth_place"
+          ],
+          "relation_id": "P17",
+          "relation_label": "country",
+          "target_id": "Q43",
+          "target_name": "Turkey",
+          "target_roles": [
+            "birth_place",
+            "country",
+            "country_root"
+          ],
+          "score": 21.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q7203434",
+        "seed_entity_name": "Playing with Death",
+        "final_answers": [
+          {
+            "entity_id": "Q794",
+            "entity_name": "The Islamic Republic of Iran"
+          }
+        ]
+      },
+      {
+        "seed_entity_id": "Q6081761",
+        "seed_entity_name": "Ah Nerede",
+        "final_answers": [
+          {
+            "entity_id": "Q43",
+            "entity_name": "Turkey"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q794",
+      "Q43"
+    ],
+    "candidate_texts": [
+      "The Islamic Republic of Iran",
+      "Turkey"
+    ],
+    "answer_text": "no"
+  },
+  "kg_summary": "Playing with Death was directed by Hamid tamjidi. Ah Nerede was directed by Orhan Aksoy. Hamid tamjidi was born in Tehran city. Orhan Aksoy was born in mustafakemalpasa. Tehran city is located in The Islamic Republic of Iran. mustafakemalpasa is located in Turkey.",
+  "expanded_query": "Were Hamid Tamjidi and Orhan Aksoy, directors of Playing with Death and Ah Nerede, born in the same country?",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_f2af017e97bd::2",
+      "title": "Were the directors of Ah Nerede and Playing with Death born in the same country?",
+      "body": "Playing with Death was directed by Hamid Tamjidi. Hamid Tamjidi was born in Tehran. Tehran is located in Iran.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6081761",
+      "metadata": {
+        "question_id": "qa_f2af017e97bd",
+        "template": "film_director_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -72.56728888981412,
+      "snippet": "Playing with Death was directed by Hamid Tamjidi. Hamid Tamjidi was born in Tehran. Tehran is located in Iran."
+    },
+    {
+      "doc_id": "path::qa_f2af017e97bd::1",
+      "title": "Were the directors of Ah Nerede and Playing with Death born in the same country?",
+      "body": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa. Mustafakemalpaşa is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6081761",
+      "metadata": {
+        "question_id": "qa_f2af017e97bd",
+        "template": "film_director_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -68.96490428862342,
+      "snippet": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa. Mustafakemalpaşa is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_ef87589de143::1",
+      "title": "Were the directors of Ah Nerede and Arabesk born in the same country?",
+      "body": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa. Mustafakemalpaşa is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6081761",
+      "metadata": {
+        "question_id": "qa_ef87589de143",
+        "template": "film_director_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -54.984248631974225,
+      "snippet": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa. Mustafakemalpaşa is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_e90dc0323aed::1",
+      "title": "In which country was the director of Playing with Death born?",
+      "body": "Playing with Death was directed by Hamid Tamjidi. Hamid Tamjidi was born in Tehran. Tehran is located in Iran.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q7203434",
+      "metadata": {
+        "question_id": "qa_e90dc0323aed",
+        "template": "film_director_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -42.590305854787196,
+      "snippet": "Playing with Death was directed by Hamid Tamjidi. Hamid Tamjidi was born in Tehran. Tehran is located in Iran."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T11:59:09.256301+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 966,
+      "remaining_tokens": 11475,
+      "reset_requests_seconds": 2937.6,
+      "reset_tokens_seconds": 2.625,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 11:59:09 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "966",
+        "x-ratelimit-remaining-tokens": "11475",
+        "x-ratelimit-reset-requests": "48m57.6s",
+        "x-ratelimit-reset-tokens": "2.625s",
+        "x-request-id": "req_01kpg7b0rye9cthztdaapk3nxg",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=7wH_acqAbfbNIPWXmBPRpTCWPAbTfFR4uEGV5ezt8JA-1776513549.0665793-1.0.1.1-Khfevak.VOnmy_GQmBvlWrA7gtDG1VE3JozmeJUhFbbHTNnRy9ZurMa6E4G62nuOFA44aUkbNpXJij9fuLEsaJu9JxM2tf2ZeyqXV3qGiLDJKfDVwdDw.gIwQWUFdJzm; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:29:09 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee38071ab371d60-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T11:59:09.912430+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 965,
+      "remaining_tokens": 11219,
+      "reset_requests_seconds": 3024.0,
+      "reset_tokens_seconds": 3.905,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 11:59:10 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "965",
+        "x-ratelimit-remaining-tokens": "11219",
+        "x-ratelimit-reset-requests": "50m24s",
+        "x-ratelimit-reset-tokens": "3.905s",
+        "x-request-id": "req_01kpg7b1njfdr9wjg8c0v9jv1n",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=9qt7x9y4pcSoCIMdmmMlasAWucWZqRX_EDOeZ.YryuI-1776513549.98222-1.0.1.1-k48ztW3eesa8h_AEBXozQyU.BViLf7ealaeVt4O6X1_p95MQQ_gMrEmG5lwjeZOHxCJJiPMHEHrHehpy_ofsU7F3sqwMH8FC3Xw1y1e7iTgfmOqboVdFqNhxS1U195V3; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:29:10 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee380776f43358f-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

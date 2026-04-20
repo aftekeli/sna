@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T13:12:41.966025+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_ab897ab4eb0b",
+  "question": "In which country was Gianni Capaldi, a cast member of Ghosts of Garip, born?",
+  "question_type": "three_hop",
+  "template": "film_cast_birth_place_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q145",
+    "text": "The United Kingdom of Great Britain and Northern Ireland"
+  },
+  "prediction_text": "Scotland",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:12:41.955809+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 732,
+    "remaining_tokens": 11893,
+    "reset_requests_seconds": 23155.2,
+    "reset_tokens_seconds": 0.535,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:12:42 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "732",
+      "x-ratelimit-remaining-tokens": "11893",
+      "x-ratelimit-reset-requests": "6h25m55.2s",
+      "x-ratelimit-reset-tokens": "535ms",
+      "x-request-id": "req_01kpgbhpage9r8hn4s5r6x8a2j",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=Pr9quwU3upe6_jbYdD5Z5M.2eJ8N32gA4WeItsfs6hk-1776517962.0416968-1.0.1.1-sAszS2rBg1zt8raWgZ9j8gq1ocsUg3R2Dw8RV8K5C6eUAOfWUCJ6sSucpZMhXIplxSC36gBgHaruJ4YMYwEUAZHD82n37lYrALftRP55fflBuNga0FgZwPy52QPrkzBj; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:42:42 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3ec2ecf28dc33-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "scotland",
+    "gold_normalized": "the united kingdom of great britain and northern ireland",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

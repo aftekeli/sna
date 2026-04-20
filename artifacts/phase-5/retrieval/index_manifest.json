@@ -1,0 +1,7 @@
+{
+  "database_path": "C:\\Users\\AFTek\\Desktop\\sna\\artifacts\\phase-5\\retrieval\\baseline_corpus.sqlite3",
+  "entity_path": "C:\\Users\\AFTek\\Desktop\\sna\\artifacts\\phase-3\\neo4j_import\\entities.csv",
+  "relationship_path": "C:\\Users\\AFTek\\Desktop\\sna\\artifacts\\phase-3\\neo4j_import\\relationships.csv",
+  "dataset_path": "C:\\Users\\AFTek\\Desktop\\sna\\artifacts\\phase-4\\turkiye_cinema_multihop_qa.json",
+  "document_count": 2200
+}

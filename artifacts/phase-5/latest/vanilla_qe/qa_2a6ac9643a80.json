@@ -1,0 +1,183 @@
+{
+  "created_at": "2026-04-18T13:11:57.226224+00:00",
+  "status": "success",
+  "method": "vanilla_qe",
+  "question_id": "qa_2a6ac9643a80",
+  "question": "In which country is the school attended by the director of Dokuz Dagin Efesi located?",
+  "question_type": "three_hop",
+  "template": "film_director_education_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q43",
+    "text": "Turkey"
+  },
+  "prediction_text": "Turkey.",
+  "expanded_query": "What country is the school of Dokuz Dagin Efesi director located in.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_2a6ac9643a80::1",
+      "title": "In which country is the school attended by the director of Dokuz Dagin Efesi located?",
+      "body": "Dokuz Dagin Efesi was directed by Metin Erksan. Metin Erksan studied at Istanbul University. Istanbul University is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6067860",
+      "metadata": {
+        "question_id": "qa_2a6ac9643a80",
+        "template": "film_director_education_country",
+        "question_type": "three_hop"
+      },
+      "score": -40.88015818605278,
+      "snippet": "Dokuz Dagin Efesi was directed by Metin Erksan. Metin Erksan studied at Istanbul University. Istanbul University is located in Turkey."
+    },
+    {
+      "doc_id": "entity::Q6067860",
+      "title": "dokuz dagin efesi: çakici geliyor",
+      "body": "dokuz dagin efesi: çakici geliyor. Description: Dokuz Dağın Efesi, or Dokuz Dağın Efesi: Çakici Geliyor is a 1958 Turkish drama film directed by Metin Erksan. It stars Fikret Hakan, Serpil Gül, and Hayri Esen. Aliases: dokuz dagin efesi: çakici geliyor, Dokuz Dagin Efesi, Dokuz dagin efesi: Çakici geliyor, dokuz dagin efesi, dokuz dağın efesi, Dokuz Dağın Efesi. Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q6067860",
+      "metadata": {
+        "entity_id": "Q6067860",
+        "aliases": [
+          "dokuz dagin efesi: çakici geliyor",
+          "Dokuz Dagin Efesi",
+          "Dokuz dagin efesi: Çakici geliyor",
+          "dokuz dagin efesi",
+          "dokuz dağın efesi",
+          "Dokuz Dağın Efesi"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -33.004980250861166,
+      "snippet": "dokuz dagin efesi: çakici geliyor. Description: Dokuz Dağın Efesi, or Dokuz Dağın Efesi: Çakici Geliyor is a 1958 Turkish drama film directed by Metin Erksan. It stars Fikret Hakan, Serpil Gül, and Hayri Esen. Aliases..."
+    },
+    {
+      "doc_id": "fact::Q6067860::P57::Q936089",
+      "title": "dokuz dagin efesi: çakici geliyor - director",
+      "body": "dokuz dagin efesi: çakici geliyor was directed by metin erksan. Relation type: director. Source roles: film. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6067860",
+      "metadata": {
+        "source_id": "Q6067860",
+        "target_id": "Q936089",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -30.939201944415704,
+      "snippet": "dokuz dagin efesi: çakici geliyor was directed by metin erksan. Relation type: director. Source roles: film. Target roles: director."
+    },
+    {
+      "doc_id": "fact::Q6067860::P495::Q43",
+      "title": "dokuz dagin efesi: çakici geliyor - country of origin",
+      "body": "dokuz dagin efesi: çakici geliyor has country of origin turkiye. Relation type: country of origin. Source roles: film. Target roles: birth_place, country, country_root.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6067860",
+      "metadata": {
+        "source_id": "Q6067860",
+        "target_id": "Q43",
+        "relation_id": "P495",
+        "relation_label": "country of origin"
+      },
+      "score": -28.015109493418144,
+      "snippet": "dokuz dagin efesi: çakici geliyor has country of origin turkiye. Relation type: country of origin. Source roles: film. Target roles: birth_place, country, country_root."
+    },
+    {
+      "doc_id": "path::qa_07e8f72b4442::1",
+      "title": "In which country is the school attended by the director of Angel's Fall located?",
+      "body": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University. Dokuz Eylül University is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6054381",
+      "metadata": {
+        "question_id": "qa_07e8f72b4442",
+        "template": "film_director_education_country",
+        "question_type": "three_hop"
+      },
+      "score": -21.78863179009136,
+      "snippet": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University. Dokuz Eylül University is located in Turkey."
+    },
+    {
+      "doc_id": "entity::Q1235258",
+      "title": "Dokuz Eylul University",
+      "body": "Dokuz Eylul University. Description: Dokuz Eylül University (Turkish: Dokuz Eylül Üniversitesi) (DEÜ) is a university in Turkey. It is located in İzmir, Turkey. It was founded in 1982 and is organized in 15 faculties. DEU is the first university which applied the problem-based learning method in Turkey, beginning in the School of Medicine in 1997. Several components of Dokuz Eylül University have attained a goal of continuous development in education, research and practice through the ISO 9001 2000 Quality Management System certificate: Social Sciences Institute and School of Maritime Business and Management (2001), University Presidency (2003) and Medical Faculty and Health Sciences Institute (2004). Aliases: Dokuz Eylul University, 9 Eylul Universitesi, 9 eylul universitesi, 9 eyluel university, 9 Eylul University, Dokuz Eylul Universitesi, 9 eyluel universitesi, 9 Eyluel University, Dokuz Eyluel University, Dokuz Eyluel Universitesi. Roles: education_entity. Domains: cinema, education, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q1235258",
+      "metadata": {
+        "entity_id": "Q1235258",
+        "aliases": [
+          "Dokuz Eylul University",
+          "9 Eylul Universitesi",
+          "9 eylul universitesi",
+          "9 eyluel university",
+          "9 Eylul University",
+          "Dokuz Eylul Universitesi",
+          "9 eyluel universitesi",
+          "9 Eyluel University",
+          "Dokuz Eyluel University",
+          "Dokuz Eyluel Universitesi"
+        ],
+        "roles": [
+          "education_entity"
+        ],
+        "domains": [
+          "cinema",
+          "education",
+          "turkiye"
+        ]
+      },
+      "score": -16.8581817092994,
+      "snippet": "Dokuz Eylul University. Description: Dokuz Eylül University (Turkish: Dokuz Eylül Üniversitesi) (DEÜ) is a university in Turkey. It is located in İzmir, Turkey. It was founded in 1982 and is organized in 15 faculties...."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:11:57.216506+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 741,
+    "remaining_tokens": 11355,
+    "reset_requests_seconds": 22377.6,
+    "reset_tokens_seconds": 3.225,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:11:57 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "741",
+      "x-ratelimit-remaining-tokens": "11355",
+      "x-ratelimit-reset-requests": "6h12m57.6s",
+      "x-ratelimit-reset-tokens": "3.225s",
+      "x-request-id": "req_01kpgbgaedfy693hgv62dpdryf",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=4Di.XH8Af3XWe3jsuQO0Mk.k1EtcC3HabjH_u2wcb.w-1776517917.1110315-1.0.1.1-nnAnKcKKHC8wwEXTA1HA6QfgnhXxSEcBetHmUCO_D9omowQjwGFXoSpw1Tpu56WgjCC9.Uv6jDDwfye9cj8eQ8VKGP_jBiQrp39oHmrC5jReMaehWPsxuJs9VhGWX5BC; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:41:57 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3eb15eafe559d-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "turkey",
+    "gold_normalized": "turkey",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "created_at": "2026-04-18T12:52:18.824075+00:00",
+  "status": "success",
+  "method": "vanilla_qe",
+  "question_id": "qa_d406bf48e837",
+  "question": "Which award was received by the director of Kanun namina?",
+  "question_type": "two_hop",
+  "template": "film_director_award",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q7241424",
+    "text": "Presidential Culture and Arts Grand Awards"
+  },
+  "prediction_text": "Presidential Culture and Arts Grand Awards.",
+  "expanded_query": "Director of Kanun namina award.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_d406bf48e837::1",
+      "title": "Which award was received by the director of Kanun namina?",
+      "body": "Kanun namina was directed by Ömer Akad. Ömer Akad received the award Presidential Culture and Arts Grand Awards.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6083314",
+      "metadata": {
+        "question_id": "qa_d406bf48e837",
+        "template": "film_director_award",
+        "question_type": "two_hop"
+      },
+      "score": -25.90943390653808,
+      "snippet": "Kanun namina was directed by Ömer Akad. Ömer Akad received the award Presidential Culture and Arts Grand Awards."
+    },
+    {
+      "doc_id": "fact::Q6083314::P57::Q3176600",
+      "title": "Kanun namina - director",
+      "body": "Kanun namina was directed by lütfi akad. Relation type: director. Source roles: film. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6083314",
+      "metadata": {
+        "source_id": "Q6083314",
+        "target_id": "Q3176600",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -22.479395879666086,
+      "snippet": "Kanun namina was directed by lütfi akad. Relation type: director. Source roles: film. Target roles: director."
+    },
+    {
+      "doc_id": "entity::Q6083314",
+      "title": "Kanun namina",
+      "body": "Kanun namina. Description: In the Name of the Law (Turkish: Kanun namina) is a 1953 Turkish drama film directed by Lütfi Akad and starring Ayhan Isik, Gülistan Güzey and Muzaffer Tema. Aliases: Kanun namina, kanun namina, in the name of the law (1952 film), In the Name of the Law (1952 film). Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q6083314",
+      "metadata": {
+        "entity_id": "Q6083314",
+        "aliases": [
+          "Kanun namina",
+          "kanun namina",
+          "in the name of the law (1952 film)",
+          "In the Name of the Law (1952 film)"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -20.238401342445005,
+      "snippet": "Kanun namina. Description: In the Name of the Law (Turkish: Kanun namina) is a 1953 Turkish drama film directed by Lütfi Akad and starring Ayhan Isik, Gülistan Güzey and Muzaffer Tema. Aliases: Kanun namina, kanun nam..."
+    },
+    {
+      "doc_id": "fact::Q6083314::P161::Q11170397",
+      "title": "Kanun namina - cast member",
+      "body": "Kanun namina has cast member nubar terziyan. Relation type: cast member. Source roles: film. Target roles: cast_member.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6083314",
+      "metadata": {
+        "source_id": "Q6083314",
+        "target_id": "Q11170397",
+        "relation_id": "P161",
+        "relation_label": "cast member"
+      },
+      "score": -19.136879249871374,
+      "snippet": "Kanun namina has cast member nubar terziyan. Relation type: cast member. Source roles: film. Target roles: cast_member."
+    },
+    {
+      "doc_id": "fact::Q6083314::P161::Q792949",
+      "title": "Kanun namina - cast member",
+      "body": "Kanun namina has cast member ayhan işık. Relation type: cast member. Source roles: film. Target roles: cast_member.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6083314",
+      "metadata": {
+        "source_id": "Q6083314",
+        "target_id": "Q792949",
+        "relation_id": "P161",
+        "relation_label": "cast member"
+      },
+      "score": -19.136879249871374,
+      "snippet": "Kanun namina has cast member ayhan işık. Relation type: cast member. Source roles: film. Target roles: cast_member."
+    },
+    {
+      "doc_id": "fact::Q6083314::P495::Q43",
+      "title": "Kanun namina - country of origin",
+      "body": "Kanun namina has country of origin turkiye. Relation type: country of origin. Source roles: film. Target roles: birth_place, country, country_root.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6083314",
+      "metadata": {
+        "source_id": "Q6083314",
+        "target_id": "Q43",
+        "relation_id": "P495",
+        "relation_label": "country of origin"
+      },
+      "score": -18.54313978412864,
+      "snippet": "Kanun namina has country of origin turkiye. Relation type: country of origin. Source roles: film. Target roles: birth_place, country, country_root."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:52:18.813951+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 864,
+    "remaining_tokens": 11555,
+    "reset_requests_seconds": 11750.4,
+    "reset_tokens_seconds": 2.225,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:52:19 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "864",
+      "x-ratelimit-remaining-tokens": "11555",
+      "x-ratelimit-reset-requests": "3h15m50.4s",
+      "x-ratelimit-reset-tokens": "2.225s",
+      "x-request-id": "req_01kpgacbtwetxt9tn1v28881e4",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=CcrYUGM61OPX_wouKHrz0OFJlFo6_f71HQq.s9bcj7M-1776516738.887539-1.0.1.1-2KlSIOasKZdO.UKvkTlr_E6SWeGhPi4PFY59sk13Fsg76aMRrRiIf4eQgDLVLX6i3OoeGs4p13HfuJbhBMLyyIgjAyjgbQ3tvYx9bLvWBErVgcWvhYZQ217.E0cTB7sJ; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:22:19 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3ce520a84b0d2-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "presidential culture and arts grand awards",
+    "gold_normalized": "presidential culture and arts grand awards",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

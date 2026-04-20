@@ -1,0 +1,275 @@
+{
+  "created_at": "2026-04-18T13:02:10.311194+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_f7df086d2062",
+  "question": "Where was Tamer Karadağlı, a cast member of Alina, born?",
+  "question_type": "two_hop",
+  "template": "film_cast_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q3640",
+    "text": "Ankara"
+  },
+  "prediction_text": "Ankara",
+  "match": {
+    "prediction_normalized": "ankara",
+    "gold_normalized": "ankara",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q3041530",
+      "entity_name": "Tamer Karadagli",
+      "roles": [
+        "cast_member"
+      ],
+      "source": "lexicon",
+      "score": 20
+    }
+  ],
+  "relation_path": [
+    "P19"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q3041530"
+      ],
+      "candidate_count": 2,
+      "selected_triples": [
+        {
+          "source_id": "Q3041530",
+          "source_name": "Tamer Karadagli",
+          "source_roles": [
+            "cast_member"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q3640",
+          "target_name": "Ankara",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 16.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q3041530",
+        "seed_entity_name": "Tamer Karadagli",
+        "final_answers": [
+          {
+            "entity_id": "Q3640",
+            "entity_name": "Ankara"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q3640"
+    ],
+    "candidate_texts": [
+      "Ankara"
+    ],
+    "answer_text": "Ankara"
+  },
+  "kg_summary": "Tamer Karadagli was born in Ankara.",
+  "expanded_query": "Where was Tamer Karadağlı born; Tamer Karadagli was born in Ankara.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_f7df086d2062::1",
+      "title": "Where was Tamer Karadağlı, a cast member of Alina, born?",
+      "body": "Alina has cast member Tamer Karadağlı. Tamer Karadağlı was born in Ankara.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q17150245",
+      "metadata": {
+        "question_id": "qa_f7df086d2062",
+        "template": "film_cast_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -50.08780797942043,
+      "snippet": "Alina has cast member Tamer Karadağlı. Tamer Karadağlı was born in Ankara."
+    },
+    {
+      "doc_id": "entity::Q3041530",
+      "title": "Tamer Karadagli",
+      "body": "Tamer Karadagli. Description: Tamer Karadağlı (born 24 May 1967) is a Turkish actor. Aliases: Tamer Karadagli, Tamer Karadağlı, tamer karadağlı, tamer karadagli. Roles: cast_member. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q3041530",
+      "metadata": {
+        "entity_id": "Q3041530",
+        "aliases": [
+          "Tamer Karadagli",
+          "Tamer Karadağlı",
+          "tamer karadağlı",
+          "tamer karadagli"
+        ],
+        "roles": [
+          "cast_member"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -47.769257565508994,
+      "snippet": "Tamer Karadagli. Description: Tamer Karadağlı (born 24 May 1967) is a Turkish actor. Aliases: Tamer Karadagli, Tamer Karadağlı, tamer karadağlı, tamer karadagli. Roles: cast_member. Domains: cinema, people, turkiye."
+    },
+    {
+      "doc_id": "fact::Q3041530::P19::Q3640",
+      "title": "Tamer Karadagli - place of birth",
+      "body": "Tamer Karadagli was born in Angora, Turkey. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q3041530",
+      "metadata": {
+        "source_id": "Q3041530",
+        "target_id": "Q3640",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -34.20674863281108,
+      "snippet": "Tamer Karadagli was born in Angora, Turkey. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place."
+    },
+    {
+      "doc_id": "fact::Q3041530::P27::Q43",
+      "title": "Tamer Karadagli - country of citizenship",
+      "body": "Tamer Karadagli has country of citizenship turkiye. Relation type: country of citizenship. Source roles: cast_member. Target roles: birth_place, country, country_root.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q3041530",
+      "metadata": {
+        "source_id": "Q3041530",
+        "target_id": "Q43",
+        "relation_id": "P27",
+        "relation_label": "country of citizenship"
+      },
+      "score": -27.772201936837924,
+      "snippet": "Tamer Karadagli has country of citizenship turkiye. Relation type: country of citizenship. Source roles: cast_member. Target roles: birth_place, country, country_root."
+    },
+    {
+      "doc_id": "fact::Q17150245::P161::Q3041530",
+      "title": "alina, the turkish assassin - cast member",
+      "body": "alina, the turkish assassin has cast member Tamer Karadagli. Relation type: cast member. Source roles: film. Target roles: cast_member.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q17150245",
+      "metadata": {
+        "source_id": "Q17150245",
+        "target_id": "Q3041530",
+        "relation_id": "P161",
+        "relation_label": "cast member"
+      },
+      "score": -22.113059809576427,
+      "snippet": "alina, the turkish assassin has cast member Tamer Karadagli. Relation type: cast member. Source roles: film. Target roles: cast_member."
+    },
+    {
+      "doc_id": "entity::Q17150245",
+      "title": "alina, the turkish assassin",
+      "body": "alina, the turkish assassin. Description: Alina, the Turkish Assassin is a 2012 film written by Seda Eğridere and directed by Vladimir Jedlicka. The consulting producer for the film was the famous American director Bobby Roth. It stars Seda Eğridere and Tamer Karadağlı. Aliases: alina, the turkish assassin, Alina, the Turkish Assassin. Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q17150245",
+      "metadata": {
+        "entity_id": "Q17150245",
+        "aliases": [
+          "alina, the turkish assassin",
+          "Alina, the Turkish Assassin"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -18.18078811558541,
+      "snippet": "alina, the turkish assassin. Description: Alina, the Turkish Assassin is a 2012 film written by Seda Eğridere and directed by Vladimir Jedlicka. The consulting producer for the film was the famous American director Bo..."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T13:02:05.704532+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 811,
+      "remaining_tokens": 11879,
+      "reset_requests_seconds": 16329.6,
+      "reset_tokens_seconds": 0.605,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 13:02:05 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "811",
+        "x-ratelimit-remaining-tokens": "11879",
+        "x-ratelimit-reset-requests": "4h32m9.6s",
+        "x-ratelimit-reset-tokens": "605ms",
+        "x-request-id": "req_01kpgay8hben8bqkdm4rv9njap",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=JsiUUzouEhZqTjptKLHLQ2z_obeZjXJkJqbyLSTbB4Q-1776517325.3346868-1.0.1.1-zpk.uf0kZKjPomLX0xCnSSk6JZZZu_1ErJJwQjhx2HQj_a9xcIhLsTZP4OFaJ72Br6ncmuCnv_DABMe94hbOR3g0HX0CeQe74swA4TdoafxgtGGym3zyYvXpkLmnr1rW; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:32:05 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3dca35cf1788b-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T13:02:10.302564+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 810,
+      "remaining_tokens": 11459,
+      "reset_requests_seconds": 16416.0,
+      "reset_tokens_seconds": 2.705,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 13:02:10 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "810",
+        "x-ratelimit-remaining-tokens": "11459",
+        "x-ratelimit-reset-requests": "4h33m36s",
+        "x-ratelimit-reset-tokens": "2.705s",
+        "x-request-id": "req_01kpgayddrepev8bfk860gz3g7",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=2wOjN_ThHSIJ83U8T9kJ7x4hf50SjMXsEG8WzdpmxAc-1776517330.339412-1.0.1.1-NR5w3KfY4VW8PJpQrr669bar.9Uemy2cZ8bqYjzqjWBEt7Q03qZaN8UlAAbOJf1U7ASxaPxEwGbnsEuQybUXC7QSsG6.gPQk0wJ.vOtn9FnksGYQu0syP9w5d3As8QhC; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:32:10 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3dcc29f6a9862-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

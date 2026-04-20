@@ -1,0 +1,180 @@
+{
+  "created_at": "2026-04-18T13:01:20.334630+00:00",
+  "status": "success",
+  "method": "vanilla_rag",
+  "question_id": "qa_baef96cb9ce7",
+  "question": "Where was Nurgül Yeşilçay, a cast member of Adem'in Trenleri, born?",
+  "question_type": "two_hop",
+  "template": "film_cast_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q166824",
+    "text": "Afyonkarahisar"
+  },
+  "prediction_text": "Afyonkarahisar.",
+  "expanded_query": null,
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_baef96cb9ce7::1",
+      "title": "Where was Nurgül Yeşilçay, a cast member of Adem'in Trenleri, born?",
+      "body": "Adem'in Trenleri has cast member Nurgül Yeşilçay. Nurgül Yeşilçay was born in Afyonkarahisar.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6087125",
+      "metadata": {
+        "question_id": "qa_baef96cb9ce7",
+        "template": "film_cast_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -48.209956356165584,
+      "snippet": "Adem'in Trenleri has cast member Nurgül Yeşilçay. Nurgül Yeşilçay was born in Afyonkarahisar."
+    },
+    {
+      "doc_id": "path::qa_95049c4cd79a::1",
+      "title": "Where was Asuman Dabak, a cast member of Adem'in Trenleri, born?",
+      "body": "Adem'in Trenleri has cast member Asuman Dabak. Asuman Dabak was born in Akhisar.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6087125",
+      "metadata": {
+        "question_id": "qa_95049c4cd79a",
+        "template": "film_cast_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -28.199498736197874,
+      "snippet": "Adem'in Trenleri has cast member Asuman Dabak. Asuman Dabak was born in Akhisar."
+    },
+    {
+      "doc_id": "entity::Q256292",
+      "title": "Nurgul Yesilcay",
+      "body": "Nurgul Yesilcay. Description: Nurgül Yeşilçay (born 26 March 1976) is a Turkish stage and film actress. Aliases: Nurgul Yesilcay, Nurgül Yesilçay, nurgul yesilcay, nurgül yesilcay, nurgül, nurgül yeşilçay, nurgül yesilçay, Yeşilçay, Nurgül Yeşilçay, yeşilçay. Roles: cast_member. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q256292",
+      "metadata": {
+        "entity_id": "Q256292",
+        "aliases": [
+          "Nurgul Yesilcay",
+          "Nurgül Yesilçay",
+          "nurgul yesilcay",
+          "nurgül yesilcay",
+          "nurgül",
+          "nurgül yeşilçay",
+          "nurgül yesilçay",
+          "Yeşilçay",
+          "Nurgül Yeşilçay",
+          "yeşilçay"
+        ],
+        "roles": [
+          "cast_member"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -24.35474842293434,
+      "snippet": "Nurgul Yesilcay. Description: Nurgül Yeşilçay (born 26 March 1976) is a Turkish stage and film actress. Aliases: Nurgul Yesilcay, Nurgül Yesilçay, nurgul yesilcay, nurgül yesilcay, nurgül, nurgül yeşilçay, nurgül yesi..."
+    },
+    {
+      "doc_id": "fact::Q256292::P19::Q166824",
+      "title": "Nurgul Yesilcay - place of birth",
+      "body": "Nurgul Yesilcay was born in Afyonkarahisar. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q256292",
+      "metadata": {
+        "source_id": "Q256292",
+        "target_id": "Q166824",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -21.814554650444123,
+      "snippet": "Nurgul Yesilcay was born in Afyonkarahisar. Relation type: place of birth. Source roles: cast_member. Target roles: birth_place."
+    },
+    {
+      "doc_id": "path::qa_6e027a24320b::2",
+      "title": "Were Tülin Özen from 10 To 11 and Asuman Dabak from Adem'in Trenleri born in the same country?",
+      "body": "Adem'in Trenleri has cast member Asuman Dabak. Asuman Dabak was born in Akhisar. Akhisar is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q3459778",
+      "metadata": {
+        "question_id": "qa_6e027a24320b",
+        "template": "film_cast_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -21.655795688545044,
+      "snippet": "Adem'in Trenleri has cast member Asuman Dabak. Asuman Dabak was born in Akhisar. Akhisar is located in Turkey."
+    },
+    {
+      "doc_id": "entity::Q6087125",
+      "title": "adam and the devil",
+      "body": "adam and the devil. Description: Adam and the Devil (Turkish: Adem'in Trenleri) is a 2007 Turkish drama film directed by Barış Pirhasan. Aliases: adam and the devil, adem'in trenleri, Adam and the Devil, Adem'in Trenleri. Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q6087125",
+      "metadata": {
+        "entity_id": "Q6087125",
+        "aliases": [
+          "adam and the devil",
+          "adem'in trenleri",
+          "Adam and the Devil",
+          "Adem'in Trenleri"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -19.986905413558944,
+      "snippet": "adam and the devil. Description: Adam and the Devil (Turkish: Adem'in Trenleri) is a 2007 Turkish drama film directed by Barış Pirhasan. Aliases: adam and the devil, adem'in trenleri, Adam and the Devil, Adem'in Trenl..."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:01:20.305454+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 820,
+    "remaining_tokens": 11412,
+    "reset_requests_seconds": 15552.0,
+    "reset_tokens_seconds": 2.94,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:01:20 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "820",
+      "x-ratelimit-remaining-tokens": "11412",
+      "x-ratelimit-reset-requests": "4h19m12s",
+      "x-ratelimit-reset-tokens": "2.94s",
+      "x-request-id": "req_01kpgawwjxfk2shwj7w0zfq31m",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=cEZTLgYTifwjdHDJTb2bQSr4LcGz16Ps63xZUXYxGAo-1776517280.3288736-1.0.1.1-zR_k0825j3sEvT5AFCPWeO_AnICiCB_ItFEcVax4PjYPhtkKwWwZ5xaumUkOOW2U8rdUxRQMv96hc56W6MvtNm0DxcAKpKWzZhox3FVoTUP_j1fZgCZlVbKl8F1Ggg26; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:31:20 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3db8a0a210c48-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "afyonkarahisar",
+    "gold_normalized": "afyonkarahisar",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

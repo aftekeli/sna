@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T13:03:27.107372+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_4e7de35a4787",
+  "question": "Which award was received by Makram Jamil Khoury, a cast member of Inheritance?",
+  "question_type": "two_hop",
+  "template": "film_cast_award",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q616568",
+    "text": "The Israel Prize"
+  },
+  "prediction_text": "Unknown",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:03:27.096621+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 797,
+    "remaining_tokens": 11894,
+    "reset_requests_seconds": 17539.2,
+    "reset_tokens_seconds": 0.53,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:03:27 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "797",
+      "x-ratelimit-remaining-tokens": "11894",
+      "x-ratelimit-reset-requests": "4h52m19.2s",
+      "x-ratelimit-reset-tokens": "530ms",
+      "x-request-id": "req_01kpgb0re5f8zaxnjy1xmhwwzm",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=fEw2xW8Q5vhYaJVMf6smigFOHBHkmnztvXoFTuHlF.M-1776517407.1527424-1.0.1.1-yLoe3ifnwxdoNenve5EO_aoYflIAx4p3wu9xViAihd77z_3bGJYnbDTM3uceLeE8Aj7hZv_JOFPwgnpsIMhjegbbFCgTH0XT6qAgaIp3.jW1cgDRbdYqOTXA6TX0S_Us; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:33:27 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3dea2bac4b76c-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "unknown",
+    "gold_normalized": "the israel prize",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

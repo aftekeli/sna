@@ -1,0 +1,319 @@
+{
+  "created_at": "2026-04-18T13:11:01.563746+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_eb46e42dc05a",
+  "question": "In which country is the school attended by the director of Shadows and Faces located?",
+  "question_type": "three_hop",
+  "template": "film_director_education_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q145",
+    "text": "The United Kingdom of Great Britain and Northern Ireland"
+  },
+  "prediction_text": "The United Kingdom of Great Britain and Northern Ireland",
+  "match": {
+    "prediction_normalized": "the united kingdom of great britain and northern ireland",
+    "gold_normalized": "the united kingdom of great britain and northern ireland",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q7460798",
+      "entity_name": "Shadows and Faces",
+      "roles": [
+        "film"
+      ],
+      "source": "lexicon",
+      "score": 28
+    }
+  ],
+  "relation_path": [
+    "P57",
+    "P69",
+    "P17"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q7460798"
+      ],
+      "candidate_count": 5,
+      "selected_triples": [
+        {
+          "source_id": "Q7460798",
+          "source_name": "Shadows and Faces",
+          "source_roles": [
+            "film"
+          ],
+          "relation_id": "P57",
+          "relation_label": "director",
+          "target_id": "Q3811192",
+          "target_name": "Dervis Zaim",
+          "target_roles": [
+            "director"
+          ],
+          "score": 19.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q3811192"
+      ],
+      "candidate_count": 2,
+      "selected_triples": [
+        {
+          "source_id": "Q3811192",
+          "source_name": "Dervis Zaim",
+          "source_roles": [
+            "director"
+          ],
+          "relation_id": "P69",
+          "relation_label": "educated at",
+          "target_id": "Q865528",
+          "target_name": "Warwick uni",
+          "target_roles": [
+            "education_entity"
+          ],
+          "score": 16.0
+        }
+      ]
+    },
+    {
+      "round_index": 3,
+      "frontier_entity_ids": [
+        "Q865528"
+      ],
+      "candidate_count": 1,
+      "selected_triples": [
+        {
+          "source_id": "Q865528",
+          "source_name": "Warwick uni",
+          "source_roles": [
+            "education_entity"
+          ],
+          "relation_id": "P17",
+          "relation_label": "country",
+          "target_id": "Q145",
+          "target_name": "United kingom",
+          "target_roles": [
+            "country"
+          ],
+          "score": 21.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q7460798",
+        "seed_entity_name": "Shadows and Faces",
+        "final_answers": [
+          {
+            "entity_id": "Q145",
+            "entity_name": "United kingom"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q145"
+    ],
+    "candidate_texts": [
+      "United kingom"
+    ],
+    "answer_text": "United kingom"
+  },
+  "kg_summary": "Shadows and Faces was directed by Dervis Zaim. Dervis Zaim studied at Warwick uni. Warwick uni is located in United kingom.",
+  "expanded_query": "In which country is Warwick University located.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_eb46e42dc05a::1",
+      "title": "In which country is the school attended by the director of Shadows and Faces located?",
+      "body": "Shadows and Faces was directed by Derviş Zaim. Derviş Zaim studied at The University of Warwick. The University of Warwick is located in The United Kingdom of Great Britain and Northern Ireland.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q7460798",
+      "metadata": {
+        "question_id": "qa_eb46e42dc05a",
+        "template": "film_director_education_country",
+        "question_type": "three_hop"
+      },
+      "score": -22.01609862959346,
+      "snippet": "Shadows and Faces was directed by Derviş Zaim. Derviş Zaim studied at The University of Warwick. The University of Warwick is located in The United Kingdom of Great Britain and Northern Ireland."
+    },
+    {
+      "doc_id": "entity::Q865528",
+      "title": "List of notable Warwick students",
+      "body": "List of notable Warwick students. Description: The University of Warwick () (abbreviated as Warw. in post-nominal letters) is a public research university on the outskirts of Coventry between the West Midlands and Warwickshire, England. It was founded in 1965 as part of a government initiative to expand higher education. Within the University, Warwick Business School was established in 1967, Warwick Law School was established in 1968,  Warwick Manufacturing Group (now WMG) was established in 1980 and Warwick Medical School was opened in 2000. Warwick incorporated Coventry College of Education in 1979 and Horticulture Research International in 2004.Warwick is primarily based on a 290 ha (720 acres) campus on the outskirts of Coventry, with a satellite campus in Wellesbourne and a central London base at the Shard. It is organised into three faculties—Arts, Science Engineering and Medicine, and Social Sciences—within which there are 32 departments. As of 2019, Warwick has around 26,531 full-time students and 2,492 academic and research staff. It had a consolidated income of £631.5 million in 2017/18, of which £126.5 million was from research grants and contracts. Warwick Arts Centre, a multi-venue arts complex in the university's main campus, is the largest venue of its kind in the UK outside London.Warwick consistently ranks in the top ten of all major domestic rankings of British universities. Warwick is ranked 7th in the UK for its research, according to the Research Excellence Framework (REF) 2014 by GPA. Warwick is cited as amongst the world's most targeted university institutions by employers and was the world's third best young university in 2015. Warwick has an average intake of 4,950 undergraduates out of 38,071 applicants (7.7 applicants per place). In 2017, Warwick was named as the university with the joint second highest graduate employment rate of any UK university (along with St Andrews), with 97.7 per cent of its graduates in work or further study three and a half years after graduation.Warwick is a member of AACSB, the Association of Commonwealth Universities, the Association of MBAs, EQUIS, the European University Association, the Midlands Innovation group, the Russell Group and Universities UK. It is the only European member of the Center for Urban Science and Progress, a collaboration with New York University. The university has extensive commercial activities, including the University of Warwick Science Park and Warwick Manufacturing Group. Aliases: List of notable Warwick students, warwick university, Warwick uni, Governance of University of Warwick, The University of Warwick, University of Warwick Symphony Orchestra, Warwick Mathematics Department, university of warwick main campus, Warwick University Business School, warwick mathematics department. Roles: education_entity. Domains: cinema, education, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q865528",
+      "metadata": {
+        "entity_id": "Q865528",
+        "aliases": [
+          "List of notable Warwick students",
+          "warwick university",
+          "Warwick uni",
+          "Governance of University of Warwick",
+          "The University of Warwick",
+          "University of Warwick Symphony Orchestra",
+          "Warwick Mathematics Department",
+          "university of warwick main campus",
+          "Warwick University Business School",
+          "warwick mathematics department"
+        ],
+        "roles": [
+          "education_entity"
+        ],
+        "domains": [
+          "cinema",
+          "education",
+          "turkiye"
+        ]
+      },
+      "score": -18.822013288457683,
+      "snippet": "List of notable Warwick students. Description: The University of Warwick () (abbreviated as Warw. in post-nominal letters) is a public research university on the outskirts of Coventry between the West Midlands and War..."
+    },
+    {
+      "doc_id": "fact::Q865528::P17::Q145",
+      "title": "List of notable Warwick students - country",
+      "body": "List of notable Warwick students is located in royaume-uni. Relation type: country. Source roles: education_entity. Target roles: country.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q865528",
+      "metadata": {
+        "source_id": "Q865528",
+        "target_id": "Q145",
+        "relation_id": "P17",
+        "relation_label": "country"
+      },
+      "score": -15.129837906293956,
+      "snippet": "List of notable Warwick students is located in royaume-uni. Relation type: country. Source roles: education_entity. Target roles: country."
+    },
+    {
+      "doc_id": "path::qa_d6de5558a6c3::1",
+      "title": "In which country is the school attended by the director of Bitter Life located?",
+      "body": "Bitter Life was directed by Metin Erksan. Metin Erksan studied at Istanbul University. Istanbul University is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q12835393",
+      "metadata": {
+        "question_id": "qa_d6de5558a6c3",
+        "template": "film_director_education_country",
+        "question_type": "three_hop"
+      },
+      "score": -14.516410273728551,
+      "snippet": "Bitter Life was directed by Metin Erksan. Metin Erksan studied at Istanbul University. Istanbul University is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_2a6ac9643a80::1",
+      "title": "In which country is the school attended by the director of Dokuz Dagin Efesi located?",
+      "body": "Dokuz Dagin Efesi was directed by Metin Erksan. Metin Erksan studied at Istanbul University. Istanbul University is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6067860",
+      "metadata": {
+        "question_id": "qa_2a6ac9643a80",
+        "template": "film_director_education_country",
+        "question_type": "three_hop"
+      },
+      "score": -14.319567862180595,
+      "snippet": "Dokuz Dagin Efesi was directed by Metin Erksan. Metin Erksan studied at Istanbul University. Istanbul University is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_07e8f72b4442::1",
+      "title": "In which country is the school attended by the director of Angel's Fall located?",
+      "body": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University. Dokuz Eylül University is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6054381",
+      "metadata": {
+        "question_id": "qa_07e8f72b4442",
+        "template": "film_director_education_country",
+        "question_type": "three_hop"
+      },
+      "score": -14.128209027296082,
+      "snippet": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University. Dokuz Eylül University is located in Turkey."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T13:10:56.701984+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 752,
+      "remaining_tokens": 11867,
+      "reset_requests_seconds": 21427.2,
+      "reset_tokens_seconds": 0.665,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 13:10:56 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "752",
+        "x-ratelimit-remaining-tokens": "11867",
+        "x-ratelimit-reset-requests": "5h57m7.2s",
+        "x-ratelimit-reset-tokens": "665ms",
+        "x-request-id": "req_01kpgbefese408v2vrra5r878d",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=jwxwE19aTXYkd_JCzb2nBYNMxOzoZVRnNyJO2uxC4LM-1776517856.7092054-1.0.1.1-2sEfVtgfVL4fI.RkkIc_jJfNWDL1RQHHD7FBR4CePZVEN_xWcZtebLRGm7uqOylJPxknGKQFRxTSRfmkqzSUDCgujbM.acOMho0ajkI6S7hSiALOXpuLnRAu9107GFPw; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:40:56 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3e99c684f16f8-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T13:11:01.555203+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 751,
+      "remaining_tokens": 11439,
+      "reset_requests_seconds": 21513.6,
+      "reset_tokens_seconds": 2.805,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 13:11:01 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "751",
+        "x-ratelimit-remaining-tokens": "11439",
+        "x-ratelimit-reset-requests": "5h58m33.6s",
+        "x-ratelimit-reset-tokens": "2.805s",
+        "x-request-id": "req_01kpgbem7sec4tt0bjpqsqwe9f",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=QAXOXBUiHpV6cpsOt_IrrIc9uMQWyApsVxGhvLq4z7A-1776517861.6036747-1.0.1.1-sXsSvNv_hGmOPAbnKuKZRFUsq4hUhDzeXzmIVvWXjP18J0yIFjC1iOm41.t5cDQQ9pc4zOXsP35lIlr7nESOAF6KfgB9HaBLnK.s53.ID9K_M_tEHatYX1dLTxRwKyt5; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:41:01 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3e9bb0f4ed2a3-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

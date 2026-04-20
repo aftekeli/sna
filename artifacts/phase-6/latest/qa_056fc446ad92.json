@@ -1,0 +1,348 @@
+{
+  "created_at": "2026-04-18T12:49:36.505480+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_056fc446ad92",
+  "question": "Were the directors of Angel's Fall and Do Not Forget Me Istanbul educated in the same country?",
+  "question_type": "comparison",
+  "template": "film_director_education_country__comparison",
+  "difficulty": "very_hard",
+  "gold_answer": {
+    "entity_id": null,
+    "text": "no"
+  },
+  "prediction_text": "no",
+  "match": {
+    "prediction_normalized": "no",
+    "gold_normalized": "no",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q20065085",
+      "entity_name": "do not forget me istanbul",
+      "roles": [
+        "film",
+        "film_seed"
+      ],
+      "source": "lexicon",
+      "score": 40
+    },
+    {
+      "entity_id": "Q6054381",
+      "entity_name": "Angel's Fall",
+      "roles": [
+        "film"
+      ],
+      "source": "lexicon",
+      "score": 23
+    }
+  ],
+  "relation_path": [
+    "P57",
+    "P69",
+    "P17"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q20065085",
+        "Q6054381"
+      ],
+      "candidate_count": 17,
+      "selected_triples": [
+        {
+          "source_id": "Q20065085",
+          "source_name": "do not forget me istanbul",
+          "source_roles": [
+            "film",
+            "film_seed"
+          ],
+          "relation_id": "P57",
+          "relation_label": "director",
+          "target_id": "Q2827768",
+          "target_name": "Aida Begic",
+          "target_roles": [
+            "director"
+          ],
+          "score": 19.0
+        },
+        {
+          "source_id": "Q6054381",
+          "source_name": "Angel's Fall",
+          "source_roles": [
+            "film"
+          ],
+          "relation_id": "P57",
+          "relation_label": "director",
+          "target_id": "Q1373349",
+          "target_name": "Semih Kaplanoğlu",
+          "target_roles": [
+            "director"
+          ],
+          "score": 19.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q2827768",
+        "Q1373349"
+      ],
+      "candidate_count": 4,
+      "selected_triples": [
+        {
+          "source_id": "Q1373349",
+          "source_name": "Semih Kaplanoğlu",
+          "source_roles": [
+            "director"
+          ],
+          "relation_id": "P69",
+          "relation_label": "educated at",
+          "target_id": "Q1235258",
+          "target_name": "9 Eylul University",
+          "target_roles": [
+            "education_entity"
+          ],
+          "score": 16.0
+        }
+      ]
+    },
+    {
+      "round_index": 3,
+      "frontier_entity_ids": [
+        "Q1235258"
+      ],
+      "candidate_count": 1,
+      "selected_triples": [
+        {
+          "source_id": "Q1235258",
+          "source_name": "9 Eylul University",
+          "source_roles": [
+            "education_entity"
+          ],
+          "relation_id": "P17",
+          "relation_label": "country",
+          "target_id": "Q43",
+          "target_name": "Turkey",
+          "target_roles": [
+            "birth_place",
+            "country",
+            "country_root"
+          ],
+          "score": 21.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q20065085",
+        "seed_entity_name": "do not forget me istanbul",
+        "final_answers": []
+      },
+      {
+        "seed_entity_id": "Q6054381",
+        "seed_entity_name": "Angel's Fall",
+        "final_answers": [
+          {
+            "entity_id": "Q43",
+            "entity_name": "Turkey"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q43"
+    ],
+    "candidate_texts": [
+      "Turkey"
+    ],
+    "answer_text": null
+  },
+  "kg_summary": "do not forget me istanbul was directed by Aida Begic. Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at 9 Eylul University. 9 Eylul University is located in Turkey.",
+  "expanded_query": "Were Semih Kaplanoğlu and Aida Begic educated in the same country, specifically Turkey, where Semih Kaplanoğlu studied at 9 Eylul University.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_056fc446ad92::1",
+      "title": "Were the directors of Angel's Fall and Do Not Forget Me Istanbul educated in the same country?",
+      "body": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University. Dokuz Eylül University is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6054381",
+      "metadata": {
+        "question_id": "qa_056fc446ad92",
+        "template": "film_director_education_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -70.05342205109663,
+      "snippet": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University. Dokuz Eylül University is located in Turkey."
+    },
+    {
+      "doc_id": "fact::Q1373349::P69::Q1235258",
+      "title": "Semih Kaplanoğlu - educated at",
+      "body": "Semih Kaplanoğlu studied at Dokuz Eylul University. Relation type: educated at. Source roles: director. Target roles: education_entity.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q1373349",
+      "metadata": {
+        "source_id": "Q1373349",
+        "target_id": "Q1235258",
+        "relation_id": "P69",
+        "relation_label": "educated at"
+      },
+      "score": -60.93692956004584,
+      "snippet": "Semih Kaplanoğlu studied at Dokuz Eylul University. Relation type: educated at. Source roles: director. Target roles: education_entity."
+    },
+    {
+      "doc_id": "path::qa_4ae95238ae3e::1",
+      "title": "Where did the director of Grain study?",
+      "body": "Grain was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q19954477",
+      "metadata": {
+        "question_id": "qa_4ae95238ae3e",
+        "template": "film_director_education",
+        "question_type": "two_hop"
+      },
+      "score": -59.787696598591424,
+      "snippet": "Grain was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University."
+    },
+    {
+      "doc_id": "path::qa_bb3348c757ee::1",
+      "title": "Where did the director of Angel's Fall study?",
+      "body": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6054381",
+      "metadata": {
+        "question_id": "qa_bb3348c757ee",
+        "template": "film_director_education",
+        "question_type": "two_hop"
+      },
+      "score": -57.875951739636875,
+      "snippet": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University."
+    },
+    {
+      "doc_id": "path::qa_07e8f72b4442::1",
+      "title": "In which country is the school attended by the director of Angel's Fall located?",
+      "body": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University. Dokuz Eylül University is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6054381",
+      "metadata": {
+        "question_id": "qa_07e8f72b4442",
+        "template": "film_director_education_country",
+        "question_type": "three_hop"
+      },
+      "score": -55.47308313017778,
+      "snippet": "Angel's Fall was directed by Semih Kaplanoğlu. Semih Kaplanoğlu studied at Dokuz Eylül University. Dokuz Eylül University is located in Turkey."
+    },
+    {
+      "doc_id": "entity::Q1373349",
+      "title": "Semih Kaplanoğlu",
+      "body": "Semih Kaplanoğlu. Description: Semih Kaplanoğlu (born 4 April 1963) is a Turkish screenwriter, film director and producer. Aliases: Semih Kaplanoğlu, semih kaplanoglu, Semih Kaplanoglu, semih kaplanoğlu. Roles: director. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q1373349",
+      "metadata": {
+        "entity_id": "Q1373349",
+        "aliases": [
+          "Semih Kaplanoğlu",
+          "semih kaplanoglu",
+          "Semih Kaplanoglu",
+          "semih kaplanoğlu"
+        ],
+        "roles": [
+          "director"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -39.79483882517854,
+      "snippet": "Semih Kaplanoğlu. Description: Semih Kaplanoğlu (born 4 April 1963) is a Turkish screenwriter, film director and producer. Aliases: Semih Kaplanoğlu, semih kaplanoglu, Semih Kaplanoglu, semih kaplanoğlu. Roles: direct..."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T12:49:31.394496+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 893,
+      "remaining_tokens": 11844,
+      "reset_requests_seconds": 9244.8,
+      "reset_tokens_seconds": 0.779,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:49:31 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "893",
+        "x-ratelimit-remaining-tokens": "11844",
+        "x-ratelimit-reset-requests": "2h34m4.8s",
+        "x-ratelimit-reset-tokens": "779ms",
+        "x-request-id": "req_01kpga786sf6mamnx3p28dtsqb",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=522hT5JBpVBVLT2PTdmy5bjCSKVyF59YQ6mCDN3Q9js-1776516571.331409-1.0.1.1-T5jw2HgCnuw9B5CFviASoNKa1yDncS_o.vnyMZ1GoDc9OlVWoIRkZ_07zpuoT3HuJstCQthJTpGruWZinXw7SmAYN5DqWRLttamJFjin2x9IE6v7.vk9OAkmnSafBaMr; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:19:31 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3ca3adcdbb737-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T12:49:36.495358+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 892,
+      "remaining_tokens": 11478,
+      "reset_requests_seconds": 9331.2,
+      "reset_tokens_seconds": 2.61,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:49:36 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "892",
+        "x-ratelimit-remaining-tokens": "11478",
+        "x-ratelimit-reset-requests": "2h35m31.2s",
+        "x-ratelimit-reset-tokens": "2.61s",
+        "x-request-id": "req_01kpga7d21f7wscejk2k50pzaz",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=rBZBiEV8CEB.DmOg_YpKH2wLqwCfN9ldkFyxpXoM6Bc-1776516576.299573-1.0.1.1-4UR2M73DDEfqpXh7Dh4FdCHvBZnBWirNWyXZnAuB5Qgips5eC9APrAyb_QC..L_3rF_1y.M7olRcvquliKww51upJTV683vdjSaaJZhBX23D8c.jEcCmEHwM0sYXVyVw; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:19:36 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3ca59de46c693-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

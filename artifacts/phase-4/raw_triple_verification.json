@@ -1,0 +1,257 @@
+{
+  "generated_at": "2026-04-18T08:45:59.975427+00:00",
+  "required_triple_count": 94,
+  "verified_triple_count": 94,
+  "question_verification": [
+    {
+      "question_id": "qa_26cd33a65acd",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_c2bd1aeb56de",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_fa625a096ffb",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_dec91d77e6cf",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_1d88f8ecd5cf",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_41602f1e45ed",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_afcdaf7d352f",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_d8aa86c24033",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_779f731c6587",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_d4d52acedc7a",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_d406bf48e837",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_f2bf3cadec14",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_bb3348c757ee",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_dcba1b612c86",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_9ebc97ac2e4f",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_104db2fbbec9",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_4ae95238ae3e",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_6c10516be4d1",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_515c0f340473",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_6efbcbaf0f9f",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_95049c4cd79a",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_baef96cb9ce7",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_f7df086d2062",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_59798c8c1dd1",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_444d583ed375",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_284c5e0ceb83",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_e2df9418d912",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_4e7de35a4787",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_5610775fbf0e",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_d78e27a4c2dc",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_8dff5823c781",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_45847cf61fb5",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_e90dc0323aed",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_ea1b335bfcbb",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_2f68e5ea0524",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_ca18f2482294",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_eb46e42dc05a",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_07e8f72b4442",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_d6de5558a6c3",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_2a6ac9643a80",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_565c95482384",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_fd2bb20d9589",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_11ec48a42232",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_ab897ab4eb0b",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_f5a4909699e7",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_ef87589de143",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_f2af017e97bd",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_056fc446ad92",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_6e027a24320b",
+      "verified": true,
+      "missing_triples": []
+    },
+    {
+      "question_id": "qa_25e417879724",
+      "verified": true,
+      "missing_triples": []
+    }
+  ]
+}

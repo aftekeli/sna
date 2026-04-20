@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T12:50:03.781049+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_dec91d77e6cf",
+  "question": "Where was the director of Anadolu Kartalları born?",
+  "question_type": "two_hop",
+  "template": "film_director_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q406",
+    "text": "Istanbul"
+  },
+  "prediction_text": "Ömer Vargı, the director of Anadolu Kartalları, was born in Istanbul, Turkey",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:50:03.772396+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 891,
+    "remaining_tokens": 11915,
+    "reset_requests_seconds": 9417.6,
+    "reset_tokens_seconds": 0.425,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:50:03 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "891",
+      "x-ratelimit-remaining-tokens": "11915",
+      "x-ratelimit-reset-requests": "2h36m57.6s",
+      "x-ratelimit-reset-tokens": "425ms",
+      "x-request-id": "req_01kpga87vyfcbsp7n1w989zx5q",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=wZRTLjoCII_ljeNeBj8WTG9jUQ6SmraZ2ypw4wmMSe8-1776516603.7524405-1.0.1.1-.Jkpra4ToKEqlz9Ljsux..1lo6UC4N5zkwJe0d.7n_.h51jOBJ1XnoC8867XfWRmBUABp4zKi3GO5tZd20Ji4mmoDIPaKXxOFdnvzi9a4ydXJp44Y08xgdiUzwlp_rk1; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:20:03 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3cb057b70e206-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "omer varg the director of anadolu kartallar was born in istanbul turkey",
+    "gold_normalized": "istanbul",
+    "exact_match": false,
+    "contains_match": true
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "created_at": "2026-04-18T09:03:44.084446+00:00",
+  "status": "success",
+  "method": "vanilla_qe",
+  "question_id": "qa_26cd33a65acd",
+  "question": "Where was the director of Aci Zafer born?",
+  "question_type": "two_hop",
+  "template": "film_director_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q35997",
+    "text": "İzmir"
+  },
+  "prediction_text": "İzmir.",
+  "expanded_query": "Director of Aci Zafer birthplace.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_26cd33a65acd::1",
+      "title": "Where was the director of Aci Zafer born?",
+      "body": "Aci Zafer was directed by Halit Refiğ. Halit Refiğ was born in İzmir.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q18712718",
+      "metadata": {
+        "question_id": "qa_26cd33a65acd",
+        "template": "film_director_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -21.79010129784555,
+      "snippet": "Aci Zafer was directed by Halit Refiğ. Halit Refiğ was born in İzmir."
+    },
+    {
+      "doc_id": "entity::Q18712718",
+      "title": "acı zafer",
+      "body": "acı zafer. Description: Acı Zafer is a 1972 Turkish film directed by Halit Refiğ and starring Yilmaz Köksal, Deniz Erkanat, Turgut Özatay. Aliases: acı zafer, Acı Zafer, aci zafer, Aci Zafer. Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q18712718",
+      "metadata": {
+        "entity_id": "Q18712718",
+        "aliases": [
+          "acı zafer",
+          "Acı Zafer",
+          "aci zafer",
+          "Aci Zafer"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -19.880575521548472,
+      "snippet": "acı zafer. Description: Acı Zafer is a 1972 Turkish film directed by Halit Refiğ and starring Yilmaz Köksal, Deniz Erkanat, Turgut Özatay. Aliases: acı zafer, Acı Zafer, aci zafer, Aci Zafer. Roles: film. Domains: cin..."
+    },
+    {
+      "doc_id": "fact::Q18712718::P57::Q2237841",
+      "title": "acı zafer - director",
+      "body": "acı zafer was directed by halit refiğ. Relation type: director. Source roles: film. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q18712718",
+      "metadata": {
+        "source_id": "Q18712718",
+        "target_id": "Q2237841",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -11.493415744382068,
+      "snippet": "acı zafer was directed by halit refiğ. Relation type: director. Source roles: film. Target roles: director."
+    },
+    {
+      "doc_id": "entity::Q6097730",
+      "title": "zafer algoz",
+      "body": "zafer algoz. Description: Zafer Algöz (born 30 August 1961) is a Turkish actor, best known for his films Salkım Hanımın Taneleri (1999), A.R.O.G (2008) and Yahşi Batı (2010). Aliases: zafer algoz, Zafer Algoz, Zafer Algöz, zafer algöz. Roles: cast_member, person_seed. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q6097730",
+      "metadata": {
+        "entity_id": "Q6097730",
+        "aliases": [
+          "zafer algoz",
+          "Zafer Algoz",
+          "Zafer Algöz",
+          "zafer algöz"
+        ],
+        "roles": [
+          "cast_member",
+          "person_seed"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -9.58515289109585,
+      "snippet": "zafer algoz. Description: Zafer Algöz (born 30 August 1961) is a Turkish actor, best known for his films Salkım Hanımın Taneleri (1999), A.R.O.G (2008) and Yahşi Batı (2010). Aliases: zafer algoz, Zafer Algoz, Zafer A..."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T09:03:44.082900+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 988,
+    "remaining_tokens": 11627,
+    "reset_requests_seconds": 1036.8,
+    "reset_tokens_seconds": 1.865,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 09:03:44 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "988",
+      "x-ratelimit-remaining-tokens": "11627",
+      "x-ratelimit-reset-requests": "17m16.8s",
+      "x-ratelimit-reset-tokens": "1.865s",
+      "x-request-id": "req_01kpfx9tegegq8jkfwb5vn6bbe",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=PJJb549TdTEmg6POvJq77IddzsxmEYOo8_UTW5pR2oU-1776503024.0584795-1.0.1.1-mvcl4Zo1RK7HlUtv8ShRTQJAhCeqevMlQVXZW9OvIYMW4Vk.hVfGPRFJb4Hh1F7Qw6RQhNeSdpmcF_faP1oHTDGhRaOdb_s937faa4pE4GKsPVAu30Fk0rb_gmD2Kbf3; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 09:33:44 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee27f7c5a236d13-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "izmir",
+    "gold_normalized": "izmir",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

@@ -1,0 +1,340 @@
+{
+  "created_at": "2026-04-18T13:14:07.122766+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_6e027a24320b",
+  "question": "Were Tülin Özen from 10 To 11 and Asuman Dabak from Adem'in Trenleri born in the same country?",
+  "question_type": "comparison",
+  "template": "film_cast_birth_place_country__comparison",
+  "difficulty": "very_hard",
+  "gold_answer": {
+    "entity_id": null,
+    "text": "yes"
+  },
+  "prediction_text": "yes",
+  "match": {
+    "prediction_normalized": "yes",
+    "gold_normalized": "yes",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q4811871",
+      "entity_name": "Asuman Dabak (born 1 February 1970)",
+      "roles": [
+        "cast_member"
+      ],
+      "source": "lexicon",
+      "score": 18
+    },
+    {
+      "entity_id": "Q6086955",
+      "entity_name": "Tülin Özen",
+      "roles": [
+        "cast_member"
+      ],
+      "source": "lexicon",
+      "score": 16
+    }
+  ],
+  "relation_path": [
+    "P19",
+    "P17"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q4811871",
+        "Q6086955"
+      ],
+      "candidate_count": 4,
+      "selected_triples": [
+        {
+          "source_id": "Q4811871",
+          "source_name": "Asuman Dabak (born 1 February 1970)",
+          "source_roles": [
+            "cast_member"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q209905",
+          "target_name": "Tepe Mezarligi",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 16.0
+        },
+        {
+          "source_id": "Q6086955",
+          "source_name": "Tülin Özen",
+          "source_roles": [
+            "cast_member"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q174341",
+          "target_name": "Iskenderum",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 16.0
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "frontier_entity_ids": [
+        "Q209905",
+        "Q174341"
+      ],
+      "candidate_count": 2,
+      "selected_triples": [
+        {
+          "source_id": "Q209905",
+          "source_name": "Tepe Mezarligi",
+          "source_roles": [
+            "birth_place"
+          ],
+          "relation_id": "P17",
+          "relation_label": "country",
+          "target_id": "Q43",
+          "target_name": "Turkey",
+          "target_roles": [
+            "birth_place",
+            "country",
+            "country_root"
+          ],
+          "score": 21.0
+        },
+        {
+          "source_id": "Q174341",
+          "source_name": "Iskenderum",
+          "source_roles": [
+            "birth_place"
+          ],
+          "relation_id": "P17",
+          "relation_label": "country",
+          "target_id": "Q43",
+          "target_name": "Turkey",
+          "target_roles": [
+            "birth_place",
+            "country",
+            "country_root"
+          ],
+          "score": 21.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q4811871",
+        "seed_entity_name": "Asuman Dabak (born 1 February 1970)",
+        "final_answers": [
+          {
+            "entity_id": "Q43",
+            "entity_name": "Turkey"
+          }
+        ]
+      },
+      {
+        "seed_entity_id": "Q6086955",
+        "seed_entity_name": "Tülin Özen",
+        "final_answers": [
+          {
+            "entity_id": "Q43",
+            "entity_name": "Turkey"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q43"
+    ],
+    "candidate_texts": [
+      "Turkey"
+    ],
+    "answer_text": "yes"
+  },
+  "kg_summary": "Asuman Dabak (born 1 February 1970) was born in Tepe Mezarligi. Tülin Özen was born in Iskenderum. Tepe Mezarligi is located in Turkey. Iskenderum is located in Turkey.",
+  "expanded_query": "Were Tülin Özen and Asuman Dabak born in the same country, given Tülin Özen was born in Iskenderum and Asuman Dabak in Tepe Mezarligi, both in Turkey?",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_6e027a24320b::2",
+      "title": "Were Tülin Özen from 10 To 11 and Asuman Dabak from Adem'in Trenleri born in the same country?",
+      "body": "Adem'in Trenleri has cast member Asuman Dabak. Asuman Dabak was born in Akhisar. Akhisar is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q3459778",
+      "metadata": {
+        "question_id": "qa_6e027a24320b",
+        "template": "film_cast_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -84.06450395352512,
+      "snippet": "Adem'in Trenleri has cast member Asuman Dabak. Asuman Dabak was born in Akhisar. Akhisar is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_6e027a24320b::1",
+      "title": "Were Tülin Özen from 10 To 11 and Asuman Dabak from Adem'in Trenleri born in the same country?",
+      "body": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun. İskenderun is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q3459778",
+      "metadata": {
+        "question_id": "qa_6e027a24320b",
+        "template": "film_cast_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -82.56631101043403,
+      "snippet": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun. İskenderun is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_25e417879724::1",
+      "title": "Were Tülin Özen from 10 To 11 and Seiyō Uchino from 125 Years Memory born in the same country?",
+      "body": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun. İskenderun is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q3459778",
+      "metadata": {
+        "question_id": "qa_25e417879724",
+        "template": "film_cast_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -57.310054552010804,
+      "snippet": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun. İskenderun is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_95049c4cd79a::1",
+      "title": "Where was Asuman Dabak, a cast member of Adem'in Trenleri, born?",
+      "body": "Adem'in Trenleri has cast member Asuman Dabak. Asuman Dabak was born in Akhisar.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6087125",
+      "metadata": {
+        "question_id": "qa_95049c4cd79a",
+        "template": "film_cast_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -48.06620376306893,
+      "snippet": "Adem'in Trenleri has cast member Asuman Dabak. Asuman Dabak was born in Akhisar."
+    },
+    {
+      "doc_id": "entity::Q4811871",
+      "title": "asuman dabak",
+      "body": "asuman dabak. Description: Asuman Dabak (born 1 February 1970) is a Turkish actress. Aliases: asuman dabak, Asuman Dabak. Roles: cast_member. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q4811871",
+      "metadata": {
+        "entity_id": "Q4811871",
+        "aliases": [
+          "asuman dabak",
+          "Asuman Dabak"
+        ],
+        "roles": [
+          "cast_member"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -45.578991773987,
+      "snippet": "asuman dabak. Description: Asuman Dabak (born 1 February 1970) is a Turkish actress. Aliases: asuman dabak, Asuman Dabak. Roles: cast_member. Domains: cinema, people, turkiye."
+    },
+    {
+      "doc_id": "path::qa_25e417879724::2",
+      "title": "Were Tülin Özen from 10 To 11 and Seiyō Uchino from 125 Years Memory born in the same country?",
+      "body": "125 Years Memory has cast member Seiyō Uchino. Seiyō Uchino was born in Kōhoku-ku. Kōhoku-ku is located in Japan.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q3459778",
+      "metadata": {
+        "question_id": "qa_25e417879724",
+        "template": "film_cast_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -43.850994062622206,
+      "snippet": "125 Years Memory has cast member Seiyō Uchino. Seiyō Uchino was born in Kōhoku-ku. Kōhoku-ku is located in Japan."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T13:14:02.193497+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 716,
+      "remaining_tokens": 11812,
+      "reset_requests_seconds": 24537.6,
+      "reset_tokens_seconds": 0.94,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 13:14:02 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "716",
+        "x-ratelimit-remaining-tokens": "11812",
+        "x-ratelimit-reset-requests": "6h48m57.6s",
+        "x-ratelimit-reset-tokens": "940ms",
+        "x-request-id": "req_01kpgbm4h6f158ret8j3wc050p",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=l6Co8ivklmnD6T602muNAf8Hc2NaRzijaBXUabNZAqc-1776518042.129675-1.0.1.1-WsOiay_EE7gDzxW0Qm2EFbH2Gw9F8lDrip_ya8XL2oraqLK.e3Pe3KBVquVGctHVGoLPSIcQDBCKwT.UC4_NUsZhwD6uphQCA0.hdrh016B8KnEIlaM6yjXQvBgIcSTG; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:44:02 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3ee234ee8ae50-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T13:14:07.113003+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 715,
+      "remaining_tokens": 11372,
+      "reset_requests_seconds": 24623.999,
+      "reset_tokens_seconds": 3.14,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 13:14:07 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "715",
+        "x-ratelimit-remaining-tokens": "11372",
+        "x-ratelimit-reset-requests": "6h50m23.999s",
+        "x-ratelimit-reset-tokens": "3.14s",
+        "x-request-id": "req_01kpgbm9c7f1vbhh89r6snxjqf",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=mWoMxQbRFqLrqySEdfiC8xmnNu3Jv67xUjb4h5M_peA-1776518047.091021-1.0.1.1-13xR13FkYVF9A6e_L7P4yOBT1qh31HbILH5omoKi4rX0gA3xn3EL9PuODsuBVU14ns9DttoblCagGM6gDAAEZ96BU6FE9.I01ILPI9kH5FYq4ssNe7M3oz0MqzL3ek7a; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:44:07 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee3ee425fd4d2a3-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

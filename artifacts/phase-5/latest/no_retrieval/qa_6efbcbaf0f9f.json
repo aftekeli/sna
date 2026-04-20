@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T13:00:15.642957+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_6efbcbaf0f9f",
+  "question": "Where was Shiori Kutsuna, a cast member of 125 Years Memory, born?",
+  "question_type": "two_hop",
+  "template": "film_cast_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q6407315",
+    "text": "Killarney Heights"
+  },
+  "prediction_text": "Kyoto, Japan.",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:00:15.626655+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 833,
+    "remaining_tokens": 11901,
+    "reset_requests_seconds": 14428.8,
+    "reset_tokens_seconds": 0.495,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:00:15 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "833",
+      "x-ratelimit-remaining-tokens": "11901",
+      "x-ratelimit-reset-requests": "4h0m28.8s",
+      "x-ratelimit-reset-tokens": "495ms",
+      "x-request-id": "req_01kpgatx4gfv9tzr2afp1273kb",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=lJIBOeCV_6OYc2.zU09uucrrep4epaDkQttDRKrcx.Q-1776517215.354669-1.0.1.1-A7bgJdlaiJDKgQnX3wPXBTKdr0ktqqG._RN0q3OUnL_9vjW3Bgr.ZKRHmuQgGkFjKpetyHQMQlYbSCWytWPdqImJyXgHN8YwCX0c9YwCbwTMDe78lDdJuLOBPvRvmjwc; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:30:15 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3d9f3fc2fe907-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "kyoto japan",
+    "gold_normalized": "killarney heights",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

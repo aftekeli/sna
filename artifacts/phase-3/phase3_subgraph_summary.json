@@ -1,0 +1,315 @@
+{
+  "node_count": 629,
+  "edge_count": 1516,
+  "top_roles": [
+    {
+      "role": "film",
+      "count": 207
+    },
+    {
+      "role": "cast_member",
+      "count": 193
+    },
+    {
+      "role": "birth_place",
+      "count": 109
+    },
+    {
+      "role": "director",
+      "count": 47
+    },
+    {
+      "role": "country",
+      "count": 25
+    },
+    {
+      "role": "film_seed",
+      "count": 25
+    },
+    {
+      "role": "person_seed",
+      "count": 25
+    },
+    {
+      "role": "turkey_neighbor",
+      "count": 20
+    },
+    {
+      "role": "award",
+      "count": 13
+    },
+    {
+      "role": "education_entity",
+      "count": 9
+    },
+    {
+      "role": "country_root",
+      "count": 1
+    }
+  ],
+  "sample_nodes": [
+    {
+      "entity_id": "Q1007545",
+      "canonical_name": "Galatasaray Lyceum",
+      "roles": [
+        "education_entity"
+      ]
+    },
+    {
+      "entity_id": "Q1010949",
+      "canonical_name": "Yesilköy",
+      "roles": [
+        "birth_place"
+      ]
+    },
+    {
+      "entity_id": "Q1021818",
+      "canonical_name": "Bay of Adramyttium",
+      "roles": [
+        "birth_place"
+      ]
+    },
+    {
+      "entity_id": "Q1021893",
+      "canonical_name": "busra pekin",
+      "roles": [
+        "cast_member"
+      ]
+    },
+    {
+      "entity_id": "Q1022149",
+      "canonical_name": "Kandira",
+      "roles": [
+        "birth_place"
+      ]
+    },
+    {
+      "entity_id": "Q1028",
+      "canonical_name": "marocko",
+      "roles": [
+        "country"
+      ]
+    },
+    {
+      "entity_id": "Q1033641",
+      "canonical_name": "Cansel Elcin",
+      "roles": [
+        "cast_member"
+      ]
+    },
+    {
+      "entity_id": "Q1033926",
+      "canonical_name": "arabesk (film)",
+      "roles": [
+        "film"
+      ]
+    },
+    {
+      "entity_id": "Q107401",
+      "canonical_name": "sebastea (see)",
+      "roles": [
+        "birth_place"
+      ]
+    },
+    {
+      "entity_id": "Q11170397",
+      "canonical_name": "nubar terziyan",
+      "roles": [
+        "cast_member"
+      ]
+    },
+    {
+      "entity_id": "Q11194",
+      "canonical_name": "Rajvosa",
+      "roles": [
+        "birth_place"
+      ]
+    },
+    {
+      "entity_id": "Q11235234",
+      "canonical_name": "Yu Tokui",
+      "roles": [
+        "cast_member"
+      ]
+    },
+    {
+      "entity_id": "Q1134063",
+      "canonical_name": "大東駿介",
+      "roles": [
+        "cast_member",
+        "person_seed"
+      ]
+    },
+    {
+      "entity_id": "Q114624",
+      "canonical_name": "yardim",
+      "roles": [
+        "person_seed"
+      ]
+    },
+    {
+      "entity_id": "Q115",
+      "canonical_name": "ityop'ia",
+      "roles": [
+        "turkey_neighbor"
+      ]
+    },
+    {
+      "entity_id": "Q1152",
+      "canonical_name": "auvergne (region)",
+      "roles": [
+        "birth_place"
+      ]
+    },
+    {
+      "entity_id": "Q1218525",
+      "canonical_name": "Le Grand Voyage",
+      "roles": [
+        "film"
+      ]
+    },
+    {
+      "entity_id": "Q122803",
+      "canonical_name": "Theodosiopolis (Armenia)",
+      "roles": [
+        "birth_place"
+      ]
+    },
+    {
+      "entity_id": "Q1235258",
+      "canonical_name": "Dokuz Eylul University",
+      "roles": [
+        "education_entity"
+      ]
+    },
+    {
+      "entity_id": "Q1255329",
+      "canonical_name": "simon abkarian",
+      "roles": [
+        "cast_member"
+      ]
+    }
+  ],
+  "sample_edges": [
+    {
+      "source_id": "Q4390382",
+      "pid": "P19",
+      "relation_label": "place of birth",
+      "target_id": "Q6407315"
+    },
+    {
+      "source_id": "Q78168",
+      "pid": "P27",
+      "relation_label": "country of citizenship",
+      "target_id": "Q43"
+    },
+    {
+      "source_id": "Q17277912",
+      "pid": "P57",
+      "relation_label": "director",
+      "target_id": "Q4815792"
+    },
+    {
+      "source_id": "Q131293",
+      "pid": "P17",
+      "relation_label": "country",
+      "target_id": "Q43"
+    },
+    {
+      "source_id": "Q18712839",
+      "pid": "P495",
+      "relation_label": "country of origin",
+      "target_id": "Q43"
+    },
+    {
+      "source_id": "Q18753224",
+      "pid": "P57",
+      "relation_label": "director",
+      "target_id": "Q2237841"
+    },
+    {
+      "source_id": "Q83965",
+      "pid": "P17",
+      "relation_label": "country",
+      "target_id": "Q43"
+    },
+    {
+      "source_id": "Q3446835",
+      "pid": "P19",
+      "relation_label": "place of birth",
+      "target_id": "Q199723"
+    },
+    {
+      "source_id": "Q284051",
+      "pid": "P166",
+      "relation_label": "award received",
+      "target_id": "Q616568"
+    },
+    {
+      "source_id": "Q180280",
+      "pid": "P27",
+      "relation_label": "country of citizenship",
+      "target_id": "Q43"
+    },
+    {
+      "source_id": "Q724172",
+      "pid": "P27",
+      "relation_label": "country of citizenship",
+      "target_id": "Q43"
+    },
+    {
+      "source_id": "Q12810813",
+      "pid": "P19",
+      "relation_label": "place of birth",
+      "target_id": "Q406"
+    },
+    {
+      "source_id": "Q6033250",
+      "pid": "P19",
+      "relation_label": "place of birth",
+      "target_id": "Q719537"
+    },
+    {
+      "source_id": "Q962106",
+      "pid": "P27",
+      "relation_label": "country of citizenship",
+      "target_id": "Q43"
+    },
+    {
+      "source_id": "Q3459778",
+      "pid": "P161",
+      "relation_label": "cast member",
+      "target_id": "Q3337865"
+    },
+    {
+      "source_id": "Q6083691",
+      "pid": "P161",
+      "relation_label": "cast member",
+      "target_id": "Q1925634"
+    },
+    {
+      "source_id": "Q4831964",
+      "pid": "P19",
+      "relation_label": "place of birth",
+      "target_id": "Q1010949"
+    },
+    {
+      "source_id": "Q12812387",
+      "pid": "P19",
+      "relation_label": "place of birth",
+      "target_id": "Q35997"
+    },
+    {
+      "source_id": "Q7116454",
+      "pid": "P27",
+      "relation_label": "country of citizenship",
+      "target_id": "Q43"
+    },
+    {
+      "source_id": "Q6085441",
+      "pid": "P161",
+      "relation_label": "cast member",
+      "target_id": "Q735585"
+    }
+  ]
+}

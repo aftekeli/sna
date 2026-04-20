@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T12:10:46.033056+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_dcba1b612c86",
+  "question": "Where did the director of Bitter Life study?",
+  "question_type": "two_hop",
+  "template": "film_director_education",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q192964",
+    "text": "Istanbul University"
+  },
+  "prediction_text": "İsmail Güneş, and later Metin Erksan, directed Bitter Life, but most notably Metin Erksan. Metin Erksan studied at Istanbul University, and later in Italy at the Centro Sperimentale di Cinematografia.",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:10:46.029574+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 909,
+    "remaining_tokens": 11627,
+    "reset_requests_seconds": 7862.4,
+    "reset_tokens_seconds": 1.865,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:10:46 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "909",
+      "x-ratelimit-remaining-tokens": "11627",
+      "x-ratelimit-reset-requests": "2h11m2.4s",
+      "x-ratelimit-reset-tokens": "1.865s",
+      "x-request-id": "req_01kpg8096rfkgv34mgm07jykyq",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=rmI5znXyLCIj6PrtjmQnX74fIM_i5_WpT_gwZKE_6SA-1776514245.8257365-1.0.1.1-XC0N__35TUfB6Bq0Wky9pxLWHjl.7JNHFUFFzKcsXJfSNcpEN8o89pac9lf3ttr96n.Q1TUtBXpiYg3B0IemnOcb_bNii68ib5aegr5YGyNXMl8kmSvCJQp9GEVoUeZA; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:40:46 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee391746803b8a1-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "ismail gunes and later metin erksan directed bitter life but most notably metin erksan metin erksan studied at istanbul university and later in italy at the centro sperimentale di cinematografia",
+    "gold_normalized": "istanbul university",
+    "exact_match": false,
+    "contains_match": true
+  }
+}

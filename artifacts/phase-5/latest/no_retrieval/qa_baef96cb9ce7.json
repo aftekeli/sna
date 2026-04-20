@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T13:01:15.281753+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_baef96cb9ce7",
+  "question": "Where was Nurgül Yeşilçay, a cast member of Adem'in Trenleri, born?",
+  "question_type": "two_hop",
+  "template": "film_cast_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q166824",
+    "text": "Afyonkarahisar"
+  },
+  "prediction_text": "Afyon, Turkey",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:01:15.271965+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 821,
+    "remaining_tokens": 11897,
+    "reset_requests_seconds": 15465.599,
+    "reset_tokens_seconds": 0.515,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:01:15 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "821",
+      "x-ratelimit-remaining-tokens": "11897",
+      "x-ratelimit-reset-requests": "4h17m45.599s",
+      "x-ratelimit-reset-tokens": "515ms",
+      "x-request-id": "req_01kpgawqp0ecfsc12t5wgys45y",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=2TqtfZnI618XxO4OFdvLY64LD2XgsetmNQhirfJ.ezE-1776517275.308122-1.0.1.1-YgBxDtNwQME4VL6HYV6hb9XhYV3zx.vM0T.hMjGPDrfsOVaG0FV.580Pf8OsAL15KlrnI36k5OVu.KDyNKqOmjWDp9cRbETATzfeFJIMdr_1qW7Y5czZbtWXfmV174iQ; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:31:15 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3db6aac3b329f-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "afyon turkey",
+    "gold_normalized": "afyonkarahisar",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

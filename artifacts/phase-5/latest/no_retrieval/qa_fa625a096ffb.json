@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T12:10:27.395728+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_fa625a096ffb",
+  "question": "Where was the director of Akvaryumda Sessiz born?",
+  "question_type": "two_hop",
+  "template": "film_director_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q35997",
+    "text": "İzmir"
+  },
+  "prediction_text": "Unknown",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:10:27.393953+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 927,
+    "remaining_tokens": 11915,
+    "reset_requests_seconds": 6307.2,
+    "reset_tokens_seconds": 0.425,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:10:27 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "927",
+      "x-ratelimit-remaining-tokens": "11915",
+      "x-ratelimit-reset-requests": "1h45m7.2s",
+      "x-ratelimit-reset-tokens": "425ms",
+      "x-request-id": "req_01kpg7zq8aeant3kyrmfnaa5ed",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=nX66Zm4gS21PabyBELorSGyH2oiHLB3sddS2Vl4J5R4-1776514227.4462066-1.0.1.1-OL6uwOgzaoiLYbTi.3PjdK4KSN2N_3BqG4Na8gqRq24VbS3EY2shTgMc9fMjNMiijKa7hNUyiLt0tYWAFYu6sqkCNl6fww6DGNFeF_6K1SSArd3gLz7f_2t8Nw7VaQ83; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:40:27 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee391018aa3f26b-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "unknown",
+    "gold_normalized": "izmir",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

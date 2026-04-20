@@ -1,0 +1,179 @@
+{
+  "created_at": "2026-04-18T13:04:42.284800+00:00",
+  "status": "success",
+  "method": "vanilla_qe",
+  "question_id": "qa_d78e27a4c2dc",
+  "question": "Which award was received by Arsinée Khanjian, a cast member of The Cut?",
+  "question_type": "two_hop",
+  "template": "film_cast_award",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q547316",
+    "text": "Genie Award for Best Performance by an Actress in a Leading Role"
+  },
+  "prediction_text": "Genie Award for Best Performance by an Actress in a Leading Role.",
+  "expanded_query": "What award did Arsinée Khanjian, cast member of The Cut, receive.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_d78e27a4c2dc::1",
+      "title": "Which award was received by Arsinée Khanjian, a cast member of The Cut?",
+      "body": "The Cut has cast member Arsinée Khanjian. Arsinée Khanjian received the award Genie Award for Best Performance by an Actress in a Leading Role.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q17512617",
+      "metadata": {
+        "question_id": "qa_d78e27a4c2dc",
+        "template": "film_cast_award",
+        "question_type": "two_hop"
+      },
+      "score": -35.66795996288161,
+      "snippet": "The Cut has cast member Arsinée Khanjian. Arsinée Khanjian received the award Genie Award for Best Performance by an Actress in a Leading Role."
+    },
+    {
+      "doc_id": "fact::Q465998::P166::Q547316",
+      "title": "Arsinee Khanjian - award received",
+      "body": "Arsinee Khanjian received the award Genie Award for Best Performance by an Actress in a Leading Role. Relation type: award received. Source roles: cast_member, person_seed. Target roles: award.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q465998",
+      "metadata": {
+        "source_id": "Q465998",
+        "target_id": "Q547316",
+        "relation_id": "P166",
+        "relation_label": "award received"
+      },
+      "score": -26.07654914435493,
+      "snippet": "Arsinee Khanjian received the award Genie Award for Best Performance by an Actress in a Leading Role. Relation type: award received. Source roles: cast_member, person_seed. Target roles: award."
+    },
+    {
+      "doc_id": "fact::Q17512617::P161::Q465998",
+      "title": "the cut (2014 film) - cast member",
+      "body": "the cut (2014 film) has cast member Arsinee Khanjian. Relation type: cast member. Source roles: film, film_seed. Target roles: cast_member, person_seed.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q17512617",
+      "metadata": {
+        "source_id": "Q17512617",
+        "target_id": "Q465998",
+        "relation_id": "P161",
+        "relation_label": "cast member"
+      },
+      "score": -24.5358210649528,
+      "snippet": "the cut (2014 film) has cast member Arsinee Khanjian. Relation type: cast member. Source roles: film, film_seed. Target roles: cast_member, person_seed."
+    },
+    {
+      "doc_id": "entity::Q465998",
+      "title": "Arsinee Khanjian",
+      "body": "Arsinee Khanjian. Description: Arsinée Khanjian (Western Armenian: Արսինէ Խանճեան, Eastern Armenian: Արսինե Խանջյան; born 6 September 1958) is an Armenian-Canadian actress and producer. Aliases: Arsinee Khanjian, arsinée khanjian, arsinee khangjian, arsinee khanjian, Arsinée Khanjian, Arsinee Khangjian. Roles: cast_member, person_seed. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q465998",
+      "metadata": {
+        "entity_id": "Q465998",
+        "aliases": [
+          "Arsinee Khanjian",
+          "arsinée khanjian",
+          "arsinee khangjian",
+          "arsinee khanjian",
+          "Arsinée Khanjian",
+          "Arsinee Khangjian"
+        ],
+        "roles": [
+          "cast_member",
+          "person_seed"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -23.130463349513,
+      "snippet": "Arsinee Khanjian. Description: Arsinée Khanjian (Western Armenian: Արսինէ Խանճեան, Eastern Armenian: Արսինե Խանջյան; born 6 September 1958) is an Armenian-Canadian actress and producer. Aliases: Arsinee Khanjian, arsi..."
+    },
+    {
+      "doc_id": "fact::Q465998::P19::Q3820",
+      "title": "Arsinee Khanjian - place of birth",
+      "body": "Arsinee Khanjian was born in Beiruit. Relation type: place of birth. Source roles: cast_member, person_seed. Target roles: birth_place.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q465998",
+      "metadata": {
+        "source_id": "Q465998",
+        "target_id": "Q3820",
+        "relation_id": "P19",
+        "relation_label": "place of birth"
+      },
+      "score": -19.26909151971951,
+      "snippet": "Arsinee Khanjian was born in Beiruit. Relation type: place of birth. Source roles: cast_member, person_seed. Target roles: birth_place."
+    },
+    {
+      "doc_id": "entity::Q17512617",
+      "title": "the cut (2014 film)",
+      "body": "the cut (2014 film). Description: The Cut is a 2014 internationally co-produced drama film directed by Fatih Akın. It was selected to compete for the Golden Lion at the 71st Venice International Film Festival. The film is about the life and experiences of a young Armenian by the name of Nazareth Manoogian, in the light of the Armenian Genocide and its repercussions in different parts of the world. Aliases: the cut (2014 film), The Cut (2014 film), Cut. Roles: film, film_seed. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q17512617",
+      "metadata": {
+        "entity_id": "Q17512617",
+        "aliases": [
+          "the cut (2014 film)",
+          "The Cut (2014 film)",
+          "Cut"
+        ],
+        "roles": [
+          "film",
+          "film_seed"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -10.905097475593893,
+      "snippet": "the cut (2014 film). Description: The Cut is a 2014 internationally co-produced drama film directed by Fatih Akın. It was selected to compete for the Golden Lion at the 71st Venice International Film Festival. The fil..."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:04:42.273947+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 782,
+    "remaining_tokens": 11371,
+    "reset_requests_seconds": 18835.2,
+    "reset_tokens_seconds": 3.145,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:04:42 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "782",
+      "x-ratelimit-remaining-tokens": "11371",
+      "x-ratelimit-reset-requests": "5h13m55.2s",
+      "x-ratelimit-reset-tokens": "3.145s",
+      "x-request-id": "req_01kpgb31nbewzbz1vdn8y2n160",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=W4tWT4TtAFErXlG6JUirK6X2bSADPZnm2_sIQyhY6Cg-1776517482.1346183-1.0.1.1-Ct8_79IVZgk51928em1DAMf3q9wC_LeEqkcT9RIM.eaXIuC2mmcvfZfC7qkm0VKXuUC8bN08z63GNS6kdOtzyJeIfYF.Pw.ITMSxw6bzsSu5X9rXWrKHAf6zQ0gG_wYU; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:34:42 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3e0775e392ff7-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "genie award for best performance by an actress in a leading role",
+    "gold_normalized": "genie award for best performance by an actress in a leading role",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

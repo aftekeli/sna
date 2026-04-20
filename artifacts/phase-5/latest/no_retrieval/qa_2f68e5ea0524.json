@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T13:09:36.502353+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_2f68e5ea0524",
+  "question": "In which country was the director of The Beauty from Peran born?",
+  "question_type": "three_hop",
+  "template": "film_director_birth_place_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q41",
+    "text": "Greece"
+  },
+  "prediction_text": "Unknown",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:09:36.471273+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 768,
+    "remaining_tokens": 11900,
+    "reset_requests_seconds": 20044.8,
+    "reset_tokens_seconds": 0.5,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:09:36 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "768",
+      "x-ratelimit-remaining-tokens": "11900",
+      "x-ratelimit-reset-requests": "5h34m4.8s",
+      "x-ratelimit-reset-tokens": "500ms",
+      "x-request-id": "req_01kpgbc16jfnzbzkrr88e5pd5c",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=tQX8JLVOuCPm38fSNEF9oQchSs_LoE7kAO_6_embP9U-1776517776.573898-1.0.1.1-3Hy_AIiCrw3W65pogTrWukrdUW1XSpp3a4M2lFR_UpFeG8G_Mpe0G_UdnH6ltGGBYyIENgaZT6dFPgs7u1d.zdcBvXtFvIOp6kSZznJoEfDKIIWRGKLz71yayU8Taibo; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:39:36 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3e7a79e6bcc7d-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "unknown",
+    "gold_normalized": "greece",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

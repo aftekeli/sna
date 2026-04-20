@@ -1,0 +1,150 @@
+{
+  "created_at": "2026-04-18T12:47:46.388802+00:00",
+  "status": "success",
+  "method": "vanilla_rag",
+  "question_id": "qa_45847cf61fb5",
+  "question": "In which country was the director of Davaro born?",
+  "question_type": "three_hop",
+  "template": "film_director_birth_place_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q43",
+    "text": "Turkey"
+  },
+  "prediction_text": "Turkey.",
+  "expanded_query": null,
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_45847cf61fb5::1",
+      "title": "In which country was the director of Davaro born?",
+      "body": "Davaro was directed by Kartal Tibet. Kartal Tibet was born in Ankara. Ankara is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6806566",
+      "metadata": {
+        "question_id": "qa_45847cf61fb5",
+        "template": "film_director_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -20.806327763385084,
+      "snippet": "Davaro was directed by Kartal Tibet. Kartal Tibet was born in Ankara. Ankara is located in Turkey."
+    },
+    {
+      "doc_id": "fact::Q6806566::P57::Q374415",
+      "title": "Davaro - director",
+      "body": "Davaro was directed by kartal tibet. Relation type: director. Source roles: film. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6806566",
+      "metadata": {
+        "source_id": "Q6806566",
+        "target_id": "Q374415",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -13.331010555930852,
+      "snippet": "Davaro was directed by kartal tibet. Relation type: director. Source roles: film. Target roles: director."
+    },
+    {
+      "doc_id": "path::qa_2f68e5ea0524::1",
+      "title": "In which country was the director of The Beauty from Peran born?",
+      "body": "The Beauty from Peran was directed by Orestis Laskos. Orestis Laskos was born in Eleusis. Eleusis is located in Greece.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q25999912",
+      "metadata": {
+        "question_id": "qa_2f68e5ea0524",
+        "template": "film_director_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -12.090682755963817,
+      "snippet": "The Beauty from Peran was directed by Orestis Laskos. Orestis Laskos was born in Eleusis. Eleusis is located in Greece."
+    },
+    {
+      "doc_id": "path::qa_8dff5823c781::1",
+      "title": "In which country was the director of Ah Nerede born?",
+      "body": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa. Mustafakemalpaşa is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6081761",
+      "metadata": {
+        "question_id": "qa_8dff5823c781",
+        "template": "film_director_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -11.891858204132816,
+      "snippet": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa. Mustafakemalpaşa is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_e90dc0323aed::1",
+      "title": "In which country was the director of Playing with Death born?",
+      "body": "Playing with Death was directed by Hamid Tamjidi. Hamid Tamjidi was born in Tehran. Tehran is located in Iran.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q7203434",
+      "metadata": {
+        "question_id": "qa_e90dc0323aed",
+        "template": "film_director_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -11.703166496763355,
+      "snippet": "Playing with Death was directed by Hamid Tamjidi. Hamid Tamjidi was born in Tehran. Tehran is located in Iran."
+    },
+    {
+      "doc_id": "path::qa_ea1b335bfcbb::1",
+      "title": "In which country was the director of Shadows and Faces born?",
+      "body": "Shadows and Faces was directed by Derviş Zaim. Derviş Zaim was born in Famagusta. Famagusta is located in Cyprus.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q7460798",
+      "metadata": {
+        "question_id": "qa_ea1b335bfcbb",
+        "template": "film_director_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -11.703166496763355,
+      "snippet": "Shadows and Faces was directed by Derviş Zaim. Derviş Zaim was born in Famagusta. Famagusta is located in Cyprus."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:47:46.361884+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 914,
+    "remaining_tokens": 11618,
+    "reset_requests_seconds": 7430.4,
+    "reset_tokens_seconds": 1.91,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:47:46 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "914",
+      "x-ratelimit-remaining-tokens": "11618",
+      "x-ratelimit-reset-requests": "2h3m50.4s",
+      "x-ratelimit-reset-tokens": "1.91s",
+      "x-request-id": "req_01kpga41meehkb0hrnqrbtr5t4",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=X3CL07NdLK3__MBmWflMOtZMroXeFeBAYXGrhIJOFZc-1776516466.297454-1.0.1.1-PYgiFCfOR5P40_pwMfxwFJCpkDxDzElbdVYLVPIRGf1VDq2buXUmr3UhbUjRL04KM7Hl.QF0GdtDrffu5MW1sgJzrGoq7gKcQwn.THBBAoN2_TLCCDR8WePsnjS2Pw1V; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:17:46 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3c7aa5840dc33-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "turkey",
+    "gold_normalized": "turkey",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

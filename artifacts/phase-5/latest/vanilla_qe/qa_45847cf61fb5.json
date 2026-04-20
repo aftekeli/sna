@@ -1,0 +1,178 @@
+{
+  "created_at": "2026-04-18T12:47:56.259421+00:00",
+  "status": "success",
+  "method": "vanilla_qe",
+  "question_id": "qa_45847cf61fb5",
+  "question": "In which country was the director of Davaro born?",
+  "question_type": "three_hop",
+  "template": "film_director_birth_place_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q43",
+    "text": "Turkey"
+  },
+  "prediction_text": "Turkey",
+  "expanded_query": "What country was the director of Davaro born in!",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_45847cf61fb5::1",
+      "title": "In which country was the director of Davaro born?",
+      "body": "Davaro was directed by Kartal Tibet. Kartal Tibet was born in Ankara. Ankara is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6806566",
+      "metadata": {
+        "question_id": "qa_45847cf61fb5",
+        "template": "film_director_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -17.353383901564694,
+      "snippet": "Davaro was directed by Kartal Tibet. Kartal Tibet was born in Ankara. Ankara is located in Turkey."
+    },
+    {
+      "doc_id": "fact::Q6806566::P57::Q374415",
+      "title": "Davaro - director",
+      "body": "Davaro was directed by kartal tibet. Relation type: director. Source roles: film. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6806566",
+      "metadata": {
+        "source_id": "Q6806566",
+        "target_id": "Q374415",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -13.331010555930852,
+      "snippet": "Davaro was directed by kartal tibet. Relation type: director. Source roles: film. Target roles: director."
+    },
+    {
+      "doc_id": "fact::Q2882584::P57::Q307737",
+      "title": "and then what? - director",
+      "body": "and then what? was directed by Özcan Deniz. Relation type: director. Source roles: film. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q2882584",
+      "metadata": {
+        "source_id": "Q2882584",
+        "target_id": "Q307737",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -12.825094709949273,
+      "snippet": "and then what? was directed by Özcan Deniz. Relation type: director. Source roles: film. Target roles: director."
+    },
+    {
+      "doc_id": "entity::Q6806566",
+      "title": "Davaro",
+      "body": "Davaro. Description: Davaro is a 1981 Turkish adventure film directed by Kartal Tibet. Aliases: Davaro, davaro. Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q6806566",
+      "metadata": {
+        "entity_id": "Q6806566",
+        "aliases": [
+          "Davaro",
+          "davaro"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -10.510745525847536,
+      "snippet": "Davaro. Description: Davaro is a 1981 Turkish adventure film directed by Kartal Tibet. Aliases: Davaro, davaro. Roles: film. Domains: cinema, film, turkiye."
+    },
+    {
+      "doc_id": "entity::Q2882584",
+      "title": "and then what?",
+      "body": "and then what?. Description: And Then What? (Turkish: Ya Sonra?) is a 2011 Turkish romantic comedy film, written and directed by Özcan Deniz, starring Deniz Çakır as an unhappily married woman who attempts to restart her long dormant career. The film, which opened on February 25, 2011 (2011-02-25) at number 2 in the Turkish box office, is one of the highest grossing Turkish films of 2011. Aliases: and then what?, And Then What?, ya sonra?, ya sonra, Ya Sonra, Ya Sonra?, and then want?, And Then Want?. Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q2882584",
+      "metadata": {
+        "entity_id": "Q2882584",
+        "aliases": [
+          "and then what?",
+          "And Then What?",
+          "ya sonra?",
+          "ya sonra",
+          "Ya Sonra",
+          "Ya Sonra?",
+          "and then want?",
+          "And Then Want?"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -10.2293073141397,
+      "snippet": "and then what?. Description: And Then What? (Turkish: Ya Sonra?) is a 2011 Turkish romantic comedy film, written and directed by Özcan Deniz, starring Deniz Çakır as an unhappily married woman who attempts to restart..."
+    },
+    {
+      "doc_id": "fact::Q6806566::P495::Q43",
+      "title": "Davaro - country of origin",
+      "body": "Davaro has country of origin turkiye. Relation type: country of origin. Source roles: film. Target roles: birth_place, country, country_root.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6806566",
+      "metadata": {
+        "source_id": "Q6806566",
+        "target_id": "Q43",
+        "relation_id": "P495",
+        "relation_label": "country of origin"
+      },
+      "score": -10.109485463499908,
+      "snippet": "Davaro has country of origin turkiye. Relation type: country of origin. Source roles: film. Target roles: birth_place, country, country_root."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:47:56.249187+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 912,
+    "remaining_tokens": 11541,
+    "reset_requests_seconds": 7603.2,
+    "reset_tokens_seconds": 2.295,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:47:56 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "912",
+      "x-ratelimit-remaining-tokens": "11541",
+      "x-ratelimit-reset-requests": "2h6m43.2s",
+      "x-ratelimit-reset-tokens": "2.295s",
+      "x-request-id": "req_01kpga4bc3ems9y9bsxds984bw",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=SUWSlgY2pQ0nAMFyOLGghppp3rneQqoi.Bdc7rvIWCQ-1776516476.2686262-1.0.1.1-P6zpu33kJaRfvrP49bNnI8XV7.S6gP0f32YzZZ2fHy6nzgiUVhXTTpJWPf2Stmlu2rV6CDYhKHTCc4lskRJ7w30JECW7hOhRKo_.Fh3SpXkQ6_P1RbxAWtXS7iJyyRN9; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:17:56 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3c7e8a87a3bfa-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "turkey",
+    "gold_normalized": "turkey",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

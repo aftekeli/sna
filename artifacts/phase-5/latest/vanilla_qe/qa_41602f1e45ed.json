@@ -1,0 +1,176 @@
+{
+  "created_at": "2026-04-18T12:50:48.668473+00:00",
+  "status": "success",
+  "method": "vanilla_qe",
+  "question_id": "qa_41602f1e45ed",
+  "question": "Where was the director of Aslan Pençesi born?",
+  "question_type": "two_hop",
+  "template": "film_director_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q406",
+    "text": "Istanbul"
+  },
+  "prediction_text": "Istanbul",
+  "expanded_query": "Director of Aslan Pençesi birthplace.",
+  "retrieved_documents": [
+    {
+      "doc_id": "fact::Q18712768::P57::Q6815170",
+      "title": "Aslan Pençesi - director",
+      "body": "Aslan Pençesi was directed by memduh un. Relation type: director. Source roles: film. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q18712768",
+      "metadata": {
+        "source_id": "Q18712768",
+        "target_id": "Q6815170",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -23.04079329893448,
+      "snippet": "Aslan Pençesi was directed by memduh un. Relation type: director. Source roles: film. Target roles: director."
+    },
+    {
+      "doc_id": "entity::Q18712768",
+      "title": "Aslan Pençesi",
+      "body": "Aslan Pençesi. Description: Aslan Pençesi is a 1966 Turkish crime film, directed by Memduh Ün and starring Ayhan Işık, Sevinç Pekin and Turgut Özatay. It was written by Halit Refiğ. Aliases: Aslan Pençesi, aslan pençesi, aslan pencesi, Aslan Pencesi. Roles: film. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q18712768",
+      "metadata": {
+        "entity_id": "Q18712768",
+        "aliases": [
+          "Aslan Pençesi",
+          "aslan pençesi",
+          "aslan pencesi",
+          "Aslan Pencesi"
+        ],
+        "roles": [
+          "film"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -22.75832200565518,
+      "snippet": "Aslan Pençesi. Description: Aslan Pençesi is a 1966 Turkish crime film, directed by Memduh Ün and starring Ayhan Işık, Sevinç Pekin and Turgut Özatay. It was written by Halit Refiğ. Aliases: Aslan Pençesi, aslan pençe..."
+    },
+    {
+      "doc_id": "path::qa_41602f1e45ed::1",
+      "title": "Where was the director of Aslan Pençesi born?",
+      "body": "Aslan Pençesi was directed by Arif Memduh Ün. Arif Memduh Ün was born in Istanbul.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q18712768",
+      "metadata": {
+        "question_id": "qa_41602f1e45ed",
+        "template": "film_director_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -21.679092069712297,
+      "snippet": "Aslan Pençesi was directed by Arif Memduh Ün. Arif Memduh Ün was born in Istanbul."
+    },
+    {
+      "doc_id": "fact::Q18712768::P161::Q792949",
+      "title": "Aslan Pençesi - cast member",
+      "body": "Aslan Pençesi has cast member ayhan işık. Relation type: cast member. Source roles: film. Target roles: cast_member.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q18712768",
+      "metadata": {
+        "source_id": "Q18712768",
+        "target_id": "Q792949",
+        "relation_id": "P161",
+        "relation_label": "cast member"
+      },
+      "score": -19.68749128466224,
+      "snippet": "Aslan Pençesi has cast member ayhan işık. Relation type: cast member. Source roles: film. Target roles: cast_member."
+    },
+    {
+      "doc_id": "fact::Q18712768::P495::Q43",
+      "title": "Aslan Pençesi - country of origin",
+      "body": "Aslan Pençesi has country of origin turkiye. Relation type: country of origin. Source roles: film. Target roles: birth_place, country, country_root.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q18712768",
+      "metadata": {
+        "source_id": "Q18712768",
+        "target_id": "Q43",
+        "relation_id": "P495",
+        "relation_label": "country of origin"
+      },
+      "score": -19.076668518301087,
+      "snippet": "Aslan Pençesi has country of origin turkiye. Relation type: country of origin. Source roles: film. Target roles: birth_place, country, country_root."
+    },
+    {
+      "doc_id": "entity::Q15479026",
+      "title": "Yavuz Özkan (director)",
+      "body": "Yavuz Özkan (director). Description: Yavuz Özkan (1942 – 21 May 2019) was a Turkish film director and screenwriter. Özkan is best known for his 1978 film The Mine. Aliases: Yavuz Özkan (director), Yavuz Ozkan (director), yavuz ozkan (director), yavuz özkan (director). Roles: director. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q15479026",
+      "metadata": {
+        "entity_id": "Q15479026",
+        "aliases": [
+          "Yavuz Özkan (director)",
+          "Yavuz Ozkan (director)",
+          "yavuz ozkan (director)",
+          "yavuz özkan (director)"
+        ],
+        "roles": [
+          "director"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -3.139284700204831,
+      "snippet": "Yavuz Özkan (director). Description: Yavuz Özkan (1942 – 21 May 2019) was a Turkish film director and screenwriter. Özkan is best known for his 1978 film The Mine. Aliases: Yavuz Özkan (director), Yavuz Ozkan (directo..."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:50:48.660285+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 882,
+    "remaining_tokens": 11498,
+    "reset_requests_seconds": 10195.199,
+    "reset_tokens_seconds": 2.51,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:50:48 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "882",
+      "x-ratelimit-remaining-tokens": "11498",
+      "x-ratelimit-reset-requests": "2h49m55.199s",
+      "x-ratelimit-reset-tokens": "2.51s",
+      "x-request-id": "req_01kpga9krfe7svfd6d8p23mhnb",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=KNojL6PXOwASxqos35siZHj8VkFhDD5xOU3WS_9D5MY-1776516648.6991448-1.0.1.1-eDXkzzh5EX9QJaQ4fyyt9mkjC7j4euO7ua5DKLNsHlNJDGjVDsmOkA4A5LjhTPemvFAkYfioLy6h11mu6HYWjoMaP311fA3VTIADH8miBScuPsbwxTM73D.51Ux5kjiF; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:20:48 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3cc1e5b95a5bc-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "istanbul",
+    "gold_normalized": "istanbul",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

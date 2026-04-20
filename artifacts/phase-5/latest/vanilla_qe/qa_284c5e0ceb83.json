@@ -1,0 +1,134 @@
+{
+  "created_at": "2026-04-18T12:06:52.272531+00:00",
+  "status": "success",
+  "method": "vanilla_qe",
+  "question_id": "qa_284c5e0ceb83",
+  "question": "Which award was received by Nuri Bilge Ceylan, a cast member of Climates?",
+  "question_type": "two_hop",
+  "template": "film_cast_award",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q7241424",
+    "text": "Presidential Culture and Arts Grand Awards"
+  },
+  "prediction_text": "Presidential Culture and Arts Grand Awards.",
+  "expanded_query": "Nuri Bilge Ceylan award as cast member of Climates.",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_284c5e0ceb83::1",
+      "title": "Which award was received by Nuri Bilge Ceylan, a cast member of Climates?",
+      "body": "Climates has cast member Nuri Bilge Ceylan. Nuri Bilge Ceylan received the award Presidential Culture and Arts Grand Awards.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q2758737",
+      "metadata": {
+        "question_id": "qa_284c5e0ceb83",
+        "template": "film_cast_award",
+        "question_type": "two_hop"
+      },
+      "score": -41.9594903004783,
+      "snippet": "Climates has cast member Nuri Bilge Ceylan. Nuri Bilge Ceylan received the award Presidential Culture and Arts Grand Awards."
+    },
+    {
+      "doc_id": "entity::Q724172",
+      "title": "nuri bilge ceylan",
+      "body": "nuri bilge ceylan. Description: Nuri Bilge Ceylan (Turkish pronunciation: [ˈnuːɾi ˈbilɟe ˈdʒejlan], born 26 January 1959) is a Turkish film director, photographer, screenwriter and actor.He won the Palme d'Or, the highest prize at the Cannes Film Festival, in 2014. He is married to filmmaker, photographer, and actress Ebru Ceylan, with whom he co-starred in Climates (2006). Aliases: nuri bilge ceylan, Nuri Bilge Ceylan. Roles: cast_member, person_seed. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q724172",
+      "metadata": {
+        "entity_id": "Q724172",
+        "aliases": [
+          "nuri bilge ceylan",
+          "Nuri Bilge Ceylan"
+        ],
+        "roles": [
+          "cast_member",
+          "person_seed"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -31.48757061759755,
+      "snippet": "nuri bilge ceylan. Description: Nuri Bilge Ceylan (Turkish pronunciation: [ˈnuːɾi ˈbilɟe ˈdʒejlan], born 26 January 1959) is a Turkish film director, photographer, screenwriter and actor.He won the Palme d'Or, the hig..."
+    },
+    {
+      "doc_id": "fact::Q724172::P166::Q844804",
+      "title": "nuri bilge ceylan - award received",
+      "body": "nuri bilge ceylan received the award Grand Prix (Cannes Festival). Relation type: award received. Source roles: cast_member, person_seed. Target roles: award.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q724172",
+      "metadata": {
+        "source_id": "Q724172",
+        "target_id": "Q844804",
+        "relation_id": "P166",
+        "relation_label": "award received"
+      },
+      "score": -30.964959404761675,
+      "snippet": "nuri bilge ceylan received the award Grand Prix (Cannes Festival). Relation type: award received. Source roles: cast_member, person_seed. Target roles: award."
+    },
+    {
+      "doc_id": "fact::Q724172::P166::Q179808",
+      "title": "nuri bilge ceylan - award received",
+      "body": "nuri bilge ceylan received the award palme d'or 1939–1959. Relation type: award received. Source roles: cast_member, person_seed. Target roles: award.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q724172",
+      "metadata": {
+        "source_id": "Q724172",
+        "target_id": "Q179808",
+        "relation_id": "P166",
+        "relation_label": "award received"
+      },
+      "score": -30.79117141119957,
+      "snippet": "nuri bilge ceylan received the award palme d'or 1939–1959. Relation type: award received. Source roles: cast_member, person_seed. Target roles: award."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T12:06:52.270437+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 935,
+    "remaining_tokens": 11355,
+    "reset_requests_seconds": 5616.0,
+    "reset_tokens_seconds": 3.225,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 12:06:52 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "935",
+      "x-ratelimit-remaining-tokens": "11355",
+      "x-ratelimit-reset-requests": "1h33m36s",
+      "x-ratelimit-reset-tokens": "3.225s",
+      "x-request-id": "req_01kpg7s51efvyasqzxgad9rhvd",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=a1g3eS7S044qrMyub0Q2q3RhKmdQt2I3FsT9SYLMCLM-1776514012.1863325-1.0.1.1-ZcOoV_Iazxt3StIUvXZ1vr..6dnzxFK_SD0i6Cr7MZlyc1kUEK78VZLM4LJ9RkRuBfGsRruYjLepn0K0_vueBt59BkDCYF.xZy1DdPCD2_2x54CTlLaM1L64SLwYUqDm; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:36:52 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee38bc02b95e116-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "presidential culture and arts grand awards",
+    "gold_normalized": "presidential culture and arts grand awards",
+    "exact_match": true,
+    "contains_match": true
+  }
+}

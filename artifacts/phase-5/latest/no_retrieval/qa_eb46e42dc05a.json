@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-18T13:10:36.489950+00:00",
+  "status": "success",
+  "method": "no_retrieval",
+  "question_id": "qa_eb46e42dc05a",
+  "question": "In which country is the school attended by the director of Shadows and Faces located?",
+  "question_type": "three_hop",
+  "template": "film_director_education_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q145",
+    "text": "The United Kingdom of Great Britain and Northern Ireland"
+  },
+  "prediction_text": "Turkey",
+  "expanded_query": null,
+  "retrieved_documents": [],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T13:10:36.481527+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 756,
+    "remaining_tokens": 11901,
+    "reset_requests_seconds": 21081.6,
+    "reset_tokens_seconds": 0.495,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 13:10:36 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "756",
+      "x-ratelimit-remaining-tokens": "11901",
+      "x-ratelimit-reset-requests": "5h51m21.6s",
+      "x-ratelimit-reset-tokens": "495ms",
+      "x-request-id": "req_01kpgbdvsyfamv2zb2p4776eaq",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=h2baKPllD4ZBfTJWxbta8M2JaPZyBdcSNJVRiLeX.0I-1776517836.5846736-1.0.1.1-iXl5.AANEUvbrzwAB3YwwFvtJ7aHcvwDaWvKffzaJDxx.wYcfUBiHiTuPRkQljAlka407tKCUMBcfXZ1FsJUShZ443AJX_T7pfNJJbSLCdMqgBDcn51k6zhmj26N65ta; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 13:40:36 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee3e91ea934c8cd-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "turkey",
+    "gold_normalized": "the united kingdom of great britain and northern ireland",
+    "exact_match": false,
+    "contains_match": false
+  }
+}

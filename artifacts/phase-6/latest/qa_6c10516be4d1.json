@@ -1,0 +1,232 @@
+{
+  "created_at": "2026-04-18T12:10:57.576115+00:00",
+  "status": "success",
+  "method": "kg_infused_rag",
+  "question_id": "qa_6c10516be4d1",
+  "question": "Where was Tülin Özen, a cast member of 10 To 11, born?",
+  "question_type": "two_hop",
+  "template": "film_cast_birth_place",
+  "difficulty": "medium",
+  "gold_answer": {
+    "entity_id": "Q174341",
+    "text": "İskenderun"
+  },
+  "prediction_text": "İskenderun",
+  "match": {
+    "prediction_normalized": "iskenderun",
+    "gold_normalized": "iskenderun",
+    "exact_match": true,
+    "contains_match": true
+  },
+  "seed_entities": [
+    {
+      "entity_id": "Q6086955",
+      "entity_name": "Tülin Özen",
+      "roles": [
+        "cast_member"
+      ],
+      "source": "lexicon",
+      "score": 16
+    }
+  ],
+  "relation_path": [
+    "P19"
+  ],
+  "activation_rounds": [
+    {
+      "round_index": 1,
+      "frontier_entity_ids": [
+        "Q6086955"
+      ],
+      "candidate_count": 2,
+      "selected_triples": [
+        {
+          "source_id": "Q6086955",
+          "source_name": "Tülin Özen",
+          "source_roles": [
+            "cast_member"
+          ],
+          "relation_id": "P19",
+          "relation_label": "place of birth",
+          "target_id": "Q174341",
+          "target_name": "Iskenderum",
+          "target_roles": [
+            "birth_place"
+          ],
+          "score": 16.0
+        }
+      ]
+    }
+  ],
+  "structured_answer": {
+    "seed_paths": [
+      {
+        "seed_entity_id": "Q6086955",
+        "seed_entity_name": "Tülin Özen",
+        "final_answers": [
+          {
+            "entity_id": "Q174341",
+            "entity_name": "Iskenderum"
+          }
+        ]
+      }
+    ],
+    "candidate_entity_ids": [
+      "Q174341"
+    ],
+    "candidate_texts": [
+      "Iskenderum"
+    ],
+    "answer_text": "Iskenderum"
+  },
+  "kg_summary": "Tülin Özen was born in Iskenderum.",
+  "expanded_query": "Where was Tülin Özen born;",
+  "retrieved_documents": [
+    {
+      "doc_id": "path::qa_6c10516be4d1::1",
+      "title": "Where was Tülin Özen, a cast member of 10 To 11, born?",
+      "body": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q3459778",
+      "metadata": {
+        "question_id": "qa_6c10516be4d1",
+        "template": "film_cast_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -25.387925198264014,
+      "snippet": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun."
+    },
+    {
+      "doc_id": "entity::Q6086955",
+      "title": "Tülin Özen",
+      "body": "Tülin Özen. Description: Tülin Özen (born 24 December 1979) is a Turkish actress. She has appeared in more than twenty films since 2003. Aliases: Tülin Özen, tülin özen. Roles: cast_member. Domains: cinema, people, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q6086955",
+      "metadata": {
+        "entity_id": "Q6086955",
+        "aliases": [
+          "Tülin Özen",
+          "tülin özen"
+        ],
+        "roles": [
+          "cast_member"
+        ],
+        "domains": [
+          "cinema",
+          "people",
+          "turkiye"
+        ]
+      },
+      "score": -19.724209240067477,
+      "snippet": "Tülin Özen. Description: Tülin Özen (born 24 December 1979) is a Turkish actress. She has appeared in more than twenty films since 2003. Aliases: Tülin Özen, tülin özen. Roles: cast_member. Domains: cinema, people, tu..."
+    },
+    {
+      "doc_id": "path::qa_6e027a24320b::1",
+      "title": "Were Tülin Özen from 10 To 11 and Asuman Dabak from Adem'in Trenleri born in the same country?",
+      "body": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun. İskenderun is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q3459778",
+      "metadata": {
+        "question_id": "qa_6e027a24320b",
+        "template": "film_cast_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -19.261803886990226,
+      "snippet": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun. İskenderun is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_25e417879724::1",
+      "title": "Were Tülin Özen from 10 To 11 and Seiyō Uchino from 125 Years Memory born in the same country?",
+      "body": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun. İskenderun is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q3459778",
+      "metadata": {
+        "question_id": "qa_25e417879724",
+        "template": "film_cast_birth_place_country__comparison",
+        "question_type": "comparison"
+      },
+      "score": -19.261803886990226,
+      "snippet": "10 To 11 has cast member Tülin Özen. Tülin Özen was born in İskenderun. İskenderun is located in Turkey."
+    }
+  ],
+  "quota_snapshot": {
+    "query_expansion": {
+      "captured_at": "2026-04-18T12:10:56.743165+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 899,
+      "remaining_tokens": 11650,
+      "reset_requests_seconds": 8726.4,
+      "reset_tokens_seconds": 1.75,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:10:56 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "899",
+        "x-ratelimit-remaining-tokens": "11650",
+        "x-ratelimit-reset-requests": "2h25m26.4s",
+        "x-ratelimit-reset-tokens": "1.75s",
+        "x-request-id": "req_01kpg80ktcez9rjwf4yhbd1g24",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=y.RpBArU0BVLO8Sq8NbOYeVSHXvAIdvD9OLLm17VgLc-1776514256.6933894-1.0.1.1-ixCad6RIKDrjOiy8OEHxEXH_6_1ZNS3u9bhv2LkiDWfzkaIaCTyISF4PCdAkpylK.UsWZ2AldpnJS28pgpBeBpV0F7cF7nBcdT9PNb1jet9ec4fgHeqNEybpQ.N10rIz; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:40:56 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee391b858630c48-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    },
+    "answer_generation": {
+      "captured_at": "2026-04-18T12:10:57.573094+00:00",
+      "model": "llama-3.3-70b-versatile",
+      "source": "chat_completion",
+      "limit_requests": 1000,
+      "limit_tokens": 12000,
+      "remaining_requests": 898,
+      "remaining_tokens": 11388,
+      "reset_requests_seconds": 8812.8,
+      "reset_tokens_seconds": 3.059,
+      "retry_after_seconds": null,
+      "service_tier": "on_demand",
+      "headers": {
+        "date": "Sat, 18 Apr 2026 12:10:57 GMT",
+        "content-type": "application/json",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+        "server": "cloudflare",
+        "vary": "Origin",
+        "x-groq-region": "fra",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "12000",
+        "x-ratelimit-remaining-requests": "898",
+        "x-ratelimit-remaining-tokens": "11388",
+        "x-ratelimit-reset-requests": "2h26m52.8s",
+        "x-ratelimit-reset-tokens": "3.059s",
+        "x-request-id": "req_01kpg80mkhfn3s7awwnh6kf05x",
+        "via": "1.1 google",
+        "cf-cache-status": "DYNAMIC",
+        "set-cookie": "__cf_bm=l_OIucMv9464rx56Ngu0sIoG0sxlBXkLCzufu5Iho54-1776514257.4994884-1.0.1.1-HVAQZ4mhyy8VaQ33d1g1bDf5oHKjaOkv4wUELo4IphfXcSOIHq0rXuwnWrwl_LvSC6kTwk1S01VeNcFbzZ41fYywU5s8mKxo__rFS83nRRTbeleeiUR4pYEcKnPqOYCw; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:40:57 GMT",
+        "strict-transport-security": "max-age=15552000",
+        "content-encoding": "gzip",
+        "cf-ray": "9ee391bd5ff21d60-IST",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      }
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "created_at": "2026-04-18T11:57:50.638077+00:00",
+  "status": "success",
+  "method": "vanilla_qe",
+  "question_id": "qa_8dff5823c781",
+  "question": "In which country was the director of Ah Nerede born?",
+  "question_type": "three_hop",
+  "template": "film_director_birth_place_country",
+  "difficulty": "hard",
+  "gold_answer": {
+    "entity_id": "Q43",
+    "text": "Turkey"
+  },
+  "prediction_text": "Turkey.",
+  "expanded_query": "Director of Ah Nerede birth country.",
+  "retrieved_documents": [
+    {
+      "doc_id": "fact::Q6081761::P57::Q6033250",
+      "title": "Ah Nerede - director",
+      "body": "Ah Nerede was directed by Orhan Aksoy. Relation type: director. Source roles: film, film_seed. Target roles: director.",
+      "source_kind": "graph_fact",
+      "source_entity_id": "Q6081761",
+      "metadata": {
+        "source_id": "Q6081761",
+        "target_id": "Q6033250",
+        "relation_id": "P57",
+        "relation_label": "director"
+      },
+      "score": -19.31840566112343,
+      "snippet": "Ah Nerede was directed by Orhan Aksoy. Relation type: director. Source roles: film, film_seed. Target roles: director."
+    },
+    {
+      "doc_id": "entity::Q6081761",
+      "title": "Ah Nerede",
+      "body": "Ah Nerede. Description: Ah Nerede is a 1975 Turkish comedy film directed by Orhan Aksoy. Aliases: Ah Nerede, ah nerede. Roles: film, film_seed. Domains: cinema, film, turkiye.",
+      "source_kind": "entity_profile",
+      "source_entity_id": "Q6081761",
+      "metadata": {
+        "entity_id": "Q6081761",
+        "aliases": [
+          "Ah Nerede",
+          "ah nerede"
+        ],
+        "roles": [
+          "film",
+          "film_seed"
+        ],
+        "domains": [
+          "cinema",
+          "film",
+          "turkiye"
+        ]
+      },
+      "score": -18.732784669547527,
+      "snippet": "Ah Nerede. Description: Ah Nerede is a 1975 Turkish comedy film directed by Orhan Aksoy. Aliases: Ah Nerede, ah nerede. Roles: film, film_seed. Domains: cinema, film, turkiye."
+    },
+    {
+      "doc_id": "path::qa_8dff5823c781::1",
+      "title": "In which country was the director of Ah Nerede born?",
+      "body": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa. Mustafakemalpaşa is located in Turkey.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6081761",
+      "metadata": {
+        "question_id": "qa_8dff5823c781",
+        "template": "film_director_birth_place_country",
+        "question_type": "three_hop"
+      },
+      "score": -18.54606662142916,
+      "snippet": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa. Mustafakemalpaşa is located in Turkey."
+    },
+    {
+      "doc_id": "path::qa_c2bd1aeb56de::1",
+      "title": "Where was the director of Ah Nerede born?",
+      "body": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa.",
+      "source_kind": "question_support_path",
+      "source_entity_id": "Q6081761",
+      "metadata": {
+        "question_id": "qa_c2bd1aeb56de",
+        "template": "film_director_birth_place",
+        "question_type": "two_hop"
+      },
+      "score": -18.539144476250907,
+      "snippet": "Ah Nerede was directed by Orhan Aksoy. Orhan Aksoy was born in Mustafakemalpaşa."
+    }
+  ],
+  "quota_snapshot": {
+    "captured_at": "2026-04-18T11:57:50.636047+00:00",
+    "model": "llama-3.3-70b-versatile",
+    "source": "chat_completion",
+    "limit_requests": 1000,
+    "limit_tokens": 12000,
+    "remaining_requests": 989,
+    "remaining_tokens": 11248,
+    "reset_requests_seconds": 950.4,
+    "reset_tokens_seconds": 3.76,
+    "retry_after_seconds": null,
+    "service_tier": "on_demand",
+    "headers": {
+      "date": "Sat, 18 Apr 2026 11:57:50 GMT",
+      "content-type": "application/json",
+      "transfer-encoding": "chunked",
+      "connection": "keep-alive",
+      "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate",
+      "server": "cloudflare",
+      "vary": "Origin",
+      "x-groq-region": "fra",
+      "x-ratelimit-limit-requests": "1000",
+      "x-ratelimit-limit-tokens": "12000",
+      "x-ratelimit-remaining-requests": "989",
+      "x-ratelimit-remaining-tokens": "11248",
+      "x-ratelimit-reset-requests": "15m50.4s",
+      "x-ratelimit-reset-tokens": "3.76s",
+      "x-request-id": "req_01kpg78m7nf2w88ezr7ptgb3c9",
+      "via": "1.1 google",
+      "cf-cache-status": "DYNAMIC",
+      "set-cookie": "__cf_bm=qYyM2IgEWkLzNJjqujZl.mhCkqVHT3PDvQGjzjVaoY8-1776513470.6874819-1.0.1.1-ShB9P3zcU.GC0PxQNuWRV3zO7XBsxo8ZT6tKBBupL2RvzQk1Aok0j7jODIUF9THhSax.XUWDXUFxhDFRHGX1Jvm5wVktxOjoD0cNteaC36JrIaN2ZQXfrTb_D3LJ68kw; HttpOnly; Secure; Path=/; Domain=groq.com; Expires=Sat, 18 Apr 2026 12:27:50 GMT",
+      "strict-transport-security": "max-age=15552000",
+      "content-encoding": "gzip",
+      "cf-ray": "9ee37e87c98b5912-IST",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "provider": {
+    "name": "groq",
+    "model": "llama-3.3-70b-versatile"
+  },
+  "match": {
+    "prediction_normalized": "turkey",
+    "gold_normalized": "turkey",
+    "exact_match": true,
+    "contains_match": true
+  }
+}
