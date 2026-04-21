@@ -21,8 +21,10 @@ class Settings(BaseSettings):
     app_name: str = "Turkiye Cinema KG-Infused RAG Backend"
     app_env: str = Field(default="development", alias="APP_ENV")
     app_debug: bool = Field(default=True, alias="APP_DEBUG")
+    app_allowed_origins: str | None = Field(default=None, alias="APP_ALLOWED_ORIGINS")
     project_domain: str = "cinema"
     api_prefix: str = "/api/v1"
+    runtime_storage_root: Path | None = Field(default=None, alias="RUNTIME_STORAGE_ROOT")
 
     groq_api_key: str | None = Field(default=None, alias="GROQ_API_KEY")
     groq_model: str = Field(default="openai/gpt-oss-120b", alias="GROQ_MODEL")
@@ -95,12 +97,36 @@ class Settings(BaseSettings):
         return REPO_ROOT / "artifacts"
 
     @property
+    def allowed_origins(self) -> list[str]:
+        if self.app_allowed_origins:
+            origins = [origin.strip() for origin in self.app_allowed_origins.split(",")]
+            return [origin for origin in origins if origin]
+        return [
+            "http://127.0.0.1:3000",
+            "http://127.0.0.1:3001",
+            "http://127.0.0.1:3002",
+            "http://127.0.0.1:3003",
+            "http://localhost:3000",
+            "http://localhost:3001",
+            "http://localhost:3002",
+            "http://localhost:3003",
+        ]
+
+    @property
+    def runtime_root_dir(self) -> Path:
+        if self.runtime_storage_root is not None:
+            return self.runtime_storage_root
+        if self.app_env.casefold() == "production":
+            return Path("/tmp/sna-runtime")
+        return self.artifacts_dir / "runtime"
+
+    @property
     def groq_runtime_dir(self) -> Path:
-        return self.artifacts_dir / "runtime" / "groq"
+        return self.runtime_root_dir / "groq"
 
     @property
     def chat_runtime_dir(self) -> Path:
-        return self.artifacts_dir / "runtime" / "chat"
+        return self.runtime_root_dir / "chat"
 
     @property
     def phase3_dir(self) -> Path:

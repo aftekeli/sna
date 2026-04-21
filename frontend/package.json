@@ -2,9 +2,9 @@
   "name": "turkiye-cinema-kg-rag-frontend",
   "private": true,
   "scripts": {
-    "dev": "scripts\\next-run.cmd dev",
-    "build": "scripts\\next-run.cmd build",
-    "start": "scripts\\next-run.cmd start"
+    "dev": "npx next dev",
+    "build": "npx next build",
+    "start": "npx next start"
   },
   "dependencies": {
     "next": "latest",
