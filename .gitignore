@@ -20,3 +20,5 @@ docs/*.pdf
 *.tmp
 
 *.zip
+
+.vercel

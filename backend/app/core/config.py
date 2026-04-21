@@ -4,6 +4,7 @@ from functools import lru_cache
 from pathlib import Path
 
 from pydantic import Field
+from pydantic import model_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
@@ -87,6 +88,16 @@ class Settings(BaseSettings):
 
     ollama_base_url: str = Field(default="http://localhost:11434", alias="OLLAMA_BASE_URL")
     ollama_model: str = Field(default="qwen2.5-coder:14b", alias="OLLAMA_MODEL")
+
+    @model_validator(mode="before")
+    @classmethod
+    def normalize_string_inputs(cls, data):
+        if not isinstance(data, dict):
+            return data
+        normalized: dict[object, object] = {}
+        for key, value in data.items():
+            normalized[key] = value.strip() if isinstance(value, str) else value
+        return normalized
 
     @property
     def env_file(self) -> Path:
