@@ -187,6 +187,9 @@ http://127.0.0.1:3000
 
 Project documentation files can be placed under the `docs/` directory.
 
+For the Vercel production workflow used on the `prod` branch, see the dedicated manual deployment guide:
+- [README.prod.md](README.prod.md)
+
 ## Project Scope
 
 This repository focuses on:
