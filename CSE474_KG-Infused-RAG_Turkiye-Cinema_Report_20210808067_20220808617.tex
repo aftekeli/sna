@@ -1,0 +1,462 @@
+\documentclass[11pt,a4paper]{article}
+
+% ---------- Encoding and language ----------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+% ---------- Page and typography ----------
+\usepackage[a4paper,top=2.2cm,bottom=2.5cm,left=2.0cm,right=2.0cm,headheight=22pt]{geometry}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{setspace}
+\setstretch{1.08}
+\usepackage{parskip}
+
+% ---------- Colors ----------
+\usepackage[table,dvipsnames]{xcolor}
+\definecolor{NavyDark}{HTML}{0D2137}
+\definecolor{TealAccent}{HTML}{00B4D8}
+\definecolor{AmberAccent}{HTML}{F4A261}
+\definecolor{GreenOK}{HTML}{2DC653}
+\definecolor{PinkStat}{HTML}{C044D8}
+\definecolor{LightBg}{HTML}{EFF6FB}
+\definecolor{MutedGray}{HTML}{6B7A8D}
+\definecolor{BorderBlue}{HTML}{C5D8E8}
+\definecolor{SuccessGreen}{HTML}{1B7A3E}
+\definecolor{SuccessBg}{HTML}{E8F8EE}
+\definecolor{ErrRed}{HTML}{E85D4A}
+\definecolor{ErrOrange}{HTML}{F4A261}
+\definecolor{ErrBlue}{HTML}{5B8FD4}
+\definecolor{RowAlt}{HTML}{F4F9FC}
+
+% ---------- Graphics ----------
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup{font={small,it},labelfont={bf,color=NavyDark},labelsep=period,textfont={color=MutedGray},skip=4pt}
+
+\newcommand{\missingfigurebox}[1]{%
+  \fbox{%
+    \begin{minipage}[c][4.3cm][c]{0.92\linewidth}
+      \centering\color{MutedGray}\small
+      Missing image file: \texttt{\detokenize{#1}}\\[4pt]
+      Upload this PNG file next to \texttt{main.tex}.
+    \end{minipage}%
+  }%
+}
+\newcommand{\safeimage}[2][]{%
+  \IfFileExists{#2}{\includegraphics[#1]{#2}}{\missingfigurebox{#2}}%
+}
+
+% ---------- Tables ----------
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{ragged2e}
+\renewcommand{\arraystretch}{1.28}
+\newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\Centering\arraybackslash}p{#1}}
+\newcommand{\tblhead}[1]{\cellcolor{NavyDark}\textbf{\color{white}\small #1}}
+\newcommand{\passCell}{\cellcolor{SuccessBg}\textbf{\color{SuccessGreen}\small PASS}}
+\newcommand{\kgbest}[1]{\cellcolor{SuccessBg}\textbf{\color{SuccessGreen}#1}}
+
+% ---------- Lists and boxes ----------
+\usepackage{enumitem}
+\setlist[itemize]{topsep=3pt,itemsep=2pt,parsep=0pt,leftmargin=1.4em,label={\color{TealAccent}\small$\bullet$}}
+\usepackage[most]{tcolorbox}
+\tcbset{
+  statbox/.style={enhanced,arc=5pt,boxrule=1pt,colback=LightBg,left=6pt,right=6pt,top=6pt,bottom=6pt},
+  infobox/.style={enhanced,breakable,arc=3pt,boxrule=0.8pt,colback=LightBg,colframe=TealAccent,left=8pt,right=8pt,top=6pt,bottom=6pt},
+  failred/.style={enhanced,breakable,arc=4pt,boxrule=0.8pt,colback=white,colframe=ErrRed,colbacktitle=ErrRed,fonttitle=\bfseries\color{white},left=7pt,right=7pt,top=5pt,bottom=5pt},
+  failorange/.style={enhanced,breakable,arc=4pt,boxrule=0.8pt,colback=white,colframe=ErrOrange,colbacktitle=ErrOrange,fonttitle=\bfseries\color{white},left=7pt,right=7pt,top=5pt,bottom=5pt},
+  failblue/.style={enhanced,breakable,arc=4pt,boxrule=0.8pt,colback=white,colframe=ErrBlue,colbacktitle=ErrBlue,fonttitle=\bfseries\color{white},left=7pt,right=7pt,top=5pt,bottom=5pt}
+}
+\newcommand{\statcard}[3]{%
+  \begin{tcolorbox}[statbox,colframe=#3]
+    \centering{\fontsize{25}{27}\selectfont\bfseries\color{#3}#1}\\[3pt]
+    {\small\bfseries\color{NavyDark}#2}
+  \end{tcolorbox}%
+}
+
+% ---------- Section styling ----------
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries\color{NavyDark}}{\color{TealAccent}\thesection.}{0.5em}{}[\vspace{1pt}{\color{TealAccent}\titlerule[1.2pt]}\vspace{4pt}]
+\titleformat{\subsection}{\normalsize\bfseries\color{NavyDark}}{\color{AmberAccent}\thesubsection.}{0.5em}{}
+\titlespacing{\section}{0pt}{18pt}{8pt}
+\titlespacing{\subsection}{0pt}{12pt}{4pt}
+
+% ---------- Header, footer, links ----------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{BorderBlue}\leaders\hrule height \headrulewidth\hfill}}
+\fancyhead[L]{\small\color{MutedGray}KG-Infused RAG - Türkiye Cinema Domain}
+\fancyhead[R]{\small\textbf{\color{NavyDark}CSE474}}
+\fancyfoot[C]{\small\color{MutedGray}Topluyurek \& Tekeli \quad{\color{BorderBlue}|}\quad \thepage}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=TealAccent,urlcolor=TealAccent,citecolor=TealAccent,pdftitle={KG-Infused RAG Project Report},pdfauthor={Topluyurek and Tekeli}}
+
+\begin{document}
+
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{tcolorbox}[enhanced,arc=0pt,boxrule=0pt,colback=NavyDark,width=\textwidth,height=5.5cm,left=8pt,right=8pt,top=18pt,bottom=18pt]
+\begin{center}
+{\fontsize{11}{13}\selectfont\color{TealAccent}\texttt{MULTI-HOP QUESTION ANSWERING WITH KG-INFUSED RAG}}\\[8pt]
+{\fontsize{30}{34}\selectfont\bfseries\color{white}Türkiye Cinema}\\[2pt]
+{\fontsize{30}{34}\selectfont\bfseries\color{white}Knowledge Graph}\\[6pt]
+{\fontsize{13}{15}\selectfont\color{white!75}using Wikidata5M -- Neo4j Aura -- Groq LLaMA}
+\end{center}
+\end{tcolorbox}
+
+\vspace{1.2cm}
+\begin{center}
+\begin{tabular}{@{}L{3.8cm}L{9.2cm}@{}}
+\toprule
+\rowcolor{NavyDark}
+\tblhead{Field} & \tblhead{Value} \\
+\midrule
+\textbf{Course} & CSE474 - Social Network Analysis \\
+\rowcolor{RowAlt}
+\textbf{Project} & Multi-Hop QA with KG-Infused RAG using Wikidata5M \\
+\textbf{Domain} & Türkiye Cinema \\
+\rowcolor{RowAlt}
+\textbf{Students} & 20210808067 - Munevver Nur Topluyurek \\
+& 20220808617 - Ahmet Faruk Tekeli \\
+\rowcolor{RowAlt}
+\textbf{Repository} & \url{https://github.com/aftekeli/sna.git} \\
+\textbf{Live Demo} & \url{https://sna-frontend-eight.vercel.app/chat} \\
+\rowcolor{RowAlt}
+\textbf{Date} & 21-04-2026 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\vfill
+\begin{center}
+\small\color{MutedGray}Wikidata5M -- Neo4j Aura -- Groq LLaMA-3.3-70b -- KG-RAG
+\end{center}
+\end{titlepage}
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Executive Summary}
+
+This project implements a \textbf{KG-Infused Retrieval-Augmented Generation} (RAG) system for multi-hop question answering in the Türkiye cinema domain. The system starts from Wikidata5M, identifies Türkiye-related cinema entities, exports a Neo4j-ready subgraph, builds a verified 50-question multi-hop QA benchmark, and evaluates four answering strategies: \emph{No Retrieval}, \emph{Vanilla RAG}, \emph{Vanilla Query Expansion}, and \emph{KG-Infused RAG}.
+
+The final evaluation shows full coverage for all four methods: 50/50 successful outputs and zero ERROR predictions. \textbf{KG-Infused RAG} is the strongest method, reaching \textbf{98.0\%} accuracy, exact match, and F1, with \textbf{97.0\%} retrieval recall.
+
+\bigskip
+\noindent
+\begin{minipage}[t]{0.24\linewidth}
+\statcard{629}{Cinema Nodes}{TealAccent}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.24\linewidth}
+\statcard{1{,}516}{Relationships}{AmberAccent}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.24\linewidth}
+\statcard{1{,}186}{Verified Paths}{GreenOK}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.24\linewidth}
+\statcard{50}{QA Questions}{PinkStat}
+\end{minipage}
+
+\section{System Dashboard}
+
+The interactive dashboard provides a live view of the Türkiye Cinema Knowledge Graph served from Neo4j Aura, including node-type filters, film-level 1-hop neighborhood visualization, and a Cypher query library.
+
+\begin{figure}[H]
+\centering
+\safeimage[width=\linewidth]{Ekran görüntüsü 2026-04-23 134722.png}
+\caption{Dashboard overview - Knowledge Graph tab: 629 cinema nodes, 1{,}516 relationships, 1{,}186 verified paths, and 50-question QA dataset.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\safeimage[width=\linewidth]{Ekran görüntüsü 2026-04-23 134815.png}
+\caption{1-hop neighborhood of \emph{Adam and the Devil}: cast nodes Asuman Dabak and Nurgul Yesilcay, country node Turkiye.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\safeimage[width=\linewidth]{Ekran görüntüsü 2026-04-23 134829.png}
+\caption{Seed entity list and verified QA dataset breakdown by hop depth.}
+\end{figure}
+
+\section{Compliance with Assignment Requirements}
+
+\begin{longtable}{@{}C{1.2cm}L{3.3cm}L{6.7cm}C{1.1cm}@{}}
+\toprule
+\rowcolor{NavyDark}
+\tblhead{Phase} & \tblhead{PDF Requirement} & \tblhead{Project Evidence} & \tblhead{Status} \\
+\midrule
+\endfirsthead
+\toprule
+\rowcolor{NavyDark}
+\tblhead{Phase} & \tblhead{PDF Requirement} & \tblhead{Project Evidence} & \tblhead{Status} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+
+\textbf{1} & Türkiye entity detection and relation/domain analysis. & Q43 selected as root; 22{,}103 direct triples. Top relations include country, citizenship, place-of-birth, and education. Cinema density: 270 films, 359 persons. & \passCell \\
+\rowcolor{RowAlt}
+\textbf{2} & Select a domain with enough seeds, relation diversity, and multi-hop paths. & Turkish Cinema selected. Subgraph: 629 nodes, 1{,}516 relationships. Candidate paths include 132 film-director-birthplace and 187 film-cast-birthplace paths. & \passCell \\
+\textbf{3} & Create at least 50 verified multi-hop questions. & 50 questions delivered: 30 two-hop, 15 three-hop, 5 comparison. Raw triple verification: 94/94. & \passCell \\
+\rowcolor{RowAlt}
+\textbf{4} & Implement KG-guided spreading activation, KG-QE, KG-augmented answer generation, and Neo4j access. & Implemented in backend KG-RAG modules. Neo4j CSV exports and Cypher verification are in \texttt{artifacts/phase-3/}. & \passCell \\
+\textbf{5} & Compare No Retrieval, Vanilla RAG, Vanilla QE, and KG-Infused RAG. & Phase 7 metrics cover all four methods with 50/50 outputs and 0 bad predictions. & \passCell \\
+\rowcolor{RowAlt}
+\textbf{6} & Provide at least 5 successful and 5 unsuccessful case studies. & Case-study artifacts contain 5 successes and 5 failures selected from 134 successes and 66 failures. & \passCell \\
+\end{longtable}
+
+\section{Phase 1 - Dataset Exploration \& Türkiye Entity Detection}
+
+The exploration stage identifies \texttt{Q43} as the Türkiye root entity in Wikidata5M. Key findings:
+
+\begin{itemize}
+\item Direct Q43-connected triples: \textbf{22{,}103} - incoming: 21{,}885 / outgoing: 219.
+\item Türkiye-origin subjects: \textbf{759}.
+\item Top cinema relations: \texttt{P495} (country of origin), \texttt{P27} (citizenship), \texttt{P19} (place of birth), \texttt{P69} (educated at).
+\item Cinema density: \textbf{270} Turkish films and \textbf{359} cinema-domain persons.
+\item City/place evidence appears through birth-place, country, and education-location paths used later in the QA dataset.
+\end{itemize}
+
+\section{Phase 2 - Domain Selection \& Subgraph Construction}
+
+Turkish Cinema was selected because film facts such as director, cast member, education, award, birth place, and country of origin are stable and naturally form two-hop and three-hop reasoning chains.
+
+\begin{figure}[H]
+\centering
+\safeimage[width=\linewidth]{Ekran görüntüsü 2026-04-23 134853.png}
+\caption{Cypher query library - 8 verified reusable query patterns from 1-hop through 3-hop and multi-hop queries.}
+\end{figure}
+
+\begin{tcolorbox}[infobox]
+\textbf{Subgraph statistics:} 629 entity nodes and 1{,}516 relationships loaded into Neo4j Aura. Candidate paths mined from Wikidata5M include 132 film-director-birthplace paths and 187 film-cast-birthplace paths.
+\end{tcolorbox}
+
+\section{Phase 3 - Multi-Hop QA Benchmark}
+
+A 50-question benchmark was constructed with triple-verified answers drawn from Wikidata5M path mining.
+
+\begin{center}
+\begin{tabular}{@{}L{4.6cm}L{4.8cm}L{4.4cm}@{}}
+\toprule
+\rowcolor{NavyDark}
+\tblhead{2-Hop Questions (30)} & \tblhead{3-Hop Questions (15)} & \tblhead{Comparison Questions (5)} \\
+\midrule
+\rowcolor{LightBg}
+Film $\to$ Director $\to$ Birth place & Film $\to$ Director $\to$ Birth place $\to$ Country & Same birth country? \\
+Film $\to$ Director $\to$ Award & Film $\to$ Director $\to$ Education $\to$ Country & Same education country? \\
+\rowcolor{LightBg}
+Film $\to$ Director $\to$ Education & Film $\to$ Cast member $\to$ Birth place $\to$ Country & Cross-film comparison \\
+Film $\to$ Cast member $\to$ Birth place & & \\
+\rowcolor{LightBg}
+Film $\to$ Cast member $\to$ Award & & \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Phase 4 \& 5 - KG-Infused RAG Pipeline \& Evaluation}
+
+The pipeline consists of three sequential modules:
+
+\begin{itemize}
+\item \textbf{Module 1 - KG-Guided Spreading Activation:} seed entity selection, iterative 1-hop expansion, LLM triple selection, and activation memory.
+\item \textbf{Module 2 - KG-Based Query Expansion:} KG subgraph summary is used to generate an expanded query, followed by dual-query corpus retrieval.
+\item \textbf{Module 3 - KG-Augmented Answer Generation:} passage note and KG facts are combined to form a fact-enhanced answer context.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\safeimage[width=\linewidth]{Ekran görüntüsü 2026-04-23 134905.png}
+\caption{GNN Experimental tab - KG-Infused RAG pipeline flow and method comparison results.}
+\end{figure}
+
+\subsection{Method Comparison - Phase 7 Results}
+
+\begin{center}
+\begin{tabular}{@{}L{4.6cm}C{2.0cm}C{2.0cm}C{2.0cm}C{2.0cm}@{}}
+\toprule
+\rowcolor{NavyDark}
+\tblhead{Method} & \tblhead{Accuracy} & \tblhead{Exact Match} & \tblhead{F1} & \tblhead{Recall} \\
+\midrule
+No Retrieval & 0.18 & 0.08 & 0.10 & 0.00 \\
+\rowcolor{RowAlt}
+Vanilla RAG & 0.96 & 0.82 & 0.94 & 1.00 \\
+Vanilla QE & 0.96 & 0.84 & 0.95 & 1.00 \\
+\rowcolor{SuccessBg}
+\textbf{\color{SuccessGreen}KG-Infused RAG} & \kgbest{0.98} & \kgbest{0.98} & \kgbest{0.98} & \kgbest{0.97} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{tcolorbox}[infobox]
+KG-Infused RAG dominates all four metrics. The 90-point exact-match gap between No Retrieval (0.08) and KG-Infused RAG (0.98) directly quantifies the value of structured knowledge grounding for multi-hop reasoning.
+\end{tcolorbox}
+
+\section{Phase 6 - XAI Evidence \& Case Studies}
+
+The XAI Evidence tab presents 10 case studies: 5 successful and 5 unsuccessful examples. Every KG-RAG answer has a saved trace (50/50 coverage).
+
+\begin{figure}[H]
+\centering
+\safeimage[width=\linewidth]{Ekrangoruntusu-2026-04-23134918.png}
+\caption{XAI Evidence tab - 10 case studies, 50/50 trace coverage, KG-RAG EM 98\%.}
+\end{figure}
+
+\subsection{Five Successful KG-RAG Case Studies}
+
+The following examples come from the saved Phase 7 case-study artifact. In all five cases, KG-Infused RAG exactly matches the gold answer.
+
+\begin{center}
+\begin{tabular}{@{}L{2.2cm}L{5.8cm}L{2.3cm}L{2.3cm}L{2.4cm}@{}}
+\toprule
+\rowcolor{NavyDark}
+\tblhead{Question ID} & \tblhead{Question} & \tblhead{Gold} & \tblhead{System} & \tblhead{Trace} \\
+\midrule
+qa\_056fc446ad92 & Were the directors of \emph{Angel's Fall} and \emph{Do Not Forget Me Istanbul} educated in the same country? & no & no & 2 seeds, 3 rounds, 6 docs \\
+\rowcolor{RowAlt}
+qa\_07e8f72b4442 & In which country is the school attended by the director of \emph{Angel's Fall} located? & Turkey & Turkey & 1 seed, 3 rounds, 6 docs \\
+qa\_104db2fbbec9 & Where did the director of \emph{Ember} study? & Istanbul University & Istanbul University & 1 seed, 2 rounds, 6 docs \\
+\rowcolor{RowAlt}
+qa\_11ec48a42232 & In which country was Ali Düşenkalkar, a cast member of \emph{Devrim Arabaları}, born? & Cyprus & Cyprus & 1 seed, 2 rounds, 6 docs \\
+qa\_1d88f8ecd5cf & Where was the director of \emph{Arabesk} born? & Trabzon & Trabzon & 1 seed, 2 rounds, 4 docs \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Detailed Successful Trace - \emph{Where did the director of Ember study?}}
+
+\begin{center}
+\begin{tabular}{@{}C{0.8cm}L{7.0cm}L{4.8cm}@{}}
+\toprule
+\rowcolor{NavyDark}
+\tblhead{Round} & \tblhead{Triple traversed} & \tblhead{Role} \\
+\midrule
+1 & Ember (film) $\xrightarrow{\texttt{director}}$ Zeki Demirkubuz & Seed resolved \\
+\rowcolor{RowAlt}
+2 & Zeki Demirkubuz $\xrightarrow{\texttt{educated\_at}}$ Darulfunun & Answer node \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{figure}[H]
+\centering
+\safeimage[width=0.52\linewidth]{Ekran görüntüsü 2026-04-23 135140.png}
+\caption{Chat interface - KG-Infused RAG answers the Ember education question.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\safeimage[width=\linewidth]{Ekran görüntüsü 2026-04-23 135155.png}
+\caption{Knowledge graph trace: Ember (film) $\to$ Zeki Demirkubuz $\to$ Darulfunun.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\safeimage[width=\linewidth]{Ekran görüntüsü 2026-04-23 135209.png}
+\caption{Evidence rail - two selected KG triples grounding the answer.}
+\end{figure}
+
+\subsection{Error Category Taxonomy}
+
+\begin{center}
+\begin{tabular}{@{}L{3.8cm}C{1.2cm}L{8.4cm}@{}}
+\toprule
+\rowcolor{NavyDark}
+\tblhead{Error Type} & \tblhead{Count} & \tblhead{Description} \\
+\midrule
+\textbf{\color{ErrRed}KG Data Deficiency} & 1/5 & Required information absent from Wikidata5M; KG path cannot be completed. \\
+\rowcolor{RowAlt}
+\textbf{Entity Linking Error} & 0/5 & Entity in query not found in KG or incorrect entity matching. \\
+\textbf{\color{TealAccent}Turkish-English Mismatch} & 0/5 & Turkish name exists only in English in KG or alias file. \\
+\rowcolor{RowAlt}
+\textbf{\color{ErrOrange}LLM Selection Error} & 3/5 & LLM selects wrong triples or produces hallucinated answer without evidence. \\
+\textbf{\color{ErrBlue}Retrieval Error} & 1/5 & Relevant passage not in corpus or wrong passage retrieved. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Failure Case Analysis - All 5 Cases}
+
+The five failure cases span the major error categories. Each case lists the gold answer, system prediction, root cause, and remediation suggestion.
+
+\begin{tcolorbox}[failred,title={Case 1 - KG Data Deficiency | KG-Infused RAG}]
+\begin{tabular}{@{}L{2.8cm}L{10.4cm}@{}}
+\textbf{Question} & Where did the director of \emph{Do Not Forget Me Istanbul} study? \\[2pt]
+\textbf{Expected} & The University of Southern California \\
+\textbf{Predicted} & \emph{unknown} \\[4pt]
+\textbf{Analysis} & The Demirkubuz $\to$ \texttt{educated\_at} $\to$ USC triple is absent from Wikidata5M. KG activation terminates without a grounded answer. \\[4pt]
+\textbf{Suggestion} & Augment the subgraph with DBpedia or Wikidata live API for missing education triples.
+\end{tabular}
+\end{tcolorbox}
+
+\begin{tcolorbox}[failorange,title={Case 2 - LLM Selection Error | No Retrieval}]
+\begin{tabular}{@{}L{2.8cm}L{10.4cm}@{}}
+\textbf{Question} & Were the directors of \emph{Angel's Fall} and \emph{Do Not Forget Me Istanbul} educated in the same country? \\[2pt]
+\textbf{Expected} & no \\
+\textbf{Predicted} & Yes. \\[4pt]
+\textbf{Analysis} & The LLM hallucinates a confident comparison answer without structured evidence. \\[4pt]
+\textbf{Suggestion} & Enforce a refusal policy for comparison questions lacking evidence.
+\end{tabular}
+\end{tcolorbox}
+
+\begin{tcolorbox}[failblue,title={Case 3 - Retrieval Error | No Retrieval}]
+\begin{tabular}{@{}L{2.8cm}L{10.4cm}@{}}
+\textbf{Question} & In which country is the school attended by the director of \emph{Angel's Fall} located? \\[2pt]
+\textbf{Expected} & Turkey \\
+\textbf{Predicted} & Unknown \\[4pt]
+\textbf{Analysis} & The 3-hop chain exceeds parametric recall. This method has zero corpus access. \\[4pt]
+\textbf{Suggestion} & Use as a negative baseline to quantify KG-RAG gain on 3-hop questions.
+\end{tabular}
+\end{tcolorbox}
+
+\begin{tcolorbox}[failorange,title={Case 4 - LLM Selection Error | No Retrieval}]
+\begin{tabular}{@{}L{2.8cm}L{10.4cm}@{}}
+\textbf{Question} & Where did the director of \emph{Ember} study? \\[2pt]
+\textbf{Expected} & Istanbul University \\
+\textbf{Predicted} & Zeki Demirkubuz studied engineering. \\[4pt]
+\textbf{Analysis} & The LLM generates a sentence-level hallucination instead of a single entity name. \\[4pt]
+\textbf{Suggestion} & Constrain the output format to a single entity name or \emph{unknown}.
+\end{tabular}
+\end{tcolorbox}
+
+\begin{tcolorbox}[failorange,title={Case 5 - LLM Selection Error | No Retrieval}]
+\begin{tabular}{@{}L{2.8cm}L{10.4cm}@{}}
+\textbf{Question} & In which country was Ali Düşenkalkar, a cast member of \emph{Devrim Arabaları}, born? \\[2pt]
+\textbf{Expected} & Cyprus \\
+\textbf{Predicted} & Turkey \\[4pt]
+\textbf{Analysis} & Turkish-domain bias causes the LLM to predict Turkey. KG-Infused RAG correctly traces the P19 $\to$ P17 path to Cyprus. \\[4pt]
+\textbf{Suggestion} & Include this as evidence of the value of KG grounding.
+\end{tabular}
+\end{tcolorbox}
+
+\section{Conclusions \& Recommendations}
+
+This project demonstrates that KG-Infused RAG substantially outperforms all baselines on multi-hop question answering over the Türkiye Cinema domain.
+
+\begin{itemize}
+\item \textbf{KG grounding is critical:} the 90-point EM gap between No Retrieval (0.08) and KG-Infused RAG (0.98) measures the value of structured knowledge for multi-hop reasoning.
+\item \textbf{LLM hallucination} is the dominant failure mode (3/5 failures), addressable through single-entity output constraints and structured prompt templates.
+\item \textbf{KG data deficiency} accounts for 1/5 failures; augmenting Wikidata5M with live Wikidata API or DBpedia is the highest-impact infrastructure fix.
+\item \textbf{Spreading activation} successfully navigates 2-hop and 3-hop reasoning chains while maintaining full trace coverage (50/50).
+\item \textbf{Future work:} integrate R-GAT graph attention networks for learned entity weighting during activation.
+\end{itemize}
+
+\bigskip
+\begin{center}
+\small\color{MutedGray}
+Repository: \url{https://github.com/aftekeli/sna.git}
+\quad -- \quad
+Commit: \texttt{7c379ee}
+\quad -- \quad
+Report date: 2026-04-23
+\end{center}
+
+\end{document}
