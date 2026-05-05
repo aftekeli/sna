@@ -12,6 +12,8 @@ DEFAULT_ENV_FILE = REPO_ROOT / ".env"
 
 
 class Settings(BaseSettings):
+    """Application configuration loaded from environment variables and `.env`."""
+
     model_config = SettingsConfigDict(
         env_file=str(DEFAULT_ENV_FILE),
         env_file_encoding="utf-8",

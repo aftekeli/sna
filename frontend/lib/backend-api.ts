@@ -10,7 +10,6 @@ import {
   domainBars,
   entityDistribution,
   evidenceRail,
-  failureCase,
   failureCases,
   gnnStats,
   hopTypeMetrics,
@@ -23,6 +22,27 @@ import {
   successfulCase,
   xaiStats,
 } from "@/lib/dashboard-data";
+
+const BACKEND_FETCH_TIMEOUT_MS = 8000;
+
+type GroqProviderDetails = {
+  model?: string;
+  plan_mode?: string;
+  quota_snapshot?: {
+    model?: string;
+    remaining_requests?: number;
+    remaining_tokens?: number;
+  } | null;
+  runtime_status?: {
+    request_pacing_rpm?: number;
+  } | null;
+};
+
+type GroqProviderSnapshot = {
+  configured: boolean;
+  mode?: string | null;
+  details?: GroqProviderDetails;
+};
 
 type OverviewResponse = {
   graph: {
@@ -56,17 +76,7 @@ type OverviewResponse = {
       retrieval_recall: number;
     }>;
   };
-  groq: {
-    configured: boolean;
-    mode: string;
-    paused_for_rest_of_day: boolean;
-    request_pacing_rpm: number;
-    snapshot?: {
-      model?: string;
-      remaining_requests?: number;
-      remaining_tokens?: number;
-    };
-  };
+  groq: GroqProviderSnapshot;
 };
 
 type CypherLibraryResponse = {
@@ -125,12 +135,16 @@ function backendBaseUrl() {
   return configuredUrl?.trim() || "http://127.0.0.1:8000";
 }
 
+function groqDetails(overview: OverviewResponse): GroqProviderDetails {
+  return overview.groq.details ?? {};
+}
+
 async function fetchBackend<T>(path: string): Promise<T | null> {
   noStore();
   try {
     const response = await fetch(`${backendBaseUrl()}${path}`, {
       cache: "no-store",
-      signal: AbortSignal.timeout(2000),
+      signal: AbortSignal.timeout(BACKEND_FETCH_TIMEOUT_MS),
     });
     if (!response.ok) {
       return null;
@@ -368,14 +382,7 @@ export async function getEvaluationViewModel() {
                     : "pink",
           }))
         : methodMetrics,
-    domainBars:
-      summaries.length > 0
-        ? summaries.map((item) => ({
-            label: titleCase(item.method),
-            kg: item.f1,
-            rag: item.accuracy,
-          }))
-        : domainBars,
+    domainBars,
     hopTypeMetrics,
     questionGrid: liveQuestionGrid,
   };
@@ -386,13 +393,12 @@ export async function getQuestionTraceViewModel(questionId = "qa_104db2fbbec9") 
 }
 
 export async function getXaiViewModel() {
-  const [overview, successTrace, failureTrace] = await Promise.all([
+  const [overview, successTrace] = await Promise.all([
     fetchBackend<OverviewResponse>("/dashboard/overview"),
     getQuestionTraceViewModel("qa_104db2fbbec9"),
-    getQuestionTraceViewModel("qa_9ebc97ac2e4f"),
   ]);
 
-  if (!overview || !successTrace || !failureTrace) {
+  if (!overview || !successTrace) {
     return {
       stats: xaiStats,
       successCase: successfulCase,
@@ -470,13 +476,16 @@ export async function getChatViewModel() {
   }
 
   const kgMetric = overview.evaluation.method_summaries?.find((item) => item.method === "kg_infused_rag");
+  const groq = groqDetails(overview);
+  const quotaSnapshot = groq.quota_snapshot ?? undefined;
+  const requestPacingRpm = groq.runtime_status?.request_pacing_rpm ?? 12;
 
   return {
     stats: [
       {
         label: "Primary Model",
-        value: overview.groq.snapshot?.model ?? "GPT-OSS 120B",
-        hint: `Groq free-plan paced at ${overview.groq.request_pacing_rpm ?? 12} RPM`,
+        value: quotaSnapshot?.model ?? groq.model ?? "openai/gpt-oss-120b",
+        hint: `Groq ${groq.plan_mode ?? "free"} plan paced at ${requestPacingRpm} RPM`,
         tone: "cyan" as const,
       },
       {
@@ -493,8 +502,11 @@ export async function getChatViewModel() {
       },
       {
         label: "Quota Left",
-        value: String(overview.groq.snapshot?.remaining_requests ?? 0),
-        hint: `Tokens left ${overview.groq.snapshot?.remaining_tokens ?? 0}`,
+        value: quotaSnapshot?.remaining_requests != null ? String(quotaSnapshot.remaining_requests) : "n/a",
+        hint:
+          quotaSnapshot?.remaining_tokens != null
+            ? `Tokens left ${quotaSnapshot.remaining_tokens}`
+            : "Probe quota from the chat workspace",
         tone: "pink" as const,
       },
     ],

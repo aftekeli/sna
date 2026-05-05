@@ -19,6 +19,8 @@ class GroqRateLimitedError(RuntimeError):
 
 
 class GroqProvider:
+    """Groq chat-completion client with quota preflight and rate-limit history."""
+
     def __init__(self, settings: Settings) -> None:
         self.settings = settings
         self.quota = GroqQuotaManager(settings)

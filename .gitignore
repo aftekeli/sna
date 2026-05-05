@@ -1,9 +1,11 @@
 .env
 .env.local
 .env.*.local
+.credentials/
 
 frontend/node_modules/
 frontend/.next/
+frontend/*.tsbuildinfo
 .vercel/
 frontend/.vercel/
 

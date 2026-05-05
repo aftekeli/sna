@@ -50,6 +50,8 @@ Production environment variables expected by the backend project:
 - `NEO4J_USERNAME`
 - `NEO4J_PASSWORD`
 - `NEO4J_DATABASE`
+- `AURA_INSTANCEID` (optional metadata)
+- `AURA_INSTANCENAME` (optional metadata)
 - `APP_ALLOWED_ORIGINS`
 - `RUNTIME_STORAGE_ROOT=/tmp/sna-runtime`
 - `VERCEL_FORCE_PYTHON_STREAMING=1`
@@ -129,3 +131,4 @@ Use this order for manual production releases:
 - The backend uses a thin root-level Vercel entrypoint and reads static project artifacts from the repository.
 - Runtime chat and quota state is written to temporary storage under `/tmp/sna-runtime` in production.
 - Automatic GitHub-triggered deployment is not required for this workflow; deployments can be completed fully from the terminal with the Vercel token.
+- `.vercelignore` files exclude local secrets, credential dumps, dependency folders, and generated runtime state from manual deployment packages.

@@ -37,6 +37,8 @@ class KGRunContext:
 
 
 class KGInfusedRAGRunner:
+    """Executes KG-guided retrieval, evidence tracing, and answer generation."""
+
     def __init__(self, settings: Settings) -> None:
         self.settings = settings
         self.registry = get_provider_registry(settings)

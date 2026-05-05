@@ -1,6 +1,9 @@
 from __future__ import annotations
 
+import csv
 import json
+import re
+import time
 from pathlib import Path
 from typing import Any
 
@@ -196,14 +199,8 @@ def get_cypher_library(settings: Settings = Depends(get_settings)) -> dict[str, 
     }
 
 
-class RunCypherBody(dict):
-    pass
-
-
 @router.post("/run-cypher")
 def run_cypher(body: dict[str, Any], settings: Settings = Depends(get_settings)) -> dict[str, Any]:
-    import time
-
     query_index: int = int(body.get("query_index", 0))
     neo4j = Neo4jProvider(settings)
     if not neo4j.configured:
@@ -215,8 +212,7 @@ def run_cypher(body: dict[str, Any], settings: Settings = Depends(get_settings))
         if query_index < 0 or query_index >= len(templates):
             return {"rows": [], "row_count": 0, "elapsed_ms": 0, "error": f"Invalid query index {query_index}"}
         statement = templates[query_index]["statement"]
-        import re as _re
-        has_limit = bool(_re.search(r"\bLIMIT\b", statement, _re.IGNORECASE))
+        has_limit = bool(re.search(r"\bLIMIT\b", statement, re.IGNORECASE))
         query = statement if has_limit else statement + " LIMIT 20"
         t0 = time.monotonic()
         rows = neo4j.run_query(query)
@@ -228,10 +224,8 @@ def run_cypher(body: dict[str, Any], settings: Settings = Depends(get_settings))
 
 @router.get("/graph-data")
 def get_graph_data(settings: Settings = Depends(get_settings)) -> dict[str, Any]:
-    import csv as _csv
-    import json as _json
-
     neo4j = Neo4jProvider(settings)
+    fallback_error: str | None = None
     if neo4j.configured:
         try:
             node_rows = neo4j.run_query(
@@ -245,24 +239,24 @@ def get_graph_data(settings: Settings = Depends(get_settings)) -> dict[str, Any]
                 "edges": [{"source": r["source"], "target": r["target"], "relation": r["relation"]} for r in edge_rows],
                 "source": "neo4j",
             }
-        except Exception:
-            pass
+        except Exception as exc:
+            fallback_error = str(exc)
 
     entities_path = settings.phase3_entities_path
     rels_path = settings.phase3_relationships_path
     if entities_path.exists() and rels_path.exists():
         nodes: list[dict[str, Any]] = []
         with open(entities_path, encoding="utf-8") as f:
-            for row in _csv.DictReader(f):
-                roles = _json.loads(row.get("roles_json", "[]"))
+            for row in csv.DictReader(f):
+                roles = json.loads(row.get("roles_json", "[]"))
                 nodes.append({"id": row["entity_id"], "label": row["canonical_name"], "roles": roles})
         edges: list[dict[str, Any]] = []
         with open(rels_path, encoding="utf-8") as f:
-            for row in _csv.DictReader(f):
+            for row in csv.DictReader(f):
                 edges.append({"source": row["source_id"], "target": row["target_id"], "relation": row["relation_label"]})
-        return {"nodes": nodes, "edges": edges, "source": "csv"}
+        return {"nodes": nodes, "edges": edges, "source": "csv", "fallback_error": fallback_error}
 
-    return {"nodes": [], "edges": [], "source": "unavailable"}
+    return {"nodes": [], "edges": [], "source": "unavailable", "fallback_error": fallback_error}
 
 
 @router.get("/entity-distribution")
