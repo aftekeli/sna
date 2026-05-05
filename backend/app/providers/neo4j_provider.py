@@ -7,6 +7,8 @@ from app.providers.base import ProviderSnapshot
 
 
 class Neo4jProvider:
+    """Thin Neo4j Aura client wrapper used by routes and KG-RAG graph traversal."""
+
     def __init__(self, settings: Settings) -> None:
         self.settings = settings
 

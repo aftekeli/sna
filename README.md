@@ -56,9 +56,9 @@ The `artifacts/` directory stores generated outputs used by the interface and ba
 
 This project was developed using a locally downloaded copy of **Wikidata5M-KG** provided by **Alphonse7** on Hugging Face. The dataset package supplies the triplets, entity aliases, relation aliases, and text descriptions used throughout the pipeline to:
 
-- extracting a Turkiye-centered cinema subgraph
-- building Neo4j-ready entity and relationship exports
-- generating the verified multi-hop QA benchmark used for evaluation
+- extract a Turkiye-centered cinema subgraph
+- build Neo4j-ready entity and relationship exports
+- generate the verified multi-hop QA benchmark used for evaluation
 
 During development, this was the only external dataset package used from the project root for graph construction and dataset generation. The downstream outputs produced from that source are stored under `artifacts/`.
 
@@ -126,10 +126,12 @@ Copy `.env.example` to `.env` and provide the required credentials.
 Expected variables:
 - `GROQ_API_KEY`
 - `GROQ_MODEL` (optional override)
+- `GROQ_MODE` and quota guardrail values (optional)
 - `NEO4J_URI`
 - `NEO4J_USERNAME`
 - `NEO4J_PASSWORD`
 - `NEO4J_DATABASE`
+- `NEXT_PUBLIC_BACKEND_API_BASE_URL` and `BACKEND_API_BASE_URL` for the frontend
 
 ### 2. Backend Installation
 
@@ -183,9 +185,27 @@ Frontend default address:
 http://127.0.0.1:3000
 ```
 
+## Verification
+
+Before presenting or deploying, run the backend and frontend checks from the project root:
+
+```bash
+python -m compileall -q backend/app scripts server.py api/index.py
+python -m pytest backend/tests -q
+```
+
+Then run the frontend production build from `frontend/`:
+
+```bash
+npm run build
+```
+
 ## Documentation
 
 Project documentation files can be placed under the `docs/` directory.
+
+For the Vercel production workflow used on the `prod` branch, see the dedicated manual deployment guide:
+- [README.prod.md](README.prod.md)
 
 ## Project Scope
 

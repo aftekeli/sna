@@ -29,39 +29,6 @@ export const knowledgeGraphStats: StatCardData[] = [
   { label: "QA Dataset", value: "50", hint: "30 two-hop, 15 three-hop, 5 comparison", tone: "pink" },
 ];
 
-export const graphNodes = [
-  { label: "Türkiye", x: 48, y: 48, tone: "amber" },
-  { label: "Angel's Fall", x: 66, y: 68, tone: "red" },
-  { label: "Do Not Forget Me Istanbul", x: 78, y: 46, tone: "red" },
-  { label: "Semih Kaplanoğlu", x: 76, y: 24, tone: "cyan" },
-  { label: "Zeki Demirkubuz", x: 56, y: 24, tone: "cyan" },
-  { label: "Istanbul University", x: 40, y: 76, tone: "green" },
-  { label: "Dokuz Eylül University", x: 22, y: 62, tone: "green" },
-  { label: "Istanbul", x: 30, y: 22, tone: "blue" },
-  { label: "Trabzon", x: 12, y: 44, tone: "blue" },
-  { label: "USC", x: 88, y: 18, tone: "pink" },
-];
-
-export const graphEdges = [
-  { from: "Türkiye", to: "Istanbul", label: "contains" },
-  { from: "Türkiye", to: "Trabzon", label: "contains" },
-  { from: "Türkiye", to: "Angel's Fall", label: "country" },
-  { from: "Türkiye", to: "Do Not Forget Me Istanbul", label: "country" },
-  { from: "Angel's Fall", to: "Semih Kaplanoğlu", label: "director" },
-  { from: "Do Not Forget Me Istanbul", to: "Zeki Demirkubuz", label: "director" },
-  { from: "Semih Kaplanoğlu", to: "Dokuz Eylül University", label: "educated at" },
-  { from: "Zeki Demirkubuz", to: "Istanbul University", label: "educated at" },
-  { from: "Zeki Demirkubuz", to: "USC", label: "contrast path" },
-];
-
-export const domainShare = [
-  { label: "Film", value: 270, tone: "red" },
-  { label: "People", value: 359, tone: "cyan" },
-  { label: "Universities", value: 12, tone: "green" },
-  { label: "Places", value: 38, tone: "blue" },
-  { label: "Awards", value: 20, tone: "pink" },
-];
-
 export const seedEntities = [
   { id: "Q43", name: "Türkiye", type: "country", links: 148 },
   { id: "Q36689", name: "Zeki Demirkubuz", type: "person", links: 12 },
@@ -194,13 +161,6 @@ export const successfulCase = {
     "R2: director neighborhood surfaced education triples and eliminated biography-only noise.",
     "R3: structured answer normalization snapped the final entity to the gold surface form.",
   ],
-};
-
-export const failureCase = {
-  question: "Where did the director of Do Not Forget Me Istanbul study?",
-  expected: "The University of Southern California",
-  prediction: "unknown",
-  note: "The USC education triple for Zeki Demirkubuz is absent from Wikidata5M. KG-Infused RAG correctly returns unknown rather than hallucinating.",
 };
 
 // All 5 failure cases with PDF error taxonomy categories (from phase-7/latest/case_studies.json).

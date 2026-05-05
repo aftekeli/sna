@@ -47,6 +47,8 @@ class RetrievalDocument:
 
 
 class Phase5CorpusIndex:
+    """Builds and queries the SQLite FTS corpus used by the retrieval baselines."""
+
     def __init__(
         self,
         settings: Settings,

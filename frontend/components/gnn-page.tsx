@@ -54,7 +54,7 @@ export function GnnPage({
             <div className="pm-badge">Module 3</div>
             <strong>KG-Augmented Answer Generation</strong>
             <p>Passage note + KG facts → fact-enhanced note → final answer generation conditioned on enriched context</p>
-            <div className="pm-params">SQLite corpus · 2 200 docs</div>
+            <div className="pm-params">SQLite corpus · 2,200 docs</div>
           </div>
         </div>
       </Panel>

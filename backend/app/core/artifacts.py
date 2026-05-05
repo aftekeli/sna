@@ -7,6 +7,8 @@ from typing import Any, Iterable
 
 
 class ArtifactStore:
+    """Small JSON/JSONL persistence helper rooted under an artifact directory."""
+
     def __init__(self, root: Path) -> None:
         self.root = root
         self.root.mkdir(parents=True, exist_ok=True)

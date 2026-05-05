@@ -13,6 +13,8 @@ EventEmitter = Callable[[str, dict[str, Any]], None]
 
 
 class ChatRuntimeService:
+    """Coordinates chat sessions, KG-RAG execution, and streaming UI events."""
+
     def __init__(
         self,
         settings: Settings,
@@ -32,6 +34,8 @@ class ChatRuntimeService:
         provider_details = provider_snapshot.get("details", {})
         runtime_status = provider_details.get("runtime_status") or {}
         quota_snapshot = provider_details.get("quota_snapshot") or {}
+        remaining_requests = quota_snapshot.get("remaining_requests")
+        remaining_tokens = quota_snapshot.get("remaining_tokens")
         pause_state = provider_details.get("pause_state")
         quick_prompt_groups = self._build_prompt_groups()
 
@@ -66,8 +70,8 @@ class ChatRuntimeService:
                 },
                 {
                     "label": "Quota Left",
-                    "value": str(quota_snapshot.get("remaining_requests", 0)),
-                    "hint": f"Tokens left {quota_snapshot.get('remaining_tokens', 0)}",
+                    "value": str(remaining_requests) if remaining_requests is not None else "n/a",
+                    "hint": f"Tokens left {remaining_tokens}" if remaining_tokens is not None else "Quota snapshot not available",
                     "tone": "amber",
                 },
                 {
